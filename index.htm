@@ -3,7 +3,7 @@
 <head><meta http-equiv="content-type" content="text/html; charset=utf-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",(e=>{this.persisted=e.persisted})),window.addEventListener("DOMContentLoaded",(()=>{this._preconnect3rdParties()})),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){document.hidden?e._triggerListener():(this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",e.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",e.touchStartHandler),document.addEventListener("visibilitychange",e.userEventHandler))}_removeUserInteractionListener(){this.triggerEvents.forEach((e=>window.removeEventListener(e,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(e){"HTML"!==e.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),e.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"onclick","rocket-onclick"))}_onTouchMove(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick")}_onTouchEnd(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(e){e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick"),this.interceptedClicks.push(e),e.preventDefault(),e.stopPropagation(),e.stopImmediatePropagation()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((e=>{e.target.dispatchEvent(new MouseEvent("click",{view:e.view,bubbles:!0,cancelable:!0}))}))}_renameDOMAttribute(e,t,n){e.hasAttribute&&e.hasAttribute(t)&&(event.target.setAttribute(n,event.target.getAttribute(t)),event.target.removeAttribute(t))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let e=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{if(t.hasAttribute("src")){const n=new URL(t.src).origin;n!==location.origin&&e.push({src:n,crossOrigin:t.crossOrigin||"module"===t.getAttribute("data-rocket-type")})}})),e=[...new Map(e.map((e=>[JSON.stringify(e),e]))).values()],this._batchInjectResourceHints(e,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(e){}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._replayClicks()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._littleBreath(),new Promise((t=>{const n=document.createElement("script");[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type"),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t());try{e.parentNode.replaceChild(n,e)}catch(e){t()}}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(e,t){var n=document.createDocumentFragment();e.forEach((e=>{if(e.src){const i=document.createElement("link");i.href=e.src,i.rel=t,"preconnect"!==t&&(i.as="script"),e.getAttribute&&"module"===e.getAttribute("data-rocket-type")&&(i.crossOrigin=!0),e.crossOrigin&&(i.crossOrigin=e.crossOrigin),n.appendChild(i)}})),document.head.appendChild(n)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(i){e["rocket"+t]=n=i}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),await this._littleBreath();const e=new Event("rocket-pageshow");e.persisted=this.persisted,window.dispatchEvent(e),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,i=document.createRange(),r=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const s=document.createDocumentFragment();i.setStart(s,0),s.appendChild(i.createContextualFragment(t)),r.insertBefore(s,o)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise((e=>setTimeout(e))):new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts;e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
 <title>Factory Aluminum Coil And Sheet In Mill Finish Or PE/PVDF Coated Or Powder Coating For Construction Decorations - Tigers Industry Aluminum</title><style id="rocket-critical-css">.section-title1 .bar{height:5px;width:90px;background:#ffe585;margin:10px auto;position:relative;border-radius:30px}.section-title1 .bar::before{content:'';position:absolute;left:0;top:-2.7px;height:10px;width:10px;border-radius:50%;background:var(--light-color1);-webkit-animation-duration:3s;animation-duration:3s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-name:MOVE-BG;animation-name:MOVE-BG}@keyframes MOVE-BG{from{transform:translateX(0)}to{transform:translateX(88px)}}.footer-form input{height:42px}.footer-form input{background:rgba(0,0,0,.1);border:1px solid rgb(147,202,234,0.5)}.btn{position:relative;border:0;padding:8px 12px 6px;font-weight:600;letter-spacing:1px;text-transform:uppercase;overflow:hidden;z-index:2}.btn:after{content:"";position:absolute;height:0;width:0;top:50%;left:50%;border-radius:50%;opacity:.3;background-color:#fff;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);z-index:-1}.scrollup{color:#000;text-align:center;visibility:hidden;opacity:0}.scrollup span{font-size:28px}.iconfont{font-family:"tigers"!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-bianji1:before{content:"\e621"}.icon-dianhua:before{content:"\e60d"}.icon-mail:before{content:"\e602"}.icon-arrow-top:before{content:"\e61a"}.icon-arrow-right:before{content:"\e61d"}.icon-whatsapp:before{content:"\e6c9"}.icon-kefu:before{content:"\e615"}.owl-carousel{position:relative}.owl-carousel{width:100%;z-index:1}@media (max-width:768px){.float-sidebar{display:none;visibility:hidden}}.float-sidebar{position:fixed;z-index:990;bottom:86px;right:15px}.float-sidebar ul{padding:0}.float-sidebar li{list-style:none}.float-sidebar a{color:#252b3a;text-decoration:none}.float-bar-nav>.item{background-color:#fff;text-align:center;line-height:48px;width:48px;height:48px;border-radius:2px;box-shadow:0 4px 10px 0 rgba(138,141,147,.2)}.float-bar-nav>.item.tel{height:180px;position:relative;margin-bottom:10px}.top-icon{background:linear-gradient(-45deg,#C7000B,#D64A52);height:48px}.float-bar-nav>.item.tel i{font-size:35px;color:#FFF;line-height:44px}.float-bar-nav>.item.tel>p{position:relative;font-size:16px;color:#252b3a;line-height:16px;letter-spacing:1px;font-weight:600;padding:12px 0 0 16px;white-space:nowrap;transform:rotate(90deg);transform-origin:18px 24px}.float-bar-nav>.item.tel>p:before{content:"";position:absolute;top:50%;left:50%;width:3px;height:3px;margin-top:-1px;margin-left:-1px;border-radius:50%;background-color:#333;display:none}.float-bar-nav .sub-nav-layer{position:absolute;bottom:0;right:100%;padding-right:5px;opacity:0;visibility:hidden;-webkit-transform:scale(.95);transform:scale(.95);-webkit-transform-origin:right;transform-origin:right}.float-bar-nav .sub-nav-main{min-width:220px;white-space:nowrap;border-radius:2px;box-shadow:0px 7px 10px 2px rgba(138,141,147,.2);background-color:#fff;border-radius:2px}.sub-inner.inner{height:auto;line-height:20px;padding-top:10px;padding-bottom:6px;text-align:left;padding-right:20px}.sub-inner .iconfont{float:left;display:inline-block;vertical-align:middle;margin:10px 12px 0 15px;font-size:38px;height:40px;color:#ce202a}.float-sidebar .sub-inner.inner .title{font-size:16px;font-weight:600;line-height:24px;margin-left:62px;margin-bottom:0}.float-sidebar .sub-inner.inner .info{font-size:13px;margin:5px 0 6px 62px;text-align:justify}</style>
 
-<link rel="dns-prefetch" href="https://img.tigersalu.com/">
+<link rel="dns-prefetch" href="/">
 <link rel="dns-prefetch" href="https://www.googletagmanager.com/">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -170,8 +170,8 @@
 <meta property="og:description" content="Tigers Industry is a professional manufacturer for mill finish and color coated aluminium coil / sheet /plate and new series of aluminum cladding panels. Alloy 1050, 1100, 3003, 3105, 5005, 5052, 5754, 6061 is the most hot sell, and Polyester (PE), Fluorocarbon (PVDF) or powder coating can be treated as customer’s request. Tigers Industry has 2 plants and export experience more than 8 years. The most products are widely used in ACP, building facade, ceiling, curtain wall, roofing sheets,exterior and interior decorations.">
 <meta property="og:url" content="https://www.tigersalu.com//">
 <meta property="og:site_name" content="Tigers aluminum">
-<meta property="og:image" content="https://img.tigersalu.com/2021/03/tigers-aluminum-logo.png">
-<meta property="og:image:secure_url" content="https://img.tigersalu.com/2021/03/tigers-aluminum-logo.png">
+<meta property="og:image" content="/2021/03/tigers-aluminum-logo.png">
+<meta property="og:image:secure_url" content="/2021/03/tigers-aluminum-logo.png">
 <meta property="og:image:width" content="320">
 <meta property="og:image:height" content="320">
 <meta property="og:image:alt" content="Tigers Aluminum logo">
@@ -179,8 +179,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Factory Aluminum Coil And Sheet In Mill Finish Or PE/PVDF Coated Or Powder Coating For Construction Decorations - Tigers Industry Aluminum">
 <meta name="twitter:description" content="Tigers Industry is a professional manufacturer for mill finish and color coated aluminium coil / sheet /plate and new series of aluminum cladding panels. Alloy 1050, 1100, 3003, 3105, 5005, 5052, 5754, 6061 is the most hot sell, and Polyester (PE), Fluorocarbon (PVDF) or powder coating can be treated as customer’s request. Tigers Industry has 2 plants and export experience more than 8 years. The most products are widely used in ACP, building facade, ceiling, curtain wall, roofing sheets,exterior and interior decorations.">
-<meta name="twitter:image" content="https://img.tigersalu.com/2021/03/tigers-aluminum-logo.png">
-<script type="application/ld+json" class="rank-math-schema-pro">{"@context":"https://schema.org","@graph":[{"@type":"Place","@id":"https://www.tigersalu.com/#place","address":{"@type":"PostalAddress","streetAddress":"No.1618,Block Yunfeng B","addressLocality":"Zhengzhou City","addressRegion":"Henan","postalCode":"450000","addressCountry":"China"}},{"@type":"Organization","@id":"https://www.tigersalu.com/#organization","name":"Henan Tigers Industry Co., Ltd","url":"https://www.tigersalu.com/","email":"aluminumtigers@gmail.com","address":{"@type":"PostalAddress","streetAddress":"No.1618,Block Yunfeng B","addressLocality":"Zhengzhou City","addressRegion":"Henan","postalCode":"450000","addressCountry":"China"},"logo":{"@type":"ImageObject","@id":"https://www.tigersalu.com/#logo","url":"https://img.tigersalu.com/2021/03/tigers-aluminum-logo.png","caption":"Henan Tigers Industry Co., Ltd","inLanguage":"en-US","width":"320","height":"320"},"location":{"@id":"https://www.tigersalu.com/#place"}},{"@type":"WebSite","@id":"https://www.tigersalu.com/#website","url":"https://www.tigersalu.com","name":"Henan Tigers Industry Co., Ltd","publisher":{"@id":"https://www.tigersalu.com/#organization"},"inLanguage":"en-US","potentialAction":{"@type":"SearchAction","target":"https://www.tigersalu.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"CollectionPage","@id":"https://www.tigersalu.com//#webpage","url":"https://www.tigersalu.com//","name":"Factory Aluminum Coil And Sheet In Mill Finish Or PE/PVDF Coated Or Powder Coating For Construction Decorations - Tigers Industry Aluminum","about":{"@id":"https://www.tigersalu.com/#organization"},"isPartOf":{"@id":"https://www.tigersalu.com/#website"},"inLanguage":"en-US"}]}</script>
+<meta name="twitter:image" content="/2021/03/tigers-aluminum-logo.png">
+<script type="application/ld+json" class="rank-math-schema-pro">{"@context":"https://schema.org","@graph":[{"@type":"Place","@id":"https://www.tigersalu.com/#place","address":{"@type":"PostalAddress","streetAddress":"No.1618,Block Yunfeng B","addressLocality":"Zhengzhou City","addressRegion":"Henan","postalCode":"450000","addressCountry":"China"}},{"@type":"Organization","@id":"https://www.tigersalu.com/#organization","name":"Henan Tigers Industry Co., Ltd","url":"https://www.tigersalu.com/","email":"vendortrust12@gmail.com","address":{"@type":"PostalAddress","streetAddress":"No.1618,Block Yunfeng B","addressLocality":"Zhengzhou City","addressRegion":"Henan","postalCode":"450000","addressCountry":"China"},"logo":{"@type":"ImageObject","@id":"https://www.tigersalu.com/#logo","url":"/2021/03/tigers-aluminum-logo.png","caption":"Henan Tigers Industry Co., Ltd","inLanguage":"en-US","width":"320","height":"320"},"location":{"@id":"https://www.tigersalu.com/#place"}},{"@type":"WebSite","@id":"https://www.tigersalu.com/#website","url":"https://www.tigersalu.com","name":"Henan Tigers Industry Co., Ltd","publisher":{"@id":"https://www.tigersalu.com/#organization"},"inLanguage":"en-US","potentialAction":{"@type":"SearchAction","target":"https://www.tigersalu.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"CollectionPage","@id":"https://www.tigersalu.com//#webpage","url":"https://www.tigersalu.com//","name":"Factory Aluminum Coil And Sheet In Mill Finish Or PE/PVDF Coated Or Powder Coating For Construction Decorations - Tigers Industry Aluminum","about":{"@id":"https://www.tigersalu.com/#organization"},"isPartOf":{"@id":"https://www.tigersalu.com/#website"},"inLanguage":"en-US"}]}</script>
 
 <link data-minify="1" rel='preload' href='wp-content/cache/min/1/wp-content/themes/tgs/css/tigers.css?ver=1651888899' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type='text/css' media='all'>
 <style id='rocket-lazyload-inline-css' type='text/css'>
@@ -452,7 +452,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="row">
                 <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
           <div class="image-effect-two hover-shadow">
-            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="https://img.tigersalu.com/2021/03/aluminum-can1-380x285.jpg" srcset="2021/03/aluminum-can1-380x285.jpg" alt="3104 aluminum can" title="3104 aluminum">
+            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="/2021/03/aluminum-can1-380x285.jpg" srcset="2021/03/aluminum-can1-380x285.jpg" alt="3104 aluminum can" title="3104 aluminum">
               <figcaption>3104 aluminum</figcaption>
             </figure>
             <div class="figcaption">
@@ -463,7 +463,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
                 <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
           <div class="image-effect-two hover-shadow">
-            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="https://img.tigersalu.com/2021/02/8mm-5005-h32-aluminum-plate-1-380x285.jpg" srcset="2021/02/8mm-5005-h32-aluminum-plate-1-380x285.jpg" alt="8mm 5005 h32 aluminum plate" title="5005 Aluminum Sheet">
+            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="/2021/02/8mm-5005-h32-aluminum-plate-1-380x285.jpg" srcset="2021/02/8mm-5005-h32-aluminum-plate-1-380x285.jpg" alt="8mm 5005 h32 aluminum plate" title="5005 Aluminum Sheet">
               <figcaption>5005 Aluminum Sheet</figcaption>
             </figure>
             <div class="figcaption">
@@ -474,7 +474,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
                 <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
           <div class="image-effect-two hover-shadow">
-            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="https://img.tigersalu.com/2022/02/5-bar-aluminum-tread-plate-380x285.jpg" srcset="2022/02/5-bar-aluminum-tread-plate-380x285.jpg" alt="5 bar aluminum tread plate" title="5 bar aluminum checker plate">
+            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="/2022/02/5-bar-aluminum-tread-plate-380x285.jpg" srcset="2022/02/5-bar-aluminum-tread-plate-380x285.jpg" alt="5 bar aluminum tread plate" title="5 bar aluminum checker plate">
               <figcaption>5 bar aluminum checker plate</figcaption>
             </figure>
             <div class="figcaption">
@@ -485,7 +485,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
                 <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
           <div class="image-effect-two hover-shadow">
-            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="https://img.tigersalu.com/2022/02/diamond-plate-aluminum-sheets-4x8-1-380x285.jpg" srcset="2022/02/diamond-plate-aluminum-sheets-4x8-1-380x285.jpg" alt="diamond plate aluminum sheets 4x8" title="aluminum diamond plate">
+            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="/2022/02/diamond-plate-aluminum-sheets-4x8-1-380x285.jpg" srcset="2022/02/diamond-plate-aluminum-sheets-4x8-1-380x285.jpg" alt="diamond plate aluminum sheets 4x8" title="aluminum diamond plate">
               <figcaption>aluminum diamond plate</figcaption>
             </figure>
             <div class="figcaption">
@@ -496,7 +496,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
                 <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
           <div class="image-effect-two hover-shadow">
-            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="https://img.tigersalu.com/2021/12/thick-aluminum-foil-380x285.jpg" srcset="2021/12/thick-aluminum-foil-380x285.jpg" alt="Thick aluminum foil" title="Thick aluminum foil">
+            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="/2021/12/thick-aluminum-foil-380x285.jpg" srcset="2021/12/thick-aluminum-foil-380x285.jpg" alt="Thick aluminum foil" title="Thick aluminum foil">
               <figcaption>Thick aluminum foil</figcaption>
             </figure>
             <div class="figcaption">
@@ -507,7 +507,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
                 <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
           <div class="image-effect-two hover-shadow">
-            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="https://img.tigersalu.com/2021/02/5mm-5005-h32-aluminum-plate-1-380x285.jpg" srcset="2021/02/5mm-5005-h32-aluminum-plate-1-380x285.jpg" alt="5mm 5005 h32 aluminum plate" title="5052 Aluminum Sheet Plate">
+            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="/2021/02/5mm-5005-h32-aluminum-plate-1-380x285.jpg" srcset="2021/02/5mm-5005-h32-aluminum-plate-1-380x285.jpg" alt="5mm 5005 h32 aluminum plate" title="5052 Aluminum Sheet Plate">
               <figcaption>5052 Aluminum Sheet Plate</figcaption>
             </figure>
             <div class="figcaption">
@@ -518,7 +518,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
                 <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
           <div class="image-effect-two hover-shadow">
-            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="https://img.tigersalu.com/2021/12/thick-heavy-duty-aluminum-foil-380x285.jpg" srcset="2021/12/thick-heavy-duty-aluminum-foil-380x285.jpg" alt="Thick heavy duty aluminum foil" title="Heavy duty aluminum foil">
+            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="/2021/12/thick-heavy-duty-aluminum-foil-380x285.jpg" srcset="2021/12/thick-heavy-duty-aluminum-foil-380x285.jpg" alt="Thick heavy duty aluminum foil" title="Heavy duty aluminum foil">
               <figcaption>Heavy duty aluminum foil</figcaption>
             </figure>
             <div class="figcaption">
@@ -529,7 +529,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
                 <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
           <div class="image-effect-two hover-shadow">
-            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="https://img.tigersalu.com/2021/02/1100-h14-aluminum-sheet-2-380x285.jpg" srcset="2021/02/1100-h14-aluminum-sheet-2-380x285.jpg" alt="1100 h14 aluminum sheet" title="5X10 aluminum sheet and plate">
+            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="/2021/02/1100-h14-aluminum-sheet-2-380x285.jpg" srcset="2021/02/1100-h14-aluminum-sheet-2-380x285.jpg" alt="1100 h14 aluminum sheet" title="5X10 aluminum sheet and plate">
               <figcaption>5X10 aluminum sheet and plate</figcaption>
             </figure>
             <div class="figcaption">
@@ -540,7 +540,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
                 <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
           <div class="image-effect-two hover-shadow">
-            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="https://img.tigersalu.com/2021/02/aluminum-sheet-with-blue-films-3-380x285.jpg" srcset="2021/02/aluminum-sheet-with-blue-films-3-380x285.jpg" alt="aluminum sheet with blue films" title="4X8 aluminum sheet plate">
+            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="/2021/02/aluminum-sheet-with-blue-films-3-380x285.jpg" srcset="2021/02/aluminum-sheet-with-blue-films-3-380x285.jpg" alt="aluminum sheet with blue films" title="4X8 aluminum sheet plate">
               <figcaption>4X8 aluminum sheet plate</figcaption>
             </figure>
             <div class="figcaption">
@@ -551,7 +551,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
                 <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
           <div class="image-effect-two hover-shadow">
-            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="https://img.tigersalu.com/2021/02/3003-h14-aluminum-sheet-2-380x285.jpg" srcset="2021/02/3003-h14-aluminum-sheet-2-380x285.jpg" alt="3003 h14 aluminum sheet" title="6082 aluminum suppliers T6 temper">
+            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="/2021/02/3003-h14-aluminum-sheet-2-380x285.jpg" srcset="2021/02/3003-h14-aluminum-sheet-2-380x285.jpg" alt="3003 h14 aluminum sheet" title="6082 aluminum suppliers T6 temper">
               <figcaption>6082 aluminum suppliers T6 temper</figcaption>
             </figure>
             <div class="figcaption">
@@ -562,7 +562,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
                 <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
           <div class="image-effect-two hover-shadow">
-            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="https://img.tigersalu.com/2021/02/6061-t6-aluminum-plate-380x285.jpg" srcset="2021/02/6061-t6-aluminum-plate-380x285.jpg" alt="6061 t6 aluminum plate" title="6061 aluminum sheet">
+            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="/2021/02/6061-t6-aluminum-plate-380x285.jpg" srcset="2021/02/6061-t6-aluminum-plate-380x285.jpg" alt="6061 t6 aluminum plate" title="6061 aluminum sheet">
               <figcaption>6061 aluminum sheet</figcaption>
             </figure>
             <div class="figcaption">
@@ -573,7 +573,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
                 <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
           <div class="image-effect-two hover-shadow">
-            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="https://img.tigersalu.com/2021/02/cutting-edge-without-burrs-of-aluminum-sheet-380x285.jpg" srcset="2021/02/cutting-edge-without-burrs-of-aluminum-sheet-380x285.jpg" alt="cutting edge without burrs of aluminum sheet" title="5754 aluminum sheet plate">
+            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="/2021/02/cutting-edge-without-burrs-of-aluminum-sheet-380x285.jpg" srcset="2021/02/cutting-edge-without-burrs-of-aluminum-sheet-380x285.jpg" alt="cutting edge without burrs of aluminum sheet" title="5754 aluminum sheet plate">
               <figcaption>5754 aluminum sheet plate</figcaption>
             </figure>
             <div class="figcaption">
@@ -585,7 +585,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               </div>
     </div>
   </div>
-</section><section data-bg="https://img.tigersalu.com/images/bg-map.png" class="iaboutus pt-5 rocket-lazyload" style="">
+</section><section data-bg="/images/bg-map.png" class="iaboutus pt-5 rocket-lazyload" style="">
   <div class="mt-separator-outer-top mt-3 pt-3">
     <div class="container">
       <div class="section-title1 text-center mb-5">
@@ -598,25 +598,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div class="col-lg-12 col-xl-8">
             <div class="owl-carousel about-home owl-dots-bottom-left">
               <div class="item ">
-                <div class="mt-img-effect zoom-slow"> <img class="lazyload" width="600" data-src="https://img.tigersalu.com/images/aluminum-sheet-coil-stock.jpg" alt="Aluminum Sheet Coil Stock"> </div>
+                <div class="mt-img-effect zoom-slow"> <img class="lazyload" width="600" data-src="/images/aluminum-sheet-coil-stock.jpg" alt="Aluminum Sheet Coil Stock"> </div>
               </div>
               <div class="item ">
-                <div class="mt-img-effect zoom-slow"> <img class="lazyload" width="600" data-src="https://img.tigersalu.com/images/pre-coatin-production.jpg" alt="Pre Coatin Production"> </div>
+                <div class="mt-img-effect zoom-slow"> <img class="lazyload" width="600" data-src="/images/pre-coatin-production.jpg" alt="Pre Coatin Production"> </div>
               </div>
               <div class="item ">
-                <div class="mt-img-effect zoom-slow"> <img class="lazyload" width="600" data-src="https://img.tigersalu.com/images/paint-powder-spraying-production.jpg" alt="Paint Powder Spraying Production"> </div>
+                <div class="mt-img-effect zoom-slow"> <img class="lazyload" width="600" data-src="/images/paint-powder-spraying-production.jpg" alt="Paint Powder Spraying Production"> </div>
               </div>
               <div class="item ">
-                <div class="mt-img-effect zoom-slow"> <img class="lazyload" width="600" data-src="https://img.tigersalu.com/images/decoil.jpg" alt="Decoil"> </div>
+                <div class="mt-img-effect zoom-slow"> <img class="lazyload" width="600" data-src="/images/decoil.jpg" alt="Decoil"> </div>
               </div>
               <div class="item ">
-                <div class="mt-img-effect zoom-slow"> <img class="lazyload" width="600" data-src="https://img.tigersalu.com/images/pre-coatin-production-1.jpg" alt="Pre Coatin Production"> </div>
+                <div class="mt-img-effect zoom-slow"> <img class="lazyload" width="600" data-src="/images/pre-coatin-production-1.jpg" alt="Pre Coatin Production"> </div>
               </div>
               <div class="item ">
-                <div class="mt-img-effect zoom-slow"> <img class="lazyload" width="600" data-src="https://img.tigersalu.com/images/paint-powder-spraying-production-line.jpg" alt="Paint Powder Spraying Production Line"> </div>
+                <div class="mt-img-effect zoom-slow"> <img class="lazyload" width="600" data-src="/images/paint-powder-spraying-production-line.jpg" alt="Paint Powder Spraying Production Line"> </div>
               </div>
               <div class="item ">
-                <div class="mt-img-effect zoom-slow"> <img class="lazyload" width="600" data-src="https://img.tigersalu.com/images/third-party-inspection.jpg" alt="Third Party Inspection"> </div>
+                <div class="mt-img-effect zoom-slow"> <img class="lazyload" width="600" data-src="/images/third-party-inspection.jpg" alt="Third Party Inspection"> </div>
               </div>
             </div>
           </div>
@@ -630,7 +630,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </div>
     </div>
   </div>
-  <div data-bg="https://img.tigersalu.com/images/bg.jpg" class="services-half-section-bottom rocket-lazyload" style="">
+  <div data-bg="/images/bg.jpg" class="services-half-section-bottom rocket-lazyload" style="">
     <div class="container">
       <div class="section-content">
         <div class="row">
@@ -675,7 +675,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 Aluminium metal has an appearance ranging from silvery white to dull gray,Pure aluminium is quite soft and lacking in strength.The density of aluminium is 2.70 g/cm3, about 1/3 that of steel, much lower than other commonly encountered metals.              </p>
             </div>
           </div>
-          <div class="col-sm-5 col-md-4 col-lg-5 card-img-right bg-img-hero"><img class="lazyload" loading="lazy" width="380" height="285" data-src="https://img.tigersalu.com/2021/02/3mm-aa1050-h14-aluminum-sheet-1-560x420.jpg" srcset="2021/02/3mm-aa1050-h14-aluminum-sheet-1-560x420.jpg" alt="" title="What is the physical properties of aluminium?"></div>
+          <div class="col-sm-5 col-md-4 col-lg-5 card-img-right bg-img-hero"><img class="lazyload" loading="lazy" width="380" height="285" data-src="/2021/02/3mm-aa1050-h14-aluminum-sheet-1-560x420.jpg" srcset="2021/02/3mm-aa1050-h14-aluminum-sheet-1-560x420.jpg" alt="" title="What is the physical properties of aluminium?"></div>
         </div>
       </article>
             <article class="col-lg-6 col-md-12 mb-5">
@@ -688,7 +688,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 6061 T6 aluminum properties is: Tensile Yield Strength:276 MPa,Elongation at Break:12%,Elongation at Break:17%,Modulus of Elasticity:68.9 GPa              </p>
             </div>
           </div>
-          <div class="col-sm-5 col-md-4 col-lg-5 card-img-right bg-img-hero"><img class="lazyload" loading="lazy" width="380" height="285" data-src="https://img.tigersalu.com/2021/02/6061-t6-aluminum-plate-380x285.jpg" srcset="2021/02/6061-t6-aluminum-plate-380x285.jpg" alt="6061 t6 aluminum plate" title="What is aluminum 6061 t6 properties?"></div>
+          <div class="col-sm-5 col-md-4 col-lg-5 card-img-right bg-img-hero"><img class="lazyload" loading="lazy" width="380" height="285" data-src="/2021/02/6061-t6-aluminum-plate-380x285.jpg" srcset="2021/02/6061-t6-aluminum-plate-380x285.jpg" alt="6061 t6 aluminum plate" title="What is aluminum 6061 t6 properties?"></div>
         </div>
       </article>
             <article class="col-lg-6 col-md-12 mb-5">
@@ -701,7 +701,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 The thickness of 18 gauge aluminum is 0.0403 inch, which is 1.024 mm in millimeters. Please refer to the 18 gauge aluminum weight conversion chart to calculate the weight.              </p>
             </div>
           </div>
-          <div class="col-sm-5 col-md-4 col-lg-5 card-img-right bg-img-hero"><img class="lazyload" loading="lazy" width="380" height="285" data-src="https://img.tigersalu.com/2021/02/aluminum-sheet-with-blue-films-3-380x285.jpg" srcset="2021/02/aluminum-sheet-with-blue-films-3-380x285.jpg" alt="aluminum sheet with blue films" title="How thick is 18 gauge aluminum?"></div>
+          <div class="col-sm-5 col-md-4 col-lg-5 card-img-right bg-img-hero"><img class="lazyload" loading="lazy" width="380" height="285" data-src="/2021/02/aluminum-sheet-with-blue-films-3-380x285.jpg" srcset="2021/02/aluminum-sheet-with-blue-films-3-380x285.jpg" alt="aluminum sheet with blue films" title="How thick is 18 gauge aluminum?"></div>
         </div>
       </article>
             <article class="col-lg-6 col-md-12 mb-5">
@@ -714,13 +714,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 The thickness of 20 gauge aluminum is 0.032 inch, which is 0.813 mm in millimeters. Please refer to the 20 gauge aluminum weight conversion chart to calculate the weight.              </p>
             </div>
           </div>
-          <div class="col-sm-5 col-md-4 col-lg-5 card-img-right bg-img-hero"><img class="lazyload" loading="lazy" width="380" height="285" data-src="https://img.tigersalu.com/2021/02/packages-of-aluminum-sheet-380x285.jpg" srcset="2021/02/packages-of-aluminum-sheet-380x285.jpg" alt="packages of aluminum sheet" title="how thick is 20 gauge aluminum?"></div>
+          <div class="col-sm-5 col-md-4 col-lg-5 card-img-right bg-img-hero"><img class="lazyload" loading="lazy" width="380" height="285" data-src="/2021/02/packages-of-aluminum-sheet-380x285.jpg" srcset="2021/02/packages-of-aluminum-sheet-380x285.jpg" alt="packages of aluminum sheet" title="how thick is 20 gauge aluminum?"></div>
         </div>
       </article>
           </div>
   </div>
 </section>
-<section data-bg="https://img.tigersalu.com/images/bg-map.png" class="delivery section_box_shadow pt-5 pb-4 rocket-lazyload" style="">
+<section data-bg="/images/bg-map.png" class="delivery section_box_shadow pt-5 pb-4 rocket-lazyload" style="">
   <div class="container mt-5">
     <div class="section-title1 text-center mx-md-auto mb-4 pb-3">
       <h2 class="h3">Easy  Delivery</h2>
@@ -751,7 +751,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="bar"></div>
         <p>Trusted Aluminum Sheet Plate/Coil/Color Aluminium/Solid Aluminum Panel Manufacturers and Suppliers</p>
       </div>
-      <div><img class="lazyload" width="1115" height="348" data-src="https://img.tigersalu.com/images/certs.jpg" srcset="images/certs-560x175.jpg 560w,images/certs-800x250.jpg 800w,images/certs.jpg 1115w" sizes="(max-width: 800px) 60vw, (max-width: 1000px) 80vw, (max-width: 1200px) 100vw, 800px" alt="Tiger's certificate" style="width: 100%; height: auto;"></div>
+      <div><img class="lazyload" width="1115" height="348" data-src="/images/certs.jpg" srcset="images/certs-560x175.jpg 560w,images/certs-800x250.jpg 800w,images/certs.jpg 1115w" sizes="(max-width: 800px) 60vw, (max-width: 1000px) 80vw, (max-width: 1200px) 100vw, 800px" alt="Tiger's certificate" style="width: 100%; height: auto;"></div>
     </div>
   </div>
 </section>
@@ -764,21 +764,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="footer-box-content">
           <h3>Head Office</h3>
           <p>
-            No.1618,Block Yunfeng B,             Zhengzhou,             Henan,             P.R China,           </p>
+            Zhengzhou, Henan, China</p>
         </div>
       </div>
-      <div class="col-md-12 col-lg-4 footer-box two"> <i class="iconfont icon-dianhua">&nbsp;</i>
+      <!-- <div class="col-md-12 col-lg-4 footer-box two"> <i class="iconfont icon-dianhua">&nbsp;</i>
         <div class="footer-box-content">
           <h3>Call Center</h3>
-          <p>Mobile: +8617737405883</p>
-          <p>Phone: +86-371-55157727</p>
+          <p>Mobile: +8618838939163</p>
+          
         </div>
       </div>
-      <div class="col-md-12 col-lg-4 footer-box three"> <i class="iconfont icon-mail">&nbsp;</i>
+      --><div class="col-md-12 col-lg-4 footer-box three"> <i class="iconfont icon-mail">&nbsp;</i>
         <div class="footer-box-content">
           <h3>Email</h3>
-          <p><a href="mailto:aluminumtigers@gmail.com" aria-label="Email">aluminumtigers@gmail.com</a></p>
-          <p><a href="mailto:sally@tigersind.com" aria-label="Email">sally@tigersind.com</a></p>
+          <p><a href="mailto:vendortrust12@gmail.com" aria-label="Email">vendortrust12@gmail.com</a></p>
+          
         </div>
       </div>
     </div>
@@ -794,9 +794,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <p>Henan Tigers Industry Co., Ltd is specializing in the R&amp;D, production and sales of mill finish and color coated aluminium products and new series of aluminum cladding panels. </p>
         <div class="footer-social">
           <ul>
-            <li><a href="https://api.whatsapp.com/send?phone=+8617737405883" target="_blank" title="Call with Whatsapp" rel="noopener noreferrer nofollow"><i class="iconfont icon-whatsapp"></i></a></li>
-            <li><a href="https://www.facebook.com/profile.php?id=100075258356811" target="_blank" title="View Tigers's Facebook" rel="noopener noreferrer nofollow"><i class="iconfont icon-facebook"></i></a></li>
-            <li><a href="https://www.youtube.com/channel/UCljPgW0Yh25rk-DzSV12foA" target="_blank" title="View Tigers's youtube" rel="noopener noreferrer nofollow"><i class="iconfont icon-youtube"></i></a></li>
+            
+            
+            
            <!-- <li><a href="#" title="View Tigers twitter"><i class="iconfont icon-twitter"></i></a></li>
             <li><a href="#" title="View Tigers Google Plus Blog"><i class="iconfont icon-google-plus"></i></a></li>
             <li><a href="#" title="View Tigers linkedin"><i class="iconfont icon-linkedin"></i></a></li>-->
@@ -826,22 +826,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <input type="hidden" name="_wpcf7_container_post" value="0">
 <input type="hidden" name="_wpcf7_posted_data_hash" value="">
 </div>
-<div class="form-wapper-1">
-  <div class="form-wapper-2">
-    <div class="form-group uname"> <input type="text" name="uname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" id="ftuname" aria-required="true" aria-invalid="false" placeholder="Your Name *">
-      <label for="uname">Name</label>
-    </div>
-    <div class="form-group uemail"> <input type="text" name="uemail" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" id="ftuemail" aria-required="true" aria-invalid="false" placeholder="Your Email or WhatsApp *">
-      <label for="uemail">E-mail</label>
-    </div>
-  </div>
+<div class="form-wapper-1"><h3><a href="mailto:vendortrust12@gmail.com" aria-label="Email">vendortrust12@gmail.com</a></h3>
 </div>
-<div class="form-group ucontent"> <textarea name="ucontent" cols="40" rows="5" class="wpcf7-form-control wpcf7-textarea form-control" id="ftucontent" aria-invalid="false" placeholder="Your Message"></textarea>
-  <label for="ucontent">Your Message or WhatsApp</label>
-</div>
-<div class="form-group submit mb-0 contact_submit_wrap">
-  <button type="submit" value="Submit" class="submit_btn btn btn-warning">Submit</button><input type="hidden" name="usubject" value="footer" class="wpcf7-form-control wpcf7-hidden" id="usubject">
-</div>
+
+
 <script type="rocketlazyloadscript">window.addEventListener('DOMContentLoaded', function() {
 $(".wpcf7-form").submit(function(){$(".wpcf7-submit").attr("disabled","disabled");});
 document.addEventListener('wpcf7spam',function(event){$(".screen-reader-response").addClass("failed_msg danger_bg");},false);
@@ -878,23 +866,19 @@ $(document).on("click",".close-modal",function(){$('.modal-backdrop').fadeOut(10
 			  <p class="title">Live Chat</p>
 			  <p class="info info-pc" href="javascript:void(0)">Chat with customer service</p>
 			 </div>
-			<div class="sub-inner inner whatappft"><a href="https://api.whatsapp.com/send?phone=+8617737405883" rel="noopener noreferrer nofollow" target="_blank">
+			<!-- <div class="sub-inner inner whatappft"><a href="https://api.whatsapp.com/send?phone=+8618838939163" rel="noopener noreferrer nofollow" target="_blank">
 				<span class="iconfont icon-whatsapp"></span>
 			  <p class="title">WhatsApp</p>
-			  <p class="info"><span>WhatsApp / Mobile:</span><br> +8617737405883</p>
+			  <p class="info"><span>WhatsApp / Mobile:</span><br> +8618838939163</p>
 				</a>
 			</div>
-			<div class="sub-inner inner emailft">
-			  <a href="mailto:aluminumtigers@gmail.com" aria-label="Email">
+			--><div class="sub-inner inner emailft">
+			  <a href="mailto:vendortrust12@gmail.com" aria-label="Email">
 			  <span class="iconfont icon-mail"></span>
 			  <p class="title">Email</p>
-			  <p class="info">aluminumtigers@gmail.com</p></a>
+			  <p class="info">vendortrust12@gmail.com</p></a>
 			</div>
-			<div class="sub-inner inner modal_msg" data-toggle="modal" data-target="#msg_modal" data-whatever="@mdo">
-			  <span class="iconfont icon-bianji1"></span>
-			  <p class="title">Online message</p>
-			  <p class="info"><span>Online message to inquire</span></p>
-			</div>
+			
 		  </div>
 		</div>
 	  </li>
@@ -904,8 +888,8 @@ $(document).on("click",".close-modal",function(){$('.modal-backdrop').fadeOut(10
 <div class="footmenu d-md-none">
 	<div class="footmenu-wrap clearfix">
 		<a href="index.htm" class="fphone"><i class="iconfont icon-home"></i>HOME</a>
-		<a href="whatsapp://send?phone=+8617737405883" rel="noopener noreferrer nofollow" class="fwhatsapp"><i class="iconfont icon-whatsapp"></i>Whatsapp</a>
-		<a href="mailto:sally@tigersind.com" class="fmail" aria-label="Email"><i class="iconfont icon-mail"></i>E-mail</a>
+		<a href="whatsapp://send?phone=+8618838939163" rel="noopener noreferrer nofollow" class="fwhatsapp"><i class="iconfont icon-whatsapp"></i>Whatsapp</a>
+		<a href="mailto:" class="fmail" aria-label="Email"><i class="iconfont icon-mail"></i>E-mail</a>
 		<a href="contact-tigers/index.htm" class="finquiry modal_msg" data-toggle="modal" data-target="#msg_modal" data-whatever="@mdo"><i class="iconfont icon-bianji1"></i>Inquiry</a>
 	</div>
 </div>

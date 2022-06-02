@@ -1,0 +1,845 @@
+﻿<!doctype html>
+<html amp="" lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<script type='text/javascript' src='../../../v0.js' async=""></script>
+<script type='text/javascript' src='../../../v0/amp-sidebar-0.1.js' async="" custom-element="amp-sidebar"></script>
+<script type='text/javascript' src='../../../v0/amp-social-share-0.1.js' async="" custom-element="amp-social-share"></script>
+<script type='text/javascript' src='../../../v0/amp-analytics-0.1.js' async="" custom-element="amp-analytics"></script>
+	<style amp-boilerplate="">body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate="">body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial, Helvetica, sans-serif:400&subset=">	<style amp-custom="">
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+input, textarea {
+	padding: 5px;
+	box-sizing: border-box;
+}
+.amp-wp-enforced-sizes {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.amp-wp-unknown-size img {
+	object-fit: contain;
+}
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+table th, table td, table th {
+    padding: 5px;
+}
+table.shop_attributes td {
+    font-style: italic;
+}
+table tr:nth-child(even) {
+    background: rgba(0,0,0,.03);
+}
+/* Flex */
+
+.full-flex {
+	flex: 1 0 100%;
+}
+.flex-space-between {
+	justify-content: space-between;
+}
+.flex-align-center {
+	align-items: center;
+}
+.flex-wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/* Template Styles */
+* {
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+html body {
+	margin:0;
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+    font-family:  Impact, Charcoal, sans-serif;
+	color: #444444;
+	font-weight: 400;
+	letter-spacing: 0px;
+}
+body {
+	background: #ffffff;
+	color: #444444;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	letter-spacing: 0px;
+	font-size:16px;
+	line-height: 24px;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 16px;
+	padding: 0;
+}
+
+a {
+	color: #ce534d;
+}
+
+a:hover {
+	color: #ce534d;
+	text-decoration: underline;
+}
+.btn, .button, button {
+    color: #fff;
+    cursor: pointer;
+    padding: .518em 1.287em;
+    text-decoration: none;
+    font-weight: 600;
+	border: 0;
+    text-shadow: none;
+    display: inline-block;
+    outline: 0;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 0;
+    font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 0px;
+	font-size:16px;
+	line-height: 24px;
+    background: #ce534d;
+}
+.btn:hover, .button:hover, .btn:active, .button:active, .btn:focus .button:focus  {
+    color: #fff;
+    text-decoration: none;
+    background: #ce534d;
+    opacity:.8;
+}
+/* Breadcrumbs */
+#amp-bread {
+    font-size: 12px;
+    margin: 5px 0;
+}
+/* Quotes */
+
+blockquote {
+	color: #444444;
+	background: rgba(127,127,127,.1);
+	border-left: 2px solid #ce534d;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #3265c5;
+}
+
+.amp-wp-header > div {
+	color: #ffffff;
+	font-size: 18px;
+	line-height:50px;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 0 16px;
+	position: relative;
+	min-height: 50px;
+	box-sizing: border-box;
+}
+
+.amp-wp-header a {
+	text-decoration: none;
+	display:block;
+	float:left;
+	font-family:  'MS Serif', 'New York', sans-serif;
+	color: #ffffff;
+	font-weight: 700;
+	letter-spacing: 0px;
+}
+
+/* Site Logo */
+
+.amp-wp-header .amp-wp-site-icon {
+	margin: 9px 8px 9px 0;
+    float: left
+}
+
+/* Menu */
+button.amp-menu-sidebar {
+    display: block;
+    float: right;
+    height: 50px;
+    background: rgba(0,0,0,0.0);
+   	font-family:  Source Sans Pro;
+	color: #444444;
+	font-weight: ;
+	letter-spacing: 0px;
+    border: none;
+    padding:0;
+    font-size: 15px;
+    cursor: pointer;
+}
+.amp-icon-button {
+    position: relative;
+    width: 28px;
+}
+.amp-icon-button:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 28px;
+    height: 4px;
+    border-top: 12px double #ffffff;
+    border-bottom: 4px solid #ffffff;
+}
+amp-sidebar {
+	background-color: #3265c5;
+	width:250px;
+}
+.close-amp-sidebar {
+    font-size: 12px;
+    font-family: sans-serif;
+    background: rgba(0,0,0,.25);
+    letter-spacing: 1px;
+    padding: 12px;
+    line-height: 8px;
+    font-weight: bold;
+    margin: 12px 12px 2px;
+    cursor: pointer;
+    display: inline-block;
+    color: #fff;
+}
+.amp-sidebar-navigation ul.menu {
+    margin: 0 12px;
+}
+.amp-sidebar-navigation ul.menu li {
+    list-style: none;
+}
+.amp-sidebar-navigation ul.menu li a {
+    text-decoration: none;
+    display: block;
+    padding: 8px 10px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    font-size: 15px;
+    line-height: 20px;
+    font-family:  Source Serif Pro;
+	color: #ffffff;
+	font-weight: 400;
+	letter-spacing: 0px;
+}
+.amp-sidebar-navigation ul.menu ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+/* main */
+
+.main {
+	color: #444444;
+	font-weight: 400;
+	margin: 16px auto;
+	max-width: 600px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	padding: 0 16px;
+	box-sizing: border-box;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 16px 0 10px;
+}
+
+.amp-wp-title {
+	display: block;
+	width: 100%;
+	margin:0;
+}
+
+/* Article Meta */
+.amp-wp-article-meta {
+	margin: 0px 0 10px 0;
+}
+.amp-wp-meta {
+	color: #777777;
+	display: inline-block;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #ce534d;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+	display:block;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+.amp-wp-page-content {
+	padding: 6px 0 0;
+}
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+
+/* comments */
+
+.amp-comments {
+    margin-top: 16px;
+}
+.comment-text {
+    position: relative;
+    padding-left: 76px;
+    min-height:60px;
+}
+.comment-text p {
+	margin-bottom:0;
+}
+.comment-list .comment-metadata a {
+    font-size: 12px;
+    color: #777;
+}
+.comment-list .comment-author amp-img {
+    margin-right:10px;
+}
+ul.comment-list li {
+    list-style-type: none;
+}
+.comment {
+    margin-top: 16px;
+    border: 1px solid #ddd;
+    padding: 1em;
+}
+.comment-list amp-img {
+    float: left;
+}
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #eee;
+	color: #777777;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #eee;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #eee url( ../../../wp-content/plugins/kadence-amp/assets/images/placeholder-icon.png ) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	margin: 16px 0;
+	display: block;
+}
+
+.amp-wp-comments-link, .mod_show_original {
+	color: #777777;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 1.5em 0 1.5em;
+}
+.amp-wp-comments-link a, .mod_show_original a{
+	border-style: solid;
+	border-color: #eee;
+	border-width: 1px 1px 2px;
+	background-color: transparent;
+	color: #ce534d;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+/* Related Posts */
+.amp-related-posts ul {
+	list-style:none;
+}
+.amp-related-posts ul li {
+	margin-bottom:16px;
+}
+a.amp-related-img-link {
+    margin-right: 10px;
+    display: block;
+}
+.amp-related-posts .amp-related-meta {
+	display:block;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	background: #444444;
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.amp-wp-footer > div {
+	max-width: 600px;
+    margin: 0 auto;
+	padding: 16px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+	color: #ffffff;
+}
+.show_original {
+    display: block;
+    text-align: center;
+}
+.show_original a {
+    display: inline-block;
+    margin-top: 10px;
+    padding:4px 8px;
+    border: 1px solid #ffffff;
+}
+.back-to-top {
+	top: 16px;
+	position: absolute;
+	right: 16px;
+}
+@media (max-width: 544px) {
+	.wp-caption.alignleft, .amp-wp-article-content amp-img.alignleft {
+		float:none;
+		margin-right:auto;
+		margin-left:auto;
+	}
+}
+		/* Inline stylesheets */
+.amp-wp-inline-0f1bf07c72fdf1784fff2e164d9dca98 { display:none; }.amp-wp-inline-869b76696f15a7298bbe56bef936cfb5 { max-width:570px; }/* Custom styles */
+@font-face{font-family:"tigers";font-display:swap;src:url("../../../wp-content/themes/tgs/css/fonts/tigers.eot");src:url("../../../wp-content/themes/tgs/css/fonts/tigers-1.eot") format("embedded-opentype"),url("../../../wp-content/themes/tgs/css/fonts/tigers.woff2") format("woff2"),url("../../../wp-content/themes/tgs/css/fonts/tigers.woff") format("woff"),url("../../../wp-content/themes/tgs/css/fonts/tigers.ttf") format("truetype"),url("../../../wp-content/themes/tgs/css/fonts/tigers.svg") format("svg")}
+h1,h2,h3,h4,h5,h6{font-family:'Tigers',sans-serif,'Arial';color:#444444;line-height:1.2}
+h1{font-size:24px;font-weight:700; color: #000;}
+h2{font-size:22px;padding:10px 0 10px 8px;margin:25px 0 20px;border-left:2px solid #487bd9;background-color:#f5f8fb}
+h3{font-size:20px;padding:15px 0 15px;margin-bottom:0}
+h4{font-size:16px;padding:12px 0 12px;margin-bottom:0}
+h5{font-size:17px;padding:5px 0 0px;margin-bottom:0}
+h6{font-size:14px;margin-bottom:0}
+.main{padding:0 10px;margin-top: 0;}
+.amp-wp-page-content li{list-style-position:inside;padding-bottom:10px}
+.amp-wp-page-content strong{padding:8px 0}
+.amp-wp-page-content a{max-width:100%;display:inline-block;text-decoration:none}
+.amp-wp-page-content a:before{font-family:'tigers';content:"\e7ff";margin-right:0px;font-size:14px;color:#feb822}
+.amp-breadcrumb-container{font-size:15px;background-color:#f5f7fa;border-bottom:1px solid #eee;padding:10px 0px;-webkit-box-shadow:0 -1px 2px rgba(0,0,0,.06) inset;box-shadow:0 -1px 2px rgba(0,0,0,.06) inset}
+.amp-breadcrumb-container a{ text-decoration: none;}
+.amp-wp-article-header{padding-bottom: 10px;   border-bottom: 1px dotted #3265c5;margin-bottom: 0px;}	</style>
+</head>
+
+<body class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="../../index.htm">TIGRES ALUMINIO</a><div class="amp-accordion-header"><button class="amp-menu-sidebar amp-icon-button" on="tap:sidebar.toggle"></button></div>	</div>
+</header>
+
+<div class="main">
+	<article class="amp-wp-article">
+		<div id="amp-bread"><div class="amp-breadcrumb-container"><span><a href="../../index.htm" itemprop="url" class="kad-bc-home"><span>Casa</span></a></span> <span class="bc-delimiter">»</span> <span><a href="../../blog/index.htm" itemprop="url"><span>Blog</span></a></span> <span class="bc-delimiter">»</span> <span class="kad-breadcurrent">Hoja de aleación de aluminio 5083 VS. 6061 hojas de metal de aluminio</span></div></div><header class="amp-wp-article-header"><h1 class="amp-wp-title">Hoja de aleación de aluminio 5083 VS. 6061 hojas de metal de aluminio</h1></header><div class="amp-wp-article-meta"><div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2021-03-17T16:13:48+00:00">
+		2021年3月17日	</time>
+</div>
+	<div class="amp-wp-meta amp-wp-byline">
+		<span class="kt-amp-by-author">por</span> <span class="amp-wp-author author vcard">administración</span>
+	</div>
+</div><div class="amp-wp-page-content"><!--noindex--><div class="lwptoc toc-list lwptoc-autoWidth lwptoc-baseItems lwptoc-light lwptoc-notInherit" data-smooth-scroll="1" data-smooth-scroll-offset="24"><div class="lwptoc_i">    <div class="lwptoc_header">
+        <b class="lwptoc_title">Tabla de contenido</b>                    <span class="lwptoc_toggle">
+                <a href="#" class="lwptoc_toggle_label" data-label="HIDE">SHOW</a>
+            </span>
+            </div>
+<div class="lwptoc_items amp-wp-inline-0f1bf07c72fdf1784fff2e164d9dca98">
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#similarities-between-5083-aluminum-and-6061-aluminium" rel="nofollow">
+                    <span class="lwptoc_item_number">1</span>
+                <span class="lwptoc_item_label">Similitudes entre el aluminio 5083 y el aluminio 6061</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#different-between-5083-aluminum-and-6061-aluminium" rel="nofollow">
+                    <span class="lwptoc_item_number">2</span>
+                <span class="lwptoc_item_label">Diferente entre aluminio 5083 y aluminio 6061</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#details" rel="nofollow">
+                    <span class="lwptoc_item_number">3</span>
+                <span class="lwptoc_item_label">Detalles</span>
+    </a>
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#5083-aluminum-alloy" rel="nofollow">
+                    <span class="lwptoc_item_number">3.1</span>
+                <span class="lwptoc_item_label">aleación de aluminio 5083</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#5083-aluminum-sheetplate-chemical-composition" rel="nofollow">
+                    <span class="lwptoc_item_number">3.2</span>
+                <span class="lwptoc_item_label">5083 composición química de lámina/placa de aluminio</span>
+    </a>
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#more-detail-of-5083-aluminum-sheetplate" rel="nofollow">
+                    <span class="lwptoc_item_number">3.2.1</span>
+                <span class="lwptoc_item_label">Más detalles de la hoja/placa de aluminio 5083</span>
+    </a>
+    </li></ul></li><li class="lwptoc_item">    <a href="#aluminum-6061-alloy-metal" rel="nofollow">
+                    <span class="lwptoc_item_number">3.3</span>
+                <span class="lwptoc_item_label">metal de aleación de aluminio 6061</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#6061-aluminum-sheet-plate-chemical-composition-for-reference" rel="nofollow">
+                    <span class="lwptoc_item_number">3.4</span>
+                <span class="lwptoc_item_label">Hoja/placa de aluminio 6061 Composición química (para referencia)</span>
+    </a>
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#more-detail-of-6061-aluminum-sheet-and-plate" rel="nofollow">
+                    <span class="lwptoc_item_number">3.4.1</span>
+                <span class="lwptoc_item_label">Más detalles de la hoja y placa de aluminio 6061</span>
+    </a>
+    </li></ul></li><li class="lwptoc_item">    <a href="#5083-aluminum-alloy-temper" rel="nofollow">
+                    <span class="lwptoc_item_number">3.5</span>
+                <span class="lwptoc_item_label">Templado de aleación de aluminio 5083:</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#6061-aluminum-sheetplate-temper" rel="nofollow">
+                    <span class="lwptoc_item_number">3.6</span>
+                <span class="lwptoc_item_label">Hoja/placa de aluminio 6061</span>
+    </a>
+    </li></ul></li><li class="lwptoc_item">    <a href="#more-differences-between-5083-alloy-and-6061-aluminum-alloy" rel="nofollow">
+                    <span class="lwptoc_item_number">4</span>
+                <span class="lwptoc_item_label">Más diferencias entre la aleación 5083 y la aleación de aluminio 6061:</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#specification-of-5083-aluminum-sheet-plate-and-6061-aluminum-plate" rel="nofollow">
+                    <span class="lwptoc_item_number">5</span>
+                <span class="lwptoc_item_label">Especificación de placa de hoja de aluminio 5083 y placa de aluminio 6061</span>
+    </a>
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#aluminium-sheetplatecoil-available-size-range" rel="nofollow">
+                    <span class="lwptoc_item_number">5.1</span>
+                <span class="lwptoc_item_label">Gama de tamaños disponibles de láminas/placas/bobinas de aluminio</span>
+    </a>
+    </li></ul></li><li class="lwptoc_item">    <a href="#applications" rel="nofollow">
+                    <span class="lwptoc_item_number">6</span>
+                <span class="lwptoc_item_label">Aplicaciones</span>
+    </a>
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#5083-aluminum-alloy-sheet-application" rel="nofollow">
+                    <span class="lwptoc_item_number">6.1</span>
+                <span class="lwptoc_item_label">Aplicación de lámina de aleación de aluminio 5083</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#6061-aluminum-alloy-sheet-application" rel="nofollow">
+                    <span class="lwptoc_item_number">6.2</span>
+                <span class="lwptoc_item_label">Aplicación de lámina de aleación de aluminio 6061</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#the-difference-between-6061-alloy-and-other-alloys" rel="nofollow">
+                    <span class="lwptoc_item_number">6.3</span>
+                <span class="lwptoc_item_label">La diferencia entre la aleación 6061 y otras aleaciones</span>
+    </a>
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#different-with-5052-alloy-aluminum" rel="nofollow">
+                    <span class="lwptoc_item_number">6.3.1</span>
+                <span class="lwptoc_item_label">diferente con aleación de aluminio 5052</span>
+    </a>
+    </li></ul></li><li class="lwptoc_item">    <a href="#description-of-5083-and-6061-on-wikipedia" rel="nofollow">
+                    <span class="lwptoc_item_number">6.4</span>
+                <span class="lwptoc_item_label">Descripción de 5083 y 6061 en wikipedia:</span>
+    </a>
+    </li></ul></li></ul></div>
+</div></div><!--/noindex--><h2><span id="similarities-between-5083-aluminum-and-6061-aluminium">Similitudes entre el aluminio 5083 y el aluminio 6061</span></h2>
+<p>Tanto el aluminio 5083 como el aluminio 6061 son aleaciones de aluminio.</p>
+<p>Tienen en común un 96% muy alto de su composición de aleación promedio.</p>
+<h2><span id="different-between-5083-aluminum-and-6061-aluminium">Diferente entre aluminio 5083 y aluminio 6061</span></h2>
+<p>Las láminas de aleación de aluminio 5083 y 6061 tienen diferentes composiciones de aleación, diferentes propiedades físicas y diferentes usos.</p>
+<h2><span id="details">Detalles</span></h2>
+<h3><span id="5083-aluminum-alloy">aleación de aluminio 5083</span></h3>
+<p>La lámina de aluminio 5083 es la aleación no tratable térmicamente de mayor resistencia en uso comercial. Tiene buena conformabilidad y soldabilidad y conserva una excelente resistencia a la tracción en la zona de soldadura en virtud de sus propiedades como laminado.</p>
+<p>Se utiliza con mayor frecuencia en estructuras que requieren una alta eficiencia de soldadura y una máxima resistencia de soldadura. 5083 también tiene una excelente resistencia a la corrosión.</p>
+<div id="attachment_92" class="wp-caption alignnone amp-wp-inline-869b76696f15a7298bbe56bef936cfb5"><p id="caption-attachment-92" class="wp-caption-text">lámina de aluminio intercalada con papel</p></div>
+<p>La lámina y placa de aluminio de aleación 5083 tiene una conductividad térmica excepcional. En estado templado, conserva una buena conformabilidad debido a su excelente ductilidad.</p>
+<p>Es muy adecuado para soldar y se puede endurecer por trabajo en frío.</p>
+<p>La aleación 5083 se ha utilizado en placas de blindaje de vehículos debido a su alto factor de resistencia.</p>
+<p>Debido a que la aleación 5083 exhibe una excelente resistencia a la corrosión general, se usa en aplicaciones marinas.</p>
+<div id="attachment_93" class="wp-caption alignnone amp-wp-inline-869b76696f15a7298bbe56bef936cfb5"><p id="caption-attachment-93" class="wp-caption-text">Hoja de aluminio 5083 H321 con películas azules</p></div>
+<p>La lámina de aluminio 5083 es una aleación de aluminio que contiene magnesio, manganeso y cromo. Tiene una excelente resistencia contra el agua de mar y los productos químicos industriales.</p>
+<p>Dado que la aleación 5083 es capaz de soportar temperaturas extremadamente bajas sin fragilidad ni pérdida de propiedades, es especialmente adecuada para el mercado criogénico.</p>
+<div class="table-responsive">
+<table class="table" width="100%" cellspacing="0" cellpadding="0"><caption>
+<h3><span id="5083-aluminum-sheetplate-chemical-composition"><span id="5083-aluminum-sheetplate-chemical-composition">5083 composición química de lámina/placa de aluminio</span></span></h3>
+</caption>
+<tbody><tr class="firstRow"><td rowspan="2" width="63">Calificación</td>
+<td colspan="11" width="577">Máx. (%)</td>
+</tr><tr class="firstRow"><td>Si</td>
+<td>Fe</td>
+<td>cobre</td>
+<td>Minnesota</td>
+<td>magnesio</td>
+<td>cr</td>
+<td>zinc</td>
+<td>ti</td>
+<td>Otros:<br>
+Cada</td>
+<td>Otros:<br>
+Total</td>
+<td>Al: Mín.</td>
+</tr><tr><td>aleación 5083</td>
+<td>0.40</td>
+<td>0.40</td>
+<td>0.10</td>
+<td>0.4~1.0</td>
+<td>4.0~4.9</td>
+<td>0.05~0.25</td>
+<td>0.25</td>
+<td>0.15</td>
+<td>0.05</td>
+<td>0.15</td>
+<td>recordatorio</td>
+</tr></tbody></table></div>
+<h4><span id="more-detail-of-5083-aluminum-sheetplate"><a href="../../product/5083-aluminum-sheet/index.htm" data-schema-attribute="">Más detalles de la hoja/placa de aluminio 5083</a></span></h4>
+<h3><span id="aluminum-6061-alloy-metal">metal de aleación de aluminio 6061</span></h3>
+<p>El aluminio 6061 es una de las aleaciones más comúnmente extruidas. Es una aleación con una larga historia. Desarrollado en 1935, originalmente se llamaba &quot;Alloy 61s&quot;.</p>
+<div id="attachment_73" class="wp-caption alignnone amp-wp-inline-869b76696f15a7298bbe56bef936cfb5"><p id="caption-attachment-73" class="wp-caption-text">paquetes de chapa de aluminio</p></div>
+<p>La lámina/placa de aluminio 6061 es una aleación de aluminio-silicio-magnesio, reforzada por endurecimiento por precipitación.</p>
+<p>Es una aleación forjada, a diferencia de una aleación de fundición. Por lo tanto, se puede extruir, enrollar o forjar en una variedad de formas.</p>
+<p>La lámina y placa de aluminio 6061 ofrece una combinación de mayor resistencia, buena resistencia a la corrosión y maquinabilidad, lo que convierte al grado 6061 en el grado de lámina y placa de aluminio más utilizado disponible para todo tipo de proyectos de fabricación.</p>
+<p>La lámina y placa de aluminio 6061 de uso general es tratable térmicamente, resiste el agrietamiento debido a la tensión y es fácil de soldar y mecanizar, pero tiene una conformabilidad limitada.</p>
+<p>Las láminas y placas de aluminio 6061 son ideales para marcos estructurales, placas base, refuerzos, partes de aeronaves, marinas y automotrices, etc.</p>
+<p>Comúnmente utilizados para 6061 son 6061-O (recocido), 6061-T4, 6061-T6 (solucionado y envejecido artificialmente) y 6061-T651 (solucionado, estirado y envejecido artificialmente).</p>
+<p>El aluminio templado T4 se envejece naturalmente y el aluminio templado T6 se envejece artificialmente para obtener la máxima resistencia.</p>
+<div id="attachment_85" class="wp-caption alignnone amp-wp-inline-869b76696f15a7298bbe56bef936cfb5"><p id="caption-attachment-85" class="wp-caption-text">placa de aluminio 6061</p></div>
+<p>La placa de aluminio 6061 es un grado tratable térmicamente ampliamente utilizado en aplicaciones estructurales de resistencia ligera a media. La aleación tiene buena resistencia a la corrosión y soldabilidad y posee buena formabilidad en los templados de 0 a T4.</p>
+<p>El metal de aleación 6061 pierde una resistencia apreciable cuando se suelda y se reemplaza por las aleaciones de la serie 5000 donde la resistencia posterior a la soldadura es una consideración primordial.</p>
+<div class="table-responsive">
+<table class="table" width="100%" cellspacing="0" cellpadding="0"><caption>
+<h3><span id="6061-aluminum-sheet-plate-chemical-composition-for-reference"><span id="6061-aluminum-sheet-plate-chemical-composition-for-reference">Hoja/placa de aluminio 6061 Composición química (para referencia)</span></span></h3>
+</caption>
+<thead><tr class="firstRow"><td>Aleación</td>
+<td>Si</td>
+<td>Fe</td>
+<td>cobre</td>
+<td>Minnesota</td>
+<td>magnesio</td>
+<td>cr</td>
+<td>zinc</td>
+<td>ti</td>
+<td>Otros:<br>
+Cada</td>
+<td>Otros:<br>
+Total</td>
+<td>Al: Mín.</td>
+</tr></thead><tbody><tr><td>6061</td>
+<td>0.40~0.8</td>
+<td>0.70</td>
+<td>0.15~0.4</td>
+<td>0.15</td>
+<td>0.8~1.2</td>
+<td>0.04~0.35</td>
+<td>0.25</td>
+<td>0.15</td>
+<td>0.05</td>
+<td>0.15</td>
+<td>recordatorio</td>
+</tr></tbody></table></div>
+<h4><span id="more-detail-of-6061-aluminum-sheet-and-plate"><a href="../../product/6061-aluminum-sheet-plate/index.htm" data-schema-attribute="">Más detalles de la hoja y placa de aluminio 6061</a></span></h4>
+<h3><span id="5083-aluminum-alloy-temper">Templado de aleación de aluminio 5083:</span></h3>
+<p>La lámina de aluminio 5083 es el producto representativo de la serie 5. La mayor parte del temple es H321, H116, el aluminio 5083 se usa generalmente en la industria de la construcción naval.</p>
+<h3><span id="6061-aluminum-sheetplate-temper">Hoja/placa de aluminio 6061</span></h3>
+<p>El aluminio 6061 es el producto representativo de la serie 6, el temple es generalmente 6061-T6, 6061-T651 y 6061-T652.</p>
+<h2><span id="more-differences-between-5083-alloy-and-6061-aluminum-alloy">Más diferencias entre la aleación 5083 y la aleación de aluminio 6061:</span></h2>
+<ol><li>Después del tratamiento térmico (T6), la aleación 6061 alcanza una resistencia media y su resistencia es superior a la de los materiales 5083;</li>
+<li>El material de la lámina de aluminio 6061 T6511 es más fácil de procesar que las aleaciones de la serie 5, como la 5083. Muestra un mejor rendimiento de procesamiento cuando se mecaniza con herramientas de diamante de un solo punto o de varios ejes;</li>
+<li>La aleación 6061 tiene un excelente tratamiento de superficie y características de anodizado, y el efecto de la oxidación dura es ligeramente mejor que el de los materiales de la serie 5 como el 5083;</li>
+<li>El 6061 también tiene un cierto grado de resistencia a la corrosión, y la resistencia a la corrosión no disminuirá cuando se exponga al aire, pero no es tan fuerte como el 5083.</li>
+</ol><p>La maquinabilidad es un poco mejor con el 6061-T6</p>
+<h2><span id="specification-of-5083-aluminum-sheet-plate-and-6061-aluminum-plate">Especificación de placa de hoja de aluminio 5083 y placa de aluminio 6061</span></h2>
+<div class="table-responsive">
+<table class="table" border="0" width="100%" cellspacing="0" cellpadding="0"><caption>
+<h3><span id="aluminium-sheetplatecoil-available-size-range">Gama de tamaños disponibles de láminas/placas/bobinas de aluminio</span></h3>
+</caption>
+<thead><tr class="firstRow"><td>Dimensión</td>
+<td>Rango</td>
+</tr></thead><tbody><tr><td>Espesor</td>
+<td>0,5 ~ 6,0 mm para hoja, máx. 500 mm</td>
+</tr><tr><td>Ancho</td>
+<td>600 ~ 2650 mm</td>
+</tr></tbody></table></div>
+<ul><li>– <strong>Ancho y largo estándar:</strong> 4〃 x 8〃, 4&quot; x 4&quot;, 4 pulg. x 10 pulg. lámina de aluminio, 5 x 10 lámina de aluminio, 48&#039; x 96&#039; lámina de aluminio, 1219 * 2438 mm, 1220 mm x 2440 mm lámina de aluminio, 1000 mm x 2000 mm aluminio hoja, 1250 mm x 2500 mm, 1219 x 2438 mm, 1524 x 3048 mm, 1500 mm x 3000 mm hoja de aluminio.</li>
+<li>– <strong>Acabado de la superficie:</strong> Acabado de fábrica (a menos que se especifique lo contrario), revestido de color o estucado en relieve</li>
+<li>– <strong>Protección de superficies</strong>: Papel intercalado, película de PE/PVC (si se especifica)</li>
+<li>– <strong>Cantidad mínima de pedido</strong>: 3MT</li>
+</ul><p>Además de las especificaciones comúnmente utilizadas, Tigers Aluminium también puede producir placas de aluminio 5052 ultra anchas y ultra gruesas con alivio de tensión interno y sin deformación durante el corte, y el ancho es de 2650 mm, el grosor es de 500 mm.</p>
+<h2><span id="applications">Aplicaciones</span></h2>
+<h3><span id="5083-aluminum-alloy-sheet-application">Aplicación de lámina de aleación de aluminio 5083</span></h3>
+<ul><li>construcción de buques de GNL</li>
+<li>Recipientes a presión</li>
+<li>Tanques de almacenaje</li>
+<li>Estructuras soldadas (alta resistencia)</li>
+<li>Placa de armadura</li>
+<li>Equipos de perforación</li>
+</ul><h3><span id="6061-aluminum-alloy-sheet-application">Aplicación de lámina de aleación de aluminio 6061</span></h3>
+<ul><li>Accesorios para aeronaves, monturas de lentes de cámara, acoplamientos, accesorios y hardware para aplicaciones marinas, accesorios y conectores eléctricos, decorativos o misceláneos.</li>
+<li>herrajes, pasadores de bisagra, piezas de magneto, pistones de freno, pistones hidráulicos, accesorios de electrodomésticos, válvulas y piezas de válvulas.</li>
+</ul><h3><span id="the-difference-between-6061-alloy-and-other-alloys">La diferencia entre la aleación 6061 y otras aleaciones</span></h3>
+<h4><span id="different-with-5052-alloy-aluminum">diferente con aleación de aluminio 5052</span></h4>
+<p>5052 aluminio y 6061 tiene magnesio como elemento de aleación principal. En el caso del 5052, es el único elemento primario de aleación. 6061 también tiene silicio. Uno de los beneficios clave de esta aleación es su alto nivel de soldabilidad en comparación con otras aleaciones. Para proyectos donde la soldabilidad es clave, vale la pena considerarlo.</p>
+<p>Sin embargo, una desventaja del 5052 es que no se puede tratar con calor. Es bueno para una variedad de aplicaciones de soldadura y funciona bien en aplicaciones marinas debido a su alta resistencia a la corrosión.</p>
+<h3><span id="description-of-5083-and-6061-on-wikipedia">Descripción de 5083 y 6061 en wikipedia:</span></h3>
+<p><a href="../../../wiki/5083_aluminium_alloy.htm" rel="nofollow noopener" target="_blank">5083 aluminio en wikipedia</a></p>
+<p><a href="../../../wiki/6061_aluminium_alloy.htm" rel="nofollow noopener" target="_blank">6061 aluminio en wikipedia</a></p>
+<p>El contenido anterior es la diferencia entre la aleación de aluminio 5083 y la aleación de aluminio 6061.</p>
+<div id="tab_a" class="tab-pane animated fadeInRightSmall active">
+<div class="pro_details">
+<div class="contents">
+<p>La mayoría de las placas/láminas de aluminio 5083 y las placas de aluminio 6061 de Tigers están disponibles en tamaño completo y longitudes de corte personalizadas.</p>
+</div>
+</div>
+</div>
+<p> </p>
+</div><div class="amp-wp-meta amp-wp-tax-category">Categorías: <a href="../../blog/index.htm" rel="category tag">Blog</a></div><div class="amp-wp-meta amp-wp-tax-tag">Etiquetas: <a href="../../tag/5083/index.htm" rel="tag">5083</a>, <a href="../../tag/6061/index.htm" rel="tag">6061</a>, <a href="../../tag/diffe/index.htm" rel="tag">diferencia</a>, <a href="../../tag/plate/index.htm" rel="tag">plato</a>, <a href="../../tag/sheet/index.htm" rel="tag">sábana</a></div><div class="amp-share-box"><amp-social-share type="facebook" width="60" height="44" data-share-endpoint="http://www.facebook.com/sharer.php?u=https://www.tigersalu.com/es/5083-aluminum-vs-6061-aluminum/"></amp-social-share><amp-social-share type="twitter" width="60" height="44"></amp-social-share><amp-social-share type="linkedin" width="60" height="44"></amp-social-share></div><div class="amp-comments"><div id="comments" class="section-content comments-area"></div>				<div class="amp-wp-comments-link">
+					<a href="../index.htm#respond">
+						Deja un comentario					</a>
+				</div>
+			</div><div class="amp-related-posts"><h3>Artículos Relacionados</h3><ul><li class="flex items-center"><a href="../../what-is-the-thickness-of-6-gauge-aluminum/amp/index.htm" class="amp-related-img-link" title="¿Cuál es el grosor del aluminio calibre 6?"><amp-img src="../../../2022/01/gauges-measurement-tool-2-80x80.jpg" width="80" height="80" alt="gauges measurement tool" srcset="/2022/01/gauges-measurement-tool-2-80x80.jpg 80w, /2022/01/gauges-measurement-tool-2-160x160.jpg 160w" sizes="(max-width: 80px) 100vw, 80px" class="amp-related-img"></amp-img></a><div class="amp-related-title"><a href="../../what-is-the-thickness-of-6-gauge-aluminum/amp/index.htm" title="¿Cuál es el grosor del aluminio calibre 6?">¿Cuál es el grosor del aluminio calibre 6?</a><div class="amp-related-meta amp-wp-meta">2022年1月12日</div></div></li><li class="flex items-center"><a href="../../what-is-the-thickness-of-24-gauge-aluminum/amp/index.htm" class="amp-related-img-link" title="¿Cuál es el espesor del aluminio calibre 24?"><amp-img src="../../../2021/02/5mm-5005-h32-aluminum-plate-1-80x80.jpg" width="80" height="80" alt="5mm 5005 h32 aluminum plate" srcset="/2021/02/5mm-5005-h32-aluminum-plate-1-80x80.jpg 80w, /2021/02/5mm-5005-h32-aluminum-plate-1-160x160.jpg 160w" sizes="(max-width: 80px) 100vw, 80px" class="amp-related-img"></amp-img></a><div class="amp-related-title"><a href="../../what-is-the-thickness-of-24-gauge-aluminum/amp/index.htm" title="¿Cuál es el espesor del aluminio calibre 24?">¿Cuál es el espesor del aluminio calibre 24?</a><div class="amp-related-meta amp-wp-meta">2022年1月12日</div></div></li><li class="flex items-center"><div class="amp-related-title"><a href="../../difference-in-aluminum-sheet-and-coil/amp/index.htm" title="¿Cuál es la diferencia entre la lámina de aluminio y la bobina de aluminio?">¿Cuál es la diferencia entre la lámina de aluminio y la bobina de aluminio?</a><div class="amp-related-meta amp-wp-meta">2021年11月25日</div></div></li></ul></div>
+	</article>
+</div>
+
+<footer class="amp-wp-footer">
+	<div class="clearfix">
+		<div class="amp-footer-content">© 2022 Tigres Industria Aluminio</div>	</div>
+</footer>
+
+<amp-analytics id="UA-194323042-1" type="googleanalytics"><script type="application/json">{"vars":{"account":"UA-194323042-1"},"triggers":{"trackPageview":{"on":"visible","request":"pageview"}}}</script></amp-analytics><amp-sidebar id="sidebar" layout="nodisplay" side="right"><div class="amp-sidebar-navigation"><div role="button" tabindex="0" on="tap:sidebar.close" class="close-amp-sidebar">X</div><div class="menu-topnav-container"><ul id="menu-topnav" class="menu"><li><a href="../../index.htm">CASA</a></li>
+<li><a title="Producto de metal de aluminio" href="../../aluminum-metal/index.htm">productos</a>
+<ul class="sub-menu">
+	<li><a href="../../products/aluminum-mill-finish/index.htm">acabado de molino de aluminio</a></li>
+	<li><a href="../../products/painted-coated-aluminum/index.htm">Aluminio revestido pintado</a></li>
+	<li><a href="../../products/powder-coating-aluminium/index.htm">Recubrimiento de polvo de aluminio</a></li>
+	<li><a href="../../products/aluminium-cladding/index.htm">revestimiento de aluminio</a></li>
+	<li><a href="../../products/perforated-aluminium/index.htm">Aluminio perforado</a></li>
+</ul>
+</li>
+<li class="current-post-ancestor current-menu-parent"><a href="../../blog/index.htm">Blog</a></li>
+<li><a rel="nofollow" href="../../about-tigers/index.htm">Acerca de los tigres</a></li>
+<li><a rel="nofollow" href="../../contact-tigers/index.htm">Contáctenos</a></li>
+</ul></div></div></amp-sidebar></body>
+</html>
+<!-- Cached for great performance - Debug: cached@1653388714 -->

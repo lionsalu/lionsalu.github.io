@@ -1,0 +1,845 @@
+﻿<!doctype html>
+<html amp="" lang="ru-RU">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<script type='text/javascript' src='../../../v0.js' async=""></script>
+<script type='text/javascript' src='../../../v0/amp-sidebar-0.1.js' async="" custom-element="amp-sidebar"></script>
+<script type='text/javascript' src='../../../v0/amp-social-share-0.1.js' async="" custom-element="amp-social-share"></script>
+<script type='text/javascript' src='../../../v0/amp-analytics-0.1.js' async="" custom-element="amp-analytics"></script>
+	<style amp-boilerplate="">body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate="">body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial, Helvetica, sans-serif:400&subset=">	<style amp-custom="">
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+input, textarea {
+	padding: 5px;
+	box-sizing: border-box;
+}
+.amp-wp-enforced-sizes {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.amp-wp-unknown-size img {
+	object-fit: contain;
+}
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+table th, table td, table th {
+    padding: 5px;
+}
+table.shop_attributes td {
+    font-style: italic;
+}
+table tr:nth-child(even) {
+    background: rgba(0,0,0,.03);
+}
+/* Flex */
+
+.full-flex {
+	flex: 1 0 100%;
+}
+.flex-space-between {
+	justify-content: space-between;
+}
+.flex-align-center {
+	align-items: center;
+}
+.flex-wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/* Template Styles */
+* {
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+html body {
+	margin:0;
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+    font-family:  Impact, Charcoal, sans-serif;
+	color: #444444;
+	font-weight: 400;
+	letter-spacing: 0px;
+}
+body {
+	background: #ffffff;
+	color: #444444;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	letter-spacing: 0px;
+	font-size:16px;
+	line-height: 24px;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 16px;
+	padding: 0;
+}
+
+a {
+	color: #ce534d;
+}
+
+a:hover {
+	color: #ce534d;
+	text-decoration: underline;
+}
+.btn, .button, button {
+    color: #fff;
+    cursor: pointer;
+    padding: .518em 1.287em;
+    text-decoration: none;
+    font-weight: 600;
+	border: 0;
+    text-shadow: none;
+    display: inline-block;
+    outline: 0;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 0;
+    font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 0px;
+	font-size:16px;
+	line-height: 24px;
+    background: #ce534d;
+}
+.btn:hover, .button:hover, .btn:active, .button:active, .btn:focus .button:focus  {
+    color: #fff;
+    text-decoration: none;
+    background: #ce534d;
+    opacity:.8;
+}
+/* Breadcrumbs */
+#amp-bread {
+    font-size: 12px;
+    margin: 5px 0;
+}
+/* Quotes */
+
+blockquote {
+	color: #444444;
+	background: rgba(127,127,127,.1);
+	border-left: 2px solid #ce534d;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #3265c5;
+}
+
+.amp-wp-header > div {
+	color: #ffffff;
+	font-size: 18px;
+	line-height:50px;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 0 16px;
+	position: relative;
+	min-height: 50px;
+	box-sizing: border-box;
+}
+
+.amp-wp-header a {
+	text-decoration: none;
+	display:block;
+	float:left;
+	font-family:  'MS Serif', 'New York', sans-serif;
+	color: #ffffff;
+	font-weight: 700;
+	letter-spacing: 0px;
+}
+
+/* Site Logo */
+
+.amp-wp-header .amp-wp-site-icon {
+	margin: 9px 8px 9px 0;
+    float: left
+}
+
+/* Menu */
+button.amp-menu-sidebar {
+    display: block;
+    float: right;
+    height: 50px;
+    background: rgba(0,0,0,0.0);
+   	font-family:  Source Sans Pro;
+	color: #444444;
+	font-weight: ;
+	letter-spacing: 0px;
+    border: none;
+    padding:0;
+    font-size: 15px;
+    cursor: pointer;
+}
+.amp-icon-button {
+    position: relative;
+    width: 28px;
+}
+.amp-icon-button:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 28px;
+    height: 4px;
+    border-top: 12px double #ffffff;
+    border-bottom: 4px solid #ffffff;
+}
+amp-sidebar {
+	background-color: #3265c5;
+	width:250px;
+}
+.close-amp-sidebar {
+    font-size: 12px;
+    font-family: sans-serif;
+    background: rgba(0,0,0,.25);
+    letter-spacing: 1px;
+    padding: 12px;
+    line-height: 8px;
+    font-weight: bold;
+    margin: 12px 12px 2px;
+    cursor: pointer;
+    display: inline-block;
+    color: #fff;
+}
+.amp-sidebar-navigation ul.menu {
+    margin: 0 12px;
+}
+.amp-sidebar-navigation ul.menu li {
+    list-style: none;
+}
+.amp-sidebar-navigation ul.menu li a {
+    text-decoration: none;
+    display: block;
+    padding: 8px 10px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    font-size: 15px;
+    line-height: 20px;
+    font-family:  Source Serif Pro;
+	color: #ffffff;
+	font-weight: 400;
+	letter-spacing: 0px;
+}
+.amp-sidebar-navigation ul.menu ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+/* main */
+
+.main {
+	color: #444444;
+	font-weight: 400;
+	margin: 16px auto;
+	max-width: 600px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	padding: 0 16px;
+	box-sizing: border-box;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 16px 0 10px;
+}
+
+.amp-wp-title {
+	display: block;
+	width: 100%;
+	margin:0;
+}
+
+/* Article Meta */
+.amp-wp-article-meta {
+	margin: 0px 0 10px 0;
+}
+.amp-wp-meta {
+	color: #777777;
+	display: inline-block;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #ce534d;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+	display:block;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+.amp-wp-page-content {
+	padding: 6px 0 0;
+}
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+
+/* comments */
+
+.amp-comments {
+    margin-top: 16px;
+}
+.comment-text {
+    position: relative;
+    padding-left: 76px;
+    min-height:60px;
+}
+.comment-text p {
+	margin-bottom:0;
+}
+.comment-list .comment-metadata a {
+    font-size: 12px;
+    color: #777;
+}
+.comment-list .comment-author amp-img {
+    margin-right:10px;
+}
+ul.comment-list li {
+    list-style-type: none;
+}
+.comment {
+    margin-top: 16px;
+    border: 1px solid #ddd;
+    padding: 1em;
+}
+.comment-list amp-img {
+    float: left;
+}
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #eee;
+	color: #777777;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #eee;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #eee url( ../../../wp-content/plugins/kadence-amp/assets/images/placeholder-icon.png ) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	margin: 16px 0;
+	display: block;
+}
+
+.amp-wp-comments-link, .mod_show_original {
+	color: #777777;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 1.5em 0 1.5em;
+}
+.amp-wp-comments-link a, .mod_show_original a{
+	border-style: solid;
+	border-color: #eee;
+	border-width: 1px 1px 2px;
+	background-color: transparent;
+	color: #ce534d;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+/* Related Posts */
+.amp-related-posts ul {
+	list-style:none;
+}
+.amp-related-posts ul li {
+	margin-bottom:16px;
+}
+a.amp-related-img-link {
+    margin-right: 10px;
+    display: block;
+}
+.amp-related-posts .amp-related-meta {
+	display:block;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	background: #444444;
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.amp-wp-footer > div {
+	max-width: 600px;
+    margin: 0 auto;
+	padding: 16px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+	color: #ffffff;
+}
+.show_original {
+    display: block;
+    text-align: center;
+}
+.show_original a {
+    display: inline-block;
+    margin-top: 10px;
+    padding:4px 8px;
+    border: 1px solid #ffffff;
+}
+.back-to-top {
+	top: 16px;
+	position: absolute;
+	right: 16px;
+}
+@media (max-width: 544px) {
+	.wp-caption.alignleft, .amp-wp-article-content amp-img.alignleft {
+		float:none;
+		margin-right:auto;
+		margin-left:auto;
+	}
+}
+		/* Inline stylesheets */
+.amp-wp-inline-0f1bf07c72fdf1784fff2e164d9dca98 { display:none; }.amp-wp-inline-869b76696f15a7298bbe56bef936cfb5 { max-width:570px; }/* Custom styles */
+@font-face{font-family:"tigers";font-display:swap;src:url("../../../wp-content/themes/tgs/css/fonts/tigers.eot");src:url("../../../wp-content/themes/tgs/css/fonts/tigers-1.eot") format("embedded-opentype"),url("../../../wp-content/themes/tgs/css/fonts/tigers.woff2") format("woff2"),url("../../../wp-content/themes/tgs/css/fonts/tigers.woff") format("woff"),url("../../../wp-content/themes/tgs/css/fonts/tigers.ttf") format("truetype"),url("../../../wp-content/themes/tgs/css/fonts/tigers.svg") format("svg")}
+h1,h2,h3,h4,h5,h6{font-family:'Tigers',sans-serif,'Arial';color:#444444;line-height:1.2}
+h1{font-size:24px;font-weight:700; color: #000;}
+h2{font-size:22px;padding:10px 0 10px 8px;margin:25px 0 20px;border-left:2px solid #487bd9;background-color:#f5f8fb}
+h3{font-size:20px;padding:15px 0 15px;margin-bottom:0}
+h4{font-size:16px;padding:12px 0 12px;margin-bottom:0}
+h5{font-size:17px;padding:5px 0 0px;margin-bottom:0}
+h6{font-size:14px;margin-bottom:0}
+.main{padding:0 10px;margin-top: 0;}
+.amp-wp-page-content li{list-style-position:inside;padding-bottom:10px}
+.amp-wp-page-content strong{padding:8px 0}
+.amp-wp-page-content a{max-width:100%;display:inline-block;text-decoration:none}
+.amp-wp-page-content a:before{font-family:'tigers';content:"\e7ff";margin-right:0px;font-size:14px;color:#feb822}
+.amp-breadcrumb-container{font-size:15px;background-color:#f5f7fa;border-bottom:1px solid #eee;padding:10px 0px;-webkit-box-shadow:0 -1px 2px rgba(0,0,0,.06) inset;box-shadow:0 -1px 2px rgba(0,0,0,.06) inset}
+.amp-breadcrumb-container a{ text-decoration: none;}
+.amp-wp-article-header{padding-bottom: 10px;   border-bottom: 1px dotted #3265c5;margin-bottom: 0px;}	</style>
+</head>
+
+<body class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="../../index.htm">ТИГРЫ АЛЮМИНИЕВЫЕ</a><div class="amp-accordion-header"><button class="amp-menu-sidebar amp-icon-button" on="tap:sidebar.toggle"></button></div>	</div>
+</header>
+
+<div class="main">
+	<article class="amp-wp-article">
+		<div id="amp-bread"><div class="amp-breadcrumb-container"><span><a href="../../index.htm" itemprop="url" class="kad-bc-home"><span>Дома</span></a></span> <span class="bc-delimiter">»</span> <span><a href="../../blog/index.htm" itemprop="url"><span>Блог</span></a></span> <span class="bc-delimiter">»</span> <span class="kad-breadcurrent">Лист из алюминиевого сплава 5083 VS. 6061 алюминиевый лист металла</span></div></div><header class="amp-wp-article-header"><h1 class="amp-wp-title">Лист из алюминиевого сплава 5083 VS. 6061 алюминиевый лист металла</h1></header><div class="amp-wp-article-meta"><div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2021-03-17T16:13:48+00:00">
+		2021 г. 3 февраля 17 января	</time>
+</div>
+	<div class="amp-wp-meta amp-wp-byline">
+		<span class="kt-amp-by-author">к</span> <span class="amp-wp-author author vcard">администратор</span>
+	</div>
+</div><div class="amp-wp-page-content"><!--noindex--><div class="lwptoc toc-list lwptoc-autoWidth lwptoc-baseItems lwptoc-light lwptoc-notInherit" data-smooth-scroll="1" data-smooth-scroll-offset="24"><div class="lwptoc_i">    <div class="lwptoc_header">
+        <b class="lwptoc_title">Оглавление</b>                    <span class="lwptoc_toggle">
+                <a href="#" class="lwptoc_toggle_label" data-label="HIDE">ПОКАЗЫВАТЬ</a>
+            </span>
+            </div>
+<div class="lwptoc_items amp-wp-inline-0f1bf07c72fdf1784fff2e164d9dca98">
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#similarities-between-5083-aluminum-and-6061-aluminium" rel="nofollow">
+                    <span class="lwptoc_item_number">1</span>
+                <span class="lwptoc_item_label">Сходства между алюминием 5083 и алюминием 6061</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#different-between-5083-aluminum-and-6061-aluminium" rel="nofollow">
+                    <span class="lwptoc_item_number">2</span>
+                <span class="lwptoc_item_label">Разница между алюминием 5083 и алюминием 6061</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#details" rel="nofollow">
+                    <span class="lwptoc_item_number">3</span>
+                <span class="lwptoc_item_label">Подробности</span>
+    </a>
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#5083-aluminum-alloy" rel="nofollow">
+                    <span class="lwptoc_item_number">3.1</span>
+                <span class="lwptoc_item_label">алюминиевый сплав 5083</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#5083-aluminum-sheetplate-chemical-composition" rel="nofollow">
+                    <span class="lwptoc_item_number">3.2</span>
+                <span class="lwptoc_item_label">Химический состав алюминиевого листа/пластины 5083</span>
+    </a>
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#more-detail-of-5083-aluminum-sheetplate" rel="nofollow">
+                    <span class="lwptoc_item_number">3.2.1</span>
+                <span class="lwptoc_item_label">Подробнее о 5083 алюминиевых листах/пластинах</span>
+    </a>
+    </li></ul></li><li class="lwptoc_item">    <a href="#aluminum-6061-alloy-metal" rel="nofollow">
+                    <span class="lwptoc_item_number">3.3</span>
+                <span class="lwptoc_item_label">алюминиевый сплав 6061 металл</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#6061-aluminum-sheet-plate-chemical-composition-for-reference" rel="nofollow">
+                    <span class="lwptoc_item_number">3.4</span>
+                <span class="lwptoc_item_label">6061 алюминиевый лист / плита Химический состав (для справки)</span>
+    </a>
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#more-detail-of-6061-aluminum-sheet-and-plate" rel="nofollow">
+                    <span class="lwptoc_item_number">3.4.1</span>
+                <span class="lwptoc_item_label">Подробнее о алюминиевом листе и пластине 6061</span>
+    </a>
+    </li></ul></li><li class="lwptoc_item">    <a href="#5083-aluminum-alloy-temper" rel="nofollow">
+                    <span class="lwptoc_item_number">3.5</span>
+                <span class="lwptoc_item_label">Характер алюминиевого сплава 5083:</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#6061-aluminum-sheetplate-temper" rel="nofollow">
+                    <span class="lwptoc_item_number">3.6</span>
+                <span class="lwptoc_item_label">6061 алюминиевый лист/плита:</span>
+    </a>
+    </li></ul></li><li class="lwptoc_item">    <a href="#more-differences-between-5083-alloy-and-6061-aluminum-alloy" rel="nofollow">
+                    <span class="lwptoc_item_number">4</span>
+                <span class="lwptoc_item_label">Больше различий между сплавом 5083 и алюминиевым сплавом 6061:</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#specification-of-5083-aluminum-sheet-plate-and-6061-aluminum-plate" rel="nofollow">
+                    <span class="lwptoc_item_number">5</span>
+                <span class="lwptoc_item_label">Спецификация алюминиевого листа 5083 и алюминиевого листа 6061</span>
+    </a>
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#aluminium-sheetplatecoil-available-size-range" rel="nofollow">
+                    <span class="lwptoc_item_number">5.1</span>
+                <span class="lwptoc_item_label">Алюминиевый лист/плита/катушка Доступный диапазон размеров</span>
+    </a>
+    </li></ul></li><li class="lwptoc_item">    <a href="#applications" rel="nofollow">
+                    <span class="lwptoc_item_number">6</span>
+                <span class="lwptoc_item_label">Приложения</span>
+    </a>
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#5083-aluminum-alloy-sheet-application" rel="nofollow">
+                    <span class="lwptoc_item_number">6.1</span>
+                <span class="lwptoc_item_label">Применение листа из алюминиевого сплава 5083</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#6061-aluminum-alloy-sheet-application" rel="nofollow">
+                    <span class="lwptoc_item_number">6.2</span>
+                <span class="lwptoc_item_label">Применение листа из алюминиевого сплава 6061</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#the-difference-between-6061-alloy-and-other-alloys" rel="nofollow">
+                    <span class="lwptoc_item_number">6.3</span>
+                <span class="lwptoc_item_label">Отличие сплава 6061 от других сплавов</span>
+    </a>
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#different-with-5052-alloy-aluminum" rel="nofollow">
+                    <span class="lwptoc_item_number">6.3.1</span>
+                <span class="lwptoc_item_label">отличается от алюминия из сплава 5052</span>
+    </a>
+    </li></ul></li><li class="lwptoc_item">    <a href="#description-of-5083-and-6061-on-wikipedia" rel="nofollow">
+                    <span class="lwptoc_item_number">6.4</span>
+                <span class="lwptoc_item_label">Описание 5083 и 6061 в Википедии:</span>
+    </a>
+    </li></ul></li></ul></div>
+</div></div><!--/noindex--><h2><span id="similarities-between-5083-aluminum-and-6061-aluminium">Сходства между алюминием 5083 и алюминием 6061</span></h2>
+<p>И алюминий 5083, и алюминий 6061 являются алюминиевыми сплавами.</p>
+<p>Они имеют очень высокое 96% их среднего состава сплава.</p>
+<h2><span id="different-between-5083-aluminum-and-6061-aluminium">Разница между алюминием 5083 и алюминием 6061</span></h2>
+<p>Алюминиевые листы из сплава алюминия 5083 и 6061 имеют разный состав сплава, разные физические свойства и разные области применения.</p>
+<h2><span id="details">Подробности</span></h2>
+<h3><span id="5083-aluminum-alloy">алюминиевый сплав 5083</span></h3>
+<p>Алюминиевый лист 5083 является самым прочным нетермообрабатываемым сплавом для коммерческого использования. Он обладает хорошей формуемостью и свариваемостью и сохраняет превосходную прочность на растяжение в зоне сварки благодаря своим свойствам после прокатки.</p>
+<p>Он чаще всего используется в конструкциях, требующих высокой эффективности сварки и максимальной прочности сварного шва. 5083 также обладает отличной устойчивостью к коррозии.</p>
+<div id="attachment_92" class="wp-caption alignnone amp-wp-inline-869b76696f15a7298bbe56bef936cfb5"><p id="caption-attachment-92" class="wp-caption-text">алюминиевый лист, проложенный бумагой</p></div>
+<p>Алюминиевый лист и пластина из сплава 5083 обладают исключительной теплопроводностью. В отпущенном состоянии он сохраняет хорошую формуемость благодаря отличной пластичности.</p>
+<p>Он отлично подходит для сварки и может быть закален холодной обработкой.</p>
+<p>Сплав 5083 использовался в броневых листах автомобилей из-за его высокого коэффициента прочности.</p>
+<p>Поскольку сплав 5083 демонстрирует превосходную стойкость к общей коррозии, он используется в морской технике.</p>
+<div id="attachment_93" class="wp-caption alignnone amp-wp-inline-869b76696f15a7298bbe56bef936cfb5"><p id="caption-attachment-93" class="wp-caption-text">Алюминиевый лист 5083 H321 с синими пленками</p></div>
+<p>Алюминиевый лист 5083 представляет собой алюминиевый сплав, содержащий магний, марганец и хром. Обладает отличной устойчивостью к морской воде и промышленным химикатам.</p>
+<p>Поскольку Alloy 5083 способен выдерживать экстремально низкие температуры без хрупкости или потери свойств, он особенно подходит для криогенного рынка.</p>
+<div class="table-responsive">
+<table class="table" width="100%" cellspacing="0" cellpadding="0"><caption>
+<h3><span id="5083-aluminum-sheetplate-chemical-composition"><span id="5083-aluminum-sheetplate-chemical-composition">Химический состав алюминиевого листа/пластины 5083</span></span></h3>
+</caption>
+<tbody><tr class="firstRow"><td rowspan="2" width="63">Оценка</td>
+<td colspan="11" width="577">Макс (%)</td>
+</tr><tr class="firstRow"><td>Си</td>
+<td>Fe</td>
+<td>Cu</td>
+<td>Мн</td>
+<td>мг</td>
+<td>Кр</td>
+<td>цинк</td>
+<td>Ти</td>
+<td>Другие:<br>
+Каждый</td>
+<td>Другие:<br>
+Всего</td>
+<td>Ал: Мин.</td>
+</tr><tr><td>сплав 5083</td>
+<td>0.40</td>
+<td>0.40</td>
+<td>0.10</td>
+<td>0.4~1.0</td>
+<td>4.0~4.9</td>
+<td>0.05~0.25</td>
+<td>0.25</td>
+<td>0.15</td>
+<td>0.05</td>
+<td>0.15</td>
+<td>остаток</td>
+</tr></tbody></table></div>
+<h4><span id="more-detail-of-5083-aluminum-sheetplate"><a href="../../product/5083-aluminum-sheet/index.htm" data-schema-attribute="">Подробнее о 5083 алюминиевых листах/пластинах</a></span></h4>
+<h3><span id="aluminum-6061-alloy-metal">алюминиевый сплав 6061 металл</span></h3>
+<p>Алюминий 6061 является одним из наиболее часто экструдируемых сплавов. Это сплав с многовековой историей. Разработанный в 1935 году, он первоначально назывался Alloy 61s.</p>
+<div id="attachment_73" class="wp-caption alignnone amp-wp-inline-869b76696f15a7298bbe56bef936cfb5"><p id="caption-attachment-73" class="wp-caption-text">пакеты из алюминиевого листа</p></div>
+<p>Алюминиевый лист/плита 6061 представляет собой алюминиево-кремниево-магниевый сплав, усиленный дисперсионным твердением.</p>
+<p>Это деформируемый сплав, в отличие от литейного сплава. Таким образом, он может быть экструдирован, свернут или выкован в различные формы.</p>
+<p>Алюминиевый лист и плита 6061 сочетают в себе более высокую прочность, хорошую коррозионную стойкость и обрабатываемость, что делает марку 6061 наиболее широко используемой маркой алюминиевого листа и плиты, доступной для всех типов производственных проектов.</p>
+<p>Алюминиевый лист и пластина общего назначения 6061 поддаются термообработке, устойчивы к растрескиванию из-за напряжения, легко поддаются сварке и обработке, но имеют ограниченную формуемость.</p>
+<p>Алюминиевый лист и плита 6061 идеально подходят для изготовления каркасных конструкций, опорных плит, косынок, авиационных, морских и автомобильных деталей и т. д.</p>
+<p>Для 6061 обычно используются 6061-O (отожженный), 6061-T4, 6061-T6 (растворенный и искусственно состаренный) и 6061-T651 (растворенный, растянутый со снятым напряжением и искусственно состаренный).</p>
+<p>Алюминий закалки Т4 подвергается естественному старению, а алюминий закалки Т6 искусственно состаривается для достижения максимальной прочности.</p>
+<div id="attachment_85" class="wp-caption alignnone amp-wp-inline-869b76696f15a7298bbe56bef936cfb5"><p id="caption-attachment-85" class="wp-caption-text">6061 алюминиевая пластина</p></div>
+<p>Алюминиевый лист 6061 представляет собой термообрабатываемый сорт, широко используемый в конструкциях легкой и средней прочности. Сплав обладает хорошей коррозионной стойкостью и свариваемостью, а также хорошей формуемостью в состояниях от 0 до Т4.</p>
+<p>Металл из сплава 6061 действительно теряет заметную прочность при сварке, и его заменяют сплавы серии 5000, где прочность после сварки является основным фактором.</p>
+<div class="table-responsive">
+<table class="table" width="100%" cellspacing="0" cellpadding="0"><caption>
+<h3><span id="6061-aluminum-sheet-plate-chemical-composition-for-reference"><span id="6061-aluminum-sheet-plate-chemical-composition-for-reference">6061 алюминиевый лист / плита Химический состав (для справки)</span></span></h3>
+</caption>
+<thead><tr class="firstRow"><td>сплав</td>
+<td>Си</td>
+<td>Fe</td>
+<td>Cu</td>
+<td>Мн</td>
+<td>мг</td>
+<td>Кр</td>
+<td>цинк</td>
+<td>Ти</td>
+<td>Другие:<br>
+Каждый</td>
+<td>Другие:<br>
+Всего</td>
+<td>Ал: Мин.</td>
+</tr></thead><tbody><tr><td>6061</td>
+<td>0.40~0.8</td>
+<td>0.70</td>
+<td>0.15~0.4</td>
+<td>0.15</td>
+<td>0.8~1.2</td>
+<td>0.04~0.35</td>
+<td>0.25</td>
+<td>0.15</td>
+<td>0.05</td>
+<td>0.15</td>
+<td>остаток</td>
+</tr></tbody></table></div>
+<h4><span id="more-detail-of-6061-aluminum-sheet-and-plate"><a href="../../product/6061-aluminum-sheet-plate/index.htm" data-schema-attribute="">Подробнее о алюминиевом листе и пластине 6061</a></span></h4>
+<h3><span id="5083-aluminum-alloy-temper">Характер алюминиевого сплава 5083:</span></h3>
+<p>Алюминиевый лист 5083 является представительным продуктом серии 5. Большинство закалки - алюминий H321, H116, 5083, который обычно использовался в судостроительной промышленности.</p>
+<h3><span id="6061-aluminum-sheetplate-temper">6061 алюминиевый лист/плита:</span></h3>
+<p>Алюминий 6061 является репрезентативным продуктом 6-й серии, состояние обычно составляет 6061-T6, 6061-T651 и 6061-T652.</p>
+<h2><span id="more-differences-between-5083-alloy-and-6061-aluminum-alloy">Больше различий между сплавом 5083 и алюминиевым сплавом 6061:</span></h2>
+<ol><li>После термической обработки (Т6) сплав 6061 достигает средней прочности, а его прочность выше, чем у материалов 5083;</li>
+<li>Материал алюминиевого листа 6061 T6511 легче обрабатывать, чем сплавы 5-й серии, такие как 5083. Он показывает лучшие характеристики обработки при обработке одноточечными или многоосевыми алмазными инструментами;</li>
+<li>Сплав 6061 имеет отличные характеристики обработки поверхности и анодирования, а эффект жесткого окисления немного лучше, чем у материалов 5-й серии, таких как 5083;</li>
+<li>6061 также обладает определенной степенью коррозионной стойкости, и коррозионная стойкость не снижается при воздействии воздуха, но она не такая прочная, как 5083.</li>
+</ol><p>Обрабатываемость немного лучше у 6061-T6</p>
+<h2><span id="specification-of-5083-aluminum-sheet-plate-and-6061-aluminum-plate">Спецификация алюминиевого листа 5083 и алюминиевого листа 6061</span></h2>
+<div class="table-responsive">
+<table class="table" border="0" width="100%" cellspacing="0" cellpadding="0"><caption>
+<h3><span id="aluminium-sheetplatecoil-available-size-range">Алюминиевый лист/плита/катушка Доступный диапазон размеров</span></h3>
+</caption>
+<thead><tr class="firstRow"><td>Измерение</td>
+<td>Спектр</td>
+</tr></thead><tbody><tr><td>Толщина</td>
+<td>0,5 ~ 6,0 мм для листа, макс. 500 мм</td>
+</tr><tr><td>Ширина</td>
+<td>600 ~ 2650 мм</td>
+</tr></tbody></table></div>
+<ul><li>– <strong>Стандартная ширина и длина:</strong> 4〃 x 8〃, 4&quot; x 4&quot;, 4 дюйма x 10 дюймов алюминиевый лист, 5 x 10 алюминиевый лист, 48 футов x 96 футов алюминиевый лист, 1219 * 2438 мм, 1220 мм x 2440 мм алюминиевый лист, 1000 мм x 2000 мм алюминий лист, 1250 мм х 2500 мм, 1219 х 2438 мм, 1524 х 3048 мм, 1500 мм х 3000 мм алюминиевый лист.</li>
+<li>– <strong>Чистота поверхности:</strong> Фрезерная отделка (если не указано иное), цветное покрытие или тиснение Stucco</li>
+<li>– <strong>Защита поверхности</strong>: Бумага с чередованием, пленка из ПЭ/ПВХ (если указано)</li>
+<li>– <strong>Минимум для заказа</strong>: 3МТ</li>
+</ul><p>В дополнение к обычно используемым спецификациям Tigers Aluminium также может производить сверхширокие и сверхтолстые алюминиевые пластины 5052 со снятием внутренних напряжений и отсутствием деформации при резке, шириной 2650 мм, толщиной 500 мм.</p>
+<h2><span id="applications">Приложения</span></h2>
+<h3><span id="5083-aluminum-alloy-sheet-application">Применение листа из алюминиевого сплава 5083</span></h3>
+<ul><li>Строительство судов СПГ</li>
+<li>Сосуды под давлением</li>
+<li>Резервуары для хранения</li>
+<li>Сварные конструкции (высокой прочности)</li>
+<li>Бронепластина</li>
+<li>Буровые установки</li>
+</ul><h3><span id="6061-aluminum-alloy-sheet-application">Применение листа из алюминиевого сплава 6061</span></h3>
+<ul><li>Фурнитура для самолетов, крепления объективов камер, муфты, морская фурнитура и скобяные изделия, электрические фитинги и разъемы, декоративные или прочие.</li>
+<li>скобяные изделия, шарнирные штифты, детали магнето, тормозные поршни, гидравлические поршни, фурнитура для приборов, клапаны и детали клапанов.</li>
+</ul><h3><span id="the-difference-between-6061-alloy-and-other-alloys">Отличие сплава 6061 от других сплавов</span></h3>
+<h4><span id="different-with-5052-alloy-aluminum">отличается от алюминия из сплава 5052</span></h4>
+<p>Алюминий 5052 и 6061 содержат магний в качестве основного легирующего элемента. В случае 5052 это единственный первичный легирующий элемент. 6061 тоже содержит кремний. Одним из ключевых преимуществ этого сплава является его высокая свариваемость по сравнению с другими сплавами. Для проектов, где свариваемость имеет ключевое значение, это стоит учитывать.</p>
+<p>Однако у 5052 есть один недостаток: он не поддается термообработке. Он подходит для различных сварочных работ и хорошо работает в морских условиях благодаря своей высокой коррозионной стойкости.</p>
+<h3><span id="description-of-5083-and-6061-on-wikipedia">Описание 5083 и 6061 в Википедии:</span></h3>
+<p><a href="../../../wiki/5083_aluminium_alloy.htm" rel="nofollow noopener" target="_blank">5083 алюминий на Википедии</a></p>
+<p><a href="../../../wiki/6061_aluminium_alloy.htm" rel="nofollow noopener" target="_blank">алюминий 6061 в википедии</a></p>
+<p>Вышеупомянутое содержание является разницей между алюминиевым сплавом 5083 и алюминиевым сплавом 6061.</p>
+<div id="tab_a" class="tab-pane animated fadeInRightSmall active">
+<div class="pro_details">
+<div class="contents">
+<p>Большинство алюминиевых листов/плит Tigers 5083 и алюминиевых пластин 6061 доступны в полном размере и с нестандартной длиной.</p>
+</div>
+</div>
+</div>
+<p> </p>
+</div><div class="amp-wp-meta amp-wp-tax-category">Категории: <a href="../../blog/index.htm" rel="category tag">Блог</a></div><div class="amp-wp-meta amp-wp-tax-tag">Теги: <a href="../../tag/5083/index.htm" rel="tag">5083</a>, <a href="../../tag/6061/index.htm" rel="tag">6061</a>, <a href="../../tag/diffe/index.htm" rel="tag">отличается</a>, <a href="../../tag/plate/index.htm" rel="tag">пластина</a>, <a href="../../tag/sheet/index.htm" rel="tag">лист</a></div><div class="amp-share-box"><amp-social-share type="facebook" width="60" height="44" data-share-endpoint="http://www.facebook.com/sharer.php?u=https://www.tigersalu.com/ru/5083-aluminum-vs-6061-aluminum/"></amp-social-share><amp-social-share type="twitter" width="60" height="44"></amp-social-share><amp-social-share type="linkedin" width="60" height="44"></amp-social-share></div><div class="amp-comments"><div id="comments" class="section-content comments-area"></div>				<div class="amp-wp-comments-link">
+					<a href="../index.htm#respond">
+						Оставить комментарий					</a>
+				</div>
+			</div><div class="amp-related-posts"><h3>Похожие сообщения</h3><ul><li class="flex items-center"><a href="../../what-is-the-thickness-of-10-gauge-aluminum/amp/index.htm" class="amp-related-img-link" title="Какова толщина алюминия 10 калибра?"><amp-img src="../../../2022/01/gauges-measurement-tool-80x80.jpg" width="80" height="80" alt="gauges measurement tool" srcset="/2022/01/gauges-measurement-tool-80x80.jpg 80w, /2022/01/gauges-measurement-tool-160x160.jpg 160w" sizes="(max-width: 80px) 100vw, 80px" class="amp-related-img"></amp-img></a><div class="amp-related-title"><a href="../../what-is-the-thickness-of-10-gauge-aluminum/amp/index.htm" title="Какова толщина алюминия 10 калибра?">Какова толщина алюминия 10 калибра?</a><div class="amp-related-meta amp-wp-meta">2022 год, 1 января, 12 дней</div></div></li><li class="flex items-center"><a href="../../what-is-the-6063-aluminum-sheet/amp/index.htm" class="amp-related-img-link" title="Что такое алюминиевый лист 6063?"><amp-img src="../../../2021/02/3mm-aa1050-h14-aluminum-sheet-2-80x80.jpg" width="80" height="80" alt="3mm aa1050 h14 aluminum sheet" srcset="/2021/02/3mm-aa1050-h14-aluminum-sheet-2-80x80.jpg 80w, /2021/02/3mm-aa1050-h14-aluminum-sheet-2-160x160.jpg 160w" sizes="(max-width: 80px) 100vw, 80px" class="amp-related-img"></amp-img></a><div class="amp-related-title"><a href="../../what-is-the-6063-aluminum-sheet/amp/index.htm" title="Что такое алюминиевый лист 6063?">Что такое алюминиевый лист 6063?</a><div class="amp-related-meta amp-wp-meta">2021 г., 2 января, 9 дней</div></div></li><li class="flex items-center"><div class="amp-related-title"><a href="../../difference-in-aluminum-sheet-and-coil/amp/index.htm" title="В чем разница между алюминиевым листом и алюминиевой катушкой?">В чем разница между алюминиевым листом и алюминиевой катушкой?</a><div class="amp-related-meta amp-wp-meta">2021 г., 11 февраля, 25 февраля.</div></div></li></ul></div>
+	</article>
+</div>
+
+<footer class="amp-wp-footer">
+	<div class="clearfix">
+		<div class="amp-footer-content">© 2022 Тайгерс Индастри Алюминий</div>	</div>
+</footer>
+
+<amp-analytics id="UA-194323042-1" type="googleanalytics"><script type="application/json">{"vars":{"account":"UA-194323042-1"},"triggers":{"trackPageview":{"on":"visible","request":"pageview"}}}</script></amp-analytics><amp-sidebar id="sidebar" layout="nodisplay" side="right"><div class="amp-sidebar-navigation"><div role="button" tabindex="0" on="tap:sidebar.close" class="close-amp-sidebar">Икс</div><div class="menu-topnav-container"><ul id="menu-topnav" class="menu"><li><a href="../../index.htm">ДОМА</a></li>
+<li><a title="Алюминиевый продукт" href="../../aluminum-metal/index.htm">Продукты</a>
+<ul class="sub-menu">
+	<li><a href="../../products/aluminum-mill-finish/index.htm">отделка алюминиевой мельницы</a></li>
+	<li><a href="../../products/painted-coated-aluminum/index.htm">Алюминий с окрашенным покрытием</a></li>
+	<li><a href="../../products/powder-coating-aluminium/index.htm">Порошковое покрытие алюминия</a></li>
+	<li><a href="../../products/aluminium-cladding/index.htm">алюминиевая облицовка</a></li>
+	<li><a href="../../products/perforated-aluminium/index.htm">Перфорированный алюминий</a></li>
+</ul>
+</li>
+<li class="current-post-ancestor current-menu-parent"><a href="../../blog/index.htm">Блог</a></li>
+<li><a rel="nofollow" href="../../about-tigers/index.htm">О тиграх</a></li>
+<li><a rel="nofollow" href="../../contact-tigers/index.htm">Связаться с нами</a></li>
+</ul></div></div></amp-sidebar></body>
+</html>
+<!-- Cached for great performance - Debug: cached@1653388663 -->

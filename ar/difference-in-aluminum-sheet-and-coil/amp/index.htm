@@ -1,0 +1,763 @@
+﻿<!doctype html>
+<html amp="" dir="rtl" lang="ar">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<script type='text/javascript' src='../../../v0.js' async=""></script>
+<script type='text/javascript' src='../../../v0/amp-sidebar-0.1.js' async="" custom-element="amp-sidebar"></script>
+<script type='text/javascript' src='../../../v0/amp-social-share-0.1.js' async="" custom-element="amp-social-share"></script>
+<script type='text/javascript' src='../../../v0/amp-analytics-0.1.js' async="" custom-element="amp-analytics"></script>
+	<style amp-boilerplate="">body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate="">body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial, Helvetica, sans-serif:400&subset=">	<style amp-custom="">
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+input, textarea {
+	padding: 5px;
+	box-sizing: border-box;
+}
+.amp-wp-enforced-sizes {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.amp-wp-unknown-size img {
+	object-fit: contain;
+}
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+table th, table td, table th {
+    padding: 5px;
+}
+table.shop_attributes td {
+    font-style: italic;
+}
+table tr:nth-child(even) {
+    background: rgba(0,0,0,.03);
+}
+/* Flex */
+
+.full-flex {
+	flex: 1 0 100%;
+}
+.flex-space-between {
+	justify-content: space-between;
+}
+.flex-align-center {
+	align-items: center;
+}
+.flex-wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/* Template Styles */
+* {
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+html body {
+	margin:0;
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+    font-family:  Impact, Charcoal, sans-serif;
+	color: #444444;
+	font-weight: 400;
+	letter-spacing: 0px;
+}
+body {
+	background: #ffffff;
+	color: #444444;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	letter-spacing: 0px;
+	font-size:16px;
+	line-height: 24px;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 16px;
+	padding: 0;
+}
+
+a {
+	color: #ce534d;
+}
+
+a:hover {
+	color: #ce534d;
+	text-decoration: underline;
+}
+.btn, .button, button {
+    color: #fff;
+    cursor: pointer;
+    padding: .518em 1.287em;
+    text-decoration: none;
+    font-weight: 600;
+	border: 0;
+    text-shadow: none;
+    display: inline-block;
+    outline: 0;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 0;
+    font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 0px;
+	font-size:16px;
+	line-height: 24px;
+    background: #ce534d;
+}
+.btn:hover, .button:hover, .btn:active, .button:active, .btn:focus .button:focus  {
+    color: #fff;
+    text-decoration: none;
+    background: #ce534d;
+    opacity:.8;
+}
+/* Breadcrumbs */
+#amp-bread {
+    font-size: 12px;
+    margin: 5px 0;
+}
+/* Quotes */
+
+blockquote {
+	color: #444444;
+	background: rgba(127,127,127,.1);
+	border-left: 2px solid #ce534d;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #3265c5;
+}
+
+.amp-wp-header > div {
+	color: #ffffff;
+	font-size: 18px;
+	line-height:50px;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 0 16px;
+	position: relative;
+	min-height: 50px;
+	box-sizing: border-box;
+}
+
+.amp-wp-header a {
+	text-decoration: none;
+	display:block;
+	float:left;
+	font-family:  'MS Serif', 'New York', sans-serif;
+	color: #ffffff;
+	font-weight: 700;
+	letter-spacing: 0px;
+}
+
+/* Site Logo */
+
+.amp-wp-header .amp-wp-site-icon {
+	margin: 9px 8px 9px 0;
+    float: left
+}
+
+/* Menu */
+button.amp-menu-sidebar {
+    display: block;
+    float: right;
+    height: 50px;
+    background: rgba(0,0,0,0.0);
+   	font-family:  Source Sans Pro;
+	color: #444444;
+	font-weight: ;
+	letter-spacing: 0px;
+    border: none;
+    padding:0;
+    font-size: 15px;
+    cursor: pointer;
+}
+.amp-icon-button {
+    position: relative;
+    width: 28px;
+}
+.amp-icon-button:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 28px;
+    height: 4px;
+    border-top: 12px double #ffffff;
+    border-bottom: 4px solid #ffffff;
+}
+amp-sidebar {
+	background-color: #3265c5;
+	width:250px;
+}
+.close-amp-sidebar {
+    font-size: 12px;
+    font-family: sans-serif;
+    background: rgba(0,0,0,.25);
+    letter-spacing: 1px;
+    padding: 12px;
+    line-height: 8px;
+    font-weight: bold;
+    margin: 12px 12px 2px;
+    cursor: pointer;
+    display: inline-block;
+    color: #fff;
+}
+.amp-sidebar-navigation ul.menu {
+    margin: 0 12px;
+}
+.amp-sidebar-navigation ul.menu li {
+    list-style: none;
+}
+.amp-sidebar-navigation ul.menu li a {
+    text-decoration: none;
+    display: block;
+    padding: 8px 10px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    font-size: 15px;
+    line-height: 20px;
+    font-family:  Source Serif Pro;
+	color: #ffffff;
+	font-weight: 400;
+	letter-spacing: 0px;
+}
+.amp-sidebar-navigation ul.menu ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+/* main */
+
+.main {
+	color: #444444;
+	font-weight: 400;
+	margin: 16px auto;
+	max-width: 600px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	padding: 0 16px;
+	box-sizing: border-box;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 16px 0 10px;
+}
+
+.amp-wp-title {
+	display: block;
+	width: 100%;
+	margin:0;
+}
+
+/* Article Meta */
+.amp-wp-article-meta {
+	margin: 0px 0 10px 0;
+}
+.amp-wp-meta {
+	color: #777777;
+	display: inline-block;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #ce534d;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+	display:block;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+.amp-wp-page-content {
+	padding: 6px 0 0;
+}
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+
+/* comments */
+
+.amp-comments {
+    margin-top: 16px;
+}
+.comment-text {
+    position: relative;
+    padding-left: 76px;
+    min-height:60px;
+}
+.comment-text p {
+	margin-bottom:0;
+}
+.comment-list .comment-metadata a {
+    font-size: 12px;
+    color: #777;
+}
+.comment-list .comment-author amp-img {
+    margin-right:10px;
+}
+ul.comment-list li {
+    list-style-type: none;
+}
+.comment {
+    margin-top: 16px;
+    border: 1px solid #ddd;
+    padding: 1em;
+}
+.comment-list amp-img {
+    float: left;
+}
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #eee;
+	color: #777777;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #eee;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #eee url( ../../../wp-content/plugins/kadence-amp/assets/images/placeholder-icon.png ) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	margin: 16px 0;
+	display: block;
+}
+
+.amp-wp-comments-link, .mod_show_original {
+	color: #777777;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 1.5em 0 1.5em;
+}
+.amp-wp-comments-link a, .mod_show_original a{
+	border-style: solid;
+	border-color: #eee;
+	border-width: 1px 1px 2px;
+	background-color: transparent;
+	color: #ce534d;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+/* Related Posts */
+.amp-related-posts ul {
+	list-style:none;
+}
+.amp-related-posts ul li {
+	margin-bottom:16px;
+}
+a.amp-related-img-link {
+    margin-right: 10px;
+    display: block;
+}
+.amp-related-posts .amp-related-meta {
+	display:block;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	background: #444444;
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.amp-wp-footer > div {
+	max-width: 600px;
+    margin: 0 auto;
+	padding: 16px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+	color: #ffffff;
+}
+.show_original {
+    display: block;
+    text-align: center;
+}
+.show_original a {
+    display: inline-block;
+    margin-top: 10px;
+    padding:4px 8px;
+    border: 1px solid #ffffff;
+}
+.back-to-top {
+	top: 16px;
+	position: absolute;
+	right: 16px;
+}
+@media (max-width: 544px) {
+	.wp-caption.alignleft, .amp-wp-article-content amp-img.alignleft {
+		float:none;
+		margin-right:auto;
+		margin-left:auto;
+	}
+}
+		/* Inline stylesheets */
+.amp-wp-inline-0f1bf07c72fdf1784fff2e164d9dca98 { display:none; }.amp-wp-inline-a76ab53db10ef3853910c24963ea59e6 { max-width:810px; }/* Custom styles */
+@font-face{font-family:"tigers";font-display:swap;src:url("../../../wp-content/themes/tgs/css/fonts/tigers.eot");src:url("../../../wp-content/themes/tgs/css/fonts/tigers-1.eot") format("embedded-opentype"),url("../../../wp-content/themes/tgs/css/fonts/tigers.woff2") format("woff2"),url("../../../wp-content/themes/tgs/css/fonts/tigers.woff") format("woff"),url("../../../wp-content/themes/tgs/css/fonts/tigers.ttf") format("truetype"),url("../../../wp-content/themes/tgs/css/fonts/tigers.svg") format("svg")}
+h1,h2,h3,h4,h5,h6{font-family:'Tigers',sans-serif,'Arial';color:#444444;line-height:1.2}
+h1{font-size:24px;font-weight:700; color: #000;}
+h2{font-size:22px;padding:10px 0 10px 8px;margin:25px 0 20px;border-left:2px solid #487bd9;background-color:#f5f8fb}
+h3{font-size:20px;padding:15px 0 15px;margin-bottom:0}
+h4{font-size:16px;padding:12px 0 12px;margin-bottom:0}
+h5{font-size:17px;padding:5px 0 0px;margin-bottom:0}
+h6{font-size:14px;margin-bottom:0}
+.main{padding:0 10px;margin-top: 0;}
+.amp-wp-page-content li{list-style-position:inside;padding-bottom:10px}
+.amp-wp-page-content strong{padding:8px 0}
+.amp-wp-page-content a{max-width:100%;display:inline-block;text-decoration:none}
+.amp-wp-page-content a:before{font-family:'tigers';content:"\e7ff";margin-right:0px;font-size:14px;color:#feb822}
+.amp-breadcrumb-container{font-size:15px;background-color:#f5f7fa;border-bottom:1px solid #eee;padding:10px 0px;-webkit-box-shadow:0 -1px 2px rgba(0,0,0,.06) inset;box-shadow:0 -1px 2px rgba(0,0,0,.06) inset}
+.amp-breadcrumb-container a{ text-decoration: none;}
+.amp-wp-article-header{padding-bottom: 10px;   border-bottom: 1px dotted #3265c5;margin-bottom: 0px;}	</style>
+</head>
+
+<body class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="../../index.htm">نمر للألمنيوم</a><div class="amp-accordion-header"><button class="amp-menu-sidebar amp-icon-button" on="tap:sidebar.toggle"></button></div>	</div>
+</header>
+
+<div class="main">
+	<article class="amp-wp-article">
+		<div id="amp-bread"><div class="amp-breadcrumb-container"><span><a href="../../index.htm" itemprop="url" class="kad-bc-home"><span>الصفحة الرئيسية</span></a></span> <span class="bc-delimiter">»</span> <span><a href="../../blog/index.htm" itemprop="url"><span>مقالات</span></a></span> <span class="bc-delimiter">»</span> <span class="kad-breadcurrent">ما هو الفرق في صفائح الألمنيوم ولفائف الألمنيوم؟</span></div></div><header class="amp-wp-article-header"><h1 class="amp-wp-title">ما هو الفرق في صفائح الألمنيوم ولفائف الألمنيوم؟</h1></header><div class="amp-wp-article-meta"><div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2021-11-25T18:09:05+00:00">
+		2021 11 25	</time>
+</div>
+	<div class="amp-wp-meta amp-wp-byline">
+		<span class="kt-amp-by-author">بواسطة</span> <span class="amp-wp-author author vcard">مشرف</span>
+	</div>
+</div><div class="amp-wp-page-content"><!--noindex--><div class="lwptoc toc-list lwptoc-autoWidth lwptoc-baseItems lwptoc-light lwptoc-notInherit" data-smooth-scroll="1" data-smooth-scroll-offset="24"><div class="lwptoc_i">    <div class="lwptoc_header">
+        <b class="lwptoc_title">جدول المحتويات</b>                    <span class="lwptoc_toggle">
+                <a href="#" class="lwptoc_toggle_label" data-label="HIDE">يعرض</a>
+            </span>
+            </div>
+<div class="lwptoc_items amp-wp-inline-0f1bf07c72fdf1784fff2e164d9dca98">
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#what-is-aluminum-sheet" rel="nofollow">
+                    <span class="lwptoc_item_number">1</span>
+                <span class="lwptoc_item_label">ما هي صفائح الألمنيوم؟</span>
+    </a>
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#images-of-aluminum-sheet" rel="nofollow">
+                    <span class="lwptoc_item_number">1.1</span>
+                <span class="lwptoc_item_label">صور من صفائح الألمنيوم</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#commonly-used-aluminum-sheet-alloys" rel="nofollow">
+                    <span class="lwptoc_item_number">1.2</span>
+                <span class="lwptoc_item_label">سبائك الألومنيوم شائعة الاستخدام</span>
+    </a>
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#1000-series-aluminmu-sheet" rel="nofollow">
+                    <span class="lwptoc_item_number">1.2.1</span>
+                <span class="lwptoc_item_label">1000 سلسلة ورقة الألومنيوم</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#2000-series-aluminmu-sheet" rel="nofollow">
+                    <span class="lwptoc_item_number">1.2.2</span>
+                <span class="lwptoc_item_label">2000 ورقة سلسلة aluminmu</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#3000-series-aluminmu-sheet" rel="nofollow">
+                    <span class="lwptoc_item_number">1.2.3</span>
+                <span class="lwptoc_item_label">3000 سلسلة ورقة الألومنيوم</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#5000-series-aluminmu-sheet" rel="nofollow">
+                    <span class="lwptoc_item_number">1.2.4</span>
+                <span class="lwptoc_item_label">5000 سلسلة ورقة الألومنيوم</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#6000-series-aluminmu-sheet" rel="nofollow">
+                    <span class="lwptoc_item_number">1.2.5</span>
+                <span class="lwptoc_item_label">6000 سلسلة ورقة الألومنيوم</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#7000-series-aluminmu-sheet" rel="nofollow">
+                    <span class="lwptoc_item_number">1.2.6</span>
+                <span class="lwptoc_item_label">7000 سلسلة ورقة الألمنيوم</span>
+    </a>
+    </li></ul></li></ul></li><li class="lwptoc_item">    <a href="#what-is-aluminum-coil" rel="nofollow">
+                    <span class="lwptoc_item_number">2</span>
+                <span class="lwptoc_item_label">ما هو لفائف الالومنيوم؟</span>
+    </a>
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#commonly-used-aluminum-coil-alloys" rel="nofollow">
+                    <span class="lwptoc_item_number">2.1</span>
+                <span class="lwptoc_item_label">سبائك الألمنيوم شائعة الاستخدام</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#images-of-aluminum-coil" rel="nofollow">
+                    <span class="lwptoc_item_number">2.2</span>
+                <span class="lwptoc_item_label">صور لفائف الالومنيوم</span>
+    </a>
+    </li></ul></li><li class="lwptoc_item">    <a href="#same" rel="nofollow">
+                    <span class="lwptoc_item_number">3</span>
+                <span class="lwptoc_item_label">نفس</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#different" rel="nofollow">
+                    <span class="lwptoc_item_number">4</span>
+                <span class="lwptoc_item_label">مختلف</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#application-of-aluminum-sheet-and-coil" rel="nofollow">
+                    <span class="lwptoc_item_number">5</span>
+                <span class="lwptoc_item_label">تطبيق لفائف وصفائح الألمنيوم</span>
+    </a>
+    </li></ul></div>
+</div></div><!--/noindex--><h2><span id="what-is-aluminum-sheet">ما هي صفائح الألمنيوم؟</span></h2>
+<p>صفائح الألمنيوم عبارة عن سبيكة مصنوعة من خليط من الألومنيوم ومعادن أخرى ، مقذوفة على شكل لوحة.</p>
+<p>يمكن أيضًا تسمية صفائح الألمنيوم السميكة بلوحة الألومنيوم.</p>
+<p>ورقة الألمنيوم هي شكل الألمنيوم الذي يتم استخدامه في أغلب الأحيان. يمكنك العثور عليها في جميع الأسواق الرئيسية لصناعة الألمنيوم. على سبيل المثال ، تعتبر صفائح الألمنيوم مفيدة لتصنيع العبوات والعلب في صناعة التعبئة والتغليف.</p>
+<h3><span id="images-of-aluminum-sheet">صور من صفائح الألمنيوم</span></h3>
+<div id="attachment_83" class="wp-caption alignnone amp-wp-inline-a76ab53db10ef3853910c24963ea59e6"><p id="caption-attachment-83" class="wp-caption-text">6082 T6 ورقة الألومنيوم</p></div>
+<p>كما أنها ذات قيمة لتصنيع مقطورات الجرارات وألواح هياكل السيارات في صناعة النقل. تعتبر الألواح مفيدة أيضًا لأواني الطهي والأجهزة المنزلية ، وكذلك لمنتجات البناء / البناء ، مثل الكراجات ، والمظلات ، والسقوف ، والمزاريب ، والانحياز.</p>
+<h3><span id="commonly-used-aluminum-sheet-alloys">سبائك الألومنيوم شائعة الاستخدام</span></h3>
+<h4><span id="1000-series-aluminmu-sheet">1000 سلسلة ورقة الألومنيوم</span></h4>
+<ul><li>1050 ورقة الألمنيوم</li>
+<li>1060 ورقة الألومنيوم</li>
+<li>1070 ورقة الألومنيوم</li>
+<li>1100 ورقة ألمنيوم</li>
+</ul><h4><span id="2000-series-aluminmu-sheet">2000 ورقة سلسلة aluminmu</span></h4>
+<ul><li>2014 ورقة الألمنيوم</li>
+<li>2A12 ورقة الألومنيوم</li>
+<li>2024 ورقة الألومنيوم</li>
+<li>2017 لوح الألمنيوم</li>
+<li>2A11 ورقة الألومنيوم</li>
+<li>2A14 ورقة الألومنيوم</li>
+</ul><h4><span id="3000-series-aluminmu-sheet">3000 سلسلة ورقة الألومنيوم</span></h4>
+<ul><li>3003 ورقة الألومنيوم</li>
+<li>3004 ورقة الألومنيوم</li>
+<li>3005 ورقة الألمنيوم</li>
+<li>3104 صفائح الألمنيوم</li>
+<li>3105 ورقة الألومنيوم</li>
+<li>ورقة الألومنيوم 3A21</li>
+</ul><h4><span id="5000-series-aluminmu-sheet">5000 سلسلة ورقة الألومنيوم</span></h4>
+<ul><li>5005 صفائح الألمنيوم</li>
+<li>5052 صفائح الألمنيوم</li>
+<li>5083 صفائح الألمنيوم</li>
+<li>5086 صفائح الألمنيوم</li>
+<li>5182 صفائح الألمنيوم</li>
+<li>5252 صفائح الألمنيوم</li>
+<li>5454 صفائح الألمنيوم</li>
+<li>لوح ألومنيوم 5754</li>
+<li>ورقة الألومنيوم 5A02</li>
+<li>ورقة الألومنيوم 5A03</li>
+<li>5A05 ورقة الألومنيوم</li>
+<li>5A06 ورقة الألومنيوم</li>
+</ul><h4><span id="6000-series-aluminmu-sheet">6000 سلسلة ورقة الألومنيوم</span></h4>
+<ul><li>ورقة الألومنيوم 6005</li>
+<li>6060 ورقة الألومنيوم</li>
+<li>6061 ورقة الألومنيوم</li>
+<li>6063 صفائح الألمنيوم</li>
+<li>6082 ورقة الألومنيوم</li>
+<li>6101 صفائح الألمنيوم</li>
+<li>6005A ورقة الألومنيوم</li>
+</ul><h4><span id="7000-series-aluminmu-sheet">7000 سلسلة ورقة الألمنيوم</span></h4>
+<ul><li>7005 ورقة الألومنيوم</li>
+<li>7050 ورقة ألمنيوم</li>
+<li>7075 ورقة الألومنيوم</li>
+<li>7A09 ورقة الألومنيوم</li>
+<li>ورقة الألومنيوم 7A04</li>
+</ul><h2><span id="what-is-aluminum-coil">ما هو لفائف الالومنيوم؟</span></h2>
+<p>لفائف الألمنيوم عنصر مهم في إنتاج مجموعة واسعة من المنتجات الصناعية والتجارية والاستهلاكية. يمكن لمكيفات الهواء والسيارات والطائرات والأثاث والمكونات الهيكلية والعديد من المنتجات الأخرى استخدام لفائف الألمنيوم. &quot;لفائف الألمنيوم&quot; هو المصطلح المستخدم لوصف المنتج الخام لعملية إنتاج صفائح الألمنيوم.</p>
+<h3><span id="commonly-used-aluminum-coil-alloys">سبائك الألمنيوم شائعة الاستخدام</span></h3>
+<ul><li>1050 لفائف الالومنيوم</li>
+<li>لفائف الالومنيوم 1100</li>
+<li>سبائك الألومنيوم 1350</li>
+<li>3003 لفائف الالومنيوم</li>
+<li>لفائف الألمنيوم 3105</li>
+<li>5005 لفائف الالومنيوم</li>
+<li>5052 لفائف الالومنيوم</li>
+<li>5083 لفائف الالومنيوم</li>
+<li>5086 لفائف الالومنيوم</li>
+<li>5154 لفائف الالومنيوم</li>
+<li>لفائف الألمنيوم 5182</li>
+<li>5454 لفائف الألمنيوم</li>
+<li>لفائف الالومنيوم 5754</li>
+<li>6061 لفائف الالومنيوم</li>
+<li>7075 لفائف الألمنيوم</li>
+</ul><h3><span id="images-of-aluminum-coil">صور لفائف الالومنيوم</span></h3>
+<div id="attachment_99" class="wp-caption alignnone amp-wp-inline-a76ab53db10ef3853910c24963ea59e6"><p id="caption-attachment-99" class="wp-caption-text">لفائف الالومنيوم 1100</p></div>
+<p>تعتبر صفائح الألمنيوم الملفوفة أسهل في التخزين والنقل من العديد من الألواح الفردية المكدسة. يتم توفير ملفات الألمنيوم لعمليات التصنيع ومصنعي المعادن وعمليات تشغيل المعادن الأخرى بواسطة موردي الألمنيوم.</p>
+<p>عندما يصل ملف من الألمنيوم إلى منشأة لتصنيع المعادن ، فإنه يمكن أن يخضع لجميع أنواع المعالجة. يمكن ختم الألمنيوم الملفوف ، وحفره ، وقطعه ، ولحامه ، وثنيه ، وتثبيته بمنتجات معدنية أخرى.</p>
+<p>نظرًا لأن الطلب على الألمنيوم الملفوف واسع جدًا ، فإن مجموعة متنوعة متساوية من سماكات الألمنيوم الملفوف ودرجات السبيكة متاحة للمشترين. الألومنيوم 6061 و 7075 و 1100 هي مجرد أمثلة قليلة للعديد من سبائك الألومنيوم المتوفرة في شكل ملفوف. تتميز سبائك الألومنيوم المختلفة بصفات مختلفة من قوة الشد ، والشرط الكهربائي</p>
+<h2><span id="same">نفس</span></h2>
+<p>يُطلق على لفائف الألمنيوم أيضًا ملف صفائح الألمنيوم ، وكلاهما عبارة عن صفائح ألمنيوم أساسًا.</p>
+<h2><span id="different">مختلف</span></h2>
+<p>عند النظر إلى لفائف الألمنيوم وصفائح الألمنيوم ، يكون الاختلاف الوحيد هو السماكة.</p>
+<p>صفائح الألمنيوم هي أي صفائح ألمنيوم أثخن من رقائق الألمنيوم ولكنها أرق من 6 مم. يتم قطع صفائح الألمنيوم وتسويتها من لفائف الألمنيوم ويمكن تقطيعها إلى أحجام مختلفة.</p>
+<h2><span id="application-of-aluminum-sheet-and-coil">تطبيق لفائف وصفائح الألمنيوم</span></h2>
+<p>تستخدم صفائح ولفائف الألمنيوم في نطاق واسع.</p>
+<p>إنها تلعب دورًا مهمًا في حياتنا ، يمكنك العثور عليها بسهولة. على سبيل المثال ، صفائح الألمنيوم ، مقلاة ، خزانات الوقود ، انحياز المقطورة ، الأسقف ، ألواح الطائرات ، ألواح السيارات ، إطارات المقطورات ، التغليف ، صفائح الألمنيوم الشخصية 5 ementos إلخ.</p>
+<p>خلاف ذلك ، من خلال تطبيقات مختلفة ، يمكن خلط معادن ومكونات أخرى مختلفة مع الألومنيوم حسب النسبة ، ثم يتم تصنيع صفائح الألمنيوم بأداء أفضل.</p>
+<p> </p>
+</div><div class="amp-wp-meta amp-wp-tax-category">فئات: <a href="../../blog/index.htm" rel="category tag">مقالات</a></div><div class="amp-wp-meta amp-wp-tax-tag">العلامات: <a href="../../tag/coil/index.htm" rel="tag">لفه</a>, <a href="../../tag/diffe/index.htm" rel="tag">فرق</a>, <a href="../../tag/sheet/index.htm" rel="tag">ورقة</a></div><div class="amp-share-box"><amp-social-share type="facebook" width="60" height="44" data-share-endpoint="http://www.facebook.com/sharer.php?u=https://www.tigersalu.com/ar/difference-in-aluminum-sheet-and-coil/"></amp-social-share><amp-social-share type="twitter" width="60" height="44"></amp-social-share><amp-social-share type="linkedin" width="60" height="44"></amp-social-share></div><div class="amp-comments"><div id="comments" class="section-content comments-area"></div>				<div class="amp-wp-comments-link">
+					<a href="../index.htm#respond">
+						اترك تعليقا					</a>
+				</div>
+			</div><div class="amp-related-posts"><h3>المنشورات ذات الصلة</h3><ul><li class="flex items-center"><a href="../../how-thick-is-20-gauge-aluminum/amp/index.htm" class="amp-related-img-link" title="ما هي سماكة الألومنيوم قياس 20؟"><amp-img src="../../../2021/02/packages-of-aluminum-sheet-80x80.jpg" width="80" height="80" alt="packages of aluminum sheet" srcset="/2021/02/packages-of-aluminum-sheet-80x80.jpg 80w, /2021/02/packages-of-aluminum-sheet-160x160.jpg 160w" sizes="(max-width: 80px) 100vw, 80px" class="amp-related-img"></amp-img></a><div class="amp-related-title"><a href="../../how-thick-is-20-gauge-aluminum/amp/index.htm" title="ما هي سماكة الألومنيوم قياس 20؟">ما هي سماكة الألومنيوم قياس 20؟</a><div class="amp-related-meta amp-wp-meta">2022 1 26</div></div></li><li class="flex items-center"><a href="../../how-thick-is-14-gauge-aluminum/amp/index.htm" class="amp-related-img-link" title="ما هي سماكة قياس 14 من الألومنيوم؟"><amp-img src="../../../2021/02/cutting-edge-without-burrs-of-aluminum-sheet-80x80.jpg" width="80" height="80" alt="cutting edge without burrs of aluminum sheet" srcset="/2021/02/cutting-edge-without-burrs-of-aluminum-sheet-80x80.jpg 80w, /2021/02/cutting-edge-without-burrs-of-aluminum-sheet-160x160.jpg 160w" sizes="(max-width: 80px) 100vw, 80px" class="amp-related-img"></amp-img></a><div class="amp-related-title"><a href="../../how-thick-is-14-gauge-aluminum/amp/index.htm" title="ما هي سماكة قياس 14 من الألومنيوم؟">ما هي سماكة قياس 14 من الألومنيوم؟</a><div class="amp-related-meta amp-wp-meta">2022 1 26</div></div></li><li class="flex items-center"><a href="../../how-thick-is-18-gauge-aluminum/amp/index.htm" class="amp-related-img-link" title="ما هي سماكة الألومنيوم قياس 18؟"><amp-img src="../../../2021/02/aluminum-sheet-with-blue-films-3-80x80.jpg" width="80" height="80" alt="aluminum sheet with blue films" srcset="/2021/02/aluminum-sheet-with-blue-films-3-80x80.jpg 80w, /2021/02/aluminum-sheet-with-blue-films-3-160x160.jpg 160w" sizes="(max-width: 80px) 100vw, 80px" class="amp-related-img"></amp-img></a><div class="amp-related-title"><a href="../../how-thick-is-18-gauge-aluminum/amp/index.htm" title="ما هي سماكة الألومنيوم قياس 18؟">ما هي سماكة الألومنيوم قياس 18؟</a><div class="amp-related-meta amp-wp-meta">2022 1 26</div></div></li></ul></div>
+	</article>
+</div>
+
+<footer class="amp-wp-footer">
+	<div class="clearfix">
+		<div class="amp-footer-content">© 2022 تايجر لصناعة الألمنيوم</div>	</div>
+</footer>
+
+<amp-analytics id="UA-194323042-1" type="googleanalytics"><script type="application/json">{"vars":{"account":"UA-194323042-1"},"triggers":{"trackPageview":{"on":"visible","request":"pageview"}}}</script></amp-analytics><amp-sidebar id="sidebar" layout="nodisplay" side="right"><div class="amp-sidebar-navigation"><div role="button" tabindex="0" on="tap:sidebar.close" class="close-amp-sidebar">X</div><div class="menu-topnav-container"><ul id="menu-topnav" class="menu"><li><a href="../../index.htm">الصفحة الرئيسية</a></li>
+<li><a title="منتج الألومنيوم Mteal" href="../../aluminum-metal/index.htm">منتجات</a>
+<ul class="sub-menu">
+	<li><a href="../../products/aluminum-mill-finish/index.htm">مطحنة الألومنيوم</a></li>
+	<li><a href="../../products/painted-coated-aluminum/index.htm">الألمنيوم المطلي المطلي</a></li>
+	<li><a href="../../products/powder-coating-aluminium/index.htm">مسحوق طلاء الألمنيوم</a></li>
+	<li><a href="../../products/aluminium-cladding/index.htm">الكسوة الألومنيوم</a></li>
+	<li><a href="../../products/perforated-aluminium/index.htm">ألمنيوم مثقب</a></li>
+</ul>
+</li>
+<li class="current-post-ancestor current-menu-parent"><a href="../../blog/index.htm">مقالات</a></li>
+<li><a rel="nofollow" href="../../about-tigers/index.htm">حول النمور</a></li>
+<li><a rel="nofollow" href="../../contact-tigers/index.htm">اتصل بنا</a></li>
+</ul></div></div></amp-sidebar></body>
+</html>
+<!-- Cached for great performance - Debug: cached@1653390823 -->

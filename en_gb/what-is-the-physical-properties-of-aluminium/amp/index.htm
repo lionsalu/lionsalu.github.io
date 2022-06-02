@@ -1,0 +1,728 @@
+﻿<!doctype html>
+<html amp="" lang="en-GB">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<script type='text/javascript' src='../../../v0.js' async=""></script>
+<script type='text/javascript' src='../../../v0/amp-sidebar-0.1.js' async="" custom-element="amp-sidebar"></script>
+<script type='text/javascript' src='../../../v0/amp-social-share-0.1.js' async="" custom-element="amp-social-share"></script>
+<script type='text/javascript' src='../../../v0/amp-analytics-0.1.js' async="" custom-element="amp-analytics"></script>
+	<style amp-boilerplate="">body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate="">body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial, Helvetica, sans-serif:400&subset=">	<style amp-custom="">
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+input, textarea {
+	padding: 5px;
+	box-sizing: border-box;
+}
+.amp-wp-enforced-sizes {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.amp-wp-unknown-size img {
+	object-fit: contain;
+}
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+table th, table td, table th {
+    padding: 5px;
+}
+table.shop_attributes td {
+    font-style: italic;
+}
+table tr:nth-child(even) {
+    background: rgba(0,0,0,.03);
+}
+/* Flex */
+
+.full-flex {
+	flex: 1 0 100%;
+}
+.flex-space-between {
+	justify-content: space-between;
+}
+.flex-align-center {
+	align-items: center;
+}
+.flex-wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/* Template Styles */
+* {
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+html body {
+	margin:0;
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+    font-family:  Impact, Charcoal, sans-serif;
+	color: #444444;
+	font-weight: 400;
+	letter-spacing: 0px;
+}
+body {
+	background: #ffffff;
+	color: #444444;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	letter-spacing: 0px;
+	font-size:16px;
+	line-height: 24px;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 16px;
+	padding: 0;
+}
+
+a {
+	color: #ce534d;
+}
+
+a:hover {
+	color: #ce534d;
+	text-decoration: underline;
+}
+.btn, .button, button {
+    color: #fff;
+    cursor: pointer;
+    padding: .518em 1.287em;
+    text-decoration: none;
+    font-weight: 600;
+	border: 0;
+    text-shadow: none;
+    display: inline-block;
+    outline: 0;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 0;
+    font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 0px;
+	font-size:16px;
+	line-height: 24px;
+    background: #ce534d;
+}
+.btn:hover, .button:hover, .btn:active, .button:active, .btn:focus .button:focus  {
+    color: #fff;
+    text-decoration: none;
+    background: #ce534d;
+    opacity:.8;
+}
+/* Breadcrumbs */
+#amp-bread {
+    font-size: 12px;
+    margin: 5px 0;
+}
+/* Quotes */
+
+blockquote {
+	color: #444444;
+	background: rgba(127,127,127,.1);
+	border-left: 2px solid #ce534d;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #3265c5;
+}
+
+.amp-wp-header > div {
+	color: #ffffff;
+	font-size: 18px;
+	line-height:50px;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 0 16px;
+	position: relative;
+	min-height: 50px;
+	box-sizing: border-box;
+}
+
+.amp-wp-header a {
+	text-decoration: none;
+	display:block;
+	float:left;
+	font-family:  'MS Serif', 'New York', sans-serif;
+	color: #ffffff;
+	font-weight: 700;
+	letter-spacing: 0px;
+}
+
+/* Site Logo */
+
+.amp-wp-header .amp-wp-site-icon {
+	margin: 9px 8px 9px 0;
+    float: left
+}
+
+/* Menu */
+button.amp-menu-sidebar {
+    display: block;
+    float: right;
+    height: 50px;
+    background: rgba(0,0,0,0.0);
+   	font-family:  Source Sans Pro;
+	color: #444444;
+	font-weight: ;
+	letter-spacing: 0px;
+    border: none;
+    padding:0;
+    font-size: 15px;
+    cursor: pointer;
+}
+.amp-icon-button {
+    position: relative;
+    width: 28px;
+}
+.amp-icon-button:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 28px;
+    height: 4px;
+    border-top: 12px double #ffffff;
+    border-bottom: 4px solid #ffffff;
+}
+amp-sidebar {
+	background-color: #3265c5;
+	width:250px;
+}
+.close-amp-sidebar {
+    font-size: 12px;
+    font-family: sans-serif;
+    background: rgba(0,0,0,.25);
+    letter-spacing: 1px;
+    padding: 12px;
+    line-height: 8px;
+    font-weight: bold;
+    margin: 12px 12px 2px;
+    cursor: pointer;
+    display: inline-block;
+    color: #fff;
+}
+.amp-sidebar-navigation ul.menu {
+    margin: 0 12px;
+}
+.amp-sidebar-navigation ul.menu li {
+    list-style: none;
+}
+.amp-sidebar-navigation ul.menu li a {
+    text-decoration: none;
+    display: block;
+    padding: 8px 10px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    font-size: 15px;
+    line-height: 20px;
+    font-family:  Source Serif Pro;
+	color: #ffffff;
+	font-weight: 400;
+	letter-spacing: 0px;
+}
+.amp-sidebar-navigation ul.menu ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+/* main */
+
+.main {
+	color: #444444;
+	font-weight: 400;
+	margin: 16px auto;
+	max-width: 600px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	padding: 0 16px;
+	box-sizing: border-box;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 16px 0 10px;
+}
+
+.amp-wp-title {
+	display: block;
+	width: 100%;
+	margin:0;
+}
+
+/* Article Meta */
+.amp-wp-article-meta {
+	margin: 0px 0 10px 0;
+}
+.amp-wp-meta {
+	color: #777777;
+	display: inline-block;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #ce534d;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+	display:block;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+.amp-wp-page-content {
+	padding: 6px 0 0;
+}
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+
+/* comments */
+
+.amp-comments {
+    margin-top: 16px;
+}
+.comment-text {
+    position: relative;
+    padding-left: 76px;
+    min-height:60px;
+}
+.comment-text p {
+	margin-bottom:0;
+}
+.comment-list .comment-metadata a {
+    font-size: 12px;
+    color: #777;
+}
+.comment-list .comment-author amp-img {
+    margin-right:10px;
+}
+ul.comment-list li {
+    list-style-type: none;
+}
+.comment {
+    margin-top: 16px;
+    border: 1px solid #ddd;
+    padding: 1em;
+}
+.comment-list amp-img {
+    float: left;
+}
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #eee;
+	color: #777777;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #eee;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #eee url( ../../../wp-content/plugins/kadence-amp/assets/images/placeholder-icon.png ) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	margin: 16px 0;
+	display: block;
+}
+
+.amp-wp-comments-link, .mod_show_original {
+	color: #777777;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 1.5em 0 1.5em;
+}
+.amp-wp-comments-link a, .mod_show_original a{
+	border-style: solid;
+	border-color: #eee;
+	border-width: 1px 1px 2px;
+	background-color: transparent;
+	color: #ce534d;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+/* Related Posts */
+.amp-related-posts ul {
+	list-style:none;
+}
+.amp-related-posts ul li {
+	margin-bottom:16px;
+}
+a.amp-related-img-link {
+    margin-right: 10px;
+    display: block;
+}
+.amp-related-posts .amp-related-meta {
+	display:block;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	background: #444444;
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.amp-wp-footer > div {
+	max-width: 600px;
+    margin: 0 auto;
+	padding: 16px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+	color: #ffffff;
+}
+.show_original {
+    display: block;
+    text-align: center;
+}
+.show_original a {
+    display: inline-block;
+    margin-top: 10px;
+    padding:4px 8px;
+    border: 1px solid #ffffff;
+}
+.back-to-top {
+	top: 16px;
+	position: absolute;
+	right: 16px;
+}
+@media (max-width: 544px) {
+	.wp-caption.alignleft, .amp-wp-article-content amp-img.alignleft {
+		float:none;
+		margin-right:auto;
+		margin-left:auto;
+	}
+}
+		/* Inline stylesheets */
+.amp-wp-inline-0f1bf07c72fdf1784fff2e164d9dca98 { display:none; }.amp-wp-inline-869b76696f15a7298bbe56bef936cfb5 { max-width:570px; }/* Custom styles */
+@font-face{font-family:"tigers";font-display:swap;src:url("../../../wp-content/themes/tgs/css/fonts/tigers.eot");src:url("../../../wp-content/themes/tgs/css/fonts/tigers-1.eot") format("embedded-opentype"),url("../../../wp-content/themes/tgs/css/fonts/tigers.woff2") format("woff2"),url("../../../wp-content/themes/tgs/css/fonts/tigers.woff") format("woff"),url("../../../wp-content/themes/tgs/css/fonts/tigers.ttf") format("truetype"),url("../../../wp-content/themes/tgs/css/fonts/tigers.svg") format("svg")}
+h1,h2,h3,h4,h5,h6{font-family:'Tigers',sans-serif,'Arial';color:#444444;line-height:1.2}
+h1{font-size:24px;font-weight:700; color: #000;}
+h2{font-size:22px;padding:10px 0 10px 8px;margin:25px 0 20px;border-left:2px solid #487bd9;background-color:#f5f8fb}
+h3{font-size:20px;padding:15px 0 15px;margin-bottom:0}
+h4{font-size:16px;padding:12px 0 12px;margin-bottom:0}
+h5{font-size:17px;padding:5px 0 0px;margin-bottom:0}
+h6{font-size:14px;margin-bottom:0}
+.main{padding:0 10px;margin-top: 0;}
+.amp-wp-page-content li{list-style-position:inside;padding-bottom:10px}
+.amp-wp-page-content strong{padding:8px 0}
+.amp-wp-page-content a{max-width:100%;display:inline-block;text-decoration:none}
+.amp-wp-page-content a:before{font-family:'tigers';content:"\e7ff";margin-right:0px;font-size:14px;color:#feb822}
+.amp-breadcrumb-container{font-size:15px;background-color:#f5f7fa;border-bottom:1px solid #eee;padding:10px 0px;-webkit-box-shadow:0 -1px 2px rgba(0,0,0,.06) inset;box-shadow:0 -1px 2px rgba(0,0,0,.06) inset}
+.amp-breadcrumb-container a{ text-decoration: none;}
+.amp-wp-article-header{padding-bottom: 10px;   border-bottom: 1px dotted #3265c5;margin-bottom: 0px;}	</style>
+</head>
+
+<body class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="../../index.htm">TIGERS ALUMINUM</a><div class="amp-accordion-header"><button class="amp-menu-sidebar amp-icon-button" on="tap:sidebar.toggle"></button></div>	</div>
+</header>
+
+<div class="main">
+	<article class="amp-wp-article">
+		<div id="amp-bread"><div class="amp-breadcrumb-container"><span><a href="../../index.htm" itemprop="url" class="kad-bc-home"><span>Home</span></a></span> <span class="bc-delimiter">&raquo;</span> <span><a href="../../blog/index.htm" itemprop="url"><span>Blog</span></a></span> <span class="bc-delimiter">&raquo;</span> <span class="kad-breadcurrent">What is the physical properties of aluminium?</span></div></div><header class="amp-wp-article-header"><h1 class="amp-wp-title">What is the physical properties of aluminium?</h1></header><div class="amp-wp-article-meta"><div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2022-03-17T17:41:56+00:00">
+		2022年3月17日	</time>
+</div>
+	<div class="amp-wp-meta amp-wp-byline">
+		<span class="kt-amp-by-author">by</span> <span class="amp-wp-author author vcard">admin</span>
+	</div>
+</div><div class="amp-wp-page-content"><!--noindex--><div class="lwptoc toc-list lwptoc-autoWidth lwptoc-baseItems lwptoc-light lwptoc-notInherit" data-smooth-scroll="1" data-smooth-scroll-offset="24"><div class="lwptoc_i">    <div class="lwptoc_header">
+        <b class="lwptoc_title">Table Of Contents</b>                    <span class="lwptoc_toggle">
+                <a href="#" class="lwptoc_toggle_label" data-label="HIDE">SHOW</a>
+            </span>
+            </div>
+<div class="lwptoc_items amp-wp-inline-0f1bf07c72fdf1784fff2e164d9dca98">
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#what-is-aluminum" rel="nofollow">
+                    <span class="lwptoc_item_number">1</span>
+                <span class="lwptoc_item_label">What is aluminum?</span>
+    </a>
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#the-history-of-aluminum" rel="nofollow">
+                    <span class="lwptoc_item_number">1.1</span>
+                <span class="lwptoc_item_label">The history of aluminum</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#world-production-of-aluminium-since-1900" rel="nofollow">
+                    <span class="lwptoc_item_number">1.2</span>
+                <span class="lwptoc_item_label">World production of aluminium since 1900</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#pure-aluminum" rel="nofollow">
+                    <span class="lwptoc_item_number">1.3</span>
+                <span class="lwptoc_item_label">Pure Aluminum</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#common-different-alloy-aluminum-plates" rel="nofollow">
+                    <span class="lwptoc_item_number">1.4</span>
+                <span class="lwptoc_item_label">Common different alloy aluminum plates:</span>
+    </a>
+    </li></ul></li><li class="lwptoc_item">    <a href="#chemical-properties-of-aluminum" rel="nofollow">
+                    <span class="lwptoc_item_number">2</span>
+                <span class="lwptoc_item_label">Chemical Properties of Aluminum</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#aluminum-alloy" rel="nofollow">
+                    <span class="lwptoc_item_number">3</span>
+                <span class="lwptoc_item_label">Aluminum Alloy</span>
+    </a>
+    </li></ul></div>
+</div></div><!--/noindex--><h2><span id="what-is-aluminum">What is aluminum?</span></h2>
+<p>Aluminium (or aluminum in American English and Canadian English) is a chemical element with the symbol Al and atomic number 13. Aluminium has a density lower than those of other common metals, at approximately one third that of steel.</p>
+<p>It has a great affinity towards oxygen, and forms a protective layer of oxide on the surface when exposed to air.Aluminium visually resembles silver, both in its color and in its great ability to reflect light. It is soft, non-magnetic and ductile.</p>
+<div id="attachment_75" class="wp-caption alignnone amp-wp-inline-869b76696f15a7298bbe56bef936cfb5"><a href="../../product/1050-aluminum-sheet/index.htm"></a><p id="caption-attachment-75" class="wp-caption-text">3mm aa1050 h14 aluminum sheet</p></div>
+<p>Aluminum is a mild and lightweight metal with mild chemical properties. It has a dull silver appearance because it rapidly forms a thin layer of oxide when exposed to air. Aluminum is non-toxic (like steel), non-magnetic and non-sparking.</p>
+<h3><span id="the-history-of-aluminum">The history of aluminum</span></h3>
+<p>The discovery of aluminium was announced in 1825 by Danish physicist Hans Christian Ørsted.</p>
+<p>The first industrial production of aluminium was initiated by French chemist Henri Étienne Sainte-Claire Deville in 1856.</p>
+<p>Aluminium became much more available to the public with the Hall–Héroult process developed independently by French engineer Paul Héroult and American engineer Charles Martin Hall in 1886, and the mass production of aluminium led to its extensive use in industry and everyday life.</p>
+<p>In World Wars I and II, aluminium was a crucial strategic resource for aviation. In 1954, aluminium became the most produced non-ferrous metal, surpassing copper. In the 21st century, most aluminium was consumed in transportation, engineering, construction, and packaging in the United States, Western Europe, China, and Japan.</p>
+<h3><span id="world-production-of-aluminium-since-1900">World production of aluminium since 1900</span></h3>
+<p>Throughout the 20th century, the production of aluminium rose rapidly: while the world production of aluminium in 1900 was 6,800 metric tons, the annual production first exceeded 100,000 metric tons in 1916; 1,000,000 tons in 1941; 10,000,000 tons in 1971.[93] In the 1970s, the increased demand for aluminium made it an exchange commodity; it entered the London Metal Exchange, the oldest industrial metal exchange in the world, in 1978.[86] The output continued to grow: the annual production of aluminium exceeded 50,000,000 metric tons in 2013.</p>
+<h3><span id="pure-aluminum">Pure Aluminum</span></h3>
+<p>Aluminum is used in many industries to make tens of millions of different products and plays a very important role in the world economy. With the use of numerous combinations of its key properties, including electrical power, light weight, corrosion resistance, recoverability and formability, aluminum is used in a growing number of applications. This commodity class ranges from structural substances to thin packaging foils.</p>
+<h3><span id="common-different-alloy-aluminum-plates">Common different alloy aluminum plates:</span></h3>
+<p><a href="../../product/1050-aluminum-sheet/index.htm">1050 Aluminum Sheet</a><br><a href="../../product/1060-aluminum-sheet/index.htm">1060 Aluminum Sheet</a><br><a href="../../product/1100-aluminum-sheet/index.htm">1100 Aluminum Sheet</a><br><a href="../../product/3003-aluminum-sheet/index.htm">3003 Aluminum Sheet</a><br><a href="../../product/3004-aluminum-sheet/index.htm">3004 Aluminum Sheet</a><br><a href="../../product/3105-aluminum-sheet/index.htm">3105 Aluminum Sheet</a><br><a href="../../product/5005-aluminum-sheet/index.htm">5005 Aluminium Sheet</a><br><a href="../../product/5052-aluminum-sheet/index.htm">5052 Aluminium Sheet Plate</a><br><a href="../../product/5083-aluminum-sheet/index.htm">5083 Aluminium Sheet Plate</a><br><a href="../../product/5754-aluminum-sheet-plate/index.htm">5754 aluminium sheet plate</a><br><a href="../../product/6061-aluminum-sheet-plate/index.htm">6061 aluminium sheet</a><br><a href="../../product/6082-aluminum-suppliers-t6-temper/index.htm">6082 aluminum sheet</a><br><a href="../../product/5-bar-aluminum-checker-plate/index.htm">5 bar aluminium checker plate</a><br><a href="../../product/aluminium-diamond-plate/index.htm">aluminium diamond plate</a><br><a href="../../product/5x10-aluminum-sheet-plate/index.htm">5X10 aluminium sheet and plate</a><br><a href="../../product/4x8-aluminum-sheet-plate/index.htm">4X8 aluminium sheet plate</a><br>
+Physical Properties of Aluminum</p>
+<p>What are the physical properties of aluminum? The physical home is usually a feature that can be located by our senses, including color, density, hardness, corrosion resistance, thermal conductivity, electrical conductivity, etc. The physical properties of aluminum are as follows.</p>
+<table><tbody><tr class="firstRow"><td><strong>Properties</strong></td>
+<td><strong>Description</strong></td>
+</tr><tr><td>Colour</td>
+<td>Aluminum is an odorless silver white metal.</td>
+</tr><tr><td>Density</td>
+<td>The density of aluminum is about one-third of steel or copper, making it one of the lightest commercial metals.</td>
+</tr><tr><td>Strength</td>
+<td>Pure aluminum does not have very high tensile strength. However, alloying elements, including manganese, silicon, copper and magnesium, can increase the strength of aluminum and produce alloys with specific applications.<br>
+Aluminum is well suited for cold environments. It has the advantage over metals that its tensile strength increases as the temperature decreases, while maintaining its durability. Again, the metal is brittle at low temperatures.</td>
+</tr><tr><td>Corrosion resistance</td>
+<td>When exposed to air, aluminum forms aluminum oxide on its surface with little delay. This deposit has excellent corrosion resistance. It has broad resistance to the largest acids, but is poorly resistant to alkalis.</td>
+</tr><tr><td>Thermal Conductivity</td>
+<td>The thermal conductivity of aluminum is approximately three times that of steel. This leads to aluminum being the key fabric for cooling and heating packages (along with heat exchangers). Combined with its non-toxic nature, this choice has led to aluminum being widely used in cookware and kitchenware.</td>
+</tr><tr><td>Conductivity</td>
+<td>Aluminum has sufficiently high conductivity and can be used as electrical conductors.</td>
+</tr><tr><td>Reflectivity</td>
+<td>From ultraviolet to infrared, aluminum is an extraordinary reflector of radiant energy. The same properties of reflectivity make aluminum an insulating fabric that blocks sunlight in the summer and even stops heat loss when it freezes.</td>
+</tr></tbody></table><p>Aluminium is an excellent thermal and electrical conductor, having around 60% the conductivity of copper, both thermal and electrical, while having only 30% of copper’s density.</p>
+<h2><span id="chemical-properties-of-aluminum"><strong>Chemical </strong><strong>P</strong><strong>roperties of </strong><strong>A</strong><strong>luminum</strong></span></h2>
+<p>A chemical property is the reaction of a substance with other substances, i.e. a substance reacts with different substances or changes from one substance to another. In standard cases, chemical substances are most easily identified at some point in a chemical reaction. The reaction of a substance may be a change due to combustion, rusting, heating, explosion, color change, etc. The following are the chemical properties of aluminum.</p>
+<table><tbody><tr><td><strong>Properties</strong></td>
+<td><strong>Description</strong></td>
+</tr><tr><td>Oxidation</td>
+<td>In general, aluminum metals do not respond to air because their surface covers a thin layer of oxides, which help protect the metal from air erosion. However, if the oxide layer is damaged and the aluminum metal is exposed, which will react again to form an amphoteric oxide.</td>
+</tr><tr><td>Reaction with Acid</td>
+<td>Aluminum is easily reacted with the inorganic acid to form a solution containing hydrated aluminum ions while the hydrogen is released.<br>
+In the case of reacting with nitric acid, it is passively reacted by forming a protective oxide layer on the surface of alumina</td>
+</tr><tr><td>Reaction with Alkali</td>
+<td>Aluminum is reactive to the base to form an aluminate while releasing hydrogen.</td>
+</tr><tr><td>Reaction with Water</td>
+<td>Reactive with hot water.</td>
+</tr><tr><td>Compound</td>
+<td>Aluminum, oxygen and other elements of mixtures produce aluminum mines, aluminum mine is the main source of aluminum.</td>
+</tr><tr><td>Alloy</td>
+<td>When combined with the elements such as copper, silicon or magnesium, it will form alloys with high strength.</td>
+</tr></tbody></table><h2><span id="aluminum-alloy"><strong>A</strong><strong>luminum </strong><strong>A</strong><strong>lloy</strong></span></h2>
+<p>Because of its physical and chemical properties, aluminum can be mixed with other metals to make aluminum alloys that are used in several fields. Aluminum alloys have different properties from those of a single metal, and aluminum alloys are classified according to the other elements they contain. The following are a range of aluminum alloys and their main uses:</p>
+<table><tbody><tr><td><strong>Series</strong></td>
+<td><strong>Alloy Element</strong></td>
+<td><strong>Application</strong></td>
+</tr><tr><td>1xxx</td>
+<td>Almost pure aluminum</td>
+<td>Decoration, chemical equipment, heat reflector</td>
+</tr><tr><td>2xxx</td>
+<td>Copper</td>
+<td>Truck panel, airplane parts</td>
+</tr><tr><td>3xxx</td>
+<td>Manganese</td>
+<td>Cookware, highway sign, refrigerator</td>
+</tr><tr><td>4xxx</td>
+<td>Silicon</td>
+<td>Ship, bridge</td>
+</tr><tr><td>5xxx</td>
+<td>Magnesium</td>
+<td>Aircraft fuel tank</td>
+</tr><tr><td>6xxx</td>
+<td>Magnesium + silicon</td>
+<td>Low-pressure weapon, aircraft connector</td>
+</tr><tr><td>7xxx</td>
+<td>Zinc</td>
+<td>Aircraft structure</td>
+</tr><tr><td>8xxx</td>
+<td>Other elements are major alloy elements</td>
+<td>Aluminum foil, radiator</td>
+</tr></tbody></table><p>Aluminum does not lose its properties after severe deformation. This allows aluminum to be made into different forms of aluminum products such as aluminum tubes, plates, discs and foils by mechanical processes such as rolling, extrusion, drawing and machining. Alloying, cold working and heat treatment can be used to customize the properties of aluminum.</p>
+<p> </p>
+</div><div class="amp-wp-meta amp-wp-tax-category">Categories: <a href="../../blog/index.htm" rel="category tag">Blog</a></div><div class="amp-wp-meta amp-wp-tax-tag">Tags: <a href="../../tag/aluminium/index.htm" rel="tag">aluminium</a>, <a href="../../tag/physical/index.htm" rel="tag">physical</a>, <a href="../../tag/properties/index.htm" rel="tag">properties</a></div><div class="amp-share-box"><amp-social-share type="facebook" width="60" height="44" data-share-endpoint="http://www.facebook.com/sharer.php?u=https://www.tigersalu.com/en_gb/what-is-the-physical-properties-of-aluminium/"></amp-social-share><amp-social-share type="twitter" width="60" height="44"></amp-social-share><amp-social-share type="linkedin" width="60" height="44"></amp-social-share></div><div class="amp-comments"><div id="comments" class="section-content comments-area"></div>				<div class="amp-wp-comments-link">
+					<a href="../index.htm#respond">
+						Leave a Comment					</a>
+				</div>
+			</div><div class="amp-related-posts"><h3>Related Posts</h3><ul><li class="flex items-center"><div class="amp-related-title"><a href="../../difference-in-aluminum-sheet-and-coil/amp/index.htm" title="What is the difference in aluminum sheet and aluminum coil?">What is the difference in aluminum sheet and aluminum coil?</a><div class="amp-related-meta amp-wp-meta">2021年11月25日</div></div></li><li class="flex items-center"><a href="../../what-is-the-thickness-of-16-gauge-aluminum/amp/index.htm" class="amp-related-img-link" title="What is the thickness of 16 gauge aluminium?"><amp-img src="../../../2021/02/5mm-5052-aluminum-plate-2-80x80.jpg" width="80" height="80" alt="5mm 5052 aluminum plate" srcset="/2021/02/5mm-5052-aluminum-plate-2-80x80.jpg 80w, /2021/02/5mm-5052-aluminum-plate-2-160x160.jpg 160w" sizes="(max-width: 80px) 100vw, 80px" class="amp-related-img"></amp-img></a><div class="amp-related-title"><a href="../../what-is-the-thickness-of-16-gauge-aluminum/amp/index.htm" title="What is the thickness of 16 gauge aluminium?">What is the thickness of 16 gauge aluminium?</a><div class="amp-related-meta amp-wp-meta">2022年1月26日</div></div></li><li class="flex items-center"><a href="../../what-is-the-thickness-of-11-gauge-aluminum/amp/index.htm" class="amp-related-img-link" title="What is the thickness of 11 gauge aluminium?"><amp-img src="../../../2021/02/aluminum-sheet-interleaved-with-paper-5-80x80.jpg" width="80" height="80" alt="aluminum sheet interleaved with paper" srcset="/2021/02/aluminum-sheet-interleaved-with-paper-5-80x80.jpg 80w, /2021/02/aluminum-sheet-interleaved-with-paper-5-160x160.jpg 160w" sizes="(max-width: 80px) 100vw, 80px" class="amp-related-img"></amp-img></a><div class="amp-related-title"><a href="../../what-is-the-thickness-of-11-gauge-aluminum/amp/index.htm" title="What is the thickness of 11 gauge aluminium?">What is the thickness of 11 gauge aluminium?</a><div class="amp-related-meta amp-wp-meta">2022年1月12日</div></div></li></ul></div>
+	</article>
+</div>
+
+<footer class="amp-wp-footer">
+	<div class="clearfix">
+		<div class="amp-footer-content">&copy; 2022 Tigers Industry Aluminum</div>	</div>
+</footer>
+
+<amp-analytics id="UA-194323042-1" type="googleanalytics"><script type="application/json">{"vars":{"account":"UA-194323042-1"},"triggers":{"trackPageview":{"on":"visible","request":"pageview"}}}</script></amp-analytics><amp-sidebar id="sidebar" layout="nodisplay" side="right"><div class="amp-sidebar-navigation"><div role="button" tabindex="0" on="tap:sidebar.close" class="close-amp-sidebar">X</div><div class="menu-topnav-container"><ul id="menu-topnav" class="menu"><li><a href="../../index.htm">HOME</a></li>
+<li><a title="Aluminium Mteal Product" href="../../aluminum-metal/index.htm">Aluminium Mteal Product</a>
+<ul class="sub-menu">
+	<li><a href="../../products/aluminium-mill-finish/index.htm">aluminium mill finish</a></li>
+	<li><a href="../../products/painted-coated-aluminium/index.htm">Painted coated aluminium</a></li>
+	<li><a href="../../products/powder-coating-aluminium/index.htm">Powder coating aluminium</a></li>
+	<li><a href="../../products/aluminium-cladding/index.htm">aluminium cladding</a></li>
+	<li><a href="../../products/perforated-aluminium/index.htm">Perforated aluminium</a></li>
+</ul>
+</li>
+<li class="current-post-ancestor current-menu-parent"><a href="../../blog/index.htm">Blog</a></li>
+<li><a rel="nofollow" href="../../about-tigers/index.htm">About Tigers</a></li>
+<li><a rel="nofollow" href="../../contact-tigers/index.htm">Contact US</a></li>
+</ul></div></div></amp-sidebar></body>
+</html>
+<!-- Cached for great performance - Debug: cached@1653388102 -->

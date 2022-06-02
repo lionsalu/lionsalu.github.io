@@ -1,0 +1,1316 @@
+﻿<!DOCTYPE html>
+<html dir="rtl" lang="ar" prefix="og: https://ogp.me/ns#">
+<head><meta http-equiv="content-type" content="text/html; charset=utf-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",(e=>{this.persisted=e.persisted})),window.addEventListener("DOMContentLoaded",(()=>{this._preconnect3rdParties()})),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){document.hidden?e._triggerListener():(this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",e.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",e.touchStartHandler),document.addEventListener("visibilitychange",e.userEventHandler))}_removeUserInteractionListener(){this.triggerEvents.forEach((e=>window.removeEventListener(e,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(e){"HTML"!==e.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),e.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"onclick","rocket-onclick"))}_onTouchMove(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick")}_onTouchEnd(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(e){e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick"),this.interceptedClicks.push(e),e.preventDefault(),e.stopPropagation(),e.stopImmediatePropagation()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((e=>{e.target.dispatchEvent(new MouseEvent("click",{view:e.view,bubbles:!0,cancelable:!0}))}))}_renameDOMAttribute(e,t,n){e.hasAttribute&&e.hasAttribute(t)&&(event.target.setAttribute(n,event.target.getAttribute(t)),event.target.removeAttribute(t))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let e=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{if(t.hasAttribute("src")){const n=new URL(t.src).origin;n!==location.origin&&e.push({src:n,crossOrigin:t.crossOrigin||"module"===t.getAttribute("data-rocket-type")})}})),e=[...new Map(e.map((e=>[JSON.stringify(e),e]))).values()],this._batchInjectResourceHints(e,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(e){}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._replayClicks()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._littleBreath(),new Promise((t=>{const n=document.createElement("script");[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type"),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t());try{e.parentNode.replaceChild(n,e)}catch(e){t()}}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(e,t){var n=document.createDocumentFragment();e.forEach((e=>{if(e.src){const i=document.createElement("link");i.href=e.src,i.rel=t,"preconnect"!==t&&(i.as="script"),e.getAttribute&&"module"===e.getAttribute("data-rocket-type")&&(i.crossOrigin=!0),e.crossOrigin&&(i.crossOrigin=e.crossOrigin),n.appendChild(i)}})),document.head.appendChild(n)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(i){e["rocket"+t]=n=i}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),await this._littleBreath();const e=new Event("rocket-pageshow");e.persisted=this.persisted,window.dispatchEvent(e),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,i=document.createRange(),r=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const s=document.createDocumentFragment();i.setStart(s,0),s.appendChild(i.createContextualFragment(t)),r.insertBefore(s,o)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise((e=>setTimeout(e))):new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts;e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
+<title>أرشيفات Diffe - Tigers Aluminium</title>
+
+<link rel="dns-prefetch" href="/">
+<link rel="dns-prefetch" href="https://www.googletagmanager.com/">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="النمور الألومنيوم 上 关于 2diffe 的 所有 日志 聚合">
+<style>*,*::before,*::after{box-sizing:inherit;box-sizing:border-box}html{box-sizing:border-box;-ms-overflow-style:scrollbar;font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}article,aside,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}img{aspect-ratio: attr(width) / attr(height);}hr{box-sizing:content-box;height:0;overflow:visible}h1,h2,h3,h4,h5,h6{margin-top:0;margin-bottom:0.5rem}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{margin-bottom:0.5rem;font-weight:500;line-height:1.2}h1,.h1{font-size:2.5rem}h2,.h2{font-size:2rem}h3,.h3{font-size:1.75rem}h4,.h4{font-size:1.5rem}h5,.h5{font-size:1.25rem}h6,.h6{font-size:1rem}p{margin-top:0;margin-bottom:1rem}address{margin-bottom:1rem;font-style:normal;line-height:inherit}ol,ul,dl{margin-top:0;margin-bottom:1rem}ol ol,ul ul,ol ul,ul ol{margin-bottom:0}dt{font-weight:700}dd{margin-bottom:.5rem;margin-left:0}blockquote{margin:0 0 1rem}b,strong{font-weight:bolder}small{font-size:80%}sub,sup{position:relative;font-size:75%;line-height:0;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}a{color:#0472e7;text-decoration:none;background-color:transparent}a:hover{color:#0056b3;text-decoration:underline}a:not([href]){color:inherit;text-decoration:none}a:not([href]):hover{color:inherit;text-decoration:none}pre{margin-top:0;margin-bottom:1rem;overflow:auto;-ms-overflow-style:scrollbar}figure{margin:0 0 1rem}img{vertical-align:middle;border-style:none}svg{overflow:hidden;vertical-align:middle}table{border-collapse:collapse}caption{padding-top:0.75rem;padding-bottom:0.75rem;color:#6c757d;text-align:left;caption-side:bottom}th{text-align:inherit}label{display:inline-block;margin-bottom:0.5rem}button{border-radius:0}button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color}input,button,select,optgroup,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,input{overflow:visible}button,select{text-transform:none}[role="button"]{cursor:pointer}select{word-wrap:normal}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button:not(:disabled),[type="button"]:not(:disabled),[type="reset"]:not(:disabled),[type="submit"]:not(:disabled){cursor:pointer}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{padding:0;border-style:none}input[type="radio"],input[type="checkbox"]{box-sizing:border-box;padding:0}textarea{overflow:auto;resize:vertical}fieldset{min-width:0;padding:0;margin:0;border:0}legend{display:block;width:100%;max-width:100%;padding:0;margin-bottom:.5rem;font-size:1.5rem;line-height:inherit;color:inherit;white-space:normal}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{outline-offset:-2px;-webkit-appearance:none}[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}output{display:inline-block}summary{display:list-item;cursor:pointer}template{display:none}[hidden]{display:none !important}
+.dropup,.dropright,.dropdown,.dropleft{position:relative}.dropdown-toggle{white-space:nowrap}.dropdown-toggle::after{display:inline-block;margin-left:0.255em;vertical-align:0.255em;content:"";border-top:0.3em solid;border-right:0.3em solid transparent;border-bottom:0;border-left:0.3em solid transparent}.dropdown-toggle:empty::after{margin-left:0}.dropdown-menu{position:absolute;top:100%;left:0;z-index:1000;display:none;float:left;min-width:10rem;padding:0.5rem 0;margin:0.125rem 0 0;font-size:1rem;color:#212529;text-align:left;list-style:none;background-color:#fff;background-clip:padding-box;border:1px solid rgba(0,0,0,0.15);border-radius:0.25rem}.btn:hover{color:#212529;text-decoration:none}.btn.focus,.btn:focus{outline:0;box-shadow:0 0 0 .2rem rgba(0,123,255,.25)}.btn.disabled,.btn:disabled{opacity:.65}.btn:not(:disabled):not(.disabled){cursor:pointer}a.btn.disabled,fieldset:disabled a.btn{pointer-events:none}.btn-primary{color:#fff;background-color:#007bff;border-color:#007bff}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-danger:hover{color:#fff;background-color:#c82333;border-color:#bd2130}.btn-light{color:#212529;background-color:#f8f9fa;border-color:#f8f9fa}.btn-light:hover{color:#212529;background-color:#e2e6ea;border-color:#dae0e5}.btn-light.focus,.btn-light:focus{color:#212529;background-color:#e2e6ea;border-color:#dae0e5;box-shadow:0 0 0 .2rem rgba(216,217,219,.5)}.btn-group-lg>.btn,.btn-lg{padding:.5rem 1rem;font-size:1.25rem;line-height:1.5;border-radius:.3rem}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}.btn-block{display:block;width:100%}.dropdown,.dropleft,.dropright,.dropup{position:relative}.input-group{position:relative;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-align:stretch;align-items:stretch;width:100%}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1140px}}.container-fluid,.container-sm,.container-md,.container-lg,.container-xl{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container,.container-sm{max-width:540px}}@media (min-width:768px){.container,.container-sm,.container-md{max-width:720px}}@media (min-width:992px){.container,.container-sm,.container-md,.container-lg{max-width:960px}}@media (min-width:1200px){.container,.container-sm,.container-md,.container-lg,.container-xl{max-width:1140px}}.row{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.no-gutters{margin-right:0;margin-left:0}.no-gutters > .col,.no-gutters > [class*="col-"]{padding-right:0;padding-left:0}.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12,.col,.col-auto,.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm,.col-sm-auto,.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12,.col-md,.col-md-auto,.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg,.col-lg-auto,.col-xl-1,.col-xl-2,.col-xl-3,.col-xl-4,.col-xl-5,.col-xl-6,.col-xl-7,.col-xl-8,.col-xl-9,.col-xl-10,.col-xl-11,.col-xl-12,.col-xl,.col-xl-auto{position:relative;width:100%;padding-right:15px;padding-left:15px}.col{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;min-width:0;max-width:100%}.col-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}.col-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}.col-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.col-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}.order-0{-ms-flex-order:0;order:0}.order-1{-ms-flex-order:1;order:1}.order-2{-ms-flex-order:2;order:2}.order-3{-ms-flex-order:3;order:3}.order-4{-ms-flex-order:4;order:4}@media (min-width:576px){.col-sm{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;min-width:0;max-width:100%}.col-sm-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-sm-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-sm-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}.col-sm-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-sm-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}.col-sm-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.col-sm-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col-sm-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}.order-sm-0{-ms-flex-order:0;order:0}.order-sm-1{-ms-flex-order:1;order:1}.order-sm-2{-ms-flex-order:2;order:2}.order-sm-3{-ms-flex-order:3;order:3}.order-sm-4{-ms-flex-order:4;order:4}}@media (min-width:768px){.col-md{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;min-width:0;max-width:100%}.col-md-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-md-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-md-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}.col-md-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-md-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}.col-md-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.col-md-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col-md-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}.order-md-0{-ms-flex-order:0;order:0}.order-md-1{-ms-flex-order:1;order:1}.order-md-2{-ms-flex-order:2;order:2}.order-md-3{-ms-flex-order:3;order:3}.order-md-4{-ms-flex-order:4;order:4}}@media (min-width:992px){.col-lg{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;min-width:0;max-width:100%}.col-lg-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-lg-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-lg-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}.col-lg-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-lg-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}.col-lg-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.col-lg-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col-lg-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}.col-lg-11 {-ms-flex: 0 0 91.666667%;flex: 0 0 91.666667%;max-width: 91.666667%;}.col-lg-12{-ms-flex: 0 0 100%;flex: 0 0 100%;max-width: 100%;}.order-lg-0{-ms-flex-order:0;order:0}.order-lg-1{-ms-flex-order:1;order:1}.order-lg-2{-ms-flex-order:2;order:2}.order-lg-3{-ms-flex-order:3;order:3}.order-lg-4{-ms-flex-order:4;order:4}}@media (min-width:1200px){.col-xl{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;min-width:0;max-width:100%}.col-xl-3{-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}.col-xl-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%}.col-xl-5{-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%}.col-xl-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-xl-7{-ms-flex:0 0 58.333333%;flex:0 0 58.333333%;max-width:58.333333%}.col-xl-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%}.col-xl-9{-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}.col-xl-10{-ms-flex:0 0 83.333333%;flex:0 0 83.333333%;max-width:83.333333%}.order-xl-0{-ms-flex-order:0;order:0}.order-xl-1{-ms-flex-order:1;order:1}.order-xl-2{-ms-flex-order:2;order:2}.order-xl-3{-ms-flex-order:3;order:3}.order-xl-4{-ms-flex-order:4;order:4}}.clearfix::after{display:block;clear:both;content:""}.d-none{display:none !important}.d-inline{display:inline !important}.d-inline-block{display:inline-block !important}.d-block{display:block !important}@media (min-width:576px){.d-sm-none{display:none !important}.d-sm-inline{display:inline !important}.d-sm-inline-block{display:inline-block !important}.d-sm-block{display:block !important}}@media (min-width:768px){.d-md-none{display:none !important}.d-md-inline{display:inline !important}.d-md-inline-block{display:inline-block !important}.d-md-block{display:block !important}}@media (min-width:992px){.d-lg-none{display:none !important}.d-lg-inline{display:inline !important}.d-lg-inline-block{display:inline-block !important}.d-lg-block{display:block !important}}@media (min-width:1200px){.d-xl-none{display:none !important}.d-xl-inline{display:inline !important}.d-xl-inline-block{display:inline-block !important}.d-xl-block{display:block !important}}.overflow-auto{overflow:auto!important}.overflow-hidden{overflow:hidden!important}.position-static{position:static!important}.position-relative{position:relative!important}.position-absolute{position:absolute!important}.position-fixed{position:fixed!important}.position-sticky{position:-webkit-sticky!important;position:sticky!important}.align-self-end{-ms-flex-item-align:end!important;align-self:flex-end!important}.btn{display:inline-block;font-weight:400;text-align:center;vertical-align:middle;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;border:1px solid transparent;padding:0.375rem 0.75rem;font-size:1rem;line-height:1.5;border-radius:0.25rem;transition:color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out}
+.rounded-circle{border-radius:50% !important}.list-unstyled{padding-left:0;list-style:none}@media (min-width:576px){.text-sm-left{text-align:left !important}.text-sm-right{text-align:right !important}.text-sm-center{text-align:center !important}}@media (min-width:768px){.text-md-left{text-align:left !important}.text-md-right{text-align:right !important}.text-md-center{text-align:center !important}}@media (min-width:992px){.text-lg-left{text-align:left !important}.text-lg-right{text-align:right !important}.text-lg-center{text-align:center !important}}@media (min-width:1200px){.text-xl-left{text-align:left !important}.text-xl-right{text-align:right !important}.text-xl-center{text-align:center !important}}.text-lowercase{text-transform:lowercase !important}.text-uppercase{text-transform:uppercase !important}.text-capitalize{text-transform:capitalize !important}.navbar{position:relative;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-align:center;align-items:center;-ms-flex-pack:justify;justify-content:space-between;padding:0.5rem 1rem}.navbar .container,.navbar .container-fluid,.navbar .container-sm,.navbar .container-md,.navbar .container-lg,.navbar .container-xl{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-align:center;align-items:center;-ms-flex-pack:justify;justify-content:space-between}.navbar-brand{display:inline-block;padding-top:0.3125rem;padding-bottom:0.3125rem;margin-right:1rem;font-size:1.25rem;line-height:inherit;white-space:nowrap}.navbar-brand:hover,.navbar-brand:focus{text-decoration:none}.navbar-nav{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;padding-left:0;margin-bottom:0;list-style:none}.navbar-nav .nav-link{padding-right:0;padding-left:0}.navbar-nav .dropdown-menu{position:static;float:none}.navbar-text{display:inline-block;padding-top:0.5rem;padding-bottom:0.5rem}.navbar-collapse{-ms-flex-preferred-size:100%;flex-basis:100%;-ms-flex-positive:1;flex-grow:1;-ms-flex-align:center;align-items:center}.navbar-toggler{padding:0.25rem 0.75rem;font-size:1.25rem;line-height:1;background-color:transparent;border:1px solid transparent;border-radius:0.25rem}.navbar-toggler:hover,.navbar-toggler:focus{text-decoration:none}.navbar-toggler-icon{display:inline-block;width:1.5em;height:1.5em;vertical-align:middle;content:"";background:no-repeat center center;background-size:100% 100%}@media (max-width:575.98px){.navbar-expand-sm > .container,.navbar-expand-sm > .container-fluid,.navbar-expand-sm > .container-sm,.navbar-expand-sm > .container-md,.navbar-expand-sm > .container-lg,.navbar-expand-sm > .container-xl{padding-right:0;padding-left:0}}@media (min-width:576px){.navbar-expand-sm{-ms-flex-flow:row nowrap;flex-flow:row nowrap;-ms-flex-pack:start;justify-content:flex-start}.navbar-expand-sm .navbar-nav{-ms-flex-direction:row;flex-direction:row}.navbar-expand-sm .navbar-nav .dropdown-menu{position:absolute}.navbar-expand-sm .navbar-nav .nav-link{padding-right:0.5rem;padding-left:0.5rem}.navbar-expand-sm > .container,.navbar-expand-sm > .container-fluid,.navbar-expand-sm > .container-sm,.navbar-expand-sm > .container-md,.navbar-expand-sm > .container-lg,.navbar-expand-sm > .container-xl{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.navbar-expand-sm .navbar-collapse{display:-ms-flexbox !important;display:flex !important;-ms-flex-preferred-size:auto;flex-basis:auto}.navbar-expand-sm .navbar-toggler{display:none}}@media (max-width:767.98px){.navbar-expand-md > .container,.navbar-expand-md > .container-fluid,.navbar-expand-md > .container-sm,.navbar-expand-md > .container-md,.navbar-expand-md > .container-lg,.navbar-expand-md > .container-xl{padding-right:0;padding-left:0}}@media (min-width:768px){.navbar-expand-md{-ms-flex-flow:row nowrap;flex-flow:row nowrap;-ms-flex-pack:start;justify-content:flex-start}.navbar-expand-md .navbar-nav{-ms-flex-direction:row;flex-direction:row}.navbar-expand-md .navbar-nav .dropdown-menu{position:absolute}.navbar-expand-md .navbar-nav .nav-link{padding-right:0.5rem;padding-left:0.5rem}.navbar-expand-md > .container,.navbar-expand-md > .container-fluid,.navbar-expand-md > .container-sm,.navbar-expand-md > .container-md,.navbar-expand-md > .container-lg,.navbar-expand-md > .container-xl{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.navbar-expand-md .navbar-collapse{display:-ms-flexbox !important;display:flex !important;-ms-flex-preferred-size:auto;flex-basis:auto}.navbar-expand-md .navbar-toggler{display:none}}@media (max-width:991.98px){.navbar-expand-lg > .container,.navbar-expand-lg > .container-fluid,.navbar-expand-lg > .container-sm,.navbar-expand-lg > .container-md,.navbar-expand-lg > .container-lg,.navbar-expand-lg > .container-xl{padding-right:0;padding-left:0}}@media (min-width:992px){.navbar-expand-lg{-ms-flex-flow:row nowrap;flex-flow:row nowrap;-ms-flex-pack:start;justify-content:flex-start}.navbar-expand-lg .navbar-nav{-ms-flex-direction:row;flex-direction:row}.navbar-expand-lg .navbar-nav .dropright{position:absolute}.navbar-expand-lg .navbar-nav .nav-link{padding-right:0.5rem;padding-left:0.5rem}.navbar-expand-lg > .container,.navbar-expand-lg > .container-fluid,.navbar-expand-lg > .container-sm,.navbar-expand-lg > .container-md,.navbar-expand-lg > .container-lg,.navbar-expand-lg > .container-xl{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.navbar-expand-lg .navbar-collapse{display:-ms-flexbox !important;display:flex !important;-ms-flex-preferred-size:auto;flex-basis:auto}.navbar-expand-lg .navbar-toggler{display:none}}@media (max-width:1199.98px){.navbar-expand-xl > .container,.navbar-expand-xl > .container-fluid,.navbar-expand-xl > .container-sm,.navbar-expand-xl > .container-md,.navbar-expand-xl > .container-lg,.navbar-expand-xl > .container-xl{padding-right:0;padding-left:0}}@media (min-width:1200px){.navbar-expand-xl{-ms-flex-flow:row nowrap;flex-flow:row nowrap;-ms-flex-pack:start;justify-content:flex-start}.navbar-expand-xl .navbar-nav{-ms-flex-direction:row;flex-direction:row}.navbar-expand-xl .navbar-nav .dropdown-menu{position:absolute}.navbar-expand-xl card-body{padding-right:0.5rem;padding-left:0.5rem}.navbar-expand-xl > .container,.navbar-expand-xl > .container-fluid,.navbar-expand-xl > .container-sm,.navbar-expand-xl > .container-md,.navbar-expand-xl > .container-lg,.navbar-expand-xl > .container-xl{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.navbar-expand-xl .navbar-collapse{display:-ms-flexbox !important;display:flex !important;-ms-flex-preferred-size:auto;flex-basis:auto}.navbar-expand-xl .navbar-toggler{display:none}}.navbar-expand{-ms-flex-flow:row nowrap;flex-flow:row nowrap;-ms-flex-pack:start;justify-content:flex-start}.navbar-expand > .container,.navbar-expand > .container-fluid,.navbar-expand > .container-sm,.navbar-expand > .container-md,.navbar-expand > .container-lg,.navbar-expand > .container-xl{padding-right:0;padding-left:0}.navbar-expand .navbar-nav{-ms-flex-direction:row;flex-direction:row}.navbar-expand .navbar-nav .dropdown-menu{position:absolute}.navbar-expand .navbar-nav .nav-link{padding-right:0.5rem;padding-left:0.5rem}.navbar-expand > .container,.navbar-expand > .container-fluid,.navbar-expand > .container-sm,.navbar-expand > .container-md,.navbar-expand > .container-lg,.navbar-expand > .container-xl{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.navbar-expand .navbar-collapse{display:-ms-flexbox !important;display:flex !important;-ms-flex-preferred-size:auto;flex-basis:auto}.navbar-expand .navbar-toggler{display:none}.fade{transition:opacity 0.15s linear}@media (prefers-reduced-motion:reduce){.fade{transition:none}}.fade:not(.show){opacity:0}.collapse:not(.show){display:none}.collapsing{position:relative;height:0;overflow:hidden;transition:height 0.35s ease}@media (prefers-reduced-motion:reduce){.collapsing{transition:none}}.card-body{-ms-flex:1 1 auto;flex:1 1 auto;min-height:1px;padding:1.25rem}.nav-link{display:block;padding:0.5rem 1rem}@media (min-width:992px){.navbar-expand-lg .navbar-nav .dropdown-menu{position:absolute}}.dropdown-item{display:block;width:100%;padding:0.25rem 1.5rem;clear:both;font-weight:400;color:#212529;text-align:inherit;white-space:nowrap;background-color:transparent;border:0}.dropdown-item:hover,.dropdown-item:focus{color:#16181b;text-decoration:none;background-color:#f8f9fa}.dropdown-item.active,.dropdown-item:active{color:#fff;text-decoration:none;background-color:#007bff}.dropdown-item.disabled,.dropdown-item:disabled{color:#6c757d;pointer-events:none;background-color:transparent}.dropdown-menu.show{display:block}.dropdown-header{display:block;padding:0.5rem 1.5rem;margin-bottom:0;font-size:0.875rem;color:#6c757d;white-space:nowrap}.w-25{width:25% !important}.w-50{width:50% !important}.w-75{width:75% !important}.w-100{width:100% !important}.w-auto{width:auto !important}.h-25{height:25% !important}.h-50{height:50% !important}.h-75{height:75% !important}.h-100{height:100% !important}.h-auto{height:auto !important}.m-0{margin:0 !important}.mt-0,.my-0{margin-top:0 !important}.mr-0,.mx-0{margin-right:0 !important}.mb-0,.my-0{margin-bottom:0 !important}.ml-0,.mx-0{margin-left:0 !important}.m-2{margin:0.5rem !important}.mt-2,.my-2{margin-top:0.5rem !important}.mr-2,.mx-2{margin-right:0.5rem !important}.mb-2,.my-2{margin-bottom:0.5rem !important}.ml-2,.mx-2{margin-left:0.5rem !important}.m-3{margin:1rem !important}.mt-3,.my-3{margin-top:1rem !important}.mr-3,.mx-3{margin-right:1rem !important}.mb-3,.my-3{margin-bottom:1rem !important}.ml-3,.mx-3{margin-left:1rem !important}.m-4{margin:1.5rem !important}.mt-4,.my-4{margin-top:1.5rem !important}.mr-4,.mx-4{margin-right:1.5rem !important}.mb-4,.my-4{margin-bottom:1.5rem !important}.ml-4,.mx-4{margin-left:1.5rem !important}.m-5{margin:3rem !important}.mt-5,.my-5{margin-top:3rem !important}.mr-5,.mx-5{margin-right:3rem !important}
+.mb-5,.my-5{margin-bottom:3rem !important}.ml-5,.mx-5{margin-left:3rem !important}.p-0{padding:0 !important}.pt-0,.py-0{padding-top:0 !important}.pr-0,.px-0{padding-right:0 !important}.pb-0,.py-0{padding-bottom:0 !important}.pl-0,.px-0{padding-left:0 !important}.p-2{padding:0.5rem !important}.pt-2,.py-2{padding-top:0.5rem !important}.pr-2,.px-2{padding-right:0.5rem !important}.pb-2,.py-2{padding-bottom:0.5rem !important}.pl-2,.px-2{padding-left:0.5rem !important}.p-3{padding:1rem !important}.pt-3,.py-3{padding-top:1rem !important}.pr-3,.px-3{padding-right:1rem !important}.pb-3,.py-3{padding-bottom:1rem !important}.pl-3,.px-3{padding-left:1rem !important}.p-4{padding:1.5rem !important}.pt-4,.py-4{padding-top:1.5rem !important}.pr-4,.px-4{padding-right:1.5rem !important}.pb-4,.py-4{padding-bottom:1.5rem !important}.pl-4,.px-4{padding-left:1.5rem !important}.p-5{padding:3rem !important}.pt-5,.py-5{padding-top:3rem !important}.pr-5,.px-5{padding-right:3rem !important}.pb-5,.py-5{padding-bottom:3rem !important}.pl-5,.px-5{padding-left:3rem !important}.m-auto{margin:auto !important}.mt-auto,.my-auto{margin-top:auto !important}.mr-auto,.mx-auto{margin-right:auto !important}.mb-auto,.my-auto{margin-bottom:auto !important}.ml-auto,.mx-auto{margin-left:auto !important}@media (min-width:576px){.m-sm-0{margin:0 !important}.mt-sm-0,.my-sm-0{margin-top:0 !important}.mr-sm-0,.mx-sm-0{margin-right:0 !important}.mb-sm-0,.my-sm-0{margin-bottom:0 !important}.ml-sm-0,.mx-sm-0{margin-left:0 !important}.m-sm-2{margin:0.5rem !important}.mt-sm-2,.my-sm-2{margin-top:0.5rem !important}.mr-sm-2,.mx-sm-2{margin-right:0.5rem !important}.mb-sm-2,.my-sm-2{margin-bottom:0.5rem !important}.ml-sm-2,.mx-sm-2{margin-left:0.5rem !important}.m-sm-3{margin:1rem !important}.mt-sm-3,.my-sm-3{margin-top:1rem !important}.mr-sm-3,.mx-sm-3{margin-right:1rem !important}.mb-sm-3,.my-sm-3{margin-bottom:1rem !important}.ml-sm-3,.mx-sm-3{margin-left:1rem !important}.m-sm-4{margin:1.5rem !important}.mt-sm-4,.my-sm-4{margin-top:1.5rem !important}.mr-sm-4,.mx-sm-4{margin-right:1.5rem !important}.mb-sm-4,.my-sm-4{margin-bottom:1.5rem !important}.ml-sm-4,.mx-sm-4{margin-left:1.5rem !important}.m-sm-5{margin:3rem !important}.mt-sm-5,.my-sm-5{margin-top:3rem !important}.mr-sm-5,.mx-sm-5{margin-right:3rem !important}.mb-sm-5,.my-sm-5{margin-bottom:3rem !important}.ml-sm-5,.mx-sm-5{margin-left:3rem !important}.p-sm-0{padding:0 !important}.pt-sm-0,.py-sm-0{padding-top:0 !important}.pr-sm-0,.px-sm-0{padding-right:0 !important}.pb-sm-0,.py-sm-0{padding-bottom:0 !important}.pl-sm-0,.px-sm-0{padding-left:0 !important}.p-sm-2{padding:0.5rem !important}.pt-sm-2,.py-sm-2{padding-top:0.5rem !important}.pr-sm-2,.px-sm-2{padding-right:0.5rem !important}.pb-sm-2,.py-sm-2{padding-bottom:0.5rem !important}.pl-sm-2,.px-sm-2{padding-left:0.5rem !important}.p-sm-3{padding:1rem !important}.pt-sm-3,.py-sm-3{padding-top:1rem !important}.pr-sm-3,.px-sm-3{padding-right:1rem !important}.pb-sm-3,.py-sm-3{padding-bottom:1rem !important}.pl-sm-3,.px-sm-3{padding-left:1rem !important}.p-sm-4{padding:1.5rem !important}.pt-sm-4,.py-sm-4{padding-top:1.5rem !important}.pr-sm-4,.px-sm-4{padding-right:1.5rem !important}.pb-sm-4,.py-sm-4{padding-bottom:1.5rem !important}.pl-sm-4,.px-sm-4{padding-left:1.5rem !important}.p-sm-5{padding:3rem !important}.pt-sm-5,.py-sm-5{padding-top:3rem !important}.pr-sm-5,.px-sm-5{padding-right:3rem !important}.pb-sm-5,.py-sm-5{padding-bottom:3rem !important}.pl-sm-5,.px-sm-5{padding-left:3rem !important}.m-sm-auto{margin:auto !important}.mt-sm-auto,.my-sm-auto{margin-top:auto !important}.mr-sm-auto,.mx-sm-auto{margin-right:auto !important}.mb-sm-auto,.my-sm-auto{margin-bottom:auto !important}.ml-sm-auto,.mx-sm-auto{margin-left:auto !important}}@media (min-width:768px){.m-md-0{margin:0 !important}.mt-md-0,.my-md-0{margin-top:0 !important}.mr-md-0,.mx-md-0{margin-right:0 !important}.mb-md-0,.my-md-0{margin-bottom:0 !important}.ml-md-0,.mx-md-0{margin-left:0 !important}.m-md-2{margin:0.5rem !important}.mt-md-2,.my-md-2{margin-top:0.5rem !important}.mr-md-2,.mx-md-2{margin-right:0.5rem !important}.mb-md-2,.my-md-2{margin-bottom:0.5rem !important}.ml-md-2,.mx-md-2{margin-left:0.5rem !important}.m-md-3{margin:1rem !important}.mt-md-3,.my-md-3{margin-top:1rem !important}.mr-md-3,.mx-md-3{margin-right:1rem !important}.mb-md-3,.my-md-3{margin-bottom:1rem !important}.ml-md-3,.mx-md-3{margin-left:1rem !important}.m-md-4{margin:1.5rem !important}.mt-md-4,.my-md-4{margin-top:1.5rem !important}.mr-md-4,.mx-md-4{margin-right:1.5rem !important}.mb-md-4,.my-md-4{margin-bottom:1.5rem !important}.ml-md-4,.mx-md-4{margin-left:1.5rem !important}.m-md-5{margin:3rem !important}.mt-md-5,.my-md-5{margin-top:3rem !important}.mr-md-5,.mx-md-5{margin-right:3rem !important}.mb-md-5,.my-md-5{margin-bottom:3rem !important}.ml-md-5,.mx-md-5{margin-left:3rem !important}.p-md-0{padding:0 !important}.pt-md-0,.py-md-0{padding-top:0 !important}.pr-md-0,.px-md-0{padding-right:0 !important}.pb-md-0,.py-md-0{padding-bottom:0 !important}.pl-md-0,.px-md-0{padding-left:0 !important}.p-md-2{padding:0.5rem !important}.pt-md-2,.py-md-2{padding-top:0.5rem !important}.pr-md-2,.px-md-2{padding-right:0.5rem !important}.pb-md-2,.py-md-2{padding-bottom:0.5rem !important}.pl-md-2,.px-md-2{padding-left:0.5rem !important}.p-md-3{padding:1rem !important}.pt-md-3,.py-md-3{padding-top:1rem !important}.pr-md-3,.px-md-3{padding-right:1rem !important}.pb-md-3,.py-md-3{padding-bottom:1rem !important}.pl-md-3,.px-md-3{padding-left:1rem !important}.p-md-4{padding:1.5rem !important}.pt-md-4,.py-md-4{padding-top:1.5rem !important}.pr-md-4,.px-md-4{padding-right:1.5rem !important}.pb-md-4,.py-md-4{padding-bottom:1.5rem !important}.pl-md-4,.px-md-4{padding-left:1.5rem !important}.p-md-5{padding:3rem !important}.pt-md-5,.py-md-5{padding-top:3rem !important}.pr-md-5,.px-md-5{padding-right:3rem !important}.pb-md-5,.py-md-5{padding-bottom:3rem !important}.pl-md-5,.px-md-5{padding-left:3rem !important}.m-md-auto{margin:auto !important}.mt-md-auto,.my-md-auto{margin-top:auto !important}.mr-md-auto,.mx-md-auto{margin-right:auto !important}.mb-md-auto,.my-md-auto{margin-bottom:auto !important}.ml-md-auto,.mx-md-auto{margin-left:auto !important}}@media (min-width:992px){.m-lg-0{margin:0 !important}.mt-lg-0,.my-lg-0{margin-top:0 !important}.mr-lg-0,.mx-lg-0{margin-right:0 !important}.mb-lg-0,.my-lg-0{margin-bottom:0 !important}.ml-lg-0,.mx-lg-0{margin-left:0 !important}.m-lg-2{margin:0.5rem !important}.mt-lg-2,.my-lg-2{margin-top:0.5rem !important}.mr-lg-2,.mx-lg-2{margin-right:0.5rem !important}.mb-lg-2,.my-lg-2{margin-bottom:0.5rem !important}.ml-lg-2,.mx-lg-2{margin-left:0.5rem !important}.m-lg-3{margin:1rem !important}.mt-lg-3,.my-lg-3{margin-top:1rem !important}.mr-lg-3,.mx-lg-3{margin-right:1rem !important}.mb-lg-3,.my-lg-3{margin-bottom:1rem !important}.ml-lg-3,.mx-lg-3{margin-left:1rem !important}.m-lg-4{margin:1.5rem !important}.mt-lg-4,.my-lg-4{margin-top:1.5rem !important}.mr-lg-4,.mx-lg-4{margin-right:1.5rem !important}.mb-lg-4,.my-lg-4{margin-bottom:1.5rem !important}.ml-lg-4,.mx-lg-4{margin-left:1.5rem !important}.m-lg-5{margin:3rem !important}.mt-lg-5,.my-lg-5{margin-top:3rem !important}.mr-lg-5,.mx-lg-5{margin-right:3rem !important}.mb-lg-5,.my-lg-5{margin-bottom:3rem !important}.ml-lg-5,.mx-lg-5{margin-left:3rem !important}.p-lg-0{padding:0 !important}.pt-lg-0,.py-lg-0{padding-top:0 !important}.pr-lg-0,.px-lg-0{padding-right:0 !important}.pb-lg-0,.py-lg-0{padding-bottom:0 !important}.pl-lg-0,.px-lg-0{padding-left:0 !important}.p-lg-2{padding:0.5rem !important}.pt-lg-2,.py-lg-2{padding-top:0.5rem !important}.pr-lg-2,.px-lg-2{padding-right:0.5rem !important}.pb-lg-2,.py-lg-2{padding-bottom:0.5rem !important}.pl-lg-2,.px-lg-2{padding-left:0.5rem !important}.p-lg-3{padding:1rem !important}.pt-lg-3,.py-lg-3{padding-top:1rem !important}.pr-lg-3,.px-lg-3{padding-right:1rem !important}.pb-lg-3,.py-lg-3{padding-bottom:1rem !important}.pl-lg-3,.px-lg-3{padding-left:1rem !important}.p-lg-4{padding:1.5rem !important}.pt-lg-4,.py-lg-4{padding-top:1.5rem !important}.pr-lg-4,.px-lg-4{padding-right:1.5rem !important}.pb-lg-4,.py-lg-4{padding-bottom:1.5rem !important}.pl-lg-4,.px-lg-4{padding-left:1.5rem !important}.p-lg-5{padding:3rem !important}.pt-lg-5,.py-lg-5{padding-top:3rem !important}.pr-lg-5,.px-lg-5{padding-right:3rem !important}.pb-lg-5,.py-lg-5{padding-bottom:3rem !important}.pl-lg-5,.px-lg-5{padding-left:3rem !important}.m-lg-auto{margin:auto !important}.mt-lg-auto,.my-lg-auto{margin-top:auto !important}.mr-lg-auto,.mx-lg-auto{margin-right:auto !important}.mb-lg-auto,.my-lg-auto{margin-bottom:auto !important}.ml-lg-auto,.mx-lg-auto{margin-left:auto !important}}@media (min-width:1200px){.m-xl-0{margin:0 !important}.mt-xl-0,.my-xl-0{margin-top:0 !important}.mr-xl-0,.mx-xl-0{margin-right:0 !important}.mb-xl-0,.my-xl-0{margin-bottom:0 !important}.ml-xl-0,.mx-xl-0{margin-left:0 !important}.m-xl-2{margin:0.5rem !important}.mt-xl-2,.my-xl-2{margin-top:0.5rem !important}.mr-xl-2,.mx-xl-2{margin-right:0.5rem !important}.mb-xl-2,.my-xl-2{margin-bottom:0.5rem !important}.ml-xl-2,.mx-xl-2{margin-left:0.5rem !important}.m-xl-3{margin:1rem !important}.mt-xl-3,.my-xl-3{margin-top:1rem !important}.mr-xl-3,.mx-xl-3{margin-right:1rem !important}.mb-xl-3,.my-xl-3{margin-bottom:1rem !important}.ml-xl-3,.mx-xl-3{margin-left:1rem !important}.m-xl-4{margin:1.5rem !important}.mt-xl-4,.my-xl-4{margin-top:1.5rem !important}.mr-xl-4,.mx-xl-4{margin-right:1.5rem !important}.mb-xl-4,.my-xl-4{margin-bottom:1.5rem !important}.ml-xl-4,.mx-xl-4{margin-left:1.5rem !important}.m-xl-5{margin:3rem !important}.mt-xl-5,.my-xl-5{margin-top:3rem !important}.mr-xl-5,.mx-xl-5{margin-right:3rem !important}.mb-xl-5,.my-xl-5{margin-bottom:3rem !important}.ml-xl-5,.mx-xl-5{margin-left:3rem !important}.p-xl-0{padding:0 !important}.pt-xl-0,.py-xl-0{padding-top:0 !important}.pr-xl-0,.px-xl-0{padding-right:0 !important}.pb-xl-0,.py-xl-0{padding-bottom:0 !important}
+.pl-xl-0,.px-xl-0{padding-left:0 !important}.p-xl-2{padding:0.5rem !important}.pt-xl-2,.py-xl-2{padding-top:0.5rem !important}.pr-xl-2,.px-xl-2{padding-right:0.5rem !important}.pb-xl-2,.py-xl-2{padding-bottom:0.5rem !important}.pl-xl-2,.px-xl-2{padding-left:0.5rem !important}.p-xl-3{padding:1rem !important}.pt-xl-3,.py-xl-3{padding-top:1rem !important}.pr-xl-3,.px-xl-3{padding-right:1rem !important}.pb-xl-3,.py-xl-3{padding-bottom:1rem !important}.pl-xl-3,.px-xl-3{padding-left:1rem !important}.p-xl-4{padding:1.5rem !important}.pt-xl-4,.py-xl-4{padding-top:1.5rem !important}.pr-xl-4,.px-xl-4{padding-right:1.5rem !important}.pb-xl-4,.py-xl-4{padding-bottom:1.5rem !important}.pl-xl-4,.px-xl-4{padding-left:1.5rem !important}.p-xl-5{padding:3rem !important}.pt-xl-5,.py-xl-5{padding-top:3rem !important}.pr-xl-5,.px-xl-5{padding-right:3rem !important}.pb-xl-5,.py-xl-5{padding-bottom:3rem !important}.pl-xl-5,.px-xl-5{padding-left:3rem !important}.m-xl-auto{margin:auto !important}.mt-xl-auto,.my-xl-auto{margin-top:auto !important}.mr-xl-auto,.mx-xl-auto{margin-right:auto !important}.mb-xl-auto,.my-xl-auto{margin-bottom:auto !important}.ml-xl-auto,.mx-xl-auto{margin-left:auto !important}}.text-monospace{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace !important}.text-justify{text-align:justify !important}.text-wrap{white-space:normal !important}.text-nowrap{white-space:nowrap !important}.text-truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.text-left{text-align:left !important}.text-right{text-align:right !important}.text-center{text-align:center !important}@media (min-width:576px){.text-sm-left{text-align:left !important}.text-sm-right{text-align:right !important}.text-sm-center{text-align:center !important}}@media (min-width:768px){.text-md-left{text-align:left !important}.text-md-right{text-align:right !important}.text-md-center{text-align:center !important}}@media (min-width:992px){.text-lg-left{text-align:left !important}.text-lg-right{text-align:right !important}.text-lg-center{text-align:center !important}}@media (min-width:1200px){.text-xl-left{text-align:left !important}.text-xl-right{text-align:right !important}.text-xl-center{text-align:center !important}}.tab-content > .tab-pane{display:none}.tab-content > .active{display:block}.nav{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;padding-left:0;margin-bottom:0;list-style:none}.bg-white{background-color:#fff !important}body{font-family:'arial','Poppins',sans-serif;font-weight:400;font-size:16px;line-height:1.8;letter-spacing:0}:root{--title1:#444444;--title2:#0379ce;--mainfont:#333333;--title-btm-font:#557998;--light-color1:#fdc800;--bg-yellow:#feb822;--bg2:#e8f7fb;--bg1:#f5f8fb}a,.dh, .card-body{-webkit-transition:all 0.3s ease-in-out;-moz-transition:all 0.3s ease-in-out;-o-transition:all 0.3s ease-in-out;-ms-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out}h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{font-family:'Tigers',sans-serif, 'Arial';color:var(--title1)}header.page_header{position:absolute;z-index:9999;width:100%;left:0;top:0}body:not(.neiye) header.page_header{background-color:rgba(0, 0, 0, 0.18);border-bottom:1px solid rgba(0,129,230,.5)}a{text-decoration:none;-webkit-transition:all 0.3s ease-in-out;-moz-transition:all 0.3s ease-in-out;-o-transition:all 0.3s ease-in-out;-ms-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out}.clearfix:after{content:" ";display:block;height:0;clear:both;visibility:hidden;line-height:0}.clear{clear:both;font-size:0;line-height:0;height:0;visibility:visible}.bg1{background-color:var(--bg1)}.bg2{background-color:var(--bg2)}.navbar-brand .svg-logo, .nav_main.sticky .svg-logo{height:60px;fill:#FFFFFF}.nav_main.sticky{position:fixed;left:0;top:0;width:100%;background-color:rgba(23, 46, 152, 0.72);border-bottom:1px solid rgba(0,129,230,.35);animation-duration:0.8s;animation-name:fadeInDown;animation-timing-function:ease-in-out}.nav_main{background:none;z-index:999;padding:0 0 0 10px;width:100%;-webkit-transition:0.8s all fadeOutUp;-moz-transition:0.8s all fadeOutUp;transition:0.8s all fadeOutUp}.navbar li{margin-right:10px;border-radius:3px}.nav_main li a:hover{color:#fdc800}.navbar-light .navbar-brand{padding-top:10px}.navbar li a{color:#fff;font-weight:600;text-transform:capitalize;font-size:16px;text-shadow:1px 1px 1px #000;text-decoration:none}.navbar-toggler .icon-bar:nth-of-type(2){top:1px}.navbar-toggler .icon-bar:nth-of-type(3){top:2px}.navbar-toggler .icon-bar{background-color:#fff;display:block;width:36px;height:3px;border-radius:1px;position:relative;-webkit-transition:all 500ms ease-in-out;-moz-transition:all 500ms ease-in-out;transition:all 500ms ease-in-out}.navbar-toggler.active .icon-bar:nth-of-type(1){top:9px;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg)}.navbar-toggler.active .icon-bar:nth-of-type(2){background-color:transparent}.navbar-toggler.active .icon-bar:nth-of-type(3){top:-9px;-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);transform:rotate(-45deg)}.navbar-toggler .icon-bar+.icon-bar{margin-top:6px}.navbar-toggler:focus{outline:0}.navbar-toggler{outline:0;border:0}.nav_main .navbar-nav .active>.nav-link,.nav_main .navbar-nav .nav-link.active,.nav_main .navbar-nav .nav-link.show,.nav_main .navbar-nav .show>.nav-link{color:#fdc800}.nav_main .dropdown-menu{min-width:260px;top:auto;background-color:rgba(255, 255, 255, 0.2);list-style:none;padding:10px;margin-top:-6px;border-radius:4px;box-shadow:8px 15px 14px rgba(0,0,0,.15);animation:fadeIn 0.5s;-moz-animation:fadeIn  0.5s;-webkit-animation:fadeIn  0.5s;-o-animation:fadeIn  0.5s}.navbar li li{margin-right:0}.nav_main .dropdown-menu .dropdown-toggle::after{vertical-align:middle;border-left:4px solid;border-bottom:4px solid transparent;border-top:4px solid transparent}.nav_main li .dropdown-menu > li a{color:#fff;padding:15px 12px;font-size:0.88rem;line-height:14px;font-weight:500}.nav_main .dropdown-menu > li a:hover,.nav_main .dropdown-menu > li.show{color:#FFF;background:rgba(1, 107, 214, 0.1)}.nav_main .dropdown-menu > li.show > a{color:#fdc800}.nav_main ul > li.current-menu-item a{font-weight:bold}@media (min-width:768px){.dropdown-menu .dropdown .dropdown-menu{margin:0;border-width:1px}}@media (min-width:768px){.navbar li li{background-color:transparent}.nav_main .dropdown-menu{margin:0 auto 15px}.navbar .navbar-collapse{padding:8px 20px;margin:15px 20px 20px;background-color:rgba(9, 42, 110, 0.88)}}@media (min-width:992px){.navbar-expand-lg .navbar-nav .nav-link{padding:0.6rem 1rem}.navbar .navbar-collapse{background-color:transparent}.navbar li{background-color:rgba(255, 255, 255, 0.05)}.navbar .navbar-collapse{margin:0}.nav_main .dropdown-menu.show{background-color:rgba(9, 42, 110, 0.88)}}.header-extras{float:right;z-index:201;position:relative}.header-extras>ul{list-style:none;padding:0;margin:0}.header-extras>ul>li{float:left;border:0;margin:0}.header-extras>ul>li>a:not(.btn){padding-left:6px;padding-right:6px}#btn-search .iconfont{font-size:24px;font-weight:normal;color:#fff;padding:0 6px;cursor:pointer}.trp-ls-shortcode-language{line-height:normal;position:absolute;z-index:5;text-align:left;opacity:0;transition:all .2s ease;visibility:hidden;transform:translateY(8px);padding:8px 10px;width:min-content!important;top:48px;right:-30px;margin:0;border-radius:4px;background-color:rgba(9,42,110,0.88);box-shadow:0 14px 20px rgba(0,0,0,.1);display:block!important}.trp-language-switcher:focus .trp-ls-shortcode-language,.trp-language-switcher:hover .trp-ls-shortcode-language{opacity:1;transform:scale(1);visibility:visible}.trp-ls-shortcode-current-language a:before{font-family:"tigers" !important;content:"\e604";color:#FFF;top:1001px;font-weight:normal;position:relative;font-size:24px;padding:4px 6px;background-color:rgba(255,255,255,0.05)}.trp-ls-shortcode-current-language:hover a:before{color:#fdc800}.trp-ls-shortcode-current-language .trp-ls-disabled-language{position:absolute;top:-999px}.trp-language-switcher{margin:0;line-height:normal;position:relative}.trp-ls-shortcode-current-language{padding:0 6px;border:0;-webkit-background-size:0;background-size:0;background-image:none;background-color:transparent;width:36px !important;line-height:40px;font-size:24px}.trp-ls-shortcode-language a{line-height:26px;font-size:0.88rem;display:block;padding:2px 5px;font-weight:400}#search{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:rgb(0 7 38 / 88%);line-height:normal;position:fixed;z-index:1100;top:0;left:0;width:100%;height:100vh;pointer-events:none;opacity:0;transition:opacity .5s}#search .search-form{opacity:0;transform:scale3d(.8,.8,1);transition:opacity .5s,transform .5s;margin:80px 0}#search .search-form .text-muted{color:#888}#search .search-form .form-control{border-width:0 0 2px;font-size:34px;padding:10px 0 10px 6px;font-weight:700;margin-bottom:20px;background-color:transparent}#search .search-form .form-control:focus{background-color:transparent;color:#fff;box-shadow:none}#search .search-form .form-control:-webkit-input-placeholder{color:#eee}#search .search-form .form-control:-moz-placeholder{color:#eee}#search .search-form .form-control:-ms-input-placeholder{color:#eee}.search_icon{font-size:24px;position:absolute;right:5px;top:10px;border:0;background-color:transparent;cursor:pointer;padding:0;color:#fff;outline:none !important}.search_icon i{font-size:26px}#search .btn-search-close{font-size:1.8rem;font-weight:bold;position:absolute;top:20px;right:30px;display:none;padding:14px 10px;line-height:12px;background-color:#FFF;border:0;cursor:pointer;border-radius:5px;color:#000;opacity:0;outline:none;transform:scale3d(.8,.8,1);transition:opacity .5s,transform .5s}#search .row h3{font-size:1.8rem;margin:0 0 20px;color:#0379ce}#search .row p{line-height:1.4;margin:0 0 10px}#search .row a{color:#6e8aa9}#search .row div{opacity:0;transform:translate3d(0,-30px,0);transition:opacity .5s,transform .5s}body.search-open #search{pointer-events:auto;opacity:1}body.search-open #search .search-form{opacity:1;transform:scale3d(1,1,1)}body.search-open #search .btn-search-close{display:block;opacity:1;transform:scale3d(1,1,1)}body.search-open #search .row div{opacity:1;transform:translate3d(0,0,0)}body.search-open #search .row div:first-child{transition-delay:.3s}body.search-open #search .row div:nth-child(2){transition-delay:.5s}@media(max-width:991px){.trp-ls-shortcode-current-language a:before{background-color:transparent}.trp-language-switcher .trp-ls-shortcode-language{right:inherit;left:0px}#search .search-form{margin:40px}#search .search-form .form-control{font-size:24px;margin-bottom:8px}#search .search-suggestion-wrapper{display:none}}
+@font-face {font-family: "tigers";font-display: swap;src: url("../../../wp-content/themes/tgs/css/fonts/tigers.eot");src: url("../../../wp-content/themes/tgs/css/fonts/tigers-1.eot") format("embedded-opentype"),url("../../../wp-content/themes/tgs/css/fonts/tigers.woff2") format("woff2"),url("../../../wp-content/themes/tgs/css/fonts/tigers.woff") format("woff"),url("../../../wp-content/themes/tgs/css/fonts/tigers.ttf") format("truetype"),url("../../../wp-content/themes/tgs/css/fonts/tigers.svg") format("svg");}
+.sin-rating{font-size: 15px;font-style: italic;color: #717171;}	
+.neiye .details h1, .neiye .details h1, .neiye .h1, .page-top h1, .page-top .h1{font-size:24px; letter-spacing: -1px; margin-bottom: 0;}
+.neiye .details h2, .neiye .h2, .cat_info_before_list h2, .cat_info h2{font-size: 22px;padding: 10px 0 10px 8px;margin: 25px 0 20px;border-left: 2px solid #487bd9;background-color: #f5f8fb;}
+.neiye .details h3, .neiye .h3, .cat_info_before_list h3, .cat_info h3{font-size: 20px;padding:15px 0 15px; margin-bottom: 0;}
+.neiye .details h4, .neiye .h4, .cat_info_before_list h4, .cat_info h4{font-size: 16px;padding:12px 0 12px; margin-bottom: 0;}
+.neiye .details h5, .neiye .h5, .cat_info_before_list h5, .cat_info h5{font-size:17px;padding:5px 0 0px; margin-bottom: 0;}
+.neiye .details h6, .neiye .h6, .cat_info_before_list h6, .cat_info h6{font-size:14px; margin-bottom: 0;}
+.neiye header.page_header{background-color:rgba(0,0,0,.3);}
+.page-top{z-index: 1;padding: 80px 0 20px;background: linear-gradient(45deg,#172c95,#2161d8);width: 100%;overflow: hidden;}
+.page-top .container div{ color: #fff; opacity: 0.8; padding:12px 0 6px; text-align: left;line-height: 25px;font-size: 16px;text-overflow: -o-ellipsis-lastline;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;}
+.page-top h1, .page-top .h1{ color: #fff;text-transform: uppercase;margin: 15px 0 8px;}
+.location{background-color:#f5f7fa;border-bottom:1px solid #eee;padding:10px 0px;-webkit-box-shadow:0 -1px 2px rgba(0,0,0,.06) inset;box-shadow:0 -1px 2px rgba(0,0,0,.06) inset}
+.breadcrumb{padding: 0;background: none; margin-bottom: 0;}
+.breadcrumb a {padding-right:20px;line-height:24px;position: relative;color: #555;}
+.breadcrumb a:not(:last-child):after{content:""; fill:#fff; position:absolute;right:0;background-image:url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGZpbGw9IiM2NjY2NjYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCI+PHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIzNjMsMjEyIDM2MywzMzAuMyA1NDMuOCw1MTEuMSAzNjMsNjkxLjYgMzYzLDgwOS40IDY2MS40LDUxMS4xICIvPjwvc3ZnPg==");}
+.breadcrumb a:after,.breadcrumb .homeicon:before{width:17px;height:17px;top: 0px;content:"";display:block;}
+.breadcrumb a:last-child:after{display: none;}
+.breadcrumb .homeicon:before{top: 3px;}
+.breadcrumb i{padding-right:5px; float: left;}
+.breadcrumb .homeicon:before{position: relative; background-size:cover;background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnICBmaWxsPSIjNjY2NjY2IiAgdmlld0JveD0nMCAwIDEwMjQgMTAyNCc+PHBhdGggZD0nTTEwMjQgNTkwLjQzMmwtNTEyLTM5Ny40NC01MTIgMzk3LjQ0IDAtMTYyLjA0OCA1MTItMzk3LjQ0IDUxMiAzOTcuNDR6TTg5NiA1NzZsMCAzODQtMjU2IDAgMC0yNTYtMjU2IDAgMCAyNTYtMjU2IDAgMC0zODQgMzg0LTI4OHonLz48L3N2Zz4=");}
+.rank-math-breadcrumb {color: #555;width: calc(100% - 23px);}
+.breadcrumb p{margin-bottom: 0;}
+@media (min-width: 576px) {
+.location{ padding: 13px 0;}
+}
+@media (min-width: 768px) {
+.rank-math-breadcrumb{ width:inherit;}
+}
+@media (max-width: 768px) {
+.rank-math-breadcrumb{overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+.rank-math-breadcrumb p a:first-child{ display: none;}
+}
+.footmenu{position:fixed;height:56px;bottom:0;left:0;text-shadow:0px 0px 2px #000;width:100%;line-height:1;z-index:5555;font-size:14px;max-width:768px;box-shadow:0px -1px 10px 0px rgb(0 0 0 / 60%);background:linear-gradient( 0deg,#a90008,#d80000);}
+.footmenu>div{padding:3px 0}
+.footmenu a{width:25%;display:inline-block;text-decoration:none;color:#FFF;height:50px;text-align:center;float:left}
+.footmenu a i{display:block;width:25px;height:25px;margin:3px auto 4px;font-size:26px;line-height:1}</style>
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+<link rel="canonical" href="index.htm">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:type" content="article">
+<meta property="og:title" content="أرشيفات Diffe - Tigers Aluminium">
+<meta property="og:url" content="https://www.tigersalu.com/ar/tag/diffe//">
+<meta property="og:site_name" content="النمور المنيوم">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="أرشيفات Diffe - Tigers Aluminium">
+<meta name="twitter:label1" content="مقالات">
+<meta name="twitter:data1" content="5">
+<script type="application/ld+json" class="rank-math-schema-pro">{
+    "@context": "https:\/\/schema.org",
+    "@graph": [
+        {
+            "@type": "Place",
+            "@id": "https:\/\/www.tigersalu.com\/ar\/#place",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "No.1618,Block Yunfeng B",
+                "addressLocality": "Zhengzhou City",
+                "addressRegion": "Henan",
+                "postalCode": "450000",
+                "addressCountry": "China"
+            }
+        },
+        {
+            "@type": "Organization",
+            "@id": "https:\/\/www.tigersalu.com\/ar\/#organization",
+            "name": "\u0634\u0631\u0643\u0629 \u0635\u0646\u0627\u0639\u0629 \u0646\u0645\u0648\u0631 \u062e\u0646\u0627\u0646 \u0627\u0644\u0645\u062d\u062f\u0648\u062f\u0629",
+            "url": "https:\/\/www.tigersalu.com\/",
+            "email": "vendortrust12@gmail.com",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "No.1618,Block Yunfeng B",
+                "addressLocality": "Zhengzhou City",
+                "addressRegion": "Henan",
+                "postalCode": "450000",
+                "addressCountry": "China"
+            },
+            "logo": {
+                "@type": "ImageObject",
+                "@id": "https:\/\/www.tigersalu.com\/ar\/#logo",
+                "url": "https:\/\/img.tigersalu.com\/2021\/03\/tigers-aluminum-logo.png",
+                "caption": "Henan Tigers Industry Co., Ltd",
+                "inLanguage": "ar",
+                "width": "320",
+                "height": "320"
+            },
+            "location": {
+                "@id": "https:\/\/www.tigersalu.com\/ar\/#place"
+            }
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https:\/\/www.tigersalu.com\/ar\/#website",
+            "url": "https:\/\/www.tigersalu.com\/ar\/",
+            "name": "\u0634\u0631\u0643\u0629 \u0635\u0646\u0627\u0639\u0629 \u0646\u0645\u0648\u0631 \u062e\u0646\u0627\u0646 \u0627\u0644\u0645\u062d\u062f\u0648\u062f\u0629",
+            "publisher": {
+                "@id": "https:\/\/www.tigersalu.com\/ar\/#organization"
+            },
+            "inLanguage": "ar"
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https:\/\/www.tigersalu.com\/ar\/tag\/diffe\/\/#breadcrumb",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": "1",
+                    "item": {
+                        "@id": "https:\/\/www.tigersalu.com\/",
+                        "name": "\u0627\u0644\u0635\u0641\u062d\u0629 \u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0629"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": "2",
+                    "item": {
+                        "@id": "https:\/\/www.tigersalu.com\/ar\/tag\/diffe\/",
+                        "name": "\u0641\u0631\u0642"
+                    }
+                }
+            ]
+        },
+        {
+            "@type": "CollectionPage",
+            "@id": "https:\/\/www.tigersalu.com\/ar\/tag\/diffe\/\/#webpage",
+            "url": "https:\/\/www.tigersalu.com\/ar\/tag\/diffe\/\/",
+            "name": "\u0623\u0631\u0634\u064a\u0641\u0627\u062a Diffe - Tigers Aluminium",
+            "isPartOf": {
+                "@id": "https:\/\/www.tigersalu.com\/ar\/#website"
+            },
+            "inLanguage": "ar",
+            "breadcrumb": {
+                "@id": "https:\/\/www.tigersalu.com\/ar\/tag\/diffe\/\/#breadcrumb"
+            }
+        }
+    ]
+}</script>
+
+<link data-minify="1" rel='stylesheet' id='tgs-style-css' href='../../../wp-content/cache/min/1/wp-content/themes/tgs/css/tigers.css?ver=1651888899' type='text/css' media='all'>
+<link data-minify="1" rel='stylesheet' id='tgs-rtl-css' href='../../../wp-content/cache/min/1/wp-content/themes/tgs/css/tigers-rtl.css?ver=1651889405' type='text/css' media='all'>
+<style id='rocket-lazyload-inline-css' type='text/css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:url(../../../wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}
+</style>
+<link rel='preload' href='../../../wp-content/themes/tgs/css/fonts/tigers.woff2' as='font' type='font/woff2' crossorigin="">
+<script type='text/javascript' src='../../../wp-includes/js/jquery/jquery.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='../../../wp-content/themes/tgs/js/jquery-3.5.1.min.js?ver=3.5.1' id='tgs-jquery-js'></script>
+<link rel="alternate" hreflang="en-US" href="../../../tag/diffe/index.htm">
+<link rel="alternate" hreflang="en-GB" href="../../../en_gb/tag/diffe/index.htm">
+<link rel="alternate" hreflang="es-ES" href="../../../es/tag/diffe/index.htm">
+<link rel="alternate" hreflang="pt-PT" href="../../../pt/tag/diffe/index.htm">
+<link rel="alternate" hreflang="ru-RU" href="../../../ru/tag/diffe/index.htm">
+<link rel="alternate" hreflang="ar" href="index.htm">
+<link rel="alternate" hreflang="fr-FR" href="../../../fr/tag/diffe/index.htm">
+<link rel="alternate" hreflang="en" href="../../../tag/diffe/index.htm">
+<link rel="alternate" hreflang="es" href="../../../es/tag/diffe/index.htm">
+<link rel="alternate" hreflang="pt" href="../../../pt/tag/diffe/index.htm">
+<link rel="alternate" hreflang="ru" href="../../../ru/tag/diffe/index.htm">
+<link rel="alternate" hreflang="fr" href="../../../fr/tag/diffe/index.htm">
+<link rel="alternate" hreflang="x-default" href="../../../tag/diffe/index.htm">
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><link rel="apple-touch-icon" sizes="180x180" href="../../../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../../favicon-16x16.png">
+<link rel="manifest" href="../../../site.webmanifest">
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js" async></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"  async></script>
+<![endif]-->
+<script type="rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PNBHDB4');</script>
+</head>
+<body class="neiye bg1">
+<noscript><iframe src="../../../ns.html.htm?id=GTM-PNBHDB4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<header class="page_header" dir="ltr">
+  <nav class="navbar nav_main navbar-expand-lg" id="main_navbar">
+    <div class="container">
+	  <a class="navbar-brand order-2 order-lg-0" title="شعار النمور للألمنيوم" alt="Tigers Aluminum logo" href="../../index.htm">
+      <img src="/images/logo.png">
+      </a>
+      <button class="navbar-toggler order-3 order-lg-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <div class="collapse navbar-collapse order-4 order-lg-0" id="navbarSupportedContent">
+        <ul id="menu-topnav" class="navbar-nav ml-auto" itemscope="" itemtype="http://www.schema.org/SiteNavigationElement"><li><a itemprop="url" href="../../index.htm" class="nav-link"><span itemprop="name">الصفحة الرئيسية</span></a></li>
+<li class="dropdown"><a title="منتج الألومنيوم Mteal" href="../../aluminum-metal/index.htm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-339"><span itemprop="name">منتجات</span></a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-339">
+	<li><a itemprop="url" href="../../products/aluminum-mill-finish/index.htm" class="dropdown-item"><span itemprop="name">مطحنة الألومنيوم</span></a></li>
+	<li><a itemprop="url" href="../../products/painted-coated-aluminum/index.htm" class="dropdown-item"><span itemprop="name">الألمنيوم المطلي المطلي</span></a></li>
+	<li><a itemprop="url" href="../../products/powder-coating-aluminium/index.htm" class="dropdown-item"><span itemprop="name">مسحوق طلاء الألمنيوم</span></a></li>
+	<li><a itemprop="url" href="../../products/aluminium-cladding/index.htm" class="dropdown-item"><span itemprop="name">الكسوة الألومنيوم</span></a></li>
+	<li><a itemprop="url" href="../../products/perforated-aluminium/index.htm" class="dropdown-item"><span itemprop="name">ألمنيوم مثقب</span></a></li>
+</ul>
+</li>
+<li><a itemprop="url" href="../../blog/index.htm" class="nav-link"><span itemprop="name">مقالات</span></a></li>
+<li><a rel="nofollow" itemprop="url" href="../../about-tigers/index.htm" class="nav-link"><span itemprop="name">حول النمور</span></a></li>
+<li><a rel="nofollow" itemprop="url" href="../../contact-tigers/index.htm" class="nav-link"><span itemprop="name">اتصل بنا</span></a></li>
+</ul>      </div>
+		<div class="header-extras order-1 order-lg-0">
+          <ul>
+            <li> <div id="btn-search"> <i class="iconfont icon-search"></i></div> </li>
+            <li> 
+              <div class="trp_language_switcher_shortcode">
+<div class="trp-language-switcher trp-language-switcher-container" data-no-translation="">
+    <div class="trp-ls-shortcode-current-language">
+        <a href="#" class="trp-ls-shortcode-disabled-language trp-ls-disabled-language" title="Arabic" onclick="event.preventDefault()">
+			 Arabic		</a>
+    </div>
+    <div class="trp-ls-shortcode-language">
+                <a href="#" class="trp-ls-shortcode-disabled-language trp-ls-disabled-language" title="Arabic" onclick="event.preventDefault()">
+			 Arabic		</a>
+                    <a href="../../../tag/diffe/index.htm" title="English(US)">
+             English(US)        </a>
+
+            <a href="../../../en_gb/tag/diffe/index.htm" title="English(UK)">
+             English(UK)        </a>
+
+            <a href="../../../es/tag/diffe/index.htm" title="Spanish">
+             Spanish        </a>
+
+            <a href="../../../pt/tag/diffe/index.htm" title="Portuguese">
+             Portuguese        </a>
+
+            <a href="../../../ru/tag/diffe/index.htm" title="Russian">
+             Russian        </a>
+
+            <a href="../../../fr/tag/diffe/index.htm" title="French">
+             French        </a>
+
+        </div>
+    <script type="rocketlazyloadscript" data-rocket-type="application/javascript">
+        // need to have the same with set from JS on both divs. Otherwise it can push stuff around in HTML
+        var trp_ls_shortcodes = document.querySelectorAll('.trp-language-switcher');
+        if ( trp_ls_shortcodes.length > 0) {
+            // get the last language switcher added
+            var trp_el = trp_ls_shortcodes[trp_ls_shortcodes.length - 1];
+
+            /* Added extra check to not execute width adjustment on the shortcode language switcher placed inside
+             * trp_ald_ls_shortcode_popup Automatic User Language Detection Popup.
+             * A similar script is executed there to adjust width.
+             */
+            if ( ! ( (" " + trp_el.parentNode.className + " ").replace(/[\n\t]/g, " ").indexOf(" trp_ald_ls_shortcode_popup ") > -1 ) ){
+                // above expression is vanilla JS for "does not have CSS class trp_ald_ls_shortcode_popup" in the parent node
+
+                var trp_shortcode_language_item = trp_el.querySelector( '.trp-ls-shortcode-language' )
+                // set width
+                var trp_ls_shortcode_width                                               = trp_shortcode_language_item.offsetWidth + 16;
+                trp_shortcode_language_item.style.width                                  = trp_ls_shortcode_width + 'px';
+                trp_el.querySelector( '.trp-ls-shortcode-current-language' ).style.width = trp_ls_shortcode_width + 'px';
+
+                // We're putting this on display: none after we have its width.
+                trp_shortcode_language_item.style.display = 'none';
+            }
+        }
+    </script>
+</div>
+</div>            </li>
+          </ul>
+        </div>
+    </div>
+  </nav>
+<div id="search">
+  <button id="btn-search-close" class="btn-search-close" aria-label="إغلاق نموذج البحث">X</button>
+  <form class="search-form" id="searchform" action="https://www.tigersalu.com/ar/" method="get" role="search" data-trp-original-action="https://www.tigersalu.com/ar/">
+	<input class="form-control" name="s" type="search" placeholder="بحث..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+	  <button type="submit" class="search_icon"><i class="iconfont icon-search"></i></button>
+	<span class="text-muted">ابدأ الكتابة واضغط على &quot;Enter&quot; أو &quot;ESC&quot; للإغلاق</span>
+  <input type="hidden" name="trp-form-language" value="ar"></form>
+  <div class="container">
+	<div class="row text-left">
+	<div class="col-12 col-md-6 text-center text-md-left">
+	  <h3>منتوجات جديدة</h3>
+	  
+          <p><a href="../../product/3104-aluminum/index.htm">3104 ألومنيوم </a></p>
+         
+          <p><a href="../../product/5005-aluminum-sheet/index.htm">5005 صفائح الألمنيوم </a></p>
+         
+          <p><a href="../../product/5-bar-aluminum-checker-plate/index.htm">5 شريط المدقق الألومنيوم لوحة </a></p>
+         
+          <p><a href="../../product/aluminum-diamond-plate/index.htm">لوحة الماس الألومنيوم </a></p>
+         
+          <p><a href="../../product/thick-aluminum-foil/index.htm">رقائق الألومنيوم السميكة </a></p>
+        	</div>
+	<div class="col-6 d-none d-md-block">
+	  <h3>مشاركات المدونة</h3>
+	   
+          <p><a href="../../what-is-the-physical-properties-of-aluminium/index.htm">ما هي الخصائص الفيزيائية للألمنيوم؟ </a></p>
+         
+          <p><a href="../../what-is-aluminum-6061-t6-properties/index.htm">ما هي خصائص الألومنيوم 6061 t6؟ </a></p>
+         
+          <p><a href="../../how-thick-is-18-gauge-aluminum/index.htm">ما هي سماكة الألومنيوم قياس 18؟ </a></p>
+         
+          <p><a href="../../how-thick-is-20-gauge-aluminum/index.htm">ما هي سماكة الألومنيوم قياس 20؟ </a></p>
+         
+          <p><a href="../../how-thick-is-14-gauge-aluminum/index.htm">ما هي سماكة قياس 14 من الألومنيوم؟ </a></p>
+        	</div>
+	</div>
+  </div>
+</div>
+</header>
+<section id="home-banner">
+  <div class="index-banner section_box_shadow">
+    <div class="top_hero_sec">
+      <img src="/images/logo.png">
+      <div class="owl-carousel index-slide">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-5 order-sm-1 order-md-2 float-right mt-4 mb-4 mt-md-5 mt-lg-2">
+              <div class="banner_image_right" style="animation-delay:1s;-webkit-animation-delay:1s;">
+                <svg version="1.1" id="aluminum panel" xmlns="http://www.w3.org/2000/svg" viewbox="60 160 910 700"><g><path style="fill:#D9BF53;" d="M743.6,699.29c2.57,2.37,20.88,23.47,22.63,25.79c1.75,2.33,10.02,3.3,13.53,1.17 c2-1.21,77-48.9,95.71-61.64c2.88-1.96,4.98-10.69,0.87-14.53c-11.58-10.8-16.96-15.5-20.8-19.29l-113.55,63.11 C741.82,695.48,741.92,697.84,743.6,699.29z M792.95,676.45l26.2-14.93c2.84-1.97,5.07-2.51,8.07-0.2l4.99,4.25 c2.12,2.86,0.34,5.34-2.64,7.76l-23.77,14.6c-2.83,1.97-5.03,3.89-8.25,2.04l-5.58-5.98C789.78,681.74,790.26,678.28,792.95,676.45 z"></path><path style="fill:#D5B63B;" d="M382.17,719.26l-94.46-94.53c0,0-0.99,5.71-3.6,6.8c-2.02,1.12-17.46,8.77-28.97,16.71 c-4.6,3.18-6.32,9.53-1.79,14.88c15.43,18.22,76.95,82.22,78.26,83.48c2.96,2.85,12.01,3.53,14.65,1.54 c2.65-1.99,29.23-19.54,32.76-21.42c2.55-1.26,3.4-4.09,3.67-5.66C382.81,720.38,382.62,719.72,382.17,719.26z M330.82,698.16 l-7.94,4.9c-4.03,1.22-5.68-1.15-7.98-3.7l-19.51-20.34c-2.3-3.03-3.32-5.89-0.09-8.34l6.72-3.28c3.95-1.72,6.12-0.73,8.43,1.82 l21.96,21.15C334.61,692.76,333.91,696.34,330.82,698.16z"></path><polygon style="fill:#F1DD85;" points="934.37,527.85 934.89,588 494.43,832.59 490.63,764.35"></polygon><polygon style="fill:#BE9B0F;" points="490.63,764.35 494.43,832.59 94.25,432.29 88.56,375.2"></polygon><polygon style="fill:#E0B81B;" points="491.07,189.27 934.37,527.85 490.63,764.35 88.56,375.2"></polygon></g></svg>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-7 order-sm-2 order-md-1 index_banner_conetnt float-left mt-4 mb-4 mt-md-5 text-center text-md-left">
+              <h2 class="mb-lg-4" style="animation-delay:0.2s;-webkit-animation-delay:0.2s;"><strong>لوحة الكسوة الألومنيوم</strong><br>
+                (قشرة ألومنيوم)</h2>
+              <ul class="mb-lg-4" style="animation-delay:0.5s;-webkit-animation-delay:0.5s;">
+                <li><b>الدهانات: </b>الفلوروكربون (PVDF) والبوليستر (PE) ومسحوق الطلاء</li>
+                <li><b>سمك التغليف: </b>5 ميكرومتر إلى 40 ميكرومتر ، مسحوق الطلاء كحد أقصى. حتى 100+ ميكرومتر</li>
+                <li>OEM أو ODM</li>
+              </ul>
+              <a href="../../products/aluminium-cladding/index.htm" class="btn" style="animation-delay:0.8s;-webkit-animation-delay:0.8s;">تصفح ألواح الكسوة المصنوعة من الألمنيوم <i class="iconfont icon-arrow-right"></i></a> </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-5 order-sm-1 order-md-2 float-right mt-2 mt-md-5 mt-lg-2">
+              <div class="banner_image_right" style="animation-delay:1s;-webkit-animation-delay:1s;">
+                <svg version="1.1" id="color aluminum sheet" xmlns="http://www.w3.org/2000/svg" viewbox="25 175 965 695"><path style="fill:#002265;" d="M600.11,482.46v338.07c0,0.19-0.15,0.34-0.34,0.34H69.13c-0.19,0-0.34-0.15-0.34-0.34V482.46 c0-0.19,0.15-0.34,0.34-0.34h530.64C599.96,482.12,600.11,482.27,600.11,482.46z"></path><path style="fill:#B6061D;" d="M692,494.5l-90.26,326.45c-0.05,0.17-0.22,0.26-0.39,0.22L89,686.25c-0.17-0.04-0.27-0.21-0.22-0.38 l90.26-326.45c0.05-0.17,0.22-0.26,0.39-0.22l512.36,134.93C691.95,494.17,692.05,494.34,692,494.5z"></path><path style="fill:#FCC846;" d="M788.34,536.29L601.36,820.95c-0.09,0.14-0.29,0.19-0.44,0.09L154.16,541.53 c-0.15-0.09-0.19-0.28-0.1-0.43l186.98-284.66c0.09-0.14,0.29-0.19,0.44-0.09l446.77,279.51 C788.39,535.95,788.43,536.14,788.34,536.29z"></path><path style="fill:#179A46;" d="M865.56,602.26L601.4,821.04c-0.13,0.11-0.33,0.09-0.45-0.04L257.58,426.1 c-0.11-0.13-0.1-0.33,0.04-0.44l264.16-218.78c0.13-0.11,0.33-0.09,0.45,0.04l343.37,394.9 C865.71,601.95,865.7,602.15,865.56,602.26z"></path><path style="fill:#ADACBC;" d="M928.42,711.17L600.75,821.01c-0.17,0.06-0.35-0.03-0.4-0.19l-172.4-489.83 c-0.06-0.16,0.03-0.34,0.2-0.39l327.67-109.84c0.17-0.06,0.35,0.03,0.4,0.19l172.4,489.83 C928.68,710.94,928.59,711.11,928.42,711.17z"></path><path style="fill:#E0E3F5;" d="M946.87,820.87H600.45c-0.19,0-0.34-0.15-0.34-0.34V302.67c0-0.19,0.15-0.34,0.34-0.34h346.42 c0.19,0,0.34,0.15,0.34,0.34v517.87C947.21,820.72,947.06,820.87,946.87,820.87z"></path></svg>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-7 order-sm-2 order-md-1 index_banner_conetnt float-left mt-2 mb-4 mt-md-5 text-center text-md-left">
+              <h2 class="mb-lg-4" style="animation-delay:0.2s;-webkit-animation-delay:0.2s;"><strong>لفائف وصفائح الألمنيوم المطلية</strong></h2>
+              <ul class="mb-lg-4" style="animation-delay:0.5s;-webkit-animation-delay:0.5s;">
+                <li><b>الدهانات: </b>الفلوروكربون (PVDF) أو PE</li>
+                <li><b>سمك التغليف: </b>5μm إلى 40μm ، مسحوق الطلاء كحد أقصى. ما يصل إلى 100 ميكرون</li>
+                <li><b>عرض ماكس: </b>1850 ملم</li>
+                <li><b>ماركة الدهانات: </b>PPG ، AkzoNobel ، KFCC</li>
+                <li><b>اللون: </b>مخطط ألوان Ral ، مخطط ألوان Pantone وعينة</li>
+              </ul>
+              <a href="../../products/painted-coated-aluminum/index.htm" class="btn" style="animation-delay:0.8s;-webkit-animation-delay:0.8s;">تصفح لفائف وصفائح الألمنيوم المطلية <i class="iconfont icon-arrow-right"></i></a> </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-5 order-sm-1 order-md-2 float-right mt-0 mt-md-5 mt-lg-2">
+              <div class="banner_image_right" style="animation-delay:1s;-webkit-animation-delay:1s;">
+                <svg version="1.1" id="aluminum sheets coils" xmlns="http://www.w3.org/2000/svg" viewbox="40 100 950 840"><g><polygon style="fill:#FFFFFF;" points="942.8,857.6 158.9,895.6 84.7,821.3 84.7,602 739.7,596.2 942.8,638.2 	"></polygon><g><polygon style="fill:#C2C1C1;" points="158.9,659.9 84.7,605.5 84.7,602 158.9,655.6"></polygon><polygon style="fill:#C2C1C1;" points="158.9,671.2 84.7,615.8 84.7,612.2 158.9,666.9"></polygon><polygon style="fill:#C2C1C1;" points="158.9,682.4 84.7,626 84.7,622.5 158.9,678.1"></polygon><polygon style="fill:#C2C1C1;" points="158.9,693.6 84.7,636.3 84.7,632.8 158.9,689.4"></polygon><polygon style="fill:#C2C1C1;" points="158.9,704.8 84.7,646.6 84.7,643 158.9,700.6"></polygon><polygon style="fill:#C2C1C1;" points="158.9,716.1 84.7,656.9 84.7,653.3 158.9,711.8"></polygon><polygon style="fill:#C2C1C1;" points="158.9,727.3 84.7,667.2 84.7,663.6 158.9,723.1"></polygon><polygon style="fill:#C2C1C1;" points="158.9,738.5 84.7,677.4 84.7,673.8 158.9,734.3"></polygon><polygon style="fill:#C2C1C1;" points="158.9,749.7 84.7,687.7 84.7,684.1 158.9,745.6"></polygon><polygon style="fill:#C2C1C1;" points="158.9,761 84.7,698 84.7,694.4 158.9,756.8"></polygon><polygon style="fill:#C2C1C1;" points="158.9,772.2 84.7,708.3 84.7,704.6 158.9,768"></polygon><polygon style="fill:#C2C1C1;" points="158.9,783.4 84.7,718.6 84.7,714.9 158.9,779.3"></polygon><polygon style="fill:#C2C1C1;" points="158.9,794.6 84.7,728.8 84.7,725.2 158.9,790.5"></polygon><polygon style="fill:#C2C1C1;" points="158.9,805.8 84.7,739.1 84.7,735.5 158.9,801.7"></polygon><polygon style="fill:#C2C1C1;" points="158.9,817.1 84.7,749.4 84.7,745.7 158.9,813"></polygon><polygon style="fill:#C2C1C1;" points="158.9,828.3 84.7,759.7 84.7,756 158.9,824.2"></polygon><polygon style="fill:#C2C1C1;" points="158.9,839.5 84.7,769.9 84.7,766.3 158.9,835.5"></polygon><polygon style="fill:#C2C1C1;" points="158.9,850.7 84.7,780.2 84.7,776.5 158.9,846.7"></polygon><polygon style="fill:#C2C1C1;" points="158.9,862 84.7,790.5 84.7,786.8 158.9,857.9"></polygon><polygon style="fill:#C2C1C1;" points="158.9,873.2 84.7,800.8 84.7,797.1 158.9,869.2"></polygon><polygon style="fill:#C2C1C1;" points="158.9,884.4 84.7,811.1 84.7,807.3 158.9,880.4"></polygon><polygon style="fill:#C2C1C1;" points="158.9,895.6 84.7,821.3 84.7,817.6 158.9,891.7"></polygon></g><polygon style="fill:#ADADAD;" points="739.7,596.2 84.7,602 158.9,655.6 942.8,638.2 "></polygon><g><polygon style="fill:#D1D1D1;" points="158.9,655.6 158.9,659.9 942.8,641.9 942.8,638.2"></polygon><polygon style="fill:#D1D1D1;" points="158.9,666.9 158.9,671.2 942.8,652.2 942.8,648.5"></polygon><polygon style="fill:#D1D1D1;" points="158.9,678.1 158.9,682.4 942.8,662.4 942.8,658.7"></polygon><polygon style="fill:#D1D1D1;" points="158.9,689.4 158.9,693.6 942.8,672.7 942.8,669"></polygon><polygon style="fill:#D1D1D1;" points="158.9,700.6 158.9,704.8 942.8,683 942.8,679.3"></polygon><polygon style="fill:#D1D1D1;" points="158.9,711.8 158.9,716.1 942.8,693.3 942.8,689.5"></polygon><polygon style="fill:#D1D1D1;" points="158.9,723.1 158.9,727.3 942.8,703.5 942.8,699.8"></polygon><polygon style="fill:#D1D1D1;" points="158.9,734.3 158.9,738.5 942.8,713.8 942.8,710.1"></polygon><polygon style="fill:#D1D1D1;" points="158.9,745.6 158.9,749.7 942.8,724.1 942.8,720.3"></polygon><polygon style="fill:#D1D1D1;" points="158.9,756.8 158.9,761 942.8,734.3 942.8,730.6"></polygon><polygon style="fill:#D1D1D1;" points="158.9,768 158.9,772.2 942.8,744.6 942.8,740.9"></polygon><polygon style="fill:#D1D1D1;" points="158.9,779.3 158.9,783.4 942.8,754.9 942.8,751.2"></polygon><polygon style="fill:#D1D1D1;" points="158.9,790.5 158.9,794.6 942.8,765.1 942.8,761.4"></polygon><polygon style="fill:#D1D1D1;" points="158.9,801.7 158.9,805.8 942.8,775.4 942.8,771.7"></polygon><polygon style="fill:#D1D1D1;" points="158.9,813 158.9,817.1 942.8,785.7 942.8,782"></polygon><polygon style="fill:#D1D1D1;" points="158.9,824.2 158.9,828.3 942.8,796 942.8,792.2"></polygon><polygon style="fill:#D1D1D1;" points="158.9,835.5 158.9,839.5 942.8,806.2 942.8,802.5"></polygon><polygon style="fill:#D1D1D1;" points="158.9,846.7 158.9,850.7 942.8,816.5 942.8,812.8"></polygon><polygon style="fill:#D1D1D1;" points="158.9,857.9 158.9,862 942.8,826.8 942.8,823"></polygon><polygon style="fill:#D1D1D1;" points="158.9,869.2 158.9,873.2 942.8,837 942.8,833.3"></polygon><polygon style="fill:#D1D1D1;" points="158.9,880.4 158.9,884.4 942.8,847.3 942.8,843.6"></polygon><polygon style="fill:#D1D1D1;" points="158.9,891.7 158.9,895.6 942.8,857.6 942.8,853.9"></polygon></g></g><g><path style="fill:#FFFFFF;" d="M764.6,597.5c-10.7,3.4-22.1,5.2-33.9,5.2H556.7c-0.5,0-1,0-1.5,0c-62.4,0-113-50.6-113-113 c0-60.9,48.1-110.5,108.4-112.9l-58.1,0c-43.4,22-72.5,65.9-71.4,115.8c1.1,47.9,29.8,89.1,71.3,110H281.6c-0.5,0-1,0-1.5,0 c-62.1,0-112.5-50.1-113-112.1c-0.6,92.9,64.1,122.9,107.9,122.9v0.1l466.5-0.2c40.5,0.2,99.5-35.7,101.9-118.6 C841.2,543.2,808.8,583.6,764.6,597.5z"></path><path style="fill:#BBBBBB;" d="M764.4,389.7c-9.4-3-19.3-4.7-29.6-5.1h-8.6l-166.8-7.9c60.4,2.3,108.7,51.9,108.7,112.9 c0,62.4-50.6,113-113,113h175.5c11.8,0,23.2-1.8,33.9-5.2c45.8-14.4,79.1-57.2,79.1-107.8C843.5,439,810.3,404.2,764.4,389.7z"></path><path style="fill:#E2E2E2;" d="M668,489.7c0,62.4-50.6,113-113,113s-113-50.6-113-113s50.6-113,113-113S668,427.3,668,489.7z"></path><circle style="fill:#9E723E;" cx="555.1" cy="489.7" r="50.2"></circle><path style="fill:#ADADAD;" d="M421,492.6c-1.1-50,28.1-93.9,71.5-115.9H284.3C344.7,379,393,428.7,393,489.6 c0,62.4-50.6,113-113,113h212.3C450.7,581.7,422.1,540.6,421,492.6z"></path><path style="fill:#E2E2E2;" d="M392.9,489.7c0,62.4-50.6,113-113,113s-113-50.6-113-113s50.6-113,113-113S392.9,427.3,392.9,489.7z"></path><circle style="fill:#9E723E;" cx="280" cy="489.7" r="50.2"></circle><g><path style="fill:#FFFFFF;" d="M626.7,361.3c-10.7,3.4-22.1,5.2-33.9,5.2H419.7c-0.5,0-1,0-1.5,0c-62.1,0-112.6-50.2-113-112.2 c-0.5,92.7,63.8,123,107.6,123v0.1l191.3-0.2c40.6,0.2,99.2-35.8,101.5-118.8C703.5,306.8,671.1,347.3,626.7,361.3z"></path></g><path style="fill:#BBBBBB;" d="M626.7,153.6c-9.4-3-19.3-4.7-29.6-5.1h-8.6l-166.8-7.9c60.4,2.3,108.7,51.9,108.7,112.9 c0,62.4-50.6,113-113,113h175.5c11.8,0,23.2-1.8,33.9-5.2c45.8-14.4,79.1-57.2,79.1-107.8S672.5,168,626.7,153.6z"></path><path style="fill:#E2E2E2;" d="M531.1,253.5c0,62.4-50.6,113-113,113s-113-50.6-113-113s50.6-113,113-113S531.1,191.1,531.1,253.5z"></path><circle style="fill:#9E723E;" cx="418.1" cy="253.5" r="50.2"></circle></g></svg>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-7 order-sm-2 order-md-1 index_banner_conetnt float-left mt-0 mb-4 mt-md-5 text-center text-md-left">
+              <h2 class="mb-lg-4" style="animation-delay:0.2s;-webkit-animation-delay:0.2s;"><strong>لفائف وصفائح الألمنيوم</strong></h2>
+              <ul class="mb-lg-4" style="animation-delay:0.5s;-webkit-animation-delay:0.5s;">
+                <li><b>أشابة: </b>1050 ، 1060 ، 1100 ، 3003 ، 3004 ، 3105 ، 5005 ، 5052 ، 5083 ، 5454 ، 5754 ، 6061 ، 6063 ، 8011 ، 8079 إلخ.</li>
+                <li><b>لين، لطف، هدأ: </b>O ، H12 ، H14 ، H16 ، H18 ، H22 ، H24 ، H26 ، H32 ، H34 ، H111 ، H112 ، H116 ، H321 ، T4 ، T6 ، T651</li>
+                <li><b>بحجم: </b>حجم مخصص (طول / عرض) وسمك</li>
+                <li><b>سماكة: </b>0.2-260 ملم</li>
+                <li><b>عرض: </b>10-2800 مم</li>
+              </ul>
+              <a href="../../products/aluminum-sheet-plate/index.htm" class="btn" style="animation-delay:0.8s;-webkit-animation-delay:0.8s;">تصفح لفائف وصفائح الألمنيوم <i class="iconfont icon-arrow-right"></i></a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<article id="home-feature">
+  <div class="home-features container text-center section_box_shadow clearfix">
+    <div class="row">
+      <div class="col-12 section-title1">
+        <h1>لفائف وصفائح الألمنيوم في المصنع بتشطيب مطحنة أو طلاء PE / PVDF أو مسحوق الطلاء لزخارف البناء</h1>
+        <div class="bar"></div>
+      </div>
+      <div class="col-md-12 col-lg-4">
+        <h2>لفائف وصفائح الألمنيوم</h2>
+        <p>تنتج صناعة النمور لفائف الألمنيوم وألواح الألمنيوم بمختلف السبائك والمزاج ، وتستخدم المواد على نطاق واسع في النقل والبناء والديكور والجدار الساتر والسقف والسقف والأجهزة المنزلية والأجهزة المعدنية والحاويات البحرية والقوالب.</p>
+      </div>
+      <div class="col-md-12 col-lg-4">
+        <h2>لفائف وصفائح الألمنيوم المطلية</h2>
+        <p>تنتج صناعة النمور لفائف الألمنيوم المطلية وصفائح الألمنيوم مع دهانات الفلوروكربون (PVDF) والبوليستر (PE) وطلاء المسحوق. سماكة الطلاء من 5 ميكرون إلى 40 ميكرون ، ويمكن طلاء مسحوق الطلاء بأكثر من 100 ميكرون أو حسب الطلب.</p>
+      </div>
+      <div class="col-md-12 col-lg-4">
+        <h2>لوحة كسوة ألمنيوم</h2>
+        <p>هذه هي منتجات الألومنيوم OEM أو ODM. تشير لوحة الكسوة المصنوعة من الألمنيوم (قشرة الألمنيوم / لوح الألمنيوم الصلب) إلى مواد زخرفة المباني التي يتم تصنيعها بالكروم ، ثم تتم معالجتها بواسطة تقنية رش الفلوروكربون. إنها أكثر مواد التشييد والبناء شيوعًا في السوق.</p>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</article>
+<main>
+<section class="prolist section_box_shadow mt-4">
+  <div class="section-full pt-3 pb-3">
+    <div class="container-fluid section-title1 text-center mb-5 mt-3">
+      <h2>منتجات الألمنيوم</h2>
+      <div class="bar"></div>
+      <p>لوح الألمنيوم / لفائف / الألمنيوم الملون / الشركة المصنعة لألواح الألمنيوم الصلبة</p>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
+          <div class="image-effect-two hover-shadow">
+            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="/2021/03/aluminum-can1-380x285.jpg" srcset="../../../2021/03/aluminum-can1-380x285.jpg" alt="3104 علبة ألمنيوم" title="3104 ألومنيوم">
+              <figcaption>3104 ألومنيوم</figcaption>
+            </figure>
+            <div class="figcaption">
+             <a href="../../product/3104-aluminum/index.htm"><h3 class="mt-tilte">3104 ألومنيوم</h3></a>
+              <p>إضافة السبائك الرئيسية لسبائك الألومنيوم 3104 هي المنغنيز ، ولديها قوة شد عالية ≥ 275Mpa ، واستطالة تصل إلى 20% ، وسحب عميق وقابلية ممتازة. أكثر التطبيقات شيوعًا هي علب المشروبات وعلب البيرة.</p>
+            </div>
+             </div>
+        </div>
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
+          <div class="image-effect-two hover-shadow">
+            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="/2021/02/8mm-5005-h32-aluminum-plate-1-380x285.jpg" srcset="../../../2021/02/8mm-5005-h32-aluminum-plate-1-380x285.jpg" alt="8 مم 5005 h32 صفيحة ألمنيوم" title="5005 صفائح الألمنيوم">
+              <figcaption>5005 صفائح الألمنيوم</figcaption>
+            </figure>
+            <div class="figcaption">
+             <a href="../../product/5005-aluminum-sheet/index.htm"><h3 class="mt-tilte">5005 صفائح الألمنيوم</h3></a>
+              <p>تحتوي صفائح وصفيحة الألمنيوم 5005 على 0.8% من المغنيسيوم ، ولديها قوة متوسطة ، وقابلية جيدة للحام ، ومتوفرة بشكل شائع في لفائف وصفائح وألواح الألمنيوم المدرفلة بشكل مسطح من مجموعة واسعة من مصانع الإنتاج.</p>
+            </div>
+             </div>
+        </div>
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
+          <div class="image-effect-two hover-shadow">
+            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="/2022/02/5-bar-aluminum-tread-plate-380x285.jpg" srcset="../../../2022/02/5-bar-aluminum-tread-plate-380x285.jpg" alt="5 بار فقي لوحة الألومنيوم" title="5 شريط المدقق الألومنيوم لوحة">
+              <figcaption>5 شريط المدقق الألومنيوم لوحة</figcaption>
+            </figure>
+            <div class="figcaption">
+             <a href="../../product/5-bar-aluminum-checker-plate/index.htm"><h3 class="mt-tilte">5 شريط المدقق الألومنيوم لوحة</h3></a>
+              <p>لوحة المدقق المصنوعة من الألومنيوم 5 بار (لوحة المداس) عبارة عن ورقة ناعمة بنمط ماسي منتظم على جانب واحد. يتم استخدامه للأرضيات ، والكسوة ، وصناديق الأدوات ، والسلالم أو أي شيء يتطلب خاصية ارتداء شديدة الصلابة.</p>
+            </div>
+             </div>
+        </div>
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
+          <div class="image-effect-two hover-shadow">
+            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="/2022/02/diamond-plate-aluminum-sheets-4x8-1-380x285.jpg" srcset="../../../2022/02/diamond-plate-aluminum-sheets-4x8-1-380x285.jpg" alt="صفائح الألومنيوم لوحة الماس 4x8" title="لوحة الماس الألومنيوم">
+              <figcaption>لوحة الماس الألومنيوم</figcaption>
+            </figure>
+            <div class="figcaption">
+             <a href="../../product/aluminum-diamond-plate/index.htm"><h3 class="mt-tilte">لوحة الماس الألومنيوم</h3></a>
+              <p>تسمى صفيحة الألمنيوم الماسية أحيانًا صفيحة الألمنيوم أو صفيحة الألمنيوم أو لوحة مدقق الألمنيوم. الحجم الشائع هو 4x8 &#039;، السماكة 1/8 ، 3/16 ، 1/4 ، وما إلى ذلك ، فهي توفر الكثافة ، وعدم الانزلاق ، والمتانة.</p>
+            </div>
+             </div>
+        </div>
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
+          <div class="image-effect-two hover-shadow">
+            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="/2021/12/thick-aluminum-foil-380x285.jpg" srcset="../../../2021/12/thick-aluminum-foil-380x285.jpg" alt="رقائق الألومنيوم السميكة" title="رقائق الألومنيوم السميكة">
+              <figcaption>رقائق الألومنيوم السميكة</figcaption>
+            </figure>
+            <div class="figcaption">
+             <a href="../../product/thick-aluminum-foil/index.htm"><h3 class="mt-tilte">رقائق الألومنيوم السميكة</h3></a>
+              <p>رقائق الألومنيوم السميكة أكثر سمكًا من رقائق الألومنيوم العادية. يمكن أن يصل سمك بعض رقائق الألومنيوم السميكة أو رقائق الألومنيوم المنزلية شديدة التحمل إلى 0.94 ميل.</p>
+            </div>
+             </div>
+        </div>
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
+          <div class="image-effect-two hover-shadow">
+            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="/2021/02/5mm-5005-h32-aluminum-plate-1-380x285.jpg" srcset="../../../2021/02/5mm-5005-h32-aluminum-plate-1-380x285.jpg" alt="5 مم 5005 h32 صفيحة ألمنيوم" title="5052 صفيحة ألمنيوم">
+              <figcaption>5052 صفيحة ألمنيوم</figcaption>
+            </figure>
+            <div class="figcaption">
+             <a href="../../product/5052-aluminum-sheet/index.htm"><h3 class="mt-tilte">5052 صفيحة ألمنيوم</h3></a>
+              <p>صفائح الألمنيوم 5052 ممزوجة بمغنيسيوم 2.5% و 0.25% من الكروم. 5052 صفائح ألمنيوم ملحومة بسهولة ومقاومة عالية للتآكل.</p>
+            </div>
+             </div>
+        </div>
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
+          <div class="image-effect-two hover-shadow">
+            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="/2021/12/thick-heavy-duty-aluminum-foil-380x285.jpg" srcset="../../../2021/12/thick-heavy-duty-aluminum-foil-380x285.jpg" alt="رقائق ألومنيوم سميكة شديدة التحمل" title="رقائق الألمنيوم شديدة التحمل">
+              <figcaption>رقائق الألمنيوم شديدة التحمل</figcaption>
+            </figure>
+            <div class="figcaption">
+             <a href="../../product/heavy-duty-aluminum-foil/index.htm"><h3 class="mt-tilte">رقائق الألمنيوم شديدة التحمل</h3></a>
+              <p>ورق الألمنيوم شديد التحمل عبارة عن ورق ألومنيوم أكثر سمكًا ، ويمكن تقطيعه إلى 18 بوصة × 500 قدم وأحجام أخرى ، فضية أو ملونة. يوفر حماية إضافية ضد كل من درجات الحرارة العالية والبرودة المتجمدة ، مما يجعله مثاليًا للطهي الذي يتطلب أداءً عالي الجودة. اعثر على مورد رقائق الألومنيوم شديد التحمل بالقرب منك.</p>
+            </div>
+             </div>
+        </div>
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
+          <div class="image-effect-two hover-shadow">
+            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="/2021/02/1100-h14-aluminum-sheet-2-380x285.jpg" srcset="../../../2021/02/1100-h14-aluminum-sheet-2-380x285.jpg" alt="1100 h14 صفائح الألمنيوم" title="5X10 ورقة وصفيحة من الألومنيوم">
+              <figcaption>5X10 ورقة وصفيحة من الألومنيوم</figcaption>
+            </figure>
+            <div class="figcaption">
+             <a href="../../product/5x10-aluminum-sheet-plate/index.htm"><h3 class="mt-tilte">5X10 ورقة وصفيحة من الألومنيوم</h3></a>
+              <p>صفائح الألمنيوم 5 × 10 متوفرة بأطوال وعرض 5 أقدام و 10 أقدام. يمكن قطع مجموعة متنوعة من درجات سبائك الألومنيوم لهذا الحجم. تشمل السماكات الشائعة 1/4 &#039;، 1/8&#039; ، 1/16 &#039;، 0.125 ، 0.32 ، 0.40 ، إلخ.</p>
+            </div>
+             </div>
+        </div>
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
+          <div class="image-effect-two hover-shadow">
+            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="/2021/02/aluminum-sheet-with-blue-films-3-380x285.jpg" srcset="../../../2021/02/aluminum-sheet-with-blue-films-3-380x285.jpg" alt="صفائح الألمنيوم بأفلام زرقاء" title="4X8 لوحة ورقة الألومنيوم">
+              <figcaption>4X8 لوحة ورقة الألومنيوم</figcaption>
+            </figure>
+            <div class="figcaption">
+             <a href="../../product/4x8-aluminum-sheet-plate/index.htm"><h3 class="mt-tilte">4X8 لوحة ورقة الألومنيوم</h3></a>
+              <p>يتم استخدام لوح الألمنيوم 4 × 8 لجلود الشاحنات والمقطورات ، والسفن ، والمباني ، ويمكن طلاءها بألوان مختلفة ، ويمكن معالجة السطح إلى صفيحة فقي ، لوحة ماسية. سعر المصنع للبيع.</p>
+            </div>
+             </div>
+        </div>
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
+          <div class="image-effect-two hover-shadow">
+            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="/2021/02/3003-h14-aluminum-sheet-2-380x285.jpg" srcset="../../../2021/02/3003-h14-aluminum-sheet-2-380x285.jpg" alt="3003 h14 ورقة الألومنيوم" title="6082 موردي الألومنيوم T6 المزاج">
+              <figcaption>6082 موردي الألومنيوم T6 المزاج</figcaption>
+            </figure>
+            <div class="figcaption">
+             <a href="../../product/6082-aluminum-suppliers-t6-temper/index.htm"><h3 class="mt-tilte">6082 موردي الألومنيوم T6 المزاج</h3></a>
+              <p>سبائك الألومنيوم 6082 هي سبيكة من عائلة الألمنيوم والمغنيسيوم والسيليكون المشغول ، وهي واحدة من أكثر السبائك شيوعًا في سلسلة 6000 (جنبًا إلى جنب مع السبائك 6005 و 6061 و 6063). لا يتم استخدامه في الصب ، ولا يمكن تقوية العمل.</p>
+            </div>
+             </div>
+        </div>
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
+          <div class="image-effect-two hover-shadow">
+            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="/2021/02/6061-t6-aluminum-plate-380x285.jpg" srcset="../../../2021/02/6061-t6-aluminum-plate-380x285.jpg" alt="6061 t6 لوحة الألومنيوم" title="6061 ورقة الألومنيوم">
+              <figcaption>6061 ورقة الألومنيوم</figcaption>
+            </figure>
+            <div class="figcaption">
+             <a href="../../product/6061-aluminum-sheet-plate/index.htm"><h3 class="mt-tilte">6061 ورقة الألومنيوم</h3></a>
+              <p>6061 ورقة الألومنيوم تحتوي على 0.8%-1.2% المغنيسيوم. يمكن أن توفر لك Tigers Aluminium 6061 ورقة ألمنيوم بجودة موثوقة وتسليم سريع. المواصفات المشتركة في المخزون. يمكن تخصيص الأحجام الخاصة وفقًا لطلبات العملاء.</p>
+            </div>
+             </div>
+        </div>
+                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
+          <div class="image-effect-two hover-shadow">
+            <figure class="default-state"><img class="lazyload" loading="lazy" width="380" height="275" data-src="/2021/02/cutting-edge-without-burrs-of-aluminum-sheet-380x285.jpg" srcset="../../../2021/02/cutting-edge-without-burrs-of-aluminum-sheet-380x285.jpg" alt="حافة القطع بدون نتوءات من صفائح الألمنيوم" title="5754 صفيحة ألمنيوم">
+              <figcaption>5754 صفيحة ألمنيوم</figcaption>
+            </figure>
+            <div class="figcaption">
+             <a href="../../product/5754-aluminum-sheet-plate/index.htm"><h3 class="mt-tilte">5754 صفيحة ألمنيوم</h3></a>
+              <p>ألواح وألواح سبائك الألومنيوم 5754 عبارة عن سبائك مغنيسيوم وألمنيوم. تشمل الاستخدامات النموذجية ألواح هيكل السيارات ، وبناء السفن ، ودواسات العتبات ، وأجسام المركبات ، والمسامير ، ومعدات صناعة الصيد.</p>
+            </div>
+             </div>
+        </div>
+              </div>
+    </div>
+  </div>
+</section><section data-bg="/images/bg-map.png" class="iaboutus pt-5 rocket-lazyload" style="">
+  <div class="mt-separator-outer-top mt-3 pt-3">
+    <div class="container">
+      <div class="section-title1 text-center mb-5">
+        <h2>حول النمور</h2>
+        <div class="bar"></div>
+        <p>موثوق به صفائح الألمنيوم / لفائف / لون الألومنيوم / مصنعي وموردي ألواح الألمنيوم الصلبة</p>
+      </div>
+      <div class="section-content">
+        <div class="row">
+          <div class="col-lg-12 col-xl-8">
+            <div class="owl-carousel about-home owl-dots-bottom-left">
+              <div class="item">
+                <div class="mt-img-effect zoom-slow"> <img class="lazyload" width="600" data-src="/images/aluminum-sheet-coil-stock.jpg" alt="لفائف ورقة الألومنيوم الأسهم"> </div>
+              </div>
+              <div class="item">
+                <div class="mt-img-effect zoom-slow"> <img class="lazyload" width="600" data-src="/images/pre-coatin-production.jpg" alt="إنتاج ما قبل Coatin"> </div>
+              </div>
+              <div class="item">
+                <div class="mt-img-effect zoom-slow"> <img class="lazyload" width="600" data-src="/images/paint-powder-spraying-production.jpg" alt="إنتاج مسحوق رش الطلاء"> </div>
+              </div>
+              <div class="item">
+                <div class="mt-img-effect zoom-slow"> <img class="lazyload" width="600" data-src="/images/decoil.jpg" alt="فك"> </div>
+              </div>
+              <div class="item">
+                <div class="mt-img-effect zoom-slow"> <img class="lazyload" width="600" data-src="/images/pre-coatin-production-1.jpg" alt="إنتاج ما قبل Coatin"> </div>
+              </div>
+              <div class="item">
+                <div class="mt-img-effect zoom-slow"> <img class="lazyload" width="600" data-src="/images/paint-powder-spraying-production-line.jpg" alt="خط إنتاج رش مسحوق الطلاء"> </div>
+              </div>
+              <div class="item">
+                <div class="mt-img-effect zoom-slow"> <img class="lazyload" width="600" data-src="/images/third-party-inspection.jpg" alt="تفتيش الطرف الثالث"> </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 col-xl-4">
+            <div class="about-home-right about-right-v2 text-black p-3">
+              <h3 class="mt-0"><a href="../../about-tigers/index.htm" class="site-button-secondry btn-effect"><span>الصانع</span> من مواد سبائك الألومنيوم الجديدة</a></h3>
+              <p><strong>تلتزم Tigers بالبحث والتطوير وإنتاج مواد سبائك الألومنيوم الجديدة مثل ألواح الألمنيوم ، ولفائف الألمنيوم ، والألومنيوم الملون المطلي مسبقًا ، وقشرة الألومنيوم ، وما إلى ذلك. مع نظام إنتاج الألمنيوم الكامل ومعدات التحكم العددي ، فإن جودة النهاية المنتج قابل للتحكم والسعر معقول.</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-bg="/images/bg.jpg" class="services-half-section-bottom rocket-lazyload" style="">
+    <div class="container">
+      <div class="section-content">
+        <div class="row">
+          <div class="col-sm-12 col-lg-4 mb-5">
+            <div class="icon-md"> <i class="iconfont icon-factory" aria-hidden="true"></i> </div>
+            <div class="icon-content">
+              <div class="counter" data-count="80000">80,000+</div>
+              <span>ورشة (متر مربع)</span> </div>
+          </div>
+          <div class="col-sm-12 col-lg-4 mb-5">
+            <div class="icon-md"> <i class="iconfont icon-houdu" aria-hidden="true"></i> </div>
+            <div class="icon-content">
+              <div class="counter" data-count="1500000">1,500,000+</div>
+              <span>الانتاج السنوي (متر مربع)</span> </div>
+          </div>
+          <div class="col-sm-12 col-lg-4 mb-3">
+            <div class="icon-md"> <i class="iconfont icon-bankcard"></i> </div>
+            <div class="icon-content">
+              <div class="counter" data-count="245000000">245,000,000+</div>
+              <span>الاستثمار (يوان صيني)</span> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="news1 newslist section_box_shadow pt-3 pb-5">
+  <div class="container mt-5"> 
+    <div class="section-title1 text-center mx-md-auto mb-4 pb-3">
+      <h2 class="h3">اقرأ أخبارنا ومدوناتنا</h2>
+      <div class="bar"></div>
+      <p>واجبنا تجاهك هو مشاركة خبرتنا التي نصل إليها معك في مسار عملنا.</p>
+    </div>    
+    <div class="row">
+            <article class="col-lg-6 col-md-12 mb-5">
+        <div class="card-body row no-gutters p-0">
+          <div class="col-sm-7 col-md-8 col-lg-7 rounded-left">
+            <div class="p-1">
+              <h2 class="h5 mb-3"> <a href="../../what-is-the-physical-properties-of-aluminium/index.htm">
+                ما هي الخصائص الفيزيائية للألمنيوم؟                </a> </h2>
+              <p class="mb-0">
+                معدن الألمنيوم له مظهر يتراوح من الأبيض الفضي إلى الرمادي الباهت ، والألمنيوم النقي ناعم للغاية ويفتقر إلى القوة. تبلغ كثافة الألومنيوم 2.70 جم / سم 3 ، أي حوالي ثلث كثافة الفولاذ ، وهي أقل بكثير من المعادن الأخرى الشائعة.              </p>
+            </div>
+          </div>
+          <div class="col-sm-5 col-md-4 col-lg-5 card-img-right bg-img-hero"><img class="lazyload" loading="lazy" width="380" height="285" data-src="/2021/02/3mm-aa1050-h14-aluminum-sheet-1-560x420.jpg" srcset="../../../2021/02/3mm-aa1050-h14-aluminum-sheet-1-560x420.jpg" alt="" title="ما هي الخصائص الفيزيائية للألمنيوم؟"></div>
+        </div>
+      </article>
+            <article class="col-lg-6 col-md-12 mb-5">
+        <div class="card-body row no-gutters p-0">
+          <div class="col-sm-7 col-md-8 col-lg-7 rounded-left">
+            <div class="p-1">
+              <h2 class="h5 mb-3"> <a href="../../what-is-aluminum-6061-t6-properties/index.htm">
+                ما هي خصائص الألومنيوم 6061 t6؟                </a> </h2>
+              <p class="mb-0">
+                خصائص الألمنيوم 6061 T6 هي: قوة إنتاج الشد: 276 ميجا باسكال ، الاستطالة عند الكسر: 12% ، الاستطالة عند الكسر: 17% ، معامل المرونة: 68.9 جيجا باسكال              </p>
+            </div>
+          </div>
+          <div class="col-sm-5 col-md-4 col-lg-5 card-img-right bg-img-hero"><img class="lazyload" loading="lazy" width="380" height="285" data-src="/2021/02/6061-t6-aluminum-plate-380x285.jpg" srcset="../../../2021/02/6061-t6-aluminum-plate-380x285.jpg" alt="6061 t6 لوحة الألومنيوم" title="ما هي خصائص الألومنيوم 6061 t6؟"></div>
+        </div>
+      </article>
+            <article class="col-lg-6 col-md-12 mb-5">
+        <div class="card-body row no-gutters p-0">
+          <div class="col-sm-7 col-md-8 col-lg-7 rounded-left">
+            <div class="p-1">
+              <h2 class="h5 mb-3"> <a href="../../how-thick-is-18-gauge-aluminum/index.htm">
+                ما هي سماكة الألومنيوم قياس 18؟                </a> </h2>
+              <p class="mb-0">
+                يبلغ سمك الألمنيوم عيار 18 0.0403 بوصة أي 1.024 ملم ملم. يرجى الرجوع إلى مخطط تحويل وزن الألمنيوم عيار 18 لحساب الوزن.              </p>
+            </div>
+          </div>
+          <div class="col-sm-5 col-md-4 col-lg-5 card-img-right bg-img-hero"><img class="lazyload" loading="lazy" width="380" height="285" data-src="/2021/02/aluminum-sheet-with-blue-films-3-380x285.jpg" srcset="../../../2021/02/aluminum-sheet-with-blue-films-3-380x285.jpg" alt="صفائح الألمنيوم بأفلام زرقاء" title="ما هي سماكة الألومنيوم قياس 18؟"></div>
+        </div>
+      </article>
+            <article class="col-lg-6 col-md-12 mb-5">
+        <div class="card-body row no-gutters p-0">
+          <div class="col-sm-7 col-md-8 col-lg-7 rounded-left">
+            <div class="p-1">
+              <h2 class="h5 mb-3"> <a href="../../how-thick-is-20-gauge-aluminum/index.htm">
+                ما هي سماكة الألومنيوم قياس 20؟                </a> </h2>
+              <p class="mb-0">
+                يبلغ سمك الألمنيوم 20 عيار 0.032 بوصة أي 0.813 ملم في المليمتر. يرجى الرجوع إلى مخطط تحويل وزن الألمنيوم قياس 20 لحساب الوزن.              </p>
+            </div>
+          </div>
+          <div class="col-sm-5 col-md-4 col-lg-5 card-img-right bg-img-hero"><img class="lazyload" loading="lazy" width="380" height="285" data-src="/2021/02/packages-of-aluminum-sheet-380x285.jpg" srcset="../../../2021/02/packages-of-aluminum-sheet-380x285.jpg" alt="عبوات من صفائح الألمنيوم" title="ما هي سماكة الألومنيوم قياس 20؟"></div>
+        </div>
+      </article>
+          </div>
+  </div>
+</section>
+<section data-bg="/images/bg-map.png" class="delivery section_box_shadow pt-5 pb-4 rocket-lazyload" style="">
+  <div class="container mt-5">
+    <div class="section-title1 text-center mx-md-auto mb-4 pb-3">
+      <h2 class="h3">توصيل سهل</h2>
+      <div class="bar"></div>
+      <p>واجبنا تجاهك هو مشاركة خبرتنا التي نصل إليها معك في مسار عملنا.</p>
+    </div>
+    <div class="row text-center">
+      <div class="col-sm-6 col-md-6 col-lg-3 mb-4"><i class="iconfont icon-factory"></i> <strong class="h4 d-block">طلب سهل عبر الإنترنت</strong>
+        <p>واجب تجاهك هو المشاركة </p>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-3 mb-4"><i class="iconfont icon-factory"></i> <strong class="h4 d-block">ساعات العمل</strong>
+        <p>تجربتنا نحن </p>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-3 mb-4"><i class="iconfont icon-factory"></i> <strong class="h4 d-block">توصيلة على الوقت</strong>
+        <p>الوصول في عملنا ص</p>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-3 mb-4"><i class="iconfont icon-factory"></i> <strong class="h4 d-block">ووو</strong>
+        <p>مهمتنا كانت دائما مركزة</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="certs pt-1">
+  <div class="mt-separator-outer-top mt-5">
+    <div class="container">
+      <div class="section-title1 text-center mb-5">
+        <h2>شهادات النمور</h2>
+        <div class="bar"></div>
+        <p>موثوق بها لوحة ورقة الألومنيوم / لفائف / لون الألومنيوم / المصنعين والموردين لوحة الألومنيوم الصلبة</p>
+      </div>
+      <div><img class="lazyload" width="1115" height="348" data-src="/images/certs.jpg" srcset="../../../images/certs-560x175.jpg 560w,../../../images/certs-800x250.jpg 800w,../../../images/certs.jpg 1115w" sizes="(max-width: 800px) 60vw, (max-width: 1000px) 80vw, (max-width: 1200px) 100vw, 800px" alt="شهادة تايجر" style="width: 100%; height: auto;"></div>
+    </div>
+  </div>
+</section>
+</main>
+<div class="clear"></div>
+<section class="footer-top">
+  <div class="container">
+    <div class="footer-top-bg row">
+      <div class="col-md-12 col-lg-4 footer-box one"> <i class="iconfont icon-address">&nbsp;</i>
+        <div class="footer-box-content">
+          <h3>المكتب الرئيسي</h3>
+          <p>
+            Zhengzhou, Henan, China           </p>
+        </div>
+      </div>
+      <!-- <div class="col-md-12 col-lg-4 footer-box two"> <i class="iconfont icon-dianhua">&nbsp;</i>
+        <div class="footer-box-content">
+          <h3>مركز الاتصال</h3>
+          <p>الجوال: +8618838939163</p>
+          
+        </div>
+      </div>
+      --><div class="col-md-12 col-lg-4 footer-box three"> <i class="iconfont icon-mail">&nbsp;</i>
+        <div class="footer-box-content">
+          <h3>بريد الالكتروني</h3>
+          <p><a href="mailto:vendortrust12@gmail.com" aria-label="بريد الالكتروني">vendortrust12@gmail.com</a></p>
+          <p><a href="mailto:" aria-label="بريد الالكتروني"></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer id="footer" class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-4 footer-widget footer-about">
+        <div class="footer-logo">
+          <img src="/images/logo.png">
+        </div>
+        <p>شركة Henan Tigers Industry Co. ، Ltd متخصصة في البحث والتطوير وإنتاج وبيع منتجات الألمنيوم المطلي بالألوان وسلسلة جديدة من ألواح الألومنيوم. </p>
+        <div class="footer-social">
+          <ul>
+            
+            
+            
+           <!-- <li><a href="#"  title="View Tigers twitter"><i class="iconfont icon-twitter"></i></a></li>
+            <li><a href="#"  title="View Tigers Google Plus Blog"><i class="iconfont icon-google-plus"></i></a></li>
+            <li><a href="#"  title="View Tigers linkedin"><i class="iconfont icon-linkedin"></i></a></li>-->
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-4 footer-widget d-block d-md-none d-lg-block">
+        <h3 class="widget-title">ما يمكننا تقديمه</h3>
+        <ul id="menu-btm-nav" class="list-arrow" itemscope="" itemtype="http://www.schema.org/SiteNavigationElement"><li><a href="../../products/aluminum-coil/index.htm">لفائف الالومنيوم</a></li>
+<li><a href="../../products/aluminum-sheet-plate/index.htm">ورقة / لوحة الألومنيوم</a></li>
+<li><a href="../../products/granite-grain-aluminum-coil-sheet/index.htm">لفائف الألومنيوم الحبوب الجرانيت / ورقة</a></li>
+<li><a href="../../products/metallic-color-aluminum-coil-sheet/index.htm">لفائف الألومنيوم اللون المعدني / ورقة</a></li>
+<li><a href="../../products/pe-pvdf-aluminum-coil/index.htm">لفائف الألمنيوم PE / PVDF</a></li>
+<li><a href="../../products/solid-color-aluminum-coil-sheet/index.htm">لفائف / صفائح الألمنيوم الصلبة</a></li>
+<li><a href="../../products/wood-grain-aluminum-coil-sheet/index.htm">لفائف الالومنيوم الخشب الحبوب / ورقة</a></li>
+</ul>      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 footer-widget footer-form">
+        <h3 class="widget-title">رسالة عبر الإنترنت</h3>
+        <div role="form" class="wpcf7" id="wpcf7-f847-o1" lang="en-US" dir="ltr">
+<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
+<form action="/ar/tag/diffe/#wpcf7-f847-o1" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init" data-trp-original-action="/ar/tag/diffe/#wpcf7-f847-o1">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="847">
+<input type="hidden" name="_wpcf7_version" value="5.5.6">
+<input type="hidden" name="_wpcf7_locale" value="en_US">
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f847-o1">
+<input type="hidden" name="_wpcf7_container_post" value="0">
+<input type="hidden" name="_wpcf7_posted_data_hash" value="">
+</div>
+<div class="form-wapper-1"><h3><a href="mailto:vendortrust12@gmail.com" aria-label="Email">vendortrust12@gmail.com</a></h3>
+</div>
+
+
+<script type="rocketlazyloadscript">window.addEventListener('DOMContentLoaded', function() {
+$(".wpcf7-form").submit(function(){$(".wpcf7-submit").attr("disabled","disabled");});
+document.addEventListener('wpcf7spam',function(event){$(".screen-reader-response").addClass("failed_msg danger_bg");},false);
+document.addEventListener('wpcf7invalid',function(event){$(".screen-reader-response").addClass("failed_msg warning_bg");},false);
+document.addEventListener('wpcf7mailfailed',function(event){$(".screen-reader-response").addClass("failed_msg warning_bg");},false);
+document.addEventListener( 'wpcf7mailsent', function( event ) {$('body').append("<div class='modal-backdrop fade show'></div><div class='modal fade show thankyou-modal'  id='thankyoumodal'  tabindex='-1'  aria-labelledby='exampleModalCenterTitle'  style='display:block;padding-right:17px;'  aria-modal='true'  role='dialog'><div class='modal-dialog modal-dialog-centered'><div class='modal-content'><header class='thank-title'><h2>Thank You</h2><p>Your message was sent successfully.</p></header><main class='thank-page' ><div class='thank-text'><p>We will reply you as soon as possible .</p><p>Talk with me on  WhatsApp:+86 177 3740 5883 for faster communication.</p></div><div class='closebtn'><button type='button'  class='btn btn-primary btn-lg close-modal'  data-dismiss='modal'>Close</button></div></main></div></div><script>document.querySelector('header').className+=' modalblur';var x=document.querySelectorAll('section');var y=document.querySelectorAll('article');var m,n;for(m=0;m<x.length;m++){x[m].className+=' modalblur' }for(n=0;n<y.length;n++){y[n].className+=' modalblur'}</sc"+"ript></div>");
+}, false );
+$(document).on("click",".close-modal",function(){$('.modal-backdrop').fadeOut(1000);$('#thankyoumodal').fadeOut(1000);setTimeout("$('.modal-backdrop').remove()",1000);setTimeout("$('#thankyoumodal').remove()",1000);$("body>header").removeClass("modalblur");$("body section").removeClass("modalblur");$("body article").removeClass("modalblur");$("body>main").removeClass("modalblur")});
+});</script><p style="display: none !important;"><label>&#916;<textarea name="_wpcf7_ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="_wpcf7_ak_js" value="54"><script type="rocketlazyloadscript">document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p><input type="hidden" name="trp-form-language" value="ar"></form></div> </div>
+    </div>
+    <div class="row copyright">
+      <div class="col-xs-12 col-sm-5">
+        <div class="copyright-info"> <span>حقوق النشر © 2020 تايجرز. كل الحقوق محفوظة.</span> </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-push-1">
+        <div class="footer-menu">
+          <ul class="nav unstyled">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="float-sidebar">
+	<ul class="float-bar-nav">
+	  <li class="item tel">
+		<div class="top-icon"><i class="iconfont icon-whatsapp"></i></div>
+		<p>دردشة مباشرة</p>
+		<div class="sub-nav-layer">
+		  <div class="sub-nav-main">
+			<div class="sub-inner inner live_chat" onclick="openZoosUrl('chatwin' ,'&e=' +escape('来自右边栏子菜单'));">
+				<span class="iconfont icon-kefu"></span>
+			  <p class="title">دردشة مباشرة</p>
+			  <p class="info info-pc" href="javascript:void(0)">تحدث مع خدمة العملاء</p>
+			 </div>
+			<!-- <div class="sub-inner inner whatappft"><a href="https://api.whatsapp.com/send?phone=+8618838939163" rel="noopener noreferrer nofollow" target="_blank">
+				<span class="iconfont icon-whatsapp"></span>
+			  <p class="title">ال WhatsApp</p>
+			  <p class="info"><span>واتس اب / موبايل:</span><br> +8618838939163</p>
+				</a>
+			</div>
+			--><div class="sub-inner inner emailft">
+			  <a href="mailto:vendortrust12@gmail.com" aria-label="بريد الالكتروني">
+			  <span class="iconfont icon-mail"></span>
+			  <p class="title">بريد الالكتروني</p>
+			  <p class="info">vendortrust12@gmail.com</p></a>
+			</div>
+			<div class="sub-inner inner modal_msg" data-toggle="modal" data-target="#msg_modal" data-whatever="@mdo">
+			  <span class="iconfont icon-bianji1"></span>
+			  <p class="title">رسالة عبر الإنترنت</p>
+			  <p class="info"><span>رسالة عبر الإنترنت للاستعلام</span></p>
+			</div>
+		  </div>
+		</div>
+	  </li>
+	  <li class="item scrollup"><span class="iconfont icon-arrow-top"></span></li>
+	</ul>
+</div>
+<div class="footmenu d-md-none">
+	<div class="footmenu-wrap clearfix">
+		<a href="../../index.htm" class="fphone"><i class="iconfont icon-home"></i>الصفحة الرئيسية</a>
+		<a href="whatsapp://send?phone=+8618838939163" rel="noopener noreferrer nofollow" class="fwhatsapp"><i class="iconfont icon-whatsapp"></i>ال WhatsApp</a>
+		<a href="mailto:" class="fmail" aria-label="بريد الالكتروني"><i class="iconfont icon-mail"></i>بريد الالكتروني</a>
+		<a href="../../contact-tigers/index.htm" class="finquiry modal_msg" data-toggle="modal" data-target="#msg_modal" data-whatever="@mdo"><i class="iconfont icon-bianji1"></i>استفسار</a>
+	</div>
+</div>
+
+
+<script type='text/javascript' id='trp-dynamic-translator-js-extra'>
+/* <![CDATA[ */
+var trp_data = {"trp_custom_ajax_url" :"https:\/\/www.tigersalu.com\/wp-content\/plugins\/translatepress-multilingual\/includes\/trp-ajax.php" ,"trp_wp_ajax_url" :"https:\/\/www.tigersalu.com\/wp-admin\/admin-ajax.php" ,"trp_language_to_query" :"ar" ,"trp_original_language" :"en_US" ,"trp_current_language" :"ar" ,"trp_skip_selectors" :["[data-no-translation]" ,"[data-no-dynamic-translation]" ,"[data-trp-translate-id-innertext]" ,"script" ,"style" ,"head" ,"trp-span" ,"translate-press" ,"[data-trp-translate-id]" ,"[data-trpgettextoriginal]" ,"[data-trp-post-slug]" ],"trp_base_selectors" :["data-trp-translate-id" ,"data-trpgettextoriginal" ,"data-trp-post-slug" ],"trp_attributes_selectors" :{"text" :{"accessor" :"outertext" ,"attribute" :false},"block" :{"accessor" :"innertext" ,"attribute" :false},"image_src" :{"selector" :"img[src]" ,"accessor" :"src" ,"attribute" :true},"submit" :{"selector" :"input[type='submit' ],input[type='button' ], input[type='reset' ]" ,"accessor" :"value" ,"attribute" :true},"placeholder" :{"selector" :"input[placeholder],textarea[placeholder]" ,"accessor" :"placeholder" ,"attribute" :true},"title" :{"selector" :"[title]" ,"accessor" :"title" ,"attribute" :true},"a_href" :{"selector" :"a[href]" ,"accessor" :"href" ,"attribute" :true},"button" :{"accessor" :"outertext" ,"attribute" :false},"option" :{"accessor" :"innertext" ,"attribute" :false},"aria_label" :{"selector" :"[aria-label]" ,"accessor" :"aria-label" ,"attribute" :true},"image_alt" :{"selector" :"img[alt]" ,"accessor" :"alt" ,"attribute" :true},"meta_desc" :{"selector" :"meta[name=\" description\"],meta[property=\" og:title\"],meta[property=\" og:description\"],meta[property=\" og:site_name\"],meta[property=\" og:image:alt\"],meta[name=\" twitter:title\"],meta[name=\" twitter:description\"],meta[name=\" twitter:image:alt\"],meta[name=\" DC.Title\"],meta[name=\" DC.Description\"]" ,"accessor" :"content" ,"attribute" :true},"page_title" :{"selector" :"title" ,"accessor" :"innertext" ,"attribute" :false},"meta_desc_img" :{"selector" :"meta[property=\" og:image\"],meta[property=\" og:image:secure_url\"],meta[name=\" twitter:image\"]" ,"accessor" :"content" ,"attribute" :true}},"trp_attributes_accessors" :["outertext" ,"innertext" ,"src" ,"value" ,"placeholder" ,"title" ,"href" ,"aria-label" ,"alt" ,"content" ],"gettranslationsnonceregular" :"3843a58ed0" ,"showdynamiccontentbeforetranslation" :"" ,"skip_strings_from_dynamic_translation" :[],"skip_strings_from_dynamic_translation_for_substrings" :{"href" :["amazon-adsystem" ,"googleads" ,"g.doubleclick" ]},"duplicate_detections_allowed":"100","trp_translate_numerals_opt":"no","trp_no_auto_translation_selectors":["[data-no-auto-translation]"]};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='../../../wp-content/plugins/translatepress-multilingual/assets/js/trp-translate-dom-changes.js?ver=2.2.5' id='trp-dynamic-translator-js' defer=""></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='rocket-browser-checker-js-after'>
+class RocketBrowserCompatibilityChecker {
+
+	constructor( options ) {
+		this.passiveSupported = false;
+
+		this._checkPassiveOption( this );
+		this.options = this.passiveSupported ? options : false;
+	}
+
+	/**
+	 * Initializes browser check for addEventListener passive option.
+	 *
+	 * @link https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener#Safely_detecting_option_support
+	 * @private
+	 *
+	 * @param self Instance of this object.
+	 * @returns {boolean}
+	 */
+	_checkPassiveOption( self ) {
+		try {
+			const options = {
+				// This function will be called when the browser attempts to access the passive property.
+				get passive() {
+					self.passiveSupported = true;
+					return false;
+				}
+			};
+
+			window.addEventListener( 'test', null, options );
+			window.removeEventListener( 'test', null, options );
+		} catch ( err ) {
+			self.passiveSupported = false;
+		}
+	}
+
+	/**
+	 * Checks if the browser supports requestIdleCallback and cancelIdleCallback. If no, shims its behavior with a polyfills.
+	 *
+	 * @link @link https://developers.google.com/web/updates/2015/08/using-requestidlecallback
+	 */
+	initRequestIdleCallback() {
+		if ( ! 'requestIdleCallback' in window ) {
+			window.requestIdleCallback = ( cb ) => {
+				const start = Date.now();
+				return setTimeout( () => {
+					cb( {
+						didTimeout: false,
+						timeRemaining: function timeRemaining() {
+							return Math.max( 0, 50 - ( Date.now() - start ) );
+						}
+					} );
+				}, 1 );
+			};
+		}
+
+		if ( ! 'cancelIdleCallback' in window ) {
+			window.cancelIdleCallback = ( id ) => clearTimeout( id );
+		}
+	}
+
+	/**
+	 * Detects if data saver mode is on.
+	 *
+	 * @link https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/save-data/#detecting_the_save-data_setting
+	 *
+	 * @returns {boolean|boolean}
+	 */
+	isDataSaverModeOn() {
+		return (
+			'connection' in navigator
+			&&
+			true === navigator.connection.saveData
+		);
+	}
+
+	/**
+	 * Checks if the browser supports link prefetch.
+	 *
+	 * @returns {boolean|boolean}
+	 */
+	supportsLinkPrefetch() {
+		const elem = document.createElement( 'link' );
+		return (
+			elem.relList
+			&&
+			elem.relList.supports
+			&&
+			elem.relList.supports( 'prefetch' )
+			&&
+			window.IntersectionObserver
+			&&
+			'isIntersecting' in IntersectionObserverEntry.prototype
+		);
+	}
+
+	isSlowConnection() {
+		return (
+			'connection' in navigator
+			&&
+			'effectiveType' in navigator.connection
+			&&
+			(
+				'2g' === navigator.connection.effectiveType
+				||
+				'slow-2g' === navigator.connection.effectiveType
+			)
+		)
+	}
+}
+</script>
+<script type='text/javascript' id='rocket-preload-links-js-extra'>
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris" :"\/ar(\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$))|\/wp-admin\/|\/logout\/|\/wp-login.php|\/refer\/|\/go\/|\/recommend\/|\/recommends\/" ,"usesTrailingSlash" :"1" ,"imageExt" :"jpg|jpeg|gif|png|tiff|bmp|webp|avif" ,"fileExt" :"jpg|jpeg|gif|png|tiff|bmp|webp|avif|php|pdf|html|htm" ,"siteUrl" :"https:\/\/www.tigersalu.com\/ar\/" ,"onHoverDelay" :"100" ,"rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='rocket-preload-links-js-after'>
+class RocketPreloadLinks {
+
+	constructor( browser, config ) {
+		this.browser = browser;
+		this.config  = config;
+		this.options = this.browser.options;
+
+		this.prefetched = new Set;
+		this.eventTime  = null;
+		this.threshold  = 1111;
+		this.numOnHover = 0;
+	}
+
+	/**
+	 * Initializes the handler.
+	 */
+	init() {
+		if (
+			! this.browser.supportsLinkPrefetch()
+			||
+			this.browser.isDataSaverModeOn()
+			||
+			this.browser.isSlowConnection()
+		) {
+			return;
+		}
+
+		this.regex = {
+			excludeUris: RegExp( this.config.excludeUris, 'i' ),
+			images: RegExp( '.(' + this.config.imageExt + ')$', 'i' ),
+			fileExt: RegExp( '.(' + this.config.fileExt + ')$', 'i' )
+		};
+
+		this._initListeners( this );
+	}
+
+	/**
+	 * Initializes the event listeners.
+	 *
+	 * @private
+	 *
+	 * @param self instance of this object, used for binding "this" to the listeners.
+	 */
+	_initListeners( self ) {
+		// Setting onHoverDelay to -1 disables the "on-hover" feature.
+		if ( this.config.onHoverDelay > -1 ) {
+			document.addEventListener( 'mouseover', self.listener.bind( self ), self.listenerOptions );
+		}
+
+		document.addEventListener( 'mousedown', self.listener.bind( self ), self.listenerOptions );
+		document.addEventListener( 'touchstart', self.listener.bind( self ), self.listenerOptions );
+	}
+
+	/**
+	 * Event listener. Processes when near or on a valid <a> hyperlink.
+	 *
+	 * @param Event event Event instance.
+	 */
+	listener( event ) {
+		const linkElem = event.target.closest( 'a' );
+		const url      = this._prepareUrl( linkElem );
+		if ( null === url ) {
+			return;
+		}
+
+		switch ( event.type ) {
+			case 'mousedown':
+			case 'touchstart':
+				this._addPrefetchLink( url );
+				break;
+			case 'mouseover':
+				this._earlyPrefetch( linkElem, url, 'mouseout' );
+		}
+	}
+
+	/**
+	 *
+	 * @private
+	 *
+	 * @param Element|null linkElem
+	 * @param object url
+	 * @param string resetEvent
+	 */
+	_earlyPrefetch( linkElem, url, resetEvent ) {
+		const doPrefetch = () => {
+			falseTrigger = null;
+
+			// Start the rate throttle: 1 sec timeout.
+			if ( 0 === this.numOnHover ) {
+				setTimeout( () => this.numOnHover = 0, 1000 );
+			}
+			// Bail out when exceeding the rate throttle.
+			else if ( this.numOnHover > this.config.rateThrottle ) {
+				return;
+			}
+
+			this.numOnHover++;
+			this._addPrefetchLink( url );
+		};
+
+		// Delay to avoid false triggers for hover/touch/tap.
+		let falseTrigger = setTimeout( doPrefetch, this.config.onHoverDelay );
+
+		// On reset event, reset the false trigger timer.
+		const reset = () => {
+			linkElem.removeEventListener( resetEvent, reset, { passive: true } );
+			if ( null === falseTrigger ) {
+				return;
+			}
+
+			clearTimeout( falseTrigger );
+			falseTrigger = null;
+		};
+		linkElem.addEventListener( resetEvent, reset, { passive: true } );
+	}
+
+	/**
+	 * Adds a <link rel="prefetch" href="<url>"> for the given URL.
+	 *
+	 * @param string url The Given URL to prefetch.
+	 */
+	_addPrefetchLink( url ) {
+		this.prefetched.add( url.href );
+
+		return new Promise( ( resolve, reject ) => {
+			const elem   = document.createElement( 'link' );
+			elem.rel     = 'prefetch';
+			elem.href    = url.href;
+			elem.onload  = resolve;
+			elem.onerror = reject;
+
+			document.head.appendChild( elem );
+		} ).catch(() => {
+			// ignore and continue.
+		});
+	}
+
+	/**
+	 * Prepares the target link's URL.
+	 *
+	 * @private
+	 *
+	 * @param Element|null linkElem Instance of the link element.
+	 * @returns {null|*}
+	 */
+	_prepareUrl( linkElem ) {
+		if (
+			null === linkElem
+			||
+			typeof linkElem !== 'object'
+			||
+			! 'href' in linkElem
+			||
+			// Link prefetching only works on http/https protocol.
+			[ 'http:', 'https:' ].indexOf( linkElem.protocol ) === -1
+		) {
+			return null;
+		}
+
+		const origin   = linkElem.href.substring( 0, this.config.siteUrl.length );
+		const pathname = this._getPathname( linkElem.href, origin );
+		const url      = {
+			original: linkElem.href,
+			protocol: linkElem.protocol,
+			origin: origin,
+			pathname: pathname,
+			href: origin + pathname
+		};
+
+		return this._isLinkOk( url ) ? url : null;
+	}
+
+	/**
+	 * Gets the URL's pathname. Note: ensures the pathname matches the permalink structure.
+	 *
+	 * @private
+	 *
+	 * @param object url Instance of the URL.
+	 * @param string origin The target link href's origin.
+	 * @returns {string}
+	 */
+	_getPathname( url, origin ) {
+		let pathname = origin
+			? url.substring( this.config.siteUrl.length )
+			: url;
+
+		if ( ! pathname.startsWith( '/' ) ) {
+			pathname = '/' + pathname;
+		}
+
+		if ( this._shouldAddTrailingSlash( pathname ) ) {
+			return pathname + '/';
+		}
+
+		return pathname;
+	}
+
+	_shouldAddTrailingSlash( pathname ) {
+		return (
+			this.config.usesTrailingSlash
+			&&
+			! pathname.endsWith( '/' )
+			&&
+			! this.regex.fileExt.test( pathname )
+		);
+	}
+
+	/**
+	 * Checks if the given link element is okay to process.
+	 *
+	 * @private
+	 *
+	 * @param object url URL parts object.
+	 *
+	 * @returns {boolean}
+	 */
+	_isLinkOk( url ) {
+		if ( null === url || typeof url !== 'object' ) {
+			return false;
+		}
+
+		return (
+			! this.prefetched.has( url.href )
+			&&
+			url.origin === this.config.siteUrl // is an internal document.
+			&&
+			url.href.indexOf( '?' ) === -1 // not a query string.
+			&&
+			url.href.indexOf( '#' ) === -1 // not an anchor.
+			&&
+			! this.regex.excludeUris.test( url.href ) // not excluded.
+			&&
+			! this.regex.images.test( url.href ) // not an image.
+		);
+	}
+
+	/**
+	 * Named static constructor to encapsulate how to create the object.
+	 */
+	static run() {
+		// Bail out if the configuration not passed from the server.
+		if ( typeof RocketPreloadLinksConfig === 'undefined' ) {
+			return;
+		}
+
+		const browser  = new RocketBrowserCompatibilityChecker( {
+			capture: true,
+			passive: true
+		} );
+		const instance = new RocketPreloadLinks( browser, RocketPreloadLinksConfig );
+		instance.init();
+	}
+}
+
+RocketPreloadLinks.run();
+</script>
+<script type='text/javascript' src='../../../wp-content/themes/tgs/js/plugs.js' id='tgs-plugins-js'></script>
+<script>window.lazyLoadOptions = {
+                elements_selector: "img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",
+                data_src: "lazy-src",
+                data_srcset: "lazy-srcset",
+                data_sizes: "lazy-sizes",
+                class_loading: "lazyloading",
+                class_loaded: "lazyloaded",
+                threshold: 300,
+                callback_loaded: function(element) {
+                    if ( element.tagName === "IFRAME" && element.dataset.rocketLazyload == "fitvidscompatible" ) {
+                        if (element.classList.contains("lazyloaded") ) {
+                            if (typeof window.jQuery != "undefined") {
+                                if (jQuery.fn.fitVids) {
+                                    jQuery(element).parent().fitVids();
+                                }
+                            }
+                        }
+                    }
+                }};
+        window.addEventListener('LazyLoad::Initialized', function (e) {
+            var lazyLoadInstance = e.detail.instance;
+
+            if (window.MutationObserver) {
+                var observer = new MutationObserver(function(mutations) {
+                    var image_count = 0;
+                    var iframe_count = 0;
+                    var rocketlazy_count = 0;
+
+                    mutations.forEach(function(mutation) {
+                        for (var i = 0; i < mutation.addedNodes.length; i++) {
+                            if (typeof mutation.addedNodes[i].getElementsByTagName !== 'function' ) {
+                                continue;
+                            }
+
+                           if (typeof mutation.addedNodes[i].getElementsByClassName !== 'function' ) {
+                                continue;
+                            }
+
+                            images = mutation.addedNodes[i].getElementsByTagName('img' );
+                            is_image = mutation.addedNodes[i].tagName == "IMG" ;
+                            iframes = mutation.addedNodes[i].getElementsByTagName('iframe' );
+                            is_iframe = mutation.addedNodes[i].tagName == "IFRAME" ;
+                            rocket_lazy = mutation.addedNodes[i].getElementsByClassName('rocket-lazyload' );
+
+                            image_count += images.length;
+			                iframe_count += iframes.length;
+			                rocketlazy_count += rocket_lazy.length;
+
+                            if(is_image){
+                                image_count += 1;
+                            }
+
+                            if(is_iframe){
+                                iframe_count += 1;
+                            }
+                        }
+                    } );
+
+                    if(image_count > 0 || iframe_count > 0 || rocketlazy_count > 0){
+                        lazyLoadInstance.update();
+                    }
+                } );
+
+                var b      = document.getElementsByTagName("body")[0];
+                var config = { childList: true, subtree: true };
+
+                observer.observe(b, config);
+            }
+        }, false);</script><script data-no-minify="1" async="" src="../../../wp-content/plugins/wp-rocket/assets/js/lazyload/17.5/lazyload.js"></script><script>function lazyLoadThumb(e){var t='<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg"  alt=""  width="480"  height="360"></noscript>',a='<button class="play"  aria-label="play Youtube video"></button>';return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?'':'&'+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var e,t,p,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)e=document.createElement("div"),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query", a[t].dataset.query),e.setAttribute("data-src", a[t].dataset.src),e.innerHTML=lazyLoadThumb(a[t].dataset.id),a[t].appendChild(e),p=e.querySelector('.play'),p.onclick=lazyLoadYoutubeIframe});</script></body>
+<script type="rocketlazyloadscript" language="javascript">/*lazysizes5.3.2*/eval(function(p,a,c,k,e,r){e=function(c){return(c<62?'' :e(parseInt(c/62)))+((c=c%62)>35?String.fromCharCode(c+29):c.toString(36))};if('0'.replace(0,e)==0){while(c--)r[e(c)]=k[c];k=[function(e){return r[e]||e}];e=function(){return'([7]|[12]\\w)'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('!11(e){7 t=11(u,D,f){"use strict";7 k,H;if(11(){7 e;7 t={1e:"lazyload",1Q:"1R",1q:"lazyloading",1S:"lazypreload",1T:"lazyerror",1B:"lazyautosizes",1U:"ls-is-cached",1V:0,1W:"19-15",1C:"19-1a",1D:"19-1f",1X:40,1Y:{},1r:12,1Z:1.5,20:.8,1b:2,21:12,1s:0,22:125};H=u.lazySizesConfig||u.lazysizesConfig||{};1t(e in t){if(!(e in H)){H[e]=t[e]}}}(),!D||!D.1h){13{1r:11(){},23:H,noSupport:12}}7 O=D.documentElement,i=u.HTMLPictureElement,P="addEventListener",$="24",q=u[P].bind(u),I=u.setTimeout,U=u.requestAnimationFrame||I,o=u.requestIdleCallback,j=/^picture$/i,r=["1u","error","lazyincluded","_lazyloaded"],a={},G=Array.prototype.1i,J=11(e,t){if(!a[t]){a[t]=25 RegExp("(\\\\s|^)"+t+"(\\\\s|$)")}13 a[t].17(e[$]("1j")||"")&&a[t]},K=11(e,t){if(!J(e,t)){e.16("1j",(e[$]("1j")||"").trim()+" "+t)}},Q=11(e,t){7 a;if(a=J(e,t)){e.16("1j",(e[$]("1j")||"").26(a," "))}},V=11(t,a,e){7 i=e?P:"removeEventListener";if(e){V(t,a)}r.1i(11(e){t[i](e,a)})},X=11(e,t,a,i,r){7 n=D.createEvent("Event");if(!a){a={}}a.instance=k;n.initEvent(t,!i,!r);n.1k=a;e.dispatchEvent(n);13 n},Y=11(e,t){7 a;if(!i&&(a=u.picturefill||H.pf)){if(t&&t.15&&!e[$]("1a")){e.16("1a",t.15)}a({reevaluate:12,1v:[e]})}14 if(t&&t.15){e.15=t.15}},Z=11(e,t){13(getComputedStyle(e,1w)||{})[t]},s=11(e,t,a){a=a||e.1E;1F(a<H.1X&&t&&!e.1G){a=t.1E;t=t.1x}13 a},ee=11(){7 a,i;7 t=[];7 r=[];7 n=t;7 s=11(){7 e=n;n=t.18?r:t;a=12;i=1H;1F(e.18){e.shift()()}a=1H};7 e=11(e,t){if(a&&!t){e.27(28,29)}14{n.push(e);if(!i){i=12;(D.1l?I:U)(s)}}};e.2a=s;13 e}(),te=11(a,e){13 e?11(){ee(a)}:11(){7 e=28;7 t=29;ee(11(){a.27(e,t)})}},ae=11(e){7 a;7 i=0;7 r=H.22;7 n=H.1s;7 t=11(){a=1H;i=f.1d();e()};7 s=o&&n>49?11(){o(t,{timeout:n});if(n!==H.1s){n=H.1s}}:te(11(){I(t)},12);13 11(e){7 t;if(e=e===12){n=33}if(a){13}a=12;t=r-(f.1d()-i);if(t<0){t=0}if(e||t<9){s()}14{I(s,t)}}},ie=11(e){7 t,a;7 i=99;7 r=11(){t=1w;e()};7 n=11(){7 e=f.1d()-a;if(e<i){I(n,i-e)}14{(o||r)(r)}};13 11(){a=f.1d();if(!t){t=I(n,i)}}},e=11(){7 v,m,c,h,e;7 y,z,g,p,C,b,A;7 n=/^img$/i;7 d=/^iframe$/i;7 E="onscroll" in u&&!/(gle|ing)bot/.17(navigator.userAgent);7 _=0;7 w=0;7 M=0;7 N=-1;7 L=11(e){M--;if(!e||M<0||!e.1n){M=0}};7 x=11(e){if(A==1w){A=Z(D.2c,"1J")=="1l"}13 A||!(Z(e.1x,"1J")=="1l"&&Z(e,"1J")=="1l")};7 W=11(e,t){7 a;7 i=e;7 r=x(e);g-=t;b+=t;p-=t;C+=t;1F(r&&(i=i.offsetParent)&&i!=D.2c&&i!=O){r=(Z(i,"opacity")||1)>0;if(r&&Z(i,"overflow")!="visible"){a=i.2d();r=C>a.2e&&p<a.2f&&b>a.2g-1&&g<a.2h+1}}13 r};7 t=11(){7 e,t,a,i,r,n,s,o,l,u,f,c;7 d=k.1v;if((h=H.1b)&&M<8&&(e=d.18)){t=0;N++;1t(;t<e;t++){if(!d[t]||d[t].1o){2i}if(!E||k.2j&&k.2j(d[t])){R(d[t]);2i}if(!(o=d[t][$]("19-1y" ))||!(n=o*1)){n=w}if(!u){u=!H.1y||H.1y<1?O.clientHeight>1K&&O.clientWidth>1K?1K:370:H.1y;k._defEx=u;f=u*H.1Z;c=H.20;A=1w;if(w<f&&M<1&&N>2&&h>2&&!D.1l){w=f;N=0}14 if(h>1&&N>1&&M<6){w=u}14{w=_}}if(l!==n){y=innerWidth+n*c;z=innerHeight+n;s=n*-1;l=n}a=d[t].2d();if((b=a.2h)>=s&&(g=a.2g)<=z&&(C=a.2f)>=s*c&&(p=a.2e)<=y&&(b||C||p||g)&&(H.21||x(d[t]))&&(m&&M<3&&!o&&(h<3||N<4)||W(d[t],n))){R(d[t]);r=12;if(M>9){break}}14 if(!r&&m&&!i&&M<4&&N<4&&h>2&&(v[0]||H.preloadAfterLoad)&&(v[0]||!o&&(b||C||p||g||d[t][$](H.1D)!="2k"))){i=v[0]||d[t]}}if(i&&!r){R(i)}}};7 a=ae(t);7 S=11(e){7 t=e.1n;if(t.1p){1L t.1p;13}L(e);K(t,H.1Q);Q(t,H.1q);V(t,B);X(t,"1R")};7 i=te(S);7 B=11(e){i({1n:e.1n})};7 T=11(e,t){7 a=e.24("19-1u-mode")||H.1V;if(a==0){e.contentWindow.location.26(t)}14 if(a==1){e.15=t}};7 F=11(e){7 t;7 a=e[$](H.1C);if(t=H.1Y[e[$]("19-1M")||e[$]("1M")]){e.16("1M",t)}if(a){e.16("1a",a)}};7 s=te(11(t,e,a,i,r){7 n,s,o,l,u,f;if(!(u=X(t,"lazybeforeunveil",e)).2l){if(i){if(a){K(t,H.1B)}14{t.16("1f",i)}}s=t[$](H.1C);n=t[$](H.1W);if(r){o=t.1x;l=o&&j.17(o.1z||"")}f=e.firesLoad||"15"in t&&(s||n||l);u={1n:t};K(t,H.1q);if(f){clearTimeout(c);c=I(L,2500);V(t,B,12)}if(l){G.call(o.2m("2n"),F)}if(s){t.16("1a",s)}14 if(n&&!l){if(d.17(t.1z)){T(t,n)}14{t.15=n}}if(r&&(s||l)){Y(t,{15:n})}}if(t.1o){1L t.1o}Q(t,H.1e);ee(11(){7 e=t.1N&&t.naturalWidth>1;if(!f||e){if(e){K(t,H.1U)}S(u);t.1p=12;I(11(){if("1p"in t){1L t.1p}},9)}if(t.loading=="lazy"){M--}},12)});7 R=11(e){if(e.1o){13}7 t;7 a=n.17(e.1z);7 i=a&&(e[$](H.1D)||e[$]("1f"));7 r=i=="2k";if((r||!m)&&a&&(e[$]("15")||e.1a)&&!e.1N&&!J(e,H.1T)&&J(e,H.1e)){13}t=X(e,"lazyunveilread").1k;if(r){re.2o(e,12,e.1E)}e.1o=12;M++;s(e,t,r,i,a)};7 r=ie(11(){H.1b=3;a()});7 o=11(){if(H.1b==3){H.1b=2}r()};7 l=11(){if(m){13}if(f.1d()-e<1O){I(l,1O);13}m=12;H.1b=3;a();q("2p" ,o,12)};13{_:11(){e=f.1d();k.1v=D.1h(H.1e);v=D.1h(H.1e+" " +H.1S);q("2p" ,a,12);q("2q" ,a,12);q("pageshow" ,11(e){if(e.persisted){7 t=D.querySelectorAll("." +H.1q);if(t.18&&t.1i){U(11(){t.1i(11(e){if(e.1N){R(e)}})})}}});if(u.2r){25 2r(a).observe(O,{childList:12,subtree:12,attributes:12})}14{O[P]("DOMNodeInserted" ,a,12);O[P]("DOMAttrModified" ,a,12);setInterval(a,1O)}q("hashchange" ,a,12);["focus" ,"mouseover" ,"click" ,"1u" ,"transitionend" ,"animationend" ].1i(11(e){D[P](e,a,12)});if(/d$|^c/.17(D.readyState)){l()}14{q("1u" ,l);D[P]("DOMContentLoaded" ,a);I(l,2e4)}if(k.1v.18){t();ee.2a()}14{a()}},2s:a,unveil:R,_aLSL:o}}(),re=11(){7 a;7 n=te(11(e,t,a,i){7 r,n,s;e.1G=i;i+="px" ;e.16("1f" ,i);if(j.17(t.1z||"" )){r=t.2m("2n" );1t(n=0,s=r.18;n<s;n++){r[n].16("1f" ,i)}}if(!a.1k.2t){Y(e,a.1k)}});7 i=11(e,t,a){7 i;7 r=e.1x;if(r){a=s(e,r,a);i=X(e,"lazybeforesizes",{2u:a,2t:!!t});if(!i.2l){a=i.1k.2u;if(a&&a!==e.1G){n(e,r,i,a)}}}};7 e=11(){7 e;7 t=a.18;if(t){e=0;1t(;e<t;e++){i(a[e])}}};7 t=ie(e);13{_:11(){a=D.1h(H.1B);q("2q" ,t)},2s:t,2o:i}}(),t=11(){if(!t.i&&D.1h){t.i=12;re._();e._()}};13 I(11(){H.1r&&t()}),k={23:H,autoSizer:re,loader:e,1r:t,uP:Y,aC:K,rC:Q,hC:J,fire:X,gW:s,rAF:ee}}(e,e.document,Date);e.lazySizes=t,"object" ==2v 1P&&1P.2w&&(1P.2w=t)}("undefined" !=2v 2x?2x:{});',[],158,' |||||||var||||||||||||||||||||||||||||||||||||||||||||||||||||||||function|true|return|else|src|setAttribute|test|length|data|srcset|loadMode||now|lazyClass|sizes||getElementsByClassName|forEach|class|detail|hidden||target|_lazyRace|_lazyCache|loadingClass|init|ricTimeout|for|load|elements|null|parentNode|expand|nodeName||autosizesClass|srcsetAttr|sizesAttr|offsetWidth|while|_lazysizesWidth|false||visibility|500|delete|media|complete|999|module|loadedClass|lazyloaded|preloadClass|errorClass|fastLoadedClass|iframeLoadMode|srcAttr|minSize|customMedia|expFactor|hFac|loadHidden|throttleDelay|cfg|getAttribute|new|replace|apply|this|arguments|_lsFlush||body|getBoundingClientRect|left|right|top|bottom|continue|prematureUnveil|auto|defaultPrevented|getElementsByTagName|source|updateElem|scroll|resize|MutationObserver|checkElems|dataAttr|width|typeof|exports|window'.split('|'),0,{}));
+	
+</script><!--  耗时 1.320 秒 | 查询 160 次 | 内存 70.05 MB-->
+</html>
+<!-- Cached for great performance - Debug: cached@1653381104 -->

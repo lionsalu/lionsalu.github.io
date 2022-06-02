@@ -1,0 +1,691 @@
+﻿<!doctype html>
+<html amp="" dir="rtl" lang="ar">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<script type='text/javascript' src='../../../v0.js' async=""></script>
+<script type='text/javascript' src='../../../v0/amp-sidebar-0.1.js' async="" custom-element="amp-sidebar"></script>
+<script type='text/javascript' src='../../../v0/amp-social-share-0.1.js' async="" custom-element="amp-social-share"></script>
+<script type='text/javascript' src='../../../v0/amp-analytics-0.1.js' async="" custom-element="amp-analytics"></script>
+	<style amp-boilerplate="">body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate="">body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial, Helvetica, sans-serif:400&subset=">	<style amp-custom="">
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+input, textarea {
+	padding: 5px;
+	box-sizing: border-box;
+}
+.amp-wp-enforced-sizes {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.amp-wp-unknown-size img {
+	object-fit: contain;
+}
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+table th, table td, table th {
+    padding: 5px;
+}
+table.shop_attributes td {
+    font-style: italic;
+}
+table tr:nth-child(even) {
+    background: rgba(0,0,0,.03);
+}
+/* Flex */
+
+.full-flex {
+	flex: 1 0 100%;
+}
+.flex-space-between {
+	justify-content: space-between;
+}
+.flex-align-center {
+	align-items: center;
+}
+.flex-wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/* Template Styles */
+* {
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+html body {
+	margin:0;
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+    font-family:  Impact, Charcoal, sans-serif;
+	color: #444444;
+	font-weight: 400;
+	letter-spacing: 0px;
+}
+body {
+	background: #ffffff;
+	color: #444444;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	letter-spacing: 0px;
+	font-size:16px;
+	line-height: 24px;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 16px;
+	padding: 0;
+}
+
+a {
+	color: #ce534d;
+}
+
+a:hover {
+	color: #ce534d;
+	text-decoration: underline;
+}
+.btn, .button, button {
+    color: #fff;
+    cursor: pointer;
+    padding: .518em 1.287em;
+    text-decoration: none;
+    font-weight: 600;
+	border: 0;
+    text-shadow: none;
+    display: inline-block;
+    outline: 0;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 0;
+    font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 0px;
+	font-size:16px;
+	line-height: 24px;
+    background: #ce534d;
+}
+.btn:hover, .button:hover, .btn:active, .button:active, .btn:focus .button:focus  {
+    color: #fff;
+    text-decoration: none;
+    background: #ce534d;
+    opacity:.8;
+}
+/* Breadcrumbs */
+#amp-bread {
+    font-size: 12px;
+    margin: 5px 0;
+}
+/* Quotes */
+
+blockquote {
+	color: #444444;
+	background: rgba(127,127,127,.1);
+	border-left: 2px solid #ce534d;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #3265c5;
+}
+
+.amp-wp-header > div {
+	color: #ffffff;
+	font-size: 18px;
+	line-height:50px;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 0 16px;
+	position: relative;
+	min-height: 50px;
+	box-sizing: border-box;
+}
+
+.amp-wp-header a {
+	text-decoration: none;
+	display:block;
+	float:left;
+	font-family:  'MS Serif', 'New York', sans-serif;
+	color: #ffffff;
+	font-weight: 700;
+	letter-spacing: 0px;
+}
+
+/* Site Logo */
+
+.amp-wp-header .amp-wp-site-icon {
+	margin: 9px 8px 9px 0;
+    float: left
+}
+
+/* Menu */
+button.amp-menu-sidebar {
+    display: block;
+    float: right;
+    height: 50px;
+    background: rgba(0,0,0,0.0);
+   	font-family:  Source Sans Pro;
+	color: #444444;
+	font-weight: ;
+	letter-spacing: 0px;
+    border: none;
+    padding:0;
+    font-size: 15px;
+    cursor: pointer;
+}
+.amp-icon-button {
+    position: relative;
+    width: 28px;
+}
+.amp-icon-button:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 28px;
+    height: 4px;
+    border-top: 12px double #ffffff;
+    border-bottom: 4px solid #ffffff;
+}
+amp-sidebar {
+	background-color: #3265c5;
+	width:250px;
+}
+.close-amp-sidebar {
+    font-size: 12px;
+    font-family: sans-serif;
+    background: rgba(0,0,0,.25);
+    letter-spacing: 1px;
+    padding: 12px;
+    line-height: 8px;
+    font-weight: bold;
+    margin: 12px 12px 2px;
+    cursor: pointer;
+    display: inline-block;
+    color: #fff;
+}
+.amp-sidebar-navigation ul.menu {
+    margin: 0 12px;
+}
+.amp-sidebar-navigation ul.menu li {
+    list-style: none;
+}
+.amp-sidebar-navigation ul.menu li a {
+    text-decoration: none;
+    display: block;
+    padding: 8px 10px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    font-size: 15px;
+    line-height: 20px;
+    font-family:  Source Serif Pro;
+	color: #ffffff;
+	font-weight: 400;
+	letter-spacing: 0px;
+}
+.amp-sidebar-navigation ul.menu ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+/* main */
+
+.main {
+	color: #444444;
+	font-weight: 400;
+	margin: 16px auto;
+	max-width: 600px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	padding: 0 16px;
+	box-sizing: border-box;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 16px 0 10px;
+}
+
+.amp-wp-title {
+	display: block;
+	width: 100%;
+	margin:0;
+}
+
+/* Article Meta */
+.amp-wp-article-meta {
+	margin: 0px 0 10px 0;
+}
+.amp-wp-meta {
+	color: #777777;
+	display: inline-block;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #ce534d;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+	display:block;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+.amp-wp-page-content {
+	padding: 6px 0 0;
+}
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+
+/* comments */
+
+.amp-comments {
+    margin-top: 16px;
+}
+.comment-text {
+    position: relative;
+    padding-left: 76px;
+    min-height:60px;
+}
+.comment-text p {
+	margin-bottom:0;
+}
+.comment-list .comment-metadata a {
+    font-size: 12px;
+    color: #777;
+}
+.comment-list .comment-author amp-img {
+    margin-right:10px;
+}
+ul.comment-list li {
+    list-style-type: none;
+}
+.comment {
+    margin-top: 16px;
+    border: 1px solid #ddd;
+    padding: 1em;
+}
+.comment-list amp-img {
+    float: left;
+}
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #eee;
+	color: #777777;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #eee;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #eee url( ../../../wp-content/plugins/kadence-amp/assets/images/placeholder-icon.png ) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	margin: 16px 0;
+	display: block;
+}
+
+.amp-wp-comments-link, .mod_show_original {
+	color: #777777;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 1.5em 0 1.5em;
+}
+.amp-wp-comments-link a, .mod_show_original a{
+	border-style: solid;
+	border-color: #eee;
+	border-width: 1px 1px 2px;
+	background-color: transparent;
+	color: #ce534d;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+/* Related Posts */
+.amp-related-posts ul {
+	list-style:none;
+}
+.amp-related-posts ul li {
+	margin-bottom:16px;
+}
+a.amp-related-img-link {
+    margin-right: 10px;
+    display: block;
+}
+.amp-related-posts .amp-related-meta {
+	display:block;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	background: #444444;
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.amp-wp-footer > div {
+	max-width: 600px;
+    margin: 0 auto;
+	padding: 16px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+	color: #ffffff;
+}
+.show_original {
+    display: block;
+    text-align: center;
+}
+.show_original a {
+    display: inline-block;
+    margin-top: 10px;
+    padding:4px 8px;
+    border: 1px solid #ffffff;
+}
+.back-to-top {
+	top: 16px;
+	position: absolute;
+	right: 16px;
+}
+@media (max-width: 544px) {
+	.wp-caption.alignleft, .amp-wp-article-content amp-img.alignleft {
+		float:none;
+		margin-right:auto;
+		margin-left:auto;
+	}
+}
+		/* Inline stylesheets */
+.amp-wp-inline-0f1bf07c72fdf1784fff2e164d9dca98 { display:none; }/* Custom styles */
+@font-face{font-family:"tigers";font-display:swap;src:url("../../../wp-content/themes/tgs/css/fonts/tigers.eot");src:url("../../../wp-content/themes/tgs/css/fonts/tigers-1.eot") format("embedded-opentype"),url("../../../wp-content/themes/tgs/css/fonts/tigers.woff2") format("woff2"),url("../../../wp-content/themes/tgs/css/fonts/tigers.woff") format("woff"),url("../../../wp-content/themes/tgs/css/fonts/tigers.ttf") format("truetype"),url("../../../wp-content/themes/tgs/css/fonts/tigers.svg") format("svg")}
+h1,h2,h3,h4,h5,h6{font-family:'Tigers',sans-serif,'Arial';color:#444444;line-height:1.2}
+h1{font-size:24px;font-weight:700; color: #000;}
+h2{font-size:22px;padding:10px 0 10px 8px;margin:25px 0 20px;border-left:2px solid #487bd9;background-color:#f5f8fb}
+h3{font-size:20px;padding:15px 0 15px;margin-bottom:0}
+h4{font-size:16px;padding:12px 0 12px;margin-bottom:0}
+h5{font-size:17px;padding:5px 0 0px;margin-bottom:0}
+h6{font-size:14px;margin-bottom:0}
+.main{padding:0 10px;margin-top: 0;}
+.amp-wp-page-content li{list-style-position:inside;padding-bottom:10px}
+.amp-wp-page-content strong{padding:8px 0}
+.amp-wp-page-content a{max-width:100%;display:inline-block;text-decoration:none}
+.amp-wp-page-content a:before{font-family:'tigers';content:"\e7ff";margin-right:0px;font-size:14px;color:#feb822}
+.amp-breadcrumb-container{font-size:15px;background-color:#f5f7fa;border-bottom:1px solid #eee;padding:10px 0px;-webkit-box-shadow:0 -1px 2px rgba(0,0,0,.06) inset;box-shadow:0 -1px 2px rgba(0,0,0,.06) inset}
+.amp-breadcrumb-container a{ text-decoration: none;}
+.amp-wp-article-header{padding-bottom: 10px;   border-bottom: 1px dotted #3265c5;margin-bottom: 0px;}	</style>
+</head>
+
+<body class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="../../index.htm">نمر للألمنيوم</a><div class="amp-accordion-header"><button class="amp-menu-sidebar amp-icon-button" on="tap:sidebar.toggle"></button></div>	</div>
+</header>
+
+<div class="main">
+	<article class="amp-wp-article">
+		<div id="amp-bread"><div class="amp-breadcrumb-container"><span><a href="../../index.htm" itemprop="url" class="kad-bc-home"><span>الصفحة الرئيسية</span></a></span> <span class="bc-delimiter">»</span> <span><a href="../../blog/index.htm" itemprop="url"><span>مقالات</span></a></span> <span class="bc-delimiter">»</span> <span class="kad-breadcurrent">ما هي سماكة عيار 22 ألمنيوم؟</span></div></div><div class="amp-wp-article-featured-image feature-content">
+	<amp-img width="800" height="600" src="../../../2021/02/3003-h14-aluminum-sheet-3.jpg" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="3003 h14 aluminum sheet" srcset="/2021/02/3003-h14-aluminum-sheet-3.jpg 800w, /2021/02/3003-h14-aluminum-sheet-3-160x120.jpg 160w, /2021/02/3003-h14-aluminum-sheet-3-560x420.jpg 560w, /2021/02/3003-h14-aluminum-sheet-3-380x285.jpg 380w" sizes="(max-width: 800px) 100vw, 800px" title="ما هو سمك عيار 22 ألمنيوم؟ 1" layout="intrinsic"></amp-img></div>
+<header class="amp-wp-article-header"><h1 class="amp-wp-title">ما هي سماكة عيار 22 ألمنيوم؟</h1></header><div class="amp-wp-article-meta"><div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2022-01-12T20:26:21+00:00">
+		2022 1 12 日	</time>
+</div>
+	<div class="amp-wp-meta amp-wp-byline">
+		<span class="kt-amp-by-author">بواسطة</span> <span class="amp-wp-author author vcard">مشرف</span>
+	</div>
+</div><div class="amp-wp-page-content"><!--noindex--><div class="lwptoc toc-list lwptoc-autoWidth lwptoc-baseItems lwptoc-light lwptoc-notInherit" data-smooth-scroll="1" data-smooth-scroll-offset="24"><div class="lwptoc_i">    <div class="lwptoc_header">
+        <b class="lwptoc_title">جدول المحتويات</b>                    <span class="lwptoc_toggle">
+                <a href="#" class="lwptoc_toggle_label" data-label="HIDE">يعرض</a>
+            </span>
+            </div>
+<div class="lwptoc_items amp-wp-inline-0f1bf07c72fdf1784fff2e164d9dca98">
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#the-thickness-of-22-gauge-aluminum-sheet" rel="nofollow">
+                    <span class="lwptoc_item_number">1</span>
+                <span class="lwptoc_item_label">سمك صفائح الألمنيوم قياس 22</span>
+    </a>
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#22-gauge-aluminum-thickness-in-inches" rel="nofollow">
+                    <span class="lwptoc_item_number">1.1</span>
+                <span class="lwptoc_item_label">22 قياس سماكة الألومنيوم بالبوصة</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#22ga-aluminum-thickness-in-mm" rel="nofollow">
+                    <span class="lwptoc_item_number">1.2</span>
+                <span class="lwptoc_item_label">سمك الألمنيوم 22ga ملم</span>
+    </a>
+    </li></ul></li><li class="lwptoc_item">    <a href="#the-weight-of-22-gauge-aluminum-sheet" rel="nofollow">
+                    <span class="lwptoc_item_number">2</span>
+                <span class="lwptoc_item_label">وزن صفائح الألمنيوم قياس 22</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#22-gauge-aluminum-chart-specification" rel="nofollow">
+                    <span class="lwptoc_item_number">3</span>
+                <span class="lwptoc_item_label">مواصفات الرسم البياني قياس 22 الألومنيوم</span>
+    </a>
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#the-thickness-and-weight-of-the-22-gauge-aluminum-sheet" rel="nofollow">
+                    <span class="lwptoc_item_number">3.1</span>
+                <span class="lwptoc_item_label">سمك ووزن صفائح الألمنيوم قياس 22</span>
+    </a>
+    </li></ul></li></ul></div>
+</div></div><!--/noindex--><p>مقاسات القياس هي أرقام تشير إلى سمك قطعة من الصفائح المعدنية.</p>
+<h2><span id="the-thickness-of-22-gauge-aluminum-sheet">سمك صفائح الألمنيوم قياس 22</span></h2>
+<h3><span id="22-gauge-aluminum-thickness-in-inches">22 قياس سماكة الألومنيوم بالبوصة</span></h3>
+<p>22 صفيحة ألمنيوم قياس 0.0253 بوصة.</p>
+<h3><span id="22ga-aluminum-thickness-in-mm">سمك الألمنيوم 22ga ملم</span></h3>
+<p>22ga سمك تقريبي بالميليمترات هو 0.643 مم.</p>
+<h2><span id="the-weight-of-22-gauge-aluminum-sheet">وزن صفائح الألمنيوم قياس 22</span></h2>
+<p>يمكن أيضًا رؤية الوزن لكل وحدة مساحة من الورقة بالجنيه لكل قدم مربع والكيلوجرام لكل متر مربع.</p>
+<p>وزن عيار 22 ألمنيوم (<strong>أوقية</strong>): 5.712 أونصة / قدم²<br>
+وزن عيار 22 ألمنيوم (<strong>جنيه أو رطل للوزن</strong> ): 0.357 رطل / قدم²<br>
+وزن عيار 22 ألمنيوم (<strong>كلغ</strong>): 0.1619 كجم / قدم²<br>
+وزن عيار 22 ألمنيوم (<strong>كجم / م²</strong>): 1.743 كجم / م²</p>
+<h2><span id="22-gauge-aluminum-chart-specification">مواصفات الرسم البياني قياس 22 الألومنيوم</span></h2>
+<div class="table-responsive">
+<table class="table"><caption>
+<h3><span id="the-thickness-and-weight-of-the-22-gauge-aluminum-sheet"><strong>سمك ووزن صفائح الألمنيوم قياس 22</strong></span></h3>
+</caption>
+<tbody><tr><td colspan="2">مقياس</td>
+<td>10</td>
+</tr><tr><td rowspan="2">سماكة</td>
+<td>السُمك التقريبي بالأجزاء العشرية من البوصة (بوصة)</td>
+<td>0.0253 بوصة</td>
+</tr><tr><td>السُمك التقريبي بالميليمترات (مم)</td>
+<td>0.643 ملم</td>
+</tr><tr><td rowspan="4">الوزن لكل منطقة</td>
+<td>الوزن لكل قدم مربع بالأوقية أفوردوبوا (أوقية / قدم²)</td>
+<td>5.712 أوقية / قدم²</td>
+</tr><tr><td>الوزن لكل قدم مربع بالجنيه الأفوردوبوا (رطل / قدم²)</td>
+<td>0.357 رطل / قدم²</td>
+</tr><tr><td>الوزن لكل قدم مربع بالكيلوجرام (كجم / قدم²)</td>
+<td>0.1619 كجم / قدم²</td>
+</tr><tr><td>الوزن لكل متر مربع بالكيلوجرام (كجم / م²)</td>
+<td>1.743 كجم / م²</td>
+</tr></tbody></table></div>
+<p><strong>معلمات المواصفات الأخرى للوحة الألومنيوم ：</strong></p>
+<p><a href="../../what-is-the-thickness-of-6-gauge-aluminum/index.htm">6 قياس سماكة الألومنيوم</a></p>
+<p><a href="../../what-is-the-thickness-of-8-gauge-aluminum/index.htm">8 قياس سماكة الألومنيوم</a></p>
+<p><a href="../../what-is-the-thickness-of-10-gauge-aluminum/index.htm">10 مقياس سماكة الألومنيوم</a></p>
+<p><a href="../../what-is-the-thickness-of-12-gauge-aluminum/index.htm">12 مقياس سماكة الألومنيوم</a></p>
+<p><a href="../../how-thick-is-14-gauge-aluminum/index.htm">14 قياس سماكة الألومنيوم</a></p>
+<p><strong><a href="../../what-is-the-thickness-of-16-gauge-aluminum/index.htm">مقياس سمك الألمنيوم 16</a></strong></p>
+<p><a href="../../how-thick-is-18-gauge-aluminum/index.htm">18 مقياس سماكة الألومنيوم</a></p>
+<p><a href="../../how-thick-is-20-gauge-aluminum/index.htm">20 مقياس سماكة الألومنيوم</a></p>
+<p><a href="../index.htm">22 مقياس سماكة الألومنيوم</a></p>
+<p><a href="../../what-is-the-thickness-of-24-gauge-aluminum/index.htm">قياس سمك الألمنيوم 24</a></p>
+<p>ملاحظة: كلما كانت قيمة المقياس أكبر ، كانت الورقة أرق.</p>
+<p>للحصول على مخطط قياس الألومنيوم المعدني المفصل والكامل ، يرجى التحقق من عنوان URL:</p>
+<p><a href="../../what-is-the-sheet-metal-gauge-how-to-calculate-aluminum-gauge/index.htm"><strong>مخطط قياس ورقة الألومنيوم</strong></a></p>
+<p><a href="../../the-weight-of-4x8-aluminum-sheet-plate/index.htm">ما هو وزن لوح الألمنيوم؟</a></p>
+</div><div class="amp-wp-meta amp-wp-tax-category">فئات: <a href="../../blog/index.htm" rel="category tag">مقالات</a></div><div class="amp-wp-meta amp-wp-tax-tag">العلامات: <a href="../../tag/gauge/index.htm" rel="tag">مقياس</a>, <a href="../../tag/thick/index.htm" rel="tag">سميك</a></div><div class="amp-share-box"><amp-social-share type="facebook" width="60" height="44" data-share-endpoint="http://www.facebook.com/sharer.php?u=https://www.tigersalu.com/ar/what-is-the-thickness-of-22-gauge-aluminum/"></amp-social-share><amp-social-share type="twitter" width="60" height="44"></amp-social-share><amp-social-share type="linkedin" width="60" height="44"></amp-social-share></div><div class="amp-comments"><div id="comments" class="section-content comments-area"></div>				<div class="amp-wp-comments-link">
+					<a href="../index.htm#respond">
+						اترك تعليقا					</a>
+				</div>
+			</div><div class="amp-related-posts"><h3>المنشورات ذات الصلة</h3><ul><li class="flex items-center"><a href="../../what-is-the-thickness-of-11-gauge-aluminum/amp/index.htm" class="amp-related-img-link" title="ما هي سماكة الألمنيوم قياس 11؟"><amp-img src="../../../2021/02/aluminum-sheet-interleaved-with-paper-5-80x80.jpg" width="80" height="80" alt="aluminum sheet interleaved with paper" srcset="/2021/02/aluminum-sheet-interleaved-with-paper-5-80x80.jpg 80w, /2021/02/aluminum-sheet-interleaved-with-paper-5-160x160.jpg 160w" sizes="(max-width: 80px) 100vw, 80px" class="amp-related-img"></amp-img></a><div class="amp-related-title"><a href="../../what-is-the-thickness-of-11-gauge-aluminum/amp/index.htm" title="ما هي سماكة الألمنيوم قياس 11؟">ما هي سماكة الألمنيوم قياس 11؟</a><div class="amp-related-meta amp-wp-meta">2022 1 12 日</div></div></li><li class="flex items-center"><a href="../../how-thick-is-14-gauge-aluminum/amp/index.htm" class="amp-related-img-link" title="ما هي سماكة قياس 14 من الألومنيوم؟"><amp-img src="../../../2021/02/cutting-edge-without-burrs-of-aluminum-sheet-80x80.jpg" width="80" height="80" alt="cutting edge without burrs of aluminum sheet" srcset="/2021/02/cutting-edge-without-burrs-of-aluminum-sheet-80x80.jpg 80w, /2021/02/cutting-edge-without-burrs-of-aluminum-sheet-160x160.jpg 160w" sizes="(max-width: 80px) 100vw, 80px" class="amp-related-img"></amp-img></a><div class="amp-related-title"><a href="../../how-thick-is-14-gauge-aluminum/amp/index.htm" title="ما هي سماكة قياس 14 من الألومنيوم؟">ما هي سماكة قياس 14 من الألومنيوم؟</a><div class="amp-related-meta amp-wp-meta">2022 1 26</div></div></li><li class="flex items-center"><div class="amp-related-title"><a href="../../difference-between-hot-rolled-dc-and-casting-rolling-cc-aluminum/amp/index.htm" title="الفرق بين صفائح الألمنيوم المدرفلة على الساخن DC وصفيحة الألمنيوم المتداول الصب المستمر CC؟">الفرق بين صفائح الألمنيوم المدرفلة على الساخن DC وصفيحة الألمنيوم المتداول الصب المستمر CC؟</a><div class="amp-related-meta amp-wp-meta">2022 1 月 4</div></div></li></ul></div>
+	</article>
+</div>
+
+<footer class="amp-wp-footer">
+	<div class="clearfix">
+		<div class="amp-footer-content">© 2022 تايجر لصناعة الألمنيوم</div>	</div>
+</footer>
+
+<amp-analytics id="UA-194323042-1" type="googleanalytics"><script type="application/json">{"vars":{"account":"UA-194323042-1"},"triggers":{"trackPageview":{"on":"visible","request":"pageview"}}}</script></amp-analytics><amp-sidebar id="sidebar" layout="nodisplay" side="right"><div class="amp-sidebar-navigation"><div role="button" tabindex="0" on="tap:sidebar.close" class="close-amp-sidebar">X</div><div class="menu-topnav-container"><ul id="menu-topnav" class="menu"><li><a href="../../index.htm">الصفحة الرئيسية</a></li>
+<li><a title="منتج الألومنيوم Mteal" href="../../aluminum-metal/index.htm">منتجات</a>
+<ul class="sub-menu">
+	<li><a href="../../products/aluminum-mill-finish/index.htm">مطحنة الألومنيوم</a></li>
+	<li><a href="../../products/painted-coated-aluminum/index.htm">الألمنيوم المطلي المطلي</a></li>
+	<li><a href="../../products/powder-coating-aluminium/index.htm">مسحوق طلاء الألمنيوم</a></li>
+	<li><a href="../../products/aluminium-cladding/index.htm">الكسوة الألومنيوم</a></li>
+	<li><a href="../../products/perforated-aluminium/index.htm">ألمنيوم مثقب</a></li>
+</ul>
+</li>
+<li class="current-post-ancestor current-menu-parent"><a href="../../blog/index.htm">مقالات</a></li>
+<li><a rel="nofollow" href="../../about-tigers/index.htm">حول النمور</a></li>
+<li><a rel="nofollow" href="../../contact-tigers/index.htm">اتصل بنا</a></li>
+</ul></div></div></amp-sidebar></body>
+</html>
+<!-- Cached for great performance - Debug: cached@1653391955 -->

@@ -1,0 +1,696 @@
+﻿<!doctype html>
+<html amp="" lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<script type='text/javascript' src='../../v0.js' async=""></script>
+<script type='text/javascript' src='../../v0/amp-sidebar-0.1.js' async="" custom-element="amp-sidebar"></script>
+<script type='text/javascript' src='../../v0/amp-social-share-0.1.js' async="" custom-element="amp-social-share"></script>
+<script type='text/javascript' src='../../v0/amp-analytics-0.1.js' async="" custom-element="amp-analytics"></script>
+	<style amp-boilerplate="">body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate="">body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial, Helvetica, sans-serif:400&subset=">	<style amp-custom="">
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+input, textarea {
+	padding: 5px;
+	box-sizing: border-box;
+}
+.amp-wp-enforced-sizes {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.amp-wp-unknown-size img {
+	object-fit: contain;
+}
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+table th, table td, table th {
+    padding: 5px;
+}
+table.shop_attributes td {
+    font-style: italic;
+}
+table tr:nth-child(even) {
+    background: rgba(0,0,0,.03);
+}
+/* Flex */
+
+.full-flex {
+	flex: 1 0 100%;
+}
+.flex-space-between {
+	justify-content: space-between;
+}
+.flex-align-center {
+	align-items: center;
+}
+.flex-wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/* Template Styles */
+* {
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+html body {
+	margin:0;
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+    font-family:  Impact, Charcoal, sans-serif;
+	color: #444444;
+	font-weight: 400;
+	letter-spacing: 0px;
+}
+body {
+	background: #ffffff;
+	color: #444444;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	letter-spacing: 0px;
+	font-size:16px;
+	line-height: 24px;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 16px;
+	padding: 0;
+}
+
+a {
+	color: #ce534d;
+}
+
+a:hover {
+	color: #ce534d;
+	text-decoration: underline;
+}
+.btn, .button, button {
+    color: #fff;
+    cursor: pointer;
+    padding: .518em 1.287em;
+    text-decoration: none;
+    font-weight: 600;
+	border: 0;
+    text-shadow: none;
+    display: inline-block;
+    outline: 0;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 0;
+    font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 0px;
+	font-size:16px;
+	line-height: 24px;
+    background: #ce534d;
+}
+.btn:hover, .button:hover, .btn:active, .button:active, .btn:focus .button:focus  {
+    color: #fff;
+    text-decoration: none;
+    background: #ce534d;
+    opacity:.8;
+}
+/* Breadcrumbs */
+#amp-bread {
+    font-size: 12px;
+    margin: 5px 0;
+}
+/* Quotes */
+
+blockquote {
+	color: #444444;
+	background: rgba(127,127,127,.1);
+	border-left: 2px solid #ce534d;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #3265c5;
+}
+
+.amp-wp-header > div {
+	color: #ffffff;
+	font-size: 18px;
+	line-height:50px;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 0 16px;
+	position: relative;
+	min-height: 50px;
+	box-sizing: border-box;
+}
+
+.amp-wp-header a {
+	text-decoration: none;
+	display:block;
+	float:left;
+	font-family:  'MS Serif', 'New York', sans-serif;
+	color: #ffffff;
+	font-weight: 700;
+	letter-spacing: 0px;
+}
+
+/* Site Logo */
+
+.amp-wp-header .amp-wp-site-icon {
+	margin: 9px 8px 9px 0;
+    float: left
+}
+
+/* Menu */
+button.amp-menu-sidebar {
+    display: block;
+    float: right;
+    height: 50px;
+    background: rgba(0,0,0,0.0);
+   	font-family:  Source Sans Pro;
+	color: #444444;
+	font-weight: ;
+	letter-spacing: 0px;
+    border: none;
+    padding:0;
+    font-size: 15px;
+    cursor: pointer;
+}
+.amp-icon-button {
+    position: relative;
+    width: 28px;
+}
+.amp-icon-button:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 28px;
+    height: 4px;
+    border-top: 12px double #ffffff;
+    border-bottom: 4px solid #ffffff;
+}
+amp-sidebar {
+	background-color: #3265c5;
+	width:250px;
+}
+.close-amp-sidebar {
+    font-size: 12px;
+    font-family: sans-serif;
+    background: rgba(0,0,0,.25);
+    letter-spacing: 1px;
+    padding: 12px;
+    line-height: 8px;
+    font-weight: bold;
+    margin: 12px 12px 2px;
+    cursor: pointer;
+    display: inline-block;
+    color: #fff;
+}
+.amp-sidebar-navigation ul.menu {
+    margin: 0 12px;
+}
+.amp-sidebar-navigation ul.menu li {
+    list-style: none;
+}
+.amp-sidebar-navigation ul.menu li a {
+    text-decoration: none;
+    display: block;
+    padding: 8px 10px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    font-size: 15px;
+    line-height: 20px;
+    font-family:  Source Serif Pro;
+	color: #ffffff;
+	font-weight: 400;
+	letter-spacing: 0px;
+}
+.amp-sidebar-navigation ul.menu ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+/* main */
+
+.main {
+	color: #444444;
+	font-weight: 400;
+	margin: 16px auto;
+	max-width: 600px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	padding: 0 16px;
+	box-sizing: border-box;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 16px 0 10px;
+}
+
+.amp-wp-title {
+	display: block;
+	width: 100%;
+	margin:0;
+}
+
+/* Article Meta */
+.amp-wp-article-meta {
+	margin: 0px 0 10px 0;
+}
+.amp-wp-meta {
+	color: #777777;
+	display: inline-block;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #ce534d;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+	display:block;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+.amp-wp-page-content {
+	padding: 6px 0 0;
+}
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+
+/* comments */
+
+.amp-comments {
+    margin-top: 16px;
+}
+.comment-text {
+    position: relative;
+    padding-left: 76px;
+    min-height:60px;
+}
+.comment-text p {
+	margin-bottom:0;
+}
+.comment-list .comment-metadata a {
+    font-size: 12px;
+    color: #777;
+}
+.comment-list .comment-author amp-img {
+    margin-right:10px;
+}
+ul.comment-list li {
+    list-style-type: none;
+}
+.comment {
+    margin-top: 16px;
+    border: 1px solid #ddd;
+    padding: 1em;
+}
+.comment-list amp-img {
+    float: left;
+}
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #eee;
+	color: #777777;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #eee;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #eee url( ../../wp-content/plugins/kadence-amp/assets/images/placeholder-icon.png ) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	margin: 16px 0;
+	display: block;
+}
+
+.amp-wp-comments-link, .mod_show_original {
+	color: #777777;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 1.5em 0 1.5em;
+}
+.amp-wp-comments-link a, .mod_show_original a{
+	border-style: solid;
+	border-color: #eee;
+	border-width: 1px 1px 2px;
+	background-color: transparent;
+	color: #ce534d;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+/* Related Posts */
+.amp-related-posts ul {
+	list-style:none;
+}
+.amp-related-posts ul li {
+	margin-bottom:16px;
+}
+a.amp-related-img-link {
+    margin-right: 10px;
+    display: block;
+}
+.amp-related-posts .amp-related-meta {
+	display:block;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	background: #444444;
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.amp-wp-footer > div {
+	max-width: 600px;
+    margin: 0 auto;
+	padding: 16px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+	color: #ffffff;
+}
+.show_original {
+    display: block;
+    text-align: center;
+}
+.show_original a {
+    display: inline-block;
+    margin-top: 10px;
+    padding:4px 8px;
+    border: 1px solid #ffffff;
+}
+.back-to-top {
+	top: 16px;
+	position: absolute;
+	right: 16px;
+}
+@media (max-width: 544px) {
+	.wp-caption.alignleft, .amp-wp-article-content amp-img.alignleft {
+		float:none;
+		margin-right:auto;
+		margin-left:auto;
+	}
+}
+		/* Inline stylesheets */
+.amp-wp-inline-0f1bf07c72fdf1784fff2e164d9dca98 { display:none; }/* Custom styles */
+@font-face{font-family:"tigers";font-display:swap;src:url("../../wp-content/themes/tgs/css/fonts/tigers.eot");src:url("../../wp-content/themes/tgs/css/fonts/tigers-1.eot") format("embedded-opentype"),url("../../wp-content/themes/tgs/css/fonts/tigers.woff2") format("woff2"),url("../../wp-content/themes/tgs/css/fonts/tigers.woff") format("woff"),url("../../wp-content/themes/tgs/css/fonts/tigers.ttf") format("truetype"),url("../../wp-content/themes/tgs/css/fonts/tigers.svg") format("svg")}
+h1,h2,h3,h4,h5,h6{font-family:'Tigers',sans-serif,'Arial';color:#444444;line-height:1.2}
+h1{font-size:24px;font-weight:700; color: #000;}
+h2{font-size:22px;padding:10px 0 10px 8px;margin:25px 0 20px;border-left:2px solid #487bd9;background-color:#f5f8fb}
+h3{font-size:20px;padding:15px 0 15px;margin-bottom:0}
+h4{font-size:16px;padding:12px 0 12px;margin-bottom:0}
+h5{font-size:17px;padding:5px 0 0px;margin-bottom:0}
+h6{font-size:14px;margin-bottom:0}
+.main{padding:0 10px;margin-top: 0;}
+.amp-wp-page-content li{list-style-position:inside;padding-bottom:10px}
+.amp-wp-page-content strong{padding:8px 0}
+.amp-wp-page-content a{max-width:100%;display:inline-block;text-decoration:none}
+.amp-wp-page-content a:before{font-family:'tigers';content:"\e7ff";margin-right:0px;font-size:14px;color:#feb822}
+.amp-breadcrumb-container{font-size:15px;background-color:#f5f7fa;border-bottom:1px solid #eee;padding:10px 0px;-webkit-box-shadow:0 -1px 2px rgba(0,0,0,.06) inset;box-shadow:0 -1px 2px rgba(0,0,0,.06) inset}
+.amp-breadcrumb-container a{ text-decoration: none;}
+.amp-wp-article-header{padding-bottom: 10px;   border-bottom: 1px dotted #3265c5;margin-bottom: 0px;}	</style>
+</head>
+
+<body class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="../../index.htm">TIGERS ALUMINUM</a><div class="amp-accordion-header"><button class="amp-menu-sidebar amp-icon-button" on="tap:sidebar.toggle"></button></div>	</div>
+</header>
+
+<div class="main">
+	<article class="amp-wp-article">
+		<div id="amp-bread"><div class="amp-breadcrumb-container"><span><a href="../../index.htm" itemprop="url" class="kad-bc-home"><span>Home</span></a></span> <span class="bc-delimiter">&raquo;</span> <span><a href="../../blog/index.htm" itemprop="url"><span>Blog</span></a></span> <span class="bc-delimiter">&raquo;</span> <span class="kad-breadcurrent">What is the thickness of 12 gauge aluminum?</span></div></div><div class="amp-wp-article-featured-image feature-content">
+	<amp-img width="800" height="600" src="../../2021/02/1100-h14-aluminum-sheet-2.jpg" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="1100 h14 aluminum sheet" srcset="/2021/02/1100-h14-aluminum-sheet-2.jpg 800w, /2021/02/1100-h14-aluminum-sheet-2-160x120.jpg 160w, /2021/02/1100-h14-aluminum-sheet-2-560x420.jpg 560w, /2021/02/1100-h14-aluminum-sheet-2-380x285.jpg 380w" sizes="(max-width: 800px) 100vw, 800px" title="What is the thickness of 12 gauge aluminum? 1" layout="intrinsic"></amp-img></div>
+<header class="amp-wp-article-header"><h1 class="amp-wp-title">What is the thickness of 12 gauge aluminum?</h1></header><div class="amp-wp-article-meta"><div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2022-01-12T20:20:58+00:00">
+		2022年1月12日	</time>
+</div>
+	<div class="amp-wp-meta amp-wp-byline">
+		<span class="kt-amp-by-author">by</span> <span class="amp-wp-author author vcard">admin</span>
+	</div>
+</div><div class="amp-wp-page-content"><!--noindex--><div class="lwptoc toc-list lwptoc-autoWidth lwptoc-baseItems lwptoc-light lwptoc-notInherit" data-smooth-scroll="1" data-smooth-scroll-offset="24"><div class="lwptoc_i">    <div class="lwptoc_header">
+        <b class="lwptoc_title">Table Of Contents</b>                    <span class="lwptoc_toggle">
+                <a href="#" class="lwptoc_toggle_label" data-label="HIDE">SHOW</a>
+            </span>
+            </div>
+<div class="lwptoc_items amp-wp-inline-0f1bf07c72fdf1784fff2e164d9dca98">
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#what-is-gauge" rel="nofollow">
+                    <span class="lwptoc_item_number">1</span>
+                <span class="lwptoc_item_label">What is gauge?</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#the-thickness-of-12-gauge-aluminum-sheet" rel="nofollow">
+                    <span class="lwptoc_item_number">2</span>
+                <span class="lwptoc_item_label">The thickness of 12 gauge aluminum sheet</span>
+    </a>
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#12-gauge-thickness-in-inches" rel="nofollow">
+                    <span class="lwptoc_item_number">2.1</span>
+                <span class="lwptoc_item_label">12 gauge thickness in inches</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#12ga-aluminum-thickness-in-mm" rel="nofollow">
+                    <span class="lwptoc_item_number">2.2</span>
+                <span class="lwptoc_item_label">12ga aluminum thickness in mm</span>
+    </a>
+    </li></ul></li><li class="lwptoc_item">    <a href="#the-weight-of-12-gauge-aluminum-sheet" rel="nofollow">
+                    <span class="lwptoc_item_number">3</span>
+                <span class="lwptoc_item_label">The weight of 12 gauge aluminum sheet</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#12-gauge-aluminum-chart-specification" rel="nofollow">
+                    <span class="lwptoc_item_number">4</span>
+                <span class="lwptoc_item_label">12 gauge aluminum chart specification</span>
+    </a>
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#the-thickness-and-weight-of-the-12-gauge-aluminum-sheet" rel="nofollow">
+                    <span class="lwptoc_item_number">4.1</span>
+                <span class="lwptoc_item_label">The thickness and weight of the 12 gauge aluminum sheet</span>
+    </a>
+    </li></ul></li></ul></div>
+</div></div><!--/noindex--><h2><span id="what-is-gauge">What is gauge?</span></h2>
+<p>Gauge sizes are numbers that indicate the thickness of a piece of sheet metal.</p>
+<h2><span id="the-thickness-of-12-gauge-aluminum-sheet">The thickness of 12 gauge aluminum sheet</span></h2>
+<h3><span id="12-gauge-thickness-in-inches">12 gauge thickness in inches</span></h3>
+<p>12 gauge aluminum sheet is 0.0808 inches thick.</p>
+<h3><span id="12ga-aluminum-thickness-in-mm">12ga aluminum thickness in mm</span></h3>
+<p>12ga approximate thickness in millimeters is 2.052 mm.</p>
+<h2><span id="the-weight-of-12-gauge-aluminum-sheet">The weight of 12 gauge aluminum sheet</span></h2>
+<p>The weight per unit area of the sheet can also be seen in pounds per square foot and kilograms per square meter.</p>
+<p>The weight of 12 gauge aluminum(<strong>ounces</strong>): 18.24 oz/ft²<br>
+The weight of 12 gauge aluminum(<strong>pounds</strong> ): 1.14 lb/ft²<br>
+The weight of 12 gauge aluminum(<strong>KG</strong>): 0.5171 kg/ft²<br>
+The weight of 12 gauge aluminum(<strong>KG/m²</strong>): 5.567 kg/m²</p>
+<h2><span id="12-gauge-aluminum-chart-specification">12 gauge aluminum chart specification</span></h2>
+<div class="table-responsive">
+<table class="table"><caption>
+<h3><span id="the-thickness-and-weight-of-the-12-gauge-aluminum-sheet"><strong>The thickness and weight of the 12 gauge aluminum sheet</strong></span></h3>
+</caption>
+<tbody><tr><td colspan="2" width="144">Gauge</td>
+<td>10</td>
+</tr><tr><td rowspan="2">Thickness</td>
+<td>Approximate thickness in decimal parts of an inch(in)</td>
+<td>0.0808 in</td>
+</tr><tr><td>Approximate thickness in millimeters(mm)</td>
+<td>2.052 mm</td>
+</tr><tr><td rowspan="4">Weight Per Area</td>
+<td>Weight per square foot in ounces avoirdupois(oz/ft²)</td>
+<td>18.24 oz/ft²</td>
+</tr><tr><td>Weight per square foot in pounds avoirdupois(lb/ft²)</td>
+<td>1.14 lb/ft²</td>
+</tr><tr><td>Weight per square foot in kilograms(kg/ft²)</td>
+<td>0.5171 kg/ft²</td>
+</tr><tr><td>Weight per square meter in kilograms(kg/m²)</td>
+<td>5.567 kg/m²</td>
+</tr></tbody></table></div>
+<p><strong>Parameters of other specifications of aluminum plate：</strong></p>
+<p><a href="../../what-is-the-thickness-of-8-gauge-aluminum/index.htm">8 gauge aluminum thickness</a></p>
+<p><a href="../../what-is-the-thickness-of-6-gauge-aluminum/index.htm">6 gauge aluminum thickness</a></p>
+<p><a href="../../what-is-the-thickness-of-10-gauge-aluminum/index.htm">10 gauge aluminum thickness</a></p>
+<p><a href="../index.htm">12 gauge aluminum thickness</a></p>
+<p><a href="../../how-thick-is-14-gauge-aluminum/index.htm">14 gauge aluminum thickness</a></p>
+<p><strong><a href="../../what-is-the-thickness-of-16-gauge-aluminum/index.htm">16 gauge aluminum thickness</a></strong></p>
+<p><a href="../../how-thick-is-20-gauge-aluminum/index.htm">20 gauge aluminum thickness</a></p>
+<p><a href="../../what-is-the-thickness-of-22-gauge-aluminum/index.htm">22 gauge aluminum thickness</a></p>
+<p><a href="../../what-is-the-thickness-of-24-gauge-aluminum/index.htm">24 gauge aluminum thickness</a></p>
+<p>Note: The larger the value of Gauge, the thinner the sheet.</p>
+<p>For more detailed and complete metal aluminum gauge chart please check url:</p>
+<p><a href="../../what-is-the-sheet-metal-gauge-how-to-calculate-aluminum-gauge/index.htm"><strong>What is the sheet metal gauge? How to calculate aluminum gauge?</strong></a></p>
+<p><a href="../../the-weight-of-4x8-aluminum-sheet-plate/index.htm">What is the weight of the aluminum sheet plate?</a></p>
+</div><div class="amp-wp-meta amp-wp-tax-category">Categories: <a href="../../blog/index.htm" rel="category tag">Blog</a></div><div class="amp-wp-meta amp-wp-tax-tag">Tags: <a href="../../tag/gauge/index.htm" rel="tag">gauge</a>, <a href="../../tag/thick/index.htm" rel="tag">thick</a></div><div class="amp-share-box"><amp-social-share type="facebook" width="60" height="44" data-share-endpoint="http://www.facebook.com/sharer.php?u=https://www.tigersalu.com/what-is-the-thickness-of-12-gauge-aluminum/"></amp-social-share><amp-social-share type="twitter" width="60" height="44"></amp-social-share><amp-social-share type="linkedin" width="60" height="44"></amp-social-share></div><div class="amp-comments"><div id="comments" class="section-content comments-area"></div>				<div class="amp-wp-comments-link">
+					<a href="../index.htm#respond">
+						Leave a Comment					</a>
+				</div>
+			</div><div class="amp-related-posts"><h3>Related Posts</h3><ul><li class="flex items-center"><a href="../../the-weight-of-4x8-aluminum-sheet-plate/amp/index.htm" class="amp-related-img-link" title="What is the weight of the aluminum sheet plate?"><amp-img src="../../2021/02/1100-h14-aluminum-sheet-1-80x80.jpg" width="80" height="80" alt="1100 h14 aluminum sheet" srcset="/2021/02/1100-h14-aluminum-sheet-1-80x80.jpg 80w, /2021/02/1100-h14-aluminum-sheet-1-160x160.jpg 160w" sizes="(max-width: 80px) 100vw, 80px" class="amp-related-img"></amp-img></a><div class="amp-related-title"><a href="../../the-weight-of-4x8-aluminum-sheet-plate/amp/index.htm" title="What is the weight of the aluminum sheet plate?">What is the weight of the aluminum sheet plate?</a><div class="amp-related-meta amp-wp-meta">2021年12月21日</div></div></li><li class="flex items-center"><a href="../../how-thick-is-20-gauge-aluminum/amp/index.htm" class="amp-related-img-link" title="how thick is 20 gauge aluminum?"><amp-img src="../../2021/02/packages-of-aluminum-sheet-80x80.jpg" width="80" height="80" alt="packages of aluminum sheet" srcset="/2021/02/packages-of-aluminum-sheet-80x80.jpg 80w, /2021/02/packages-of-aluminum-sheet-160x160.jpg 160w" sizes="(max-width: 80px) 100vw, 80px" class="amp-related-img"></amp-img></a><div class="amp-related-title"><a href="../../how-thick-is-20-gauge-aluminum/amp/index.htm" title="how thick is 20 gauge aluminum?">how thick is 20 gauge aluminum?</a><div class="amp-related-meta amp-wp-meta">2022年1月26日</div></div></li><li class="flex items-center"><a href="../../what-is-the-6063-aluminum-sheet/amp/index.htm" class="amp-related-img-link" title="What is the 6063 aluminum sheet?"><amp-img src="../../2021/02/3mm-aa1050-h14-aluminum-sheet-2-80x80.jpg" width="80" height="80" alt="3mm aa1050 h14 aluminum sheet" srcset="/2021/02/3mm-aa1050-h14-aluminum-sheet-2-80x80.jpg 80w, /2021/02/3mm-aa1050-h14-aluminum-sheet-2-160x160.jpg 160w" sizes="(max-width: 80px) 100vw, 80px" class="amp-related-img"></amp-img></a><div class="amp-related-title"><a href="../../what-is-the-6063-aluminum-sheet/amp/index.htm" title="What is the 6063 aluminum sheet?">What is the 6063 aluminum sheet?</a><div class="amp-related-meta amp-wp-meta">2021年2月9日</div></div></li></ul></div>
+	</article>
+</div>
+
+<footer class="amp-wp-footer">
+	<div class="clearfix">
+		<div class="amp-footer-content">&copy; 2022 Tigers Industry Aluminum</div>	</div>
+</footer>
+
+<amp-analytics id="UA-194323042-1" type="googleanalytics"><script type="application/json">{"vars":{"account":"UA-194323042-1"},"triggers":{"trackPageview":{"on":"visible","request":"pageview"}}}</script></amp-analytics><amp-sidebar id="sidebar" layout="nodisplay" side="right"><div class="amp-sidebar-navigation"><div role="button" tabindex="0" on="tap:sidebar.close" class="close-amp-sidebar">X</div><div class="menu-topnav-container"><ul id="menu-topnav" class="menu"><li><a href="../../index.htm">HOME</a></li>
+<li><a title="Aluminum Mteal Product" href="../../aluminum-metal/index.htm">Products</a>
+<ul class="sub-menu">
+	<li><a href="../../products/aluminum-mill-finish/index.htm">aluminum mill finish</a></li>
+	<li><a href="../../products/painted-coated-aluminum/index.htm">Painted coated aluminum</a></li>
+	<li><a href="../../products/powder-coating-aluminium/index.htm">Powder coating aluminium</a></li>
+	<li><a href="../../products/aluminium-cladding/index.htm">aluminum cladding</a></li>
+	<li><a href="../../products/perforated-aluminium/index.htm">Perforated aluminium</a></li>
+</ul>
+</li>
+<li class="current-post-ancestor current-menu-parent"><a href="../../blog/index.htm">Blog</a></li>
+<li><a rel="nofollow" href="../../about-tigers/index.htm">About Tigers</a></li>
+<li><a rel="nofollow" href="../../contact-tigers/index.htm">Contact US</a></li>
+</ul></div></div></amp-sidebar></body>
+</html>
+
+<!-- Cached for great performance - Debug: cached@1653381342 -->

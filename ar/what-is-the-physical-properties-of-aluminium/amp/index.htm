@@ -1,0 +1,728 @@
+﻿<!doctype html>
+<html amp="" dir="rtl" lang="ar">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<script type='text/javascript' src='../../../v0.js' async=""></script>
+<script type='text/javascript' src='../../../v0/amp-sidebar-0.1.js' async="" custom-element="amp-sidebar"></script>
+<script type='text/javascript' src='../../../v0/amp-social-share-0.1.js' async="" custom-element="amp-social-share"></script>
+<script type='text/javascript' src='../../../v0/amp-analytics-0.1.js' async="" custom-element="amp-analytics"></script>
+	<style amp-boilerplate="">body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate="">body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial, Helvetica, sans-serif:400&subset=">	<style amp-custom="">
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+input, textarea {
+	padding: 5px;
+	box-sizing: border-box;
+}
+.amp-wp-enforced-sizes {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.amp-wp-unknown-size img {
+	object-fit: contain;
+}
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+table th, table td, table th {
+    padding: 5px;
+}
+table.shop_attributes td {
+    font-style: italic;
+}
+table tr:nth-child(even) {
+    background: rgba(0,0,0,.03);
+}
+/* Flex */
+
+.full-flex {
+	flex: 1 0 100%;
+}
+.flex-space-between {
+	justify-content: space-between;
+}
+.flex-align-center {
+	align-items: center;
+}
+.flex-wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/* Template Styles */
+* {
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+html body {
+	margin:0;
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+    font-family:  Impact, Charcoal, sans-serif;
+	color: #444444;
+	font-weight: 400;
+	letter-spacing: 0px;
+}
+body {
+	background: #ffffff;
+	color: #444444;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	letter-spacing: 0px;
+	font-size:16px;
+	line-height: 24px;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 16px;
+	padding: 0;
+}
+
+a {
+	color: #ce534d;
+}
+
+a:hover {
+	color: #ce534d;
+	text-decoration: underline;
+}
+.btn, .button, button {
+    color: #fff;
+    cursor: pointer;
+    padding: .518em 1.287em;
+    text-decoration: none;
+    font-weight: 600;
+	border: 0;
+    text-shadow: none;
+    display: inline-block;
+    outline: 0;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 0;
+    font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 0px;
+	font-size:16px;
+	line-height: 24px;
+    background: #ce534d;
+}
+.btn:hover, .button:hover, .btn:active, .button:active, .btn:focus .button:focus  {
+    color: #fff;
+    text-decoration: none;
+    background: #ce534d;
+    opacity:.8;
+}
+/* Breadcrumbs */
+#amp-bread {
+    font-size: 12px;
+    margin: 5px 0;
+}
+/* Quotes */
+
+blockquote {
+	color: #444444;
+	background: rgba(127,127,127,.1);
+	border-left: 2px solid #ce534d;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #3265c5;
+}
+
+.amp-wp-header > div {
+	color: #ffffff;
+	font-size: 18px;
+	line-height:50px;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 0 16px;
+	position: relative;
+	min-height: 50px;
+	box-sizing: border-box;
+}
+
+.amp-wp-header a {
+	text-decoration: none;
+	display:block;
+	float:left;
+	font-family:  'MS Serif', 'New York', sans-serif;
+	color: #ffffff;
+	font-weight: 700;
+	letter-spacing: 0px;
+}
+
+/* Site Logo */
+
+.amp-wp-header .amp-wp-site-icon {
+	margin: 9px 8px 9px 0;
+    float: left
+}
+
+/* Menu */
+button.amp-menu-sidebar {
+    display: block;
+    float: right;
+    height: 50px;
+    background: rgba(0,0,0,0.0);
+   	font-family:  Source Sans Pro;
+	color: #444444;
+	font-weight: ;
+	letter-spacing: 0px;
+    border: none;
+    padding:0;
+    font-size: 15px;
+    cursor: pointer;
+}
+.amp-icon-button {
+    position: relative;
+    width: 28px;
+}
+.amp-icon-button:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 28px;
+    height: 4px;
+    border-top: 12px double #ffffff;
+    border-bottom: 4px solid #ffffff;
+}
+amp-sidebar {
+	background-color: #3265c5;
+	width:250px;
+}
+.close-amp-sidebar {
+    font-size: 12px;
+    font-family: sans-serif;
+    background: rgba(0,0,0,.25);
+    letter-spacing: 1px;
+    padding: 12px;
+    line-height: 8px;
+    font-weight: bold;
+    margin: 12px 12px 2px;
+    cursor: pointer;
+    display: inline-block;
+    color: #fff;
+}
+.amp-sidebar-navigation ul.menu {
+    margin: 0 12px;
+}
+.amp-sidebar-navigation ul.menu li {
+    list-style: none;
+}
+.amp-sidebar-navigation ul.menu li a {
+    text-decoration: none;
+    display: block;
+    padding: 8px 10px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    font-size: 15px;
+    line-height: 20px;
+    font-family:  Source Serif Pro;
+	color: #ffffff;
+	font-weight: 400;
+	letter-spacing: 0px;
+}
+.amp-sidebar-navigation ul.menu ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+/* main */
+
+.main {
+	color: #444444;
+	font-weight: 400;
+	margin: 16px auto;
+	max-width: 600px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	padding: 0 16px;
+	box-sizing: border-box;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 16px 0 10px;
+}
+
+.amp-wp-title {
+	display: block;
+	width: 100%;
+	margin:0;
+}
+
+/* Article Meta */
+.amp-wp-article-meta {
+	margin: 0px 0 10px 0;
+}
+.amp-wp-meta {
+	color: #777777;
+	display: inline-block;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #ce534d;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+	display:block;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+.amp-wp-page-content {
+	padding: 6px 0 0;
+}
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+
+/* comments */
+
+.amp-comments {
+    margin-top: 16px;
+}
+.comment-text {
+    position: relative;
+    padding-left: 76px;
+    min-height:60px;
+}
+.comment-text p {
+	margin-bottom:0;
+}
+.comment-list .comment-metadata a {
+    font-size: 12px;
+    color: #777;
+}
+.comment-list .comment-author amp-img {
+    margin-right:10px;
+}
+ul.comment-list li {
+    list-style-type: none;
+}
+.comment {
+    margin-top: 16px;
+    border: 1px solid #ddd;
+    padding: 1em;
+}
+.comment-list amp-img {
+    float: left;
+}
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #eee;
+	color: #777777;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #eee;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #eee url( ../../../wp-content/plugins/kadence-amp/assets/images/placeholder-icon.png ) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	margin: 16px 0;
+	display: block;
+}
+
+.amp-wp-comments-link, .mod_show_original {
+	color: #777777;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 1.5em 0 1.5em;
+}
+.amp-wp-comments-link a, .mod_show_original a{
+	border-style: solid;
+	border-color: #eee;
+	border-width: 1px 1px 2px;
+	background-color: transparent;
+	color: #ce534d;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+/* Related Posts */
+.amp-related-posts ul {
+	list-style:none;
+}
+.amp-related-posts ul li {
+	margin-bottom:16px;
+}
+a.amp-related-img-link {
+    margin-right: 10px;
+    display: block;
+}
+.amp-related-posts .amp-related-meta {
+	display:block;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	background: #444444;
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.amp-wp-footer > div {
+	max-width: 600px;
+    margin: 0 auto;
+	padding: 16px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+	color: #ffffff;
+}
+.show_original {
+    display: block;
+    text-align: center;
+}
+.show_original a {
+    display: inline-block;
+    margin-top: 10px;
+    padding:4px 8px;
+    border: 1px solid #ffffff;
+}
+.back-to-top {
+	top: 16px;
+	position: absolute;
+	right: 16px;
+}
+@media (max-width: 544px) {
+	.wp-caption.alignleft, .amp-wp-article-content amp-img.alignleft {
+		float:none;
+		margin-right:auto;
+		margin-left:auto;
+	}
+}
+		/* Inline stylesheets */
+.amp-wp-inline-0f1bf07c72fdf1784fff2e164d9dca98 { display:none; }.amp-wp-inline-869b76696f15a7298bbe56bef936cfb5 { max-width:570px; }/* Custom styles */
+@font-face{font-family:"tigers";font-display:swap;src:url("../../../wp-content/themes/tgs/css/fonts/tigers.eot");src:url("../../../wp-content/themes/tgs/css/fonts/tigers-1.eot") format("embedded-opentype"),url("../../../wp-content/themes/tgs/css/fonts/tigers.woff2") format("woff2"),url("../../../wp-content/themes/tgs/css/fonts/tigers.woff") format("woff"),url("../../../wp-content/themes/tgs/css/fonts/tigers.ttf") format("truetype"),url("../../../wp-content/themes/tgs/css/fonts/tigers.svg") format("svg")}
+h1,h2,h3,h4,h5,h6{font-family:'Tigers',sans-serif,'Arial';color:#444444;line-height:1.2}
+h1{font-size:24px;font-weight:700; color: #000;}
+h2{font-size:22px;padding:10px 0 10px 8px;margin:25px 0 20px;border-left:2px solid #487bd9;background-color:#f5f8fb}
+h3{font-size:20px;padding:15px 0 15px;margin-bottom:0}
+h4{font-size:16px;padding:12px 0 12px;margin-bottom:0}
+h5{font-size:17px;padding:5px 0 0px;margin-bottom:0}
+h6{font-size:14px;margin-bottom:0}
+.main{padding:0 10px;margin-top: 0;}
+.amp-wp-page-content li{list-style-position:inside;padding-bottom:10px}
+.amp-wp-page-content strong{padding:8px 0}
+.amp-wp-page-content a{max-width:100%;display:inline-block;text-decoration:none}
+.amp-wp-page-content a:before{font-family:'tigers';content:"\e7ff";margin-right:0px;font-size:14px;color:#feb822}
+.amp-breadcrumb-container{font-size:15px;background-color:#f5f7fa;border-bottom:1px solid #eee;padding:10px 0px;-webkit-box-shadow:0 -1px 2px rgba(0,0,0,.06) inset;box-shadow:0 -1px 2px rgba(0,0,0,.06) inset}
+.amp-breadcrumb-container a{ text-decoration: none;}
+.amp-wp-article-header{padding-bottom: 10px;   border-bottom: 1px dotted #3265c5;margin-bottom: 0px;}	</style>
+</head>
+
+<body class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="../../index.htm">نمر للألمنيوم</a><div class="amp-accordion-header"><button class="amp-menu-sidebar amp-icon-button" on="tap:sidebar.toggle"></button></div>	</div>
+</header>
+
+<div class="main">
+	<article class="amp-wp-article">
+		<div id="amp-bread"><div class="amp-breadcrumb-container"><span><a href="../../index.htm" itemprop="url" class="kad-bc-home"><span>الصفحة الرئيسية</span></a></span> <span class="bc-delimiter">»</span> <span><a href="../../blog/index.htm" itemprop="url"><span>مقالات</span></a></span> <span class="bc-delimiter">»</span> <span class="kad-breadcurrent">ما هي الخصائص الفيزيائية للألمنيوم؟</span></div></div><header class="amp-wp-article-header"><h1 class="amp-wp-title">ما هي الخصائص الفيزيائية للألمنيوم؟</h1></header><div class="amp-wp-article-meta"><div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2022-03-17T17:41:56+00:00">
+		2022 年 3 月 17	</time>
+</div>
+	<div class="amp-wp-meta amp-wp-byline">
+		<span class="kt-amp-by-author">بواسطة</span> <span class="amp-wp-author author vcard">مشرف</span>
+	</div>
+</div><div class="amp-wp-page-content"><!--noindex--><div class="lwptoc toc-list lwptoc-autoWidth lwptoc-baseItems lwptoc-light lwptoc-notInherit" data-smooth-scroll="1" data-smooth-scroll-offset="24"><div class="lwptoc_i">    <div class="lwptoc_header">
+        <b class="lwptoc_title">جدول المحتويات</b>                    <span class="lwptoc_toggle">
+                <a href="#" class="lwptoc_toggle_label" data-label="HIDE">يعرض</a>
+            </span>
+            </div>
+<div class="lwptoc_items amp-wp-inline-0f1bf07c72fdf1784fff2e164d9dca98">
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#what-is-aluminum" rel="nofollow">
+                    <span class="lwptoc_item_number">1</span>
+                <span class="lwptoc_item_label">ما هو الألمنيوم؟</span>
+    </a>
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#the-history-of-aluminum" rel="nofollow">
+                    <span class="lwptoc_item_number">1.1</span>
+                <span class="lwptoc_item_label">تاريخ الألمنيوم</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#world-production-of-aluminium-since-1900" rel="nofollow">
+                    <span class="lwptoc_item_number">1.2</span>
+                <span class="lwptoc_item_label">الإنتاج العالمي للألمنيوم منذ عام 1900</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#pure-aluminum" rel="nofollow">
+                    <span class="lwptoc_item_number">1.3</span>
+                <span class="lwptoc_item_label">ألمنيوم نقي</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#common-different-alloy-aluminum-plates" rel="nofollow">
+                    <span class="lwptoc_item_number">1.4</span>
+                <span class="lwptoc_item_label">لوحات سبائك الألومنيوم المختلفة المشتركة:</span>
+    </a>
+    </li></ul></li><li class="lwptoc_item">    <a href="#chemical-properties-of-aluminum" rel="nofollow">
+                    <span class="lwptoc_item_number">2</span>
+                <span class="lwptoc_item_label">الخواص الكيميائية للألمنيوم</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#aluminum-alloy" rel="nofollow">
+                    <span class="lwptoc_item_number">3</span>
+                <span class="lwptoc_item_label">سبائك الألومنيوم</span>
+    </a>
+    </li></ul></div>
+</div></div><!--/noindex--><h2><span id="what-is-aluminum">ما هو الألمنيوم؟</span></h2>
+<p>الألومنيوم (أو الألمنيوم باللغتين الإنجليزية الأمريكية والإنجليزية الكندية) هو عنصر كيميائي يحمل الرمز Al والرقم الذري 13. للألمنيوم كثافة أقل من كثافة المعادن الشائعة الأخرى ، أي ما يقرب من ثلث كثافة الفولاذ.</p>
+<p>وله تقارب كبير مع الأكسجين ، ويشكل طبقة واقية من الأكسيد على السطح عند تعرضه للهواء ، ويشبه الألمنيوم بصريًا الفضة ، سواء في لونه أو في قدرته الكبيرة على عكس الضوء. إنه ناعم وغير مغناطيسي ومرن.</p>
+<div id="attachment_75" class="wp-caption alignnone amp-wp-inline-869b76696f15a7298bbe56bef936cfb5"><a href="../../product/1050-aluminum-sheet/index.htm"></a><p id="caption-attachment-75" class="wp-caption-text">3mm aa1050 h14 صفائح الألمنيوم</p></div>
+<p>الألومنيوم معدن خفيف وخفيف الوزن وله خصائص كيميائية خفيفة. له مظهر فضي باهت لأنه يشكل بسرعة طبقة رقيقة من الأكسيد عند تعرضه للهواء. الألومنيوم غير سام (مثل الفولاذ) وغير مغناطيسي وغير شرر.</p>
+<h3><span id="the-history-of-aluminum">تاريخ الألمنيوم</span></h3>
+<p>تم الإعلان عن اكتشاف الألمنيوم في عام 1825 من قبل الفيزيائي الدنماركي هانز كريستيان أورستد.</p>
+<p>بدأ الكيميائي الفرنسي هنري إتيان سانت كلير ديفيل أول إنتاج صناعي للألمنيوم عام 1856.</p>
+<p>أصبح الألمنيوم متاحًا بشكل أكبر للجمهور من خلال عملية Hall-Héroult التي تم تطويرها بشكل مستقل من قبل المهندس الفرنسي Paul Héroult والمهندس الأمريكي Charles Martin Hall في عام 1886 ، وأدى الإنتاج الضخم للألمنيوم إلى استخدامه على نطاق واسع في الصناعة والحياة اليومية.</p>
+<p>في الحربين العالميتين الأولى والثانية ، كان الألمنيوم مورداً استراتيجياً بالغ الأهمية للطيران. في عام 1954 ، أصبح الألمنيوم أكثر المعادن غير الحديدية إنتاجًا متجاوزًا النحاس. في القرن الحادي والعشرين ، تم استهلاك معظم الألومنيوم في النقل والهندسة والبناء والتعبئة والتغليف في الولايات المتحدة وأوروبا الغربية والصين واليابان.</p>
+<h3><span id="world-production-of-aluminium-since-1900">الإنتاج العالمي للألمنيوم منذ عام 1900</span></h3>
+<p>خلال القرن العشرين ، ارتفع إنتاج الألمنيوم بسرعة: فبينما بلغ الإنتاج العالمي للألمنيوم في عام 1900 6800 طن متري ، تجاوز الإنتاج السنوي لأول مرة 100 ألف طن متري في عام 1916 ؛ مليون طن في عام 1941 ؛ 10000000 طن في عام 1971. [93] في السبعينيات ، أدى الطلب المتزايد على الألمنيوم إلى تحويله إلى سلعة تبادلية. دخلت بورصة لندن للمعادن ، وهي أقدم بورصة صناعية للمعادن في العالم ، في عام 1978. [86] استمر الإنتاج في النمو: تجاوز الإنتاج السنوي للألمنيوم 50،000،000 طن متري في عام 2013.</p>
+<h3><span id="pure-aluminum">ألمنيوم نقي</span></h3>
+<p>يستخدم الألمنيوم في العديد من الصناعات لصنع عشرات الملايين من المنتجات المختلفة ويلعب دورًا مهمًا للغاية في الاقتصاد العالمي. مع استخدام مجموعات عديدة من خصائصه الرئيسية ، بما في ذلك الطاقة الكهربائية ، وخفة الوزن ، ومقاومة التآكل ، وقابلية الاستعادة والتشكيل ، يتم استخدام الألمنيوم في عدد متزايد من التطبيقات. تتراوح فئة السلع هذه من المواد الهيكلية إلى رقائق التغليف الرقيقة.</p>
+<h3><span id="common-different-alloy-aluminum-plates">لوحات سبائك الألومنيوم المختلفة المشتركة:</span></h3>
+<p><a href="../../product/1050-aluminum-sheet/index.htm">1050 ورقة ألمنيوم</a><br><a href="../../product/1060-aluminum-sheet/index.htm">1060 ورقة الألومنيوم</a><br><a href="../../product/1100-aluminum-sheet/index.htm">1100 صفائح ألمنيوم</a><br><a href="../../product/3003-aluminum-sheet/index.htm">3003 ورقة الألومنيوم</a><br><a href="../../product/3004-aluminum-sheet/index.htm">3004 ورقة الألومنيوم</a><br><a href="../../product/3105-aluminum-sheet/index.htm">3105 صفائح الألمنيوم</a><br><a href="../../product/5005-aluminum-sheet/index.htm">5005 صفائح الألمنيوم</a><br><a href="../../product/5052-aluminum-sheet/index.htm">5052 صفيحة ألمنيوم</a><br><a href="../../product/5083-aluminum-sheet/index.htm">5083 صفيحة ألمنيوم</a><br><a href="../../product/5754-aluminum-sheet-plate/index.htm">5754 صفيحة ألمنيوم</a><br><a href="../../product/6061-aluminum-sheet-plate/index.htm">6061 ورقة الألومنيوم</a><br><a href="../../product/6082-aluminum-suppliers-t6-temper/index.htm">6082 ورقة الألومنيوم</a><br><a href="../../product/5-bar-aluminum-checker-plate/index.htm">5 شريط المدقق الألومنيوم لوحة</a><br><a href="../../product/aluminum-diamond-plate/index.htm">لوحة الماس الألومنيوم</a><br><a href="../../product/5x10-aluminum-sheet-plate/index.htm">5X10 ورقة وصفيحة من الألومنيوم</a><br><a href="../../product/4x8-aluminum-sheet-plate/index.htm">4X8 لوحة ورقة الألومنيوم</a><br>
+الخصائص الفيزيائية للألمنيوم</p>
+<p>ما هي الخصائص الفيزيائية للألمنيوم؟ عادة ما يكون المنزل المادي ميزة يمكن أن تحددها حواسنا ، بما في ذلك اللون ، والكثافة ، والصلابة ، ومقاومة التآكل ، والتوصيل الحراري ، والتوصيل الكهربائي ، وما إلى ذلك. الخصائص الفيزيائية للألمنيوم هي كما يلي.</p>
+<table><tbody><tr class="firstRow"><td><strong>الخصائص</strong></td>
+<td><strong>وصف</strong></td>
+</tr><tr><td>لون</td>
+<td>الألومنيوم معدن فضي عديم الرائحة أبيض.</td>
+</tr><tr><td>كثافة</td>
+<td>تبلغ كثافة الألمنيوم حوالي ثلث الفولاذ أو النحاس ، مما يجعله من أخف المعادن التجارية.</td>
+</tr><tr><td>الخضوع ل</td>
+<td>لا يتمتع الألمنيوم النقي بقوة شد عالية جدًا. ومع ذلك ، فإن عناصر صناعة السبائك ، بما في ذلك المنغنيز والسيليكون والنحاس والمغنيسيوم ، يمكن أن تزيد من قوة الألمنيوم وتنتج سبائك مع تطبيقات محددة.<br>
+الألومنيوم مناسب تمامًا للبيئات الباردة. لها ميزة على المعادن أن قوة شدها تزداد مع انخفاض درجة الحرارة ، مع الحفاظ على متانتها. مرة أخرى ، يكون المعدن هشًا في درجات الحرارة المنخفضة.</td>
+</tr><tr><td>المقاومة للتآكل</td>
+<td>عند تعرضه للهواء ، يشكل الألومنيوم أكسيد الألومنيوم على سطحه مع تأخير بسيط. هذا الرواسب لديه مقاومة ممتازة للتآكل. لديها مقاومة واسعة لأكبر الأحماض ، لكنها ضعيفة المقاومة للقلويات.</td>
+</tr><tr><td>توصيل حراري</td>
+<td>تبلغ الموصلية الحرارية للألمنيوم ثلاثة أضعاف الموصلية الحرارية للصلب. وهذا يؤدي إلى أن يكون الألومنيوم هو النسيج الأساسي لحزم التبريد والتدفئة (جنبًا إلى جنب مع المبادلات الحرارية). إلى جانب طبيعته غير السامة ، أدى هذا الاختيار إلى استخدام الألمنيوم على نطاق واسع في أدوات الطهي وأدوات المطبخ.</td>
+</tr><tr><td>التوصيل</td>
+<td>يتميز الألمنيوم بموصلية عالية بدرجة كافية ويمكن استخدامه كموصلات كهربائية.</td>
+</tr><tr><td>انعكاسية</td>
+<td>من الأشعة فوق البنفسجية إلى الأشعة تحت الحمراء ، الألومنيوم هو عاكس غير عادي للطاقة المشعة. نفس خصائص الانعكاس تجعل الألومنيوم نسيجًا عازلًا يمنع أشعة الشمس في الصيف بل ويوقف فقدان الحرارة عندما يتجمد.</td>
+</tr></tbody></table><p>يعتبر الألمنيوم موصلًا حراريًا وكهربائيًا ممتازًا ، حيث يحتوي على حوالي 60% من موصلية النحاس ، حراريًا وكهربائيًا ، بينما يحتوي على 30% فقط من كثافة النحاس.</p>
+<h2><span id="chemical-properties-of-aluminum"><strong>المواد الكيميائية </strong><strong>ص</strong><strong>roperties من </strong><strong>أ</strong><strong>الألمنيوم</strong></span></h2>
+<p>الخاصية الكيميائية هي تفاعل مادة مع مواد أخرى ، أي أن المادة تتفاعل مع مواد مختلفة أو تتغير من مادة إلى أخرى. في الحالات القياسية ، يتم التعرف بسهولة على المواد الكيميائية في مرحلة ما من التفاعل الكيميائي. قد يكون تفاعل مادة ما تغيرًا بسبب الاحتراق والصدأ والتسخين والانفجار وتغير اللون وما إلى ذلك. وفيما يلي الخصائص الكيميائية للألمنيوم.</p>
+<table><tbody><tr><td><strong>الخصائص</strong></td>
+<td><strong>وصف</strong></td>
+</tr><tr><td>أكسدة</td>
+<td>بشكل عام ، لا تستجيب معادن الألمنيوم للهواء لأن سطحها يغطي طبقة رقيقة من الأكاسيد ، مما يساعد على حماية المعدن من التآكل بالهواء. ومع ذلك ، في حالة تلف طبقة الأكسيد وانكشاف معدن الألمنيوم ، والذي سوف يتفاعل مرة أخرى لتشكيل أكسيد مذبذب.</td>
+</tr><tr><td>تفاعل مع الحمض</td>
+<td>يتفاعل الألمنيوم بسهولة مع الحمض غير العضوي لتكوين محلول يحتوي على أيونات الألومنيوم المميهة أثناء إطلاق الهيدروجين.<br>
+في حالة التفاعل مع حمض النيتريك ، فإنه يتفاعل بشكل سلبي عن طريق تكوين طبقة أكسيد واقية على سطح الألومينا</td>
+</tr><tr><td>التفاعل مع القلويات</td>
+<td>يتفاعل الألمنيوم مع القاعدة لتكوين ألومينات أثناء إطلاق الهيدروجين.</td>
+</tr><tr><td>التفاعل مع الماء</td>
+<td>رد الفعل مع الماء الساخن.</td>
+</tr><tr><td>مجمع</td>
+<td>الألمنيوم والأكسجين وعناصر أخرى من المخاليط تنتج مناجم الألمنيوم ، منجم الألمنيوم هو المصدر الرئيسي للألمنيوم.</td>
+</tr><tr><td>سبيكة</td>
+<td>عندما يتم دمجها مع عناصر مثل النحاس أو السيليكون أو المغنيسيوم ، فإنها تشكل سبائك ذات قوة عالية.</td>
+</tr></tbody></table><h2><span id="aluminum-alloy"><strong>أ</strong><strong>الألمنيوم </strong><strong>أ</strong><strong>لو</strong></span></h2>
+<p>بسبب خصائصه الفيزيائية والكيميائية ، يمكن خلط الألمنيوم مع معادن أخرى لصنع سبائك الألومنيوم التي تستخدم في العديد من المجالات. لسبائك الألومنيوم خصائص مختلفة عن تلك الموجودة في معدن واحد ، ويتم تصنيف سبائك الألومنيوم وفقًا للعناصر الأخرى التي تحتوي عليها. فيما يلي مجموعة من سبائك الألومنيوم واستخداماتها الرئيسية:</p>
+<table><tbody><tr><td><strong>مسلسل</strong></td>
+<td><strong>عنصر سبيكة</strong></td>
+<td><strong>تطبيق</strong></td>
+</tr><tr><td>1xxx</td>
+<td>ألومنيوم نقي تقريبا</td>
+<td>الديكور والمعدات الكيميائية وعاكس الحرارة</td>
+</tr><tr><td>2xxx</td>
+<td>نحاس</td>
+<td>لوحة الشاحنة ، أجزاء الطائرة</td>
+</tr><tr><td>3xxx</td>
+<td>المنغنيز</td>
+<td>تجهيزات المطابخ ، لافتة الطريق السريع ، الثلاجة</td>
+</tr><tr><td>4xxx</td>
+<td>السيليكون</td>
+<td>سفينة ، جسر</td>
+</tr><tr><td>5xxx</td>
+<td>المغنيسيوم</td>
+<td>خزان وقود الطائرات</td>
+</tr><tr><td>6 ×××</td>
+<td>المغنيسيوم + السيليكون</td>
+<td>سلاح الضغط المنخفض ، موصل الطائرة</td>
+</tr><tr><td>7xxx</td>
+<td>الزنك</td>
+<td>هيكل الطائرات</td>
+</tr><tr><td>8xxx</td>
+<td>العناصر الأخرى هي عناصر سبيكة رئيسية</td>
+<td>رقائق الألومنيوم ، المبرد</td>
+</tr></tbody></table><p>لا يفقد الألمنيوم خصائصه بعد التشوه الشديد. يسمح ذلك بتصنيع الألومنيوم في أشكال مختلفة من منتجات الألمنيوم مثل أنابيب الألمنيوم والألواح والأقراص والرقائق من خلال العمليات الميكانيكية مثل الدرفلة والبثق والرسم والتشغيل الآلي. يمكن استخدام السبائك والعمل البارد والمعالجة الحرارية لتخصيص خصائص الألومنيوم.</p>
+<p> </p>
+</div><div class="amp-wp-meta amp-wp-tax-category">فئات: <a href="../../blog/index.htm" rel="category tag">مقالات</a></div><div class="amp-wp-meta amp-wp-tax-tag">العلامات: <a href="../../tag/aluminium/index.htm" rel="tag">الألومنيوم</a>, <a href="../../tag/physical/index.htm" rel="tag">جسدي - بدني</a>, <a href="../../tag/properties/index.htm" rel="tag">الخصائص</a></div><div class="amp-share-box"><amp-social-share type="facebook" width="60" height="44" data-share-endpoint="http://www.facebook.com/sharer.php?u=https://www.tigersalu.com/ar/what-is-the-physical-properties-of-aluminium/"></amp-social-share><amp-social-share type="twitter" width="60" height="44"></amp-social-share><amp-social-share type="linkedin" width="60" height="44"></amp-social-share></div><div class="amp-comments"><div id="comments" class="section-content comments-area"></div>				<div class="amp-wp-comments-link">
+					<a href="../index.htm#respond">
+						اترك تعليقا					</a>
+				</div>
+			</div><div class="amp-related-posts"><h3>المنشورات ذات الصلة</h3><ul><li class="flex items-center"><a href="../../the-weight-of-4x8-aluminum-sheet-plate/amp/index.htm" class="amp-related-img-link" title="ما هو وزن لوح الألمنيوم؟"><amp-img src="../../../2021/02/1100-h14-aluminum-sheet-1-80x80.jpg" width="80" height="80" alt="1100 h14 aluminum sheet" srcset="/2021/02/1100-h14-aluminum-sheet-1-80x80.jpg 80w, /2021/02/1100-h14-aluminum-sheet-1-160x160.jpg 160w" sizes="(max-width: 80px) 100vw, 80px" class="amp-related-img"></amp-img></a><div class="amp-related-title"><a href="../../the-weight-of-4x8-aluminum-sheet-plate/amp/index.htm" title="ما هو وزن لوح الألمنيوم؟">ما هو وزن لوح الألمنيوم؟</a><div class="amp-related-meta amp-wp-meta">2021 12 月 21</div></div></li><li class="flex items-center"><div class="amp-related-title"><a href="../../difference-in-aluminum-sheet-and-coil/amp/index.htm" title="ما هو الفرق في صفائح الألمنيوم ولفائف الألمنيوم؟">ما هو الفرق في صفائح الألمنيوم ولفائف الألمنيوم؟</a><div class="amp-related-meta amp-wp-meta">2021 11 25</div></div></li><li class="flex items-center"><a href="../../difference-aluminum-and-aluminium/amp/index.htm" class="amp-related-img-link" title="لماذا الألمنيوم والألمنيوم ما الفرق؟"><amp-img src="../../../2021/02/3mm-aa1050-h14-aluminum-sheet-1-80x80.jpg" width="80" height="80" alt="3mm aa1050 h14 aluminum sheet" srcset="/2021/02/3mm-aa1050-h14-aluminum-sheet-1-80x80.jpg 80w, /2021/02/3mm-aa1050-h14-aluminum-sheet-1-160x160.jpg 160w" sizes="(max-width: 80px) 100vw, 80px" class="amp-related-img"></amp-img></a><div class="amp-related-title"><a href="../../difference-aluminum-and-aluminium/amp/index.htm" title="لماذا الألمنيوم والألمنيوم ما الفرق؟">لماذا الألمنيوم والألمنيوم ما الفرق؟</a><div class="amp-related-meta amp-wp-meta">2021 3 月 17</div></div></li></ul></div>
+	</article>
+</div>
+
+<footer class="amp-wp-footer">
+	<div class="clearfix">
+		<div class="amp-footer-content">© 2022 تايجر لصناعة الألمنيوم</div>	</div>
+</footer>
+
+<amp-analytics id="UA-194323042-1" type="googleanalytics"><script type="application/json">{"vars":{"account":"UA-194323042-1"},"triggers":{"trackPageview":{"on":"visible","request":"pageview"}}}</script></amp-analytics><amp-sidebar id="sidebar" layout="nodisplay" side="right"><div class="amp-sidebar-navigation"><div role="button" tabindex="0" on="tap:sidebar.close" class="close-amp-sidebar">X</div><div class="menu-topnav-container"><ul id="menu-topnav" class="menu"><li><a href="../../index.htm">الصفحة الرئيسية</a></li>
+<li><a title="منتج الألومنيوم Mteal" href="../../aluminum-metal/index.htm">منتجات</a>
+<ul class="sub-menu">
+	<li><a href="../../products/aluminum-mill-finish/index.htm">مطحنة الألومنيوم</a></li>
+	<li><a href="../../products/painted-coated-aluminum/index.htm">الألمنيوم المطلي المطلي</a></li>
+	<li><a href="../../products/powder-coating-aluminium/index.htm">مسحوق طلاء الألمنيوم</a></li>
+	<li><a href="../../products/aluminium-cladding/index.htm">الكسوة الألومنيوم</a></li>
+	<li><a href="../../products/perforated-aluminium/index.htm">ألمنيوم مثقب</a></li>
+</ul>
+</li>
+<li class="current-post-ancestor current-menu-parent"><a href="../../blog/index.htm">مقالات</a></li>
+<li><a rel="nofollow" href="../../about-tigers/index.htm">حول النمور</a></li>
+<li><a rel="nofollow" href="../../contact-tigers/index.htm">اتصل بنا</a></li>
+</ul></div></div></amp-sidebar></body>
+</html>
+<!-- Cached for great performance - Debug: cached@1653386908 -->
