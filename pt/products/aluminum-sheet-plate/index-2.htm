@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-PT" prefix="og: https://ogp.me/ns#">
 <head><meta http-equiv="content-type" content="text/html; charset=utf-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",(e=>{this.persisted=e.persisted})),window.addEventListener("DOMContentLoaded",(()=>{this._preconnect3rdParties()})),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){document.hidden?e._triggerListener():(this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",e.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",e.touchStartHandler),document.addEventListener("visibilitychange",e.userEventHandler))}_removeUserInteractionListener(){this.triggerEvents.forEach((e=>window.removeEventListener(e,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(e){"HTML"!==e.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),e.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"onclick","rocket-onclick"))}_onTouchMove(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick")}_onTouchEnd(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(e){e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick"),this.interceptedClicks.push(e),e.preventDefault(),e.stopPropagation(),e.stopImmediatePropagation()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((e=>{e.target.dispatchEvent(new MouseEvent("click",{view:e.view,bubbles:!0,cancelable:!0}))}))}_renameDOMAttribute(e,t,n){e.hasAttribute&&e.hasAttribute(t)&&(event.target.setAttribute(n,event.target.getAttribute(t)),event.target.removeAttribute(t))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let e=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{if(t.hasAttribute("src")){const n=new URL(t.src).origin;n!==location.origin&&e.push({src:n,crossOrigin:t.crossOrigin||"module"===t.getAttribute("data-rocket-type")})}})),e=[...new Map(e.map((e=>[JSON.stringify(e),e]))).values()],this._batchInjectResourceHints(e,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(e){}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._replayClicks()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._littleBreath(),new Promise((t=>{const n=document.createElement("script");[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type"),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t());try{e.parentNode.replaceChild(n,e)}catch(e){t()}}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(e,t){var n=document.createDocumentFragment();e.forEach((e=>{if(e.src){const i=document.createElement("link");i.href=e.src,i.rel=t,"preconnect"!==t&&(i.as="script"),e.getAttribute&&"module"===e.getAttribute("data-rocket-type")&&(i.crossOrigin=!0),e.crossOrigin&&(i.crossOrigin=e.crossOrigin),n.appendChild(i)}})),document.head.appendChild(n)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(i){e["rocket"+t]=n=i}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),await this._littleBreath();const e=new Event("rocket-pageshow");e.persisted=this.persisted,window.dispatchEvent(e),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,i=document.createRange(),r=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const s=document.createDocumentFragment();i.setStart(s,0),s.appendChild(i.createContextualFragment(t)),r.insertBefore(s,o)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise((e=>setTimeout(e))):new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts;e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
-<title>Fornecedores de folha de alumínio de metal decorativo colorido de tamanho personalizado com preço de fábrica - alumínio tigres</title>
+<title>Fornecedores de folha de alumínio de metal decorativo colorido de tamanho personalizado com preço de fábrica - alumínio Lions</title>
 
 <link rel="dns-prefetch" href="/">
 <link rel="dns-prefetch" href="https://www.googletagmanager.com/">
@@ -76,11 +76,11 @@
 <meta name="keywords" content="aluminum sheet plate">
 <meta property="og:locale" content="pt_PT">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Fornecedores de folha de alumínio de metal decorativo colorido de tamanho personalizado com preço de fábrica - alumínio tigres">
+<meta property="og:title" content="Fornecedores de folha de alumínio de metal decorativo colorido de tamanho personalizado com preço de fábrica - alumínio Lions">
 <meta property="og:url" content="https://www.tigersalu.com/pt/products/aluminum-sheet-plate//">
 <meta property="og:site_name" content="Tigres de alumínio">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Fornecedores de folha de alumínio de metal decorativo colorido de tamanho personalizado com preço de fábrica - alumínio tigres">
+<meta name="twitter:title" content="Fornecedores de folha de alumínio de metal decorativo colorido de tamanho personalizado com preço de fábrica - alumínio Lions">
 <script type="application/ld+json" class="rank-math-schema-pro">{
     "@context": "https:\/\/schema.org",
     "@graph": [
@@ -99,7 +99,7 @@
         {
             "@type": "Organization",
             "@id": "https:\/\/www.tigersalu.com\/pt\/#organization",
-            "name": "Henan Tigres Industry Co., Ltd",
+            "name": "Henan Lions Industry Co., Ltd",
             "url": "https:\/\/www.tigersalu.com\/",
             "email": "vendortrust12@gmail.com",
             "address": {
@@ -114,7 +114,7 @@
                 "@type": "ImageObject",
                 "@id": "https:\/\/www.tigersalu.com\/pt\/#logo",
                 "url": "https:\/\/img.tigersalu.com\/2021\/03\/tigers-aluminum-logo.png",
-                "caption": "Henan Tigers Industry Co., Ltd",
+                "caption": "Henan Lions Industry Co., Ltd",
                 "inLanguage": "pt-PT",
                 "width": "320",
                 "height": "320"
@@ -127,7 +127,7 @@
             "@type": "WebSite",
             "@id": "https:\/\/www.tigersalu.com\/pt\/#website",
             "url": "https:\/\/www.tigersalu.com\/pt\/",
-            "name": "Henan Tigres Industry Co., Ltd",
+            "name": "Henan Lions Industry Co., Ltd",
             "publisher": {
                 "@id": "https:\/\/www.tigersalu.com\/pt\/#organization"
             },
@@ -167,7 +167,7 @@
             "@type": "CollectionPage",
             "@id": "https:\/\/www.tigersalu.com\/pt\/products\/aluminum-sheet-plate\/\/#webpage",
             "url": "https:\/\/www.tigersalu.com\/pt\/products\/aluminum-sheet-plate\/\/",
-            "name": "Fornecedores de folha de alum\u00ednio de metal decorativo colorido de tamanho personalizado com pre\u00e7o de f\u00e1brica - alum\u00ednio tigres",
+            "name": "Fornecedores de folha de alum\u00ednio de metal decorativo colorido de tamanho personalizado com pre\u00e7o de f\u00e1brica - alum\u00ednio Lions",
             "isPartOf": {
                 "@id": "https:\/\/www.tigersalu.com\/pt\/#website"
             },
@@ -218,7 +218,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <header class="page_header" dir="ltr">
   <nav class="navbar nav_main navbar-expand-lg" id="main_navbar">
     <div class="container section-full">
-	  <a class="navbar-brand order-2 order-lg-0" title="Logo Tigers Aluminium" alt="Tigers Aluminum logo" href="../../index.htm">
+	  <a class="navbar-brand order-2 order-lg-0" title="Logo Lions Aluminium" alt="Tigers Aluminum logo" href="../../index.htm">
       <img src="/images/logo.png">
       </a>
       <button class="navbar-toggler order-3 order-lg-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Alternar de navegação"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
@@ -234,7 +234,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </ul>
 </li>
 <li><a itemprop="url" href="../../blog/index.htm" class="nav-link"><span itemprop="name">Blogue</span></a></li>
-<li><a rel="nofollow" itemprop="url" href="../../about-tigers/index.htm" class="nav-link"><span itemprop="name">Sobre Tigres</span></a></li>
+<li><a rel="nofollow" itemprop="url" href="../../about-tigers/index.htm" class="nav-link"><span itemprop="name">Sobre Lions</span></a></li>
 <li><a rel="nofollow" itemprop="url" href="../../contact-tigers/index.htm" class="nav-link"><span itemprop="name">Contate-Nos</span></a></li>
 </ul>      </div>
 		<div class="header-extras order-1 order-lg-0">
@@ -343,7 +343,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <div class="position-relative overflow-hidden text-center">
     <div class="page-top top_hero_sec">
       <div class="container section-full pt-lg-3 pb-lg-1">
-          <h1>folha/placa de alumínio</h1>          <div> Tigers alumínio oferece chapa de alumínio de metal e folha de alumínio decorativa colorida com preço de fábrica dos fabricantes, e o tamanho e a espessura podem ser personalizados, a liga de vendas quente incluindo 1050, 1100, 3003, 5052, tamanho 4x8, 5x10 etc. </div>
+          <h1>folha/placa de alumínio</h1>          <div> Lions alumínio oferece chapa de alumínio de metal e folha de alumínio decorativa colorida com preço de fábrica dos fabricantes, e o tamanho e a espessura podem ser personalizados, a liga de vendas quente incluindo 1050, 1100, 3003, 5052, tamanho 4x8, 5x10 etc. </div>
       </div>
     </div>
   </div>
@@ -461,7 +461,7 @@ Placa de folha de alumínio super grossa (25mm acima)</p>
 <p>As chapas planas de alumínio podem ser cortadas com uma variedade de métodos, desde ferramentas manuais até sistemas industriais altamente avançados.</p>
 <p><img class="lazyload wp-image-119 size-wyc-560" title="Como cortar folha de alumínio" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg' %20viewBox='0%200%20560%20420' %3E%3C/svg%3E" alt="corte de folha de alumínio" width="560" height="420" data-lazy-src="/2021/02/aluminum-sheet-cutting-560x420.jpg"><noscript><img class="lazyload wp-image-119 size-wyc-560" title="Como cortar folha de alumínio" src="../../../2021/02/aluminum-sheet-cutting-560x420.jpg" alt="corte de folha de alumínio" width="560" height="420"></noscript></p>
 <p>Como cortar folha de alumínio</p>
-<p>A Tigers possui 2 linhas de alisamento de alumínio químico, o que facilita a transformação de bobinas de alumínio em chapas de alumínio.</p>
+<p>A Lions possui 2 linhas de alisamento de alumínio químico, o que facilita a transformação de bobinas de alumínio em chapas de alumínio.</p>
 <p>Podemos cortar a folha de alumínio e a placa em qualquer tamanho que você desejar.</p>
 </div>
 			          <div class="row">
@@ -560,7 +560,7 @@ Placa de folha de alumínio super grossa (25mm acima)</p>
                 </figure>
                 <div class="figcaption">                  
                 <a href="../../product/6061-aluminum-sheet-plate/index.htm"><h2 class="mt-tilte">6061 folha de alumínio</h2></a>
-                  <p>A folha de alumínio 6061 tem magnésio 0.8%-1.2%. Tigers alumínio pode fornecer folha de alumínio 6061 com qualidade confiável e entrega rápida. Especificações comuns estão em estoque. Tamanhos especiais podem ser personalizados de acordo com as solicitações dos clientes.</p>
+                  <p>A folha de alumínio 6061 tem magnésio 0.8%-1.2%. Lions alumínio pode fornecer folha de alumínio 6061 com qualidade confiável e entrega rápida. Especificações comuns estão em estoque. Tamanhos especiais podem ser personalizados de acordo com as solicitações dos clientes.</p>
                 </div>
                  </div>
             </div>
@@ -599,11 +599,11 @@ Placa de folha de alumínio super grossa (25mm acima)</p>
 <p>Quando os produtos são exportados, são embalados em caixas de madeira e paletes com marcações de fumigação.</p>
 <h3>Largura e espessura das folhas de alumínio:</h3>
 <p class="d-block">A largura está entre 20-1900mm, a espessura está entre 0,2-8mm para bobinas de alumínio, 0,2-500mm para chapas e chapas de alumínio. , 3mm, 5mm.</p>
-<p class="d-block">A Tigers Industry fornece chapas de alumínio com desbobinamento de tamanho não padrão e rolos de chapas de alumínio em várias larguras e comprimentos. Os clientes podem obter o tamanho personalizado conforme necessário. É adequado para processamento de parede cortina, sinais de trânsito e processamento de hardware.</p>
+<p class="d-block">A Lions Industry fornece chapas de alumínio com desbobinamento de tamanho não padrão e rolos de chapas de alumínio em várias larguras e comprimentos. Os clientes podem obter o tamanho personalizado conforme necessário. É adequado para processamento de parede cortina, sinais de trânsito e processamento de hardware.</p>
 <h4 class="d-block"><strong>Largura e Comprimento Padrão:</strong></h4>
 <p class="d-block">4〃 x 8〃, 4&quot; x 4&quot;, folha de alumínio de 4 pol. x 10 pol., folha de alumínio 5 x 10, folha de alumínio 48&#039; x 96&#039;, folha de alumínio 1219 * 2438mm, 1220mm x 2440mm, alumínio 1000mm x 2000mm folha, 1250 mm x 2500 mm, 1219 x 2438 mm, 1524 x 3048 mm, folha de alumínio 1500 mm x 3000 mm.</p>
 <p class="d-block"><img class="alignnone size-full wp-image-302 lazyload" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg' %20viewBox='0%200%20800%20600' %3E%3C/svg%3E" alt="escada de placa de xadrez de cinco barras" width="800" height="600" data-lazy-src="https://www.tigersalu.com/uploads/2021/03/five-bar-checker-plate-staircase.jpg"><noscript><img class="alignnone size-full wp-image-302 lazyload" src="../../../uploads/2021/03/five-bar-checker-plate-staircase.jpg" alt="escada de placa de xadrez de cinco barras" width="800" height="600"></noscript></p>
-<p class="d-block">Além disso, tigers produz uma variedade de folhas de alumínio decorativas coloridas, que são simplesmente pintadas com tinta fluorocarbonada e cozidas na superfície.</p>
+<p class="d-block">Além disso, Lions produz uma variedade de folhas de alumínio decorativas coloridas, que são simplesmente pintadas com tinta fluorocarbonada e cozidas na superfície.</p>
 <p class="d-block">Folhas e placas de alumínio podem ser moldadas em um rolo de alumínio, o maior rolo de alumínio tem cerca de 12 toneladas métricas. Depois de forjado em um rolo, o rolo de alumínio pode ser cortado em um círculo de alumínio e tira de alumínio, etc. Podemos dar uma sugestão quando você nos informar sua aplicação.</p>
 <p class="d-block">Tigers alumínio é um produto para os compradores é fornecido em diferentes especificações que variam em tamanho, dimensão, especificação e espessura da parede etc. x 36 pol., etc. O tamanho comum ou outro tamanho incomum.</p>
 <p class="d-block">No que diz respeito a vários padrões de qualidade de matéria-prima, o produto para os compradores é fornecido a preços razoáveis.</p>
@@ -712,15 +712,15 @@ Placa de folha de alumínio super grossa (25mm acima)</p>
         <div class="footer-logo">
           <img src="/images/logo.png">
         </div>
-        <p>Henan Tigers Industry Co., Ltd é especializada em P&amp;D, produção e vendas de produtos de alumínio revestido de cor e acabamento de moinho e nova série de painéis de revestimento de alumínio. </p>
+        <p>Henan Lions Industry Co., Ltd é especializada em P&amp;D, produção e vendas de produtos de alumínio revestido de cor e acabamento de moinho e nova série de painéis de revestimento de alumínio. </p>
         <div class="footer-social">
           <ul>
             
             
             
-           <!-- <li><a href="#"  title="View Tigers twitter"><i class="iconfont icon-twitter"></i></a></li>
-            <li><a href="#"  title="View Tigers Google Plus Blog"><i class="iconfont icon-google-plus"></i></a></li>
-            <li><a href="#"  title="View Tigers linkedin"><i class="iconfont icon-linkedin"></i></a></li>-->
+           <!-- <li><a href="#"  title="View Lions twitter"><i class="iconfont icon-twitter"></i></a></li>
+            <li><a href="#"  title="View Lions Google Plus Blog"><i class="iconfont icon-google-plus"></i></a></li>
+            <li><a href="#"  title="View Lions linkedin"><i class="iconfont icon-linkedin"></i></a></li>-->
           </ul>
         </div>
       </div>
@@ -763,7 +763,7 @@ $(document).on("click",".close-modal",function(){$('.modal-backdrop').fadeOut(10
     </div>
     <div class="row copyright">
       <div class="col-xs-12 col-sm-5">
-        <div class="copyright-info"> <span>Direitos autorais © 2020 Tigres. Todos os direitos reservados.</span> </div>
+        <div class="copyright-info"> <span>Direitos autorais © 2020 Lions. Todos os direitos reservados.</span> </div>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-push-1">
         <div class="footer-menu">
