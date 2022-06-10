@@ -1,0 +1,1349 @@
+﻿<!doctype html>
+<html amp="" lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<script type='text/javascript' src='../../v0.js' async></script>
+<script type='text/javascript' src='../../v0/amp-sidebar-0.1.js' async custom-element="amp-sidebar"></script>
+<script type='text/javascript' src='../../v0/amp-social-share-0.1.js' async custom-element="amp-social-share"></script>
+<script type='text/javascript' src='../../v0/amp-analytics-0.1.js' async custom-element="amp-analytics"></script>
+	<style amp-boilerplate="">body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate="">body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial, Helvetica, sans-serif:400&subset=">	<style amp-custom="">
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+input, textarea {
+	padding: 5px;
+	box-sizing: border-box;
+}
+.amp-wp-enforced-sizes {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.amp-wp-unknown-size img {
+	object-fit: contain;
+}
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+table th, table td, table th {
+    padding: 5px;
+}
+table.shop_attributes td {
+    font-style: italic;
+}
+table tr:nth-child(even) {
+    background: rgba(0,0,0,.03);
+}
+/* Flex */
+
+.full-flex {
+	flex: 1 0 100%;
+}
+.flex-space-between {
+	justify-content: space-between;
+}
+.flex-align-center {
+	align-items: center;
+}
+.flex-wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/* Template Styles */
+* {
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+html body {
+	margin:0;
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+    font-family:  Impact, Charcoal, sans-serif;
+	color: #444444;
+	font-weight: 400;
+	letter-spacing: 0px;
+}
+body {
+	background: #ffffff;
+	color: #444444;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	letter-spacing: 0px;
+	font-size:16px;
+	line-height: 24px;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 16px;
+	padding: 0;
+}
+
+a {
+	color: #ce534d;
+}
+
+a:hover {
+	color: #ce534d;
+	text-decoration: underline;
+}
+.btn, .button, button {
+    color: #fff;
+    cursor: pointer;
+    padding: .518em 1.287em;
+    text-decoration: none;
+    font-weight: 600;
+	border: 0;
+    text-shadow: none;
+    display: inline-block;
+    outline: 0;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 0;
+    font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 0px;
+	font-size:16px;
+	line-height: 24px;
+    background: #ce534d;
+}
+.btn:hover, .button:hover, .btn:active, .button:active, .btn:focus .button:focus  {
+    color: #fff;
+    text-decoration: none;
+    background: #ce534d;
+    opacity:.8;
+}
+/* Breadcrumbs */
+#amp-bread {
+    font-size: 12px;
+    margin: 5px 0;
+}
+/* Quotes */
+
+blockquote {
+	color: #444444;
+	background: rgba(127,127,127,.1);
+	border-left: 2px solid #ce534d;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #3265c5;
+}
+
+.amp-wp-header > div {
+	color: #ffffff;
+	font-size: 18px;
+	line-height:50px;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 0 16px;
+	position: relative;
+	min-height: 50px;
+	box-sizing: border-box;
+}
+
+.amp-wp-header a {
+	text-decoration: none;
+	display:block;
+	float:left;
+	font-family:  'MS Serif', 'New York', sans-serif;
+	color: #ffffff;
+	font-weight: 700;
+	letter-spacing: 0px;
+}
+
+/* Site Logo */
+
+.amp-wp-header .amp-wp-site-icon {
+	margin: 9px 8px 9px 0;
+    float: left
+}
+
+/* Menu */
+button.amp-menu-sidebar {
+    display: block;
+    float: right;
+    height: 50px;
+    background: rgba(0,0,0,0.0);
+   	font-family:  Source Sans Pro;
+	color: #444444;
+	font-weight: ;
+	letter-spacing: 0px;
+    border: none;
+    padding:0;
+    font-size: 15px;
+    cursor: pointer;
+}
+.amp-icon-button {
+    position: relative;
+    width: 28px;
+}
+.amp-icon-button:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 28px;
+    height: 4px;
+    border-top: 12px double #ffffff;
+    border-bottom: 4px solid #ffffff;
+}
+amp-sidebar {
+	background-color: #3265c5;
+	width:250px;
+}
+.close-amp-sidebar {
+    font-size: 12px;
+    font-family: sans-serif;
+    background: rgba(0,0,0,.25);
+    letter-spacing: 1px;
+    padding: 12px;
+    line-height: 8px;
+    font-weight: bold;
+    margin: 12px 12px 2px;
+    cursor: pointer;
+    display: inline-block;
+    color: #fff;
+}
+.amp-sidebar-navigation ul.menu {
+    margin: 0 12px;
+}
+.amp-sidebar-navigation ul.menu li {
+    list-style: none;
+}
+.amp-sidebar-navigation ul.menu li a {
+    text-decoration: none;
+    display: block;
+    padding: 8px 10px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    font-size: 15px;
+    line-height: 20px;
+    font-family:  Source Serif Pro;
+	color: #ffffff;
+	font-weight: 400;
+	letter-spacing: 0px;
+}
+.amp-sidebar-navigation ul.menu ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+/* main */
+
+.main {
+	color: #444444;
+	font-weight: 400;
+	margin: 16px auto;
+	max-width: 600px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	padding: 0 16px;
+	box-sizing: border-box;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 16px 0 10px;
+}
+
+.amp-wp-title {
+	display: block;
+	width: 100%;
+	margin:0;
+}
+
+/* Article Meta */
+.amp-wp-article-meta {
+	margin: 0px 0 10px 0;
+}
+.amp-wp-meta {
+	color: #777777;
+	display: inline-block;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #ce534d;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+	display:block;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+.amp-wp-page-content {
+	padding: 6px 0 0;
+}
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+
+/* comments */
+
+.amp-comments {
+    margin-top: 16px;
+}
+.comment-text {
+    position: relative;
+    padding-left: 76px;
+    min-height:60px;
+}
+.comment-text p {
+	margin-bottom:0;
+}
+.comment-list .comment-metadata a {
+    font-size: 12px;
+    color: #777;
+}
+.comment-list .comment-author amp-img {
+    margin-right:10px;
+}
+ul.comment-list li {
+    list-style-type: none;
+}
+.comment {
+    margin-top: 16px;
+    border: 1px solid #ddd;
+    padding: 1em;
+}
+.comment-list amp-img {
+    float: left;
+}
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #eee;
+	color: #777777;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #eee;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #eee url( ../../wp-content/plugins/kadence-amp/assets/images/placeholder-icon.png ) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	margin: 16px 0;
+	display: block;
+}
+
+.amp-wp-comments-link, .mod_show_original {
+	color: #777777;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 1.5em 0 1.5em;
+}
+.amp-wp-comments-link a, .mod_show_original a{
+	border-style: solid;
+	border-color: #eee;
+	border-width: 1px 1px 2px;
+	background-color: transparent;
+	color: #ce534d;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+/* Related Posts */
+.amp-related-posts ul {
+	list-style:none;
+}
+.amp-related-posts ul li {
+	margin-bottom:16px;
+}
+a.amp-related-img-link {
+    margin-right: 10px;
+    display: block;
+}
+.amp-related-posts .amp-related-meta {
+	display:block;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	background: #444444;
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.amp-wp-footer > div {
+	max-width: 600px;
+    margin: 0 auto;
+	padding: 16px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+	color: #ffffff;
+}
+.show_original {
+    display: block;
+    text-align: center;
+}
+.show_original a {
+    display: inline-block;
+    margin-top: 10px;
+    padding:4px 8px;
+    border: 1px solid #ffffff;
+}
+.back-to-top {
+	top: 16px;
+	position: absolute;
+	right: 16px;
+}
+@media (max-width: 544px) {
+	.wp-caption.alignleft, .amp-wp-article-content amp-img.alignleft {
+		float:none;
+		margin-right:auto;
+		margin-left:auto;
+	}
+}
+		/* Custom styles */
+@font-face{font-family:"tigers";font-display:swap;src:url("../../wp-content/themes/tgs/css/fonts/tigers.eot");src:url("../../wp-content/themes/tgs/css/fonts/tigers-1.eot") format("embedded-opentype"),url("../../wp-content/themes/tgs/css/fonts/tigers.woff2") format("woff2"),url("../../wp-content/themes/tgs/css/fonts/tigers.woff") format("woff"),url("../../wp-content/themes/tgs/css/fonts/tigers.ttf") format("truetype"),url("../../wp-content/themes/tgs/css/fonts/tigers.svg") format("svg")}
+h1,h2,h3,h4,h5,h6{font-family:'Tigers',sans-serif,'Arial';color:#444444;line-height:1.2}
+h1{font-size:24px;font-weight:700; color: #000;}
+h2{font-size:22px;padding:10px 0 10px 8px;margin:25px 0 20px;border-left:2px solid #487bd9;background-color:#f5f8fb}
+h3{font-size:20px;padding:15px 0 15px;margin-bottom:0}
+h4{font-size:16px;padding:12px 0 12px;margin-bottom:0}
+h5{font-size:17px;padding:5px 0 0px;margin-bottom:0}
+h6{font-size:14px;margin-bottom:0}
+.main{padding:0 10px;margin-top: 0;}
+.amp-wp-page-content li{list-style-position:inside;padding-bottom:10px}
+.amp-wp-page-content strong{padding:8px 0}
+.amp-wp-page-content a{max-width:100%;display:inline-block;text-decoration:none}
+.amp-wp-page-content a:before{font-family:'tigers';content:"\e7ff";margin-right:0px;font-size:14px;color:#feb822}
+.amp-breadcrumb-container{font-size:15px;background-color:#f5f7fa;border-bottom:1px solid #eee;padding:10px 0px;-webkit-box-shadow:0 -1px 2px rgba(0,0,0,.06) inset;box-shadow:0 -1px 2px rgba(0,0,0,.06) inset}
+.amp-breadcrumb-container a{ text-decoration: none;}
+.amp-wp-article-header{padding-bottom: 10px;   border-bottom: 1px dotted #3265c5;margin-bottom: 0px;}	</style>
+</head>
+
+<body class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="../../index.htm">LIONS ALUMINUM</a><div class="amp-accordion-header"><button class="amp-menu-sidebar amp-icon-button" on="tap:sidebar.toggle"></button></div>	</div>
+</header>
+
+<div class="main">
+	<article class="amp-wp-article">
+		<div id="amp-bread"><div class="amp-breadcrumb-container"><span><a href="../../index.htm" itemprop="url" class="kad-bc-home"><span>Home</span></a></span> <span class="bc-delimiter">&raquo;</span> <span><a href="../../blog/index.htm" itemprop="url"><span>Blog</span></a></span> <span class="bc-delimiter">&raquo;</span> <span class="kad-breadcurrent">Different grades of aluminum alloy density table and alternative grades</span></div></div><div class="amp-wp-article-featured-image feature-content">
+	<amp-img width="800" height="600" src="../../2021/02/3003-aluminum-coil-2.jpg" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="3003 aluminum coil" srcset="/2021/02/3003-aluminum-coil-2.jpg 800w, /2021/02/3003-aluminum-coil-2-160x120.jpg 160w, /2021/02/3003-aluminum-coil-2-560x420.jpg 560w, /2021/02/3003-aluminum-coil-2-380x285.jpg 380w" sizes="(max-width: 800px) 100vw, 800px" title="Different grades of aluminum alloy density table and alternative grades 1" layout="intrinsic"></amp-img></div>
+<header class="amp-wp-article-header"><h1 class="amp-wp-title">Different grades of aluminum alloy density table and alternative grades</h1></header><div class="amp-wp-article-meta"><div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2021-12-21T15:25:35+00:00">
+		2021年12月21日	</time>
+</div>
+	<div class="amp-wp-meta amp-wp-byline">
+		<span class="kt-amp-by-author">by</span> <span class="amp-wp-author author vcard">admin</span>
+	</div>
+</div><div class="amp-wp-page-content"><p>Pure aluminum is fused and rolled by adding different other metals, which is aluminum alloy.</p>
+<p>The metal composition contained in each alloy is different, so the density of different grades of aluminum alloys is also different. We organize the density data of different types of alloys into data tables for easy query.</p>
+<p>Different alloys of aluminum alloys have different characteristics, some are corrosion resistant and can be used in harsh environments such as outdoors, some have high strength and can be used to build cars and ships, and some have medium hardness and better workability. In short, different alloys have different uses.</p>
+<p>The following table lists the density of different grades of aluminum alloys and the alternative grades.</p>
+<div class="table-responsive">
+<table class="table"><caption>
+<h3><span id="aluminum-alloy-density-table">Aluminum alloy density table</span></h3>
+</caption>
+<tbody><tr class="firstRow"><td>No.</td>
+<td>Alloy grade</td>
+<td>alternative</td>
+<td>Density</td>
+<td></td>
+<td>No.</td>
+<td>Alloy grade</td>
+<td>alternative</td>
+<td>Density</td>
+</tr><tr><td>1</td>
+<td>1035</td>
+<td></td>
+<td>2.71</td>
+<td></td>
+<td>81</td>
+<td>3004</td>
+<td></td>
+<td>2.72</td>
+</tr><tr><td>2</td>
+<td>1050</td>
+<td></td>
+<td>2.71</td>
+<td></td>
+<td>82</td>
+<td>3005</td>
+<td></td>
+<td>2.73</td>
+</tr><tr><td>3</td>
+<td>1050A</td>
+<td></td>
+<td>2.7</td>
+<td></td>
+<td>83</td>
+<td>3102</td>
+<td></td>
+<td>2.71</td>
+</tr><tr><td>4</td>
+<td>1060</td>
+<td></td>
+<td>2.7</td>
+<td></td>
+<td>84</td>
+<td>3103</td>
+<td></td>
+<td>2.73</td>
+</tr><tr><td>5</td>
+<td>1070</td>
+<td></td>
+<td>2.7</td>
+<td></td>
+<td>85</td>
+<td>3104</td>
+<td></td>
+<td>2.72</td>
+</tr><tr><td>6</td>
+<td>1070A</td>
+<td></td>
+<td>2.7</td>
+<td></td>
+<td>86</td>
+<td>3105</td>
+<td></td>
+<td>2.72</td>
+</tr><tr><td>7</td>
+<td>1100</td>
+<td></td>
+<td>2.71</td>
+<td></td>
+<td>87</td>
+<td>3203</td>
+<td></td>
+<td>2.73</td>
+</tr><tr><td>8</td>
+<td>1100-1</td>
+<td></td>
+<td>2.71</td>
+<td></td>
+<td>88</td>
+<td>3303</td>
+<td></td>
+<td>2.73</td>
+</tr><tr><td>9</td>
+<td>1145</td>
+<td></td>
+<td>2.7</td>
+<td></td>
+<td>89</td>
+<td>3A21</td>
+<td>LF21</td>
+<td>2.73</td>
+</tr><tr><td>10</td>
+<td>1200</td>
+<td></td>
+<td>2.7</td>
+<td></td>
+<td>90</td>
+<td>LMT</td>
+<td></td>
+<td>2.72</td>
+</tr><tr><td>11</td>
+<td>1230</td>
+<td></td>
+<td>2.7</td>
+<td></td>
+<td>91</td>
+<td>4004</td>
+<td></td>
+<td>2. 65</td>
+</tr><tr><td>12</td>
+<td>1235</td>
+<td></td>
+<td>2.7</td>
+<td></td>
+<td>92</td>
+<td>4032</td>
+<td></td>
+<td>2.68</td>
+</tr><tr><td>13</td>
+<td>1350</td>
+<td></td>
+<td>2.7</td>
+<td></td>
+<td>93</td>
+<td>4043</td>
+<td></td>
+<td>2.69</td>
+</tr><tr><td>14</td>
+<td>1370</td>
+<td></td>
+<td>2.7</td>
+<td></td>
+<td>94</td>
+<td>4043A</td>
+<td></td>
+<td>2.69</td>
+</tr><tr><td>15</td>
+<td>1435</td>
+<td></td>
+<td>2.7</td>
+<td></td>
+<td>95</td>
+<td>4047</td>
+<td></td>
+<td>2.66</td>
+</tr><tr><td>16</td>
+<td>1A30</td>
+<td>L4-1</td>
+<td>2.7</td>
+<td></td>
+<td>96</td>
+<td>4047A</td>
+<td></td>
+<td>2.66</td>
+</tr><tr><td>17</td>
+<td>1A50</td>
+<td>LB2</td>
+<td>2.7</td>
+<td></td>
+<td>97</td>
+<td>4A01</td>
+<td>LT1</td>
+<td>2.68</td>
+</tr><tr><td>18</td>
+<td>1A80</td>
+<td></td>
+<td>2.7</td>
+<td></td>
+<td>98</td>
+<td>4A11</td>
+<td>LD11</td>
+<td>2.68</td>
+</tr><tr><td>19</td>
+<td>1A80A</td>
+<td></td>
+<td>2.7</td>
+<td></td>
+<td>99</td>
+<td>4A13</td>
+<td>LT13</td>
+<td>2.68</td>
+</tr><tr><td>20</td>
+<td>1A85</td>
+<td>LG1</td>
+<td>2.7</td>
+<td></td>
+<td>100</td>
+<td>4A17</td>
+<td>LT17</td>
+<td>2.66</td>
+</tr><tr><td>21</td>
+<td>1A90</td>
+<td>LG2</td>
+<td>2.7</td>
+<td></td>
+<td>101</td>
+<td>5005</td>
+<td></td>
+<td>2.70</td>
+</tr><tr><td>22</td>
+<td>1A93</td>
+<td>LG3</td>
+<td>2.7</td>
+<td></td>
+<td>102</td>
+<td>5019</td>
+<td></td>
+<td>2.65</td>
+</tr><tr><td>23</td>
+<td>1A95</td>
+<td></td>
+<td>2.7</td>
+<td></td>
+<td>103</td>
+<td>5050</td>
+<td></td>
+<td>2.69</td>
+</tr><tr><td>24</td>
+<td>1A97</td>
+<td>LG4</td>
+<td>2.7</td>
+<td></td>
+<td>104</td>
+<td>5052</td>
+<td></td>
+<td>2.68</td>
+</tr><tr><td>25</td>
+<td>1A99</td>
+<td>LG5</td>
+<td>2.7</td>
+<td></td>
+<td>105</td>
+<td>5056</td>
+<td>LF5-1</td>
+<td>2.64</td>
+</tr><tr><td>26</td>
+<td>L1</td>
+<td></td>
+<td>2.7</td>
+<td></td>
+<td>106</td>
+<td>5062</td>
+<td></td>
+<td>2.65</td>
+</tr><tr><td>27</td>
+<td>L2</td>
+<td></td>
+<td>2.7</td>
+<td></td>
+<td>107</td>
+<td>5083</td>
+<td>LF4</td>
+<td>2.66</td>
+</tr><tr><td>28</td>
+<td>L2-1</td>
+<td></td>
+<td>2.7</td>
+<td></td>
+<td>108</td>
+<td>5086</td>
+<td></td>
+<td>2.66</td>
+</tr><tr><td>29</td>
+<td>L3</td>
+<td></td>
+<td>2.7</td>
+<td></td>
+<td>109</td>
+<td>5154</td>
+<td></td>
+<td>2.67</td>
+</tr><tr><td>30</td>
+<td>L4</td>
+<td></td>
+<td>2.7</td>
+<td></td>
+<td>110</td>
+<td>5154A</td>
+<td></td>
+<td>2.67</td>
+</tr><tr><td>31</td>
+<td>L5</td>
+<td></td>
+<td>2.7</td>
+<td></td>
+<td>111</td>
+<td>5182</td>
+<td></td>
+<td>2.65</td>
+</tr><tr><td>32</td>
+<td>L5-1</td>
+<td></td>
+<td>2.71</td>
+<td></td>
+<td>112</td>
+<td>8183</td>
+<td></td>
+<td>2.66</td>
+</tr><tr><td>33</td>
+<td>LT62</td>
+<td></td>
+<td>2.7</td>
+<td></td>
+<td>113</td>
+<td>5251</td>
+<td></td>
+<td>2.69</td>
+</tr><tr><td>34</td>
+<td>LT75</td>
+<td></td>
+<td>2.7</td>
+<td></td>
+<td>114</td>
+<td>5252</td>
+<td></td>
+<td>2.67</td>
+</tr><tr><td>35</td>
+<td>2004</td>
+<td></td>
+<td>2.82</td>
+<td></td>
+<td>115</td>
+<td>5254</td>
+<td></td>
+<td>2.66</td>
+</tr><tr><td>36</td>
+<td>2011</td>
+<td></td>
+<td>2.83</td>
+<td></td>
+<td>116</td>
+<td>5356</td>
+<td></td>
+<td>2.64</td>
+</tr><tr><td>37</td>
+<td>2014</td>
+<td></td>
+<td>2.8</td>
+<td></td>
+<td>117</td>
+<td>5454</td>
+<td></td>
+<td>2.69</td>
+</tr><tr><td>38</td>
+<td>2014A</td>
+<td></td>
+<td>2.8</td>
+<td></td>
+<td>118</td>
+<td>5456</td>
+<td></td>
+<td>2.65</td>
+</tr><tr><td>39</td>
+<td>2017</td>
+<td></td>
+<td>2.79</td>
+<td></td>
+<td>119</td>
+<td>5457</td>
+<td></td>
+<td>2.69</td>
+</tr><tr><td>40</td>
+<td>2017A</td>
+<td></td>
+<td>2.79</td>
+<td></td>
+<td>120</td>
+<td>5554</td>
+<td></td>
+<td>2.69</td>
+</tr><tr><td>41</td>
+<td>2018</td>
+<td></td>
+<td>2.82</td>
+<td></td>
+<td>121</td>
+<td>5652</td>
+<td></td>
+<td>2.67</td>
+</tr><tr><td>42</td>
+<td>2024</td>
+<td></td>
+<td>2.78</td>
+<td></td>
+<td>122</td>
+<td>5754</td>
+<td></td>
+<td>2.69</td>
+</tr><tr><td>43</td>
+<td>2025</td>
+<td></td>
+<td>2.81</td>
+<td></td>
+<td>123</td>
+<td>5A01</td>
+<td>LF15</td>
+<td>2.63</td>
+</tr><tr><td>44</td>
+<td>2117</td>
+<td></td>
+<td>2.75</td>
+<td></td>
+<td>124</td>
+<td>5A02</td>
+<td>LF2</td>
+<td>2.67</td>
+</tr><tr><td>45</td>
+<td>2124</td>
+<td></td>
+<td>2.78</td>
+<td></td>
+<td>125</td>
+<td>5A03</td>
+<td>LF3</td>
+<td>2.67</td>
+</tr><tr><td>46</td>
+<td>2214</td>
+<td></td>
+<td>2.8</td>
+<td></td>
+<td>126</td>
+<td>5A05</td>
+<td>LF5</td>
+<td>2.65</td>
+</tr><tr><td>47</td>
+<td>2218</td>
+<td></td>
+<td>2.81</td>
+<td></td>
+<td>127</td>
+<td>5A06</td>
+<td>LF6</td>
+<td>2.63</td>
+</tr><tr><td>48</td>
+<td>2219</td>
+<td>LY19</td>
+<td>2.84</td>
+<td></td>
+<td>128</td>
+<td>5A12</td>
+<td>LF12</td>
+<td>2.60</td>
+</tr><tr><td>49</td>
+<td>2618</td>
+<td></td>
+<td>2.76</td>
+<td></td>
+<td>129</td>
+<td>5A13</td>
+<td>LF13</td>
+<td>2.59</td>
+</tr><tr><td>50</td>
+<td>2A01</td>
+<td>LY19</td>
+<td>2.75</td>
+<td></td>
+<td>130</td>
+<td>5A30</td>
+<td>LF16</td>
+<td>2.65</td>
+</tr><tr><td>51</td>
+<td>2A02</td>
+<td>LY2</td>
+<td>2.74</td>
+<td></td>
+<td>131</td>
+<td>5A33</td>
+<td>LF33</td>
+<td>2.64</td>
+</tr><tr><td>52</td>
+<td>2A04</td>
+<td>LY4</td>
+<td>2.75</td>
+<td></td>
+<td>132</td>
+<td>5A41</td>
+<td>LT41</td>
+<td>2.64</td>
+</tr><tr><td>53</td>
+<td>2A06</td>
+<td>LY6</td>
+<td>2.77</td>
+<td></td>
+<td>133</td>
+<td>5A43</td>
+<td>LF43</td>
+<td>2.70</td>
+</tr><tr><td>54</td>
+<td>2A10</td>
+<td>LY10</td>
+<td>2.79</td>
+<td></td>
+<td>134</td>
+<td>5A66</td>
+<td>LT66</td>
+<td>2.68</td>
+</tr><tr><td>55</td>
+<td>2A11</td>
+<td>LY11</td>
+<td>2.79</td>
+<td></td>
+<td>135</td>
+<td>5B05</td>
+<td>LF10</td>
+<td>2.64</td>
+</tr><tr><td>56</td>
+<td>2A12</td>
+<td>LY12</td>
+<td>2.78</td>
+<td></td>
+<td>136</td>
+<td>5B06</td>
+<td>LF14</td>
+<td>2.64</td>
+</tr><tr><td>57</td>
+<td>2A13</td>
+<td>LY13</td>
+<td>2.79</td>
+<td></td>
+<td>137</td>
+<td>LF11</td>
+<td></td>
+<td>2.65</td>
+</tr><tr><td>58</td>
+<td>2A14</td>
+<td>LD10</td>
+<td>2.8</td>
+<td></td>
+<td>138</td>
+<td>6003</td>
+<td></td>
+<td>2.70</td>
+</tr><tr><td>59</td>
+<td>2A16</td>
+<td>LY16</td>
+<td>2.85</td>
+<td></td>
+<td>139</td>
+<td>6005</td>
+<td></td>
+<td>2.70</td>
+</tr><tr><td>60</td>
+<td>2A17</td>
+<td>LY17</td>
+<td>2.84</td>
+<td></td>
+<td>140</td>
+<td>6005A</td>
+<td></td>
+<td>2.70</td>
+</tr><tr><td>61</td>
+<td>2A20</td>
+<td>LY20</td>
+<td>2.83</td>
+<td></td>
+<td>141</td>
+<td>6053</td>
+<td></td>
+<td>2.69</td>
+</tr><tr><td>62</td>
+<td>2A21</td>
+<td></td>
+<td>2.8</td>
+<td></td>
+<td>142</td>
+<td>6060</td>
+<td></td>
+<td>2.70</td>
+</tr><tr><td>63</td>
+<td>2A25</td>
+<td></td>
+<td>2.77</td>
+<td></td>
+<td>143</td>
+<td>6061</td>
+<td>LD30</td>
+<td>2.70</td>
+</tr><tr><td>64</td>
+<td>2A49</td>
+<td></td>
+<td>2.79</td>
+<td></td>
+<td>144</td>
+<td>6063</td>
+<td>LD31</td>
+<td>2.70</td>
+</tr><tr><td>65</td>
+<td>2A50</td>
+<td>LD5</td>
+<td>2.75</td>
+<td></td>
+<td>145</td>
+<td>6063-1</td>
+<td></td>
+<td>2.70</td>
+</tr><tr><td>66</td>
+<td>2A70</td>
+<td>LD7</td>
+<td>2.77</td>
+<td></td>
+<td>146</td>
+<td>6063-2</td>
+<td></td>
+<td>2.70</td>
+</tr><tr><td>67</td>
+<td>2A80</td>
+<td>LD8</td>
+<td>2.77</td>
+<td></td>
+<td>147</td>
+<td>6063A</td>
+<td></td>
+<td>2.70</td>
+</tr><tr><td>68</td>
+<td>2A90</td>
+<td>LD9</td>
+<td>2.83</td>
+<td></td>
+<td>148</td>
+<td>6066</td>
+<td></td>
+<td>2.72</td>
+</tr><tr><td>69</td>
+<td>2B11</td>
+<td>LY8</td>
+<td>2.79</td>
+<td></td>
+<td>149</td>
+<td>6070</td>
+<td>LD2-2</td>
+<td>2.71</td>
+</tr><tr><td>70</td>
+<td>2B12</td>
+<td>LY9</td>
+<td>2.77</td>
+<td></td>
+<td>150</td>
+<td>6082</td>
+<td></td>
+<td>2.70</td>
+</tr><tr><td>71</td>
+<td>2B16</td>
+<td></td>
+<td>2.84</td>
+<td></td>
+<td>151</td>
+<td>6101</td>
+<td></td>
+<td>2.70</td>
+</tr><tr><td>72</td>
+<td>2B50</td>
+<td>LD6</td>
+<td>2.75</td>
+<td></td>
+<td>152</td>
+<td>6101A</td>
+<td></td>
+<td>2.69</td>
+</tr><tr><td>73</td>
+<td>2B70</td>
+<td></td>
+<td>2.77</td>
+<td></td>
+<td>153</td>
+<td>6105</td>
+<td></td>
+<td>2.69</td>
+</tr><tr><td>74</td>
+<td>LY78</td>
+<td></td>
+<td>2.74</td>
+<td></td>
+<td>154</td>
+<td>6151</td>
+<td></td>
+<td>2.71</td>
+</tr><tr><td>75</td>
+<td>3003</td>
+<td></td>
+<td>2.73</td>
+<td></td>
+<td>155</td>
+<td>6162</td>
+<td></td>
+<td>2.70</td>
+</tr><tr><td>76</td>
+<td>44199</td>
+<td></td>
+<td>2.73</td>
+<td></td>
+<td>156</td>
+<td>6181</td>
+<td></td>
+<td>2.69</td>
+</tr><tr><td>77</td>
+<td>44230</td>
+<td></td>
+<td>2.73</td>
+<td></td>
+<td>157</td>
+<td>6253</td>
+<td></td>
+<td>2.73</td>
+</tr><tr><td>78</td>
+<td>3003D</td>
+<td></td>
+<td>2.73</td>
+<td></td>
+<td>158</td>
+<td>6351</td>
+<td></td>
+<td>2.71</td>
+</tr><tr><td>79</td>
+<td>3003K</td>
+<td>H3003</td>
+<td>2.73</td>
+<td></td>
+<td>159</td>
+<td>6463</td>
+<td></td>
+<td>2.69</td>
+</tr><tr><td>80</td>
+<td>3003S</td>
+<td></td>
+<td>2.73</td>
+<td></td>
+<td>160</td>
+<td>6A02</td>
+<td>LD2</td>
+<td>2.70</td>
+</tr></tbody></table></div>
+</div><div class="amp-wp-meta amp-wp-tax-category">Categories: <a href="../../blog/index.htm" rel="category tag">Blog</a></div><div class="amp-wp-meta amp-wp-tax-tag">Tags: <a href="../../tag/alloy/index.htm" rel="tag">alloy</a>, <a href="../../tag/sheet/index.htm" rel="tag">sheet</a></div><div class="amp-share-box"><amp-social-share type="facebook" width="60" height="44" data-share-endpoint="http://www.facebook.com/sharer.php?u=https://pizzerialabellastoria.nl/aluminum-alloy-density-table-and-alternative/"></amp-social-share><amp-social-share type="twitter" width="60" height="44"></amp-social-share><amp-social-share type="linkedin" width="60" height="44"></amp-social-share></div><div class="amp-comments"><div id="comments" class="section-content comments-area"></div>				<div class="amp-wp-comments-link">
+					<a href="../index.htm#respond">
+						Leave a Comment					</a>
+				</div>
+			</div><div class="amp-related-posts"><h3>Related Posts</h3><ul><li class="flex items-center"><a href="../../difference-aluminum-plate-and-sheet/amp/index.htm" class="amp-related-img-link" title="What is the difference in aluminum sheet and aluminum plate?"><amp-img src="../../2021/02/3mm-aa1050-h14-aluminum-sheet-1-80x80.jpg" width="80" height="80" alt="3mm aa1050 h14 aluminum sheet" srcset="/2021/02/3mm-aa1050-h14-aluminum-sheet-1-80x80.jpg 80w, /2021/02/3mm-aa1050-h14-aluminum-sheet-1-160x160.jpg 160w" sizes="(max-width: 80px) 100vw, 80px" class="amp-related-img"></amp-img></a><div class="amp-related-title"><a href="../../difference-aluminum-plate-and-sheet/amp/index.htm" title="What is the difference in aluminum sheet and aluminum plate?">What is the difference in aluminum sheet and aluminum plate?</a><div class="amp-related-meta amp-wp-meta">2021年2月9日</div></div></li><li class="flex items-center"><a href="../../5083-aluminum-vs-6061-aluminum/amp/index.htm" class="amp-related-img-link" title="5083 aluminum alloy sheet VS. 6061 aluminum metal sheets"><amp-img src="../../2021/02/aluminum-sheet-with-blue-films-1-80x80.jpg" width="80" height="80" alt="aluminum sheet with blue films" srcset="/2021/02/aluminum-sheet-with-blue-films-1-80x80.jpg 80w, /2021/02/aluminum-sheet-with-blue-films-1-160x160.jpg 160w" sizes="(max-width: 80px) 100vw, 80px" class="amp-related-img"></amp-img></a><div class="amp-related-title"><a href="../../5083-aluminum-vs-6061-aluminum/amp/index.htm" title="5083 aluminum alloy sheet VS. 6061 aluminum metal sheets">5083 aluminum alloy sheet VS. 6061 aluminum metal sheets</a><div class="amp-related-meta amp-wp-meta">2021年3月17日</div></div></li><li class="flex items-center"><a href="../../how-thick-is-14-gauge-aluminum/amp/index.htm" class="amp-related-img-link" title="how thick is 14 gauge aluminum?"><amp-img src="../../2021/02/cutting-edge-without-burrs-of-aluminum-sheet-80x80.jpg" width="80" height="80" alt="cutting edge without burrs of aluminum sheet" srcset="/2021/02/cutting-edge-without-burrs-of-aluminum-sheet-80x80.jpg 80w, /2021/02/cutting-edge-without-burrs-of-aluminum-sheet-160x160.jpg 160w" sizes="(max-width: 80px) 100vw, 80px" class="amp-related-img"></amp-img></a><div class="amp-related-title"><a href="../../how-thick-is-14-gauge-aluminum/amp/index.htm" title="how thick is 14 gauge aluminum?">how thick is 14 gauge aluminum?</a><div class="amp-related-meta amp-wp-meta">2022年1月26日</div></div></li></ul></div>
+	</article>
+</div>
+
+<footer class="amp-wp-footer">
+	<div class="clearfix">
+		<div class="amp-footer-content">&copy; 2022 Lions Industry Aluminum</div>	</div>
+</footer>
+
+<amp-analytics id="UA-194323042-1" type="googleanalytics"><script type="application/json">{"vars":{"account":"UA-194323042-1"},"triggers":{"trackPageview":{"on":"visible","request":"pageview"}}}</script></amp-analytics><amp-sidebar id="sidebar" layout="nodisplay" side="right"><div class="amp-sidebar-navigation"><div role="button" tabindex="0" on="tap:sidebar.close" class="close-amp-sidebar">X</div><div class="menu-topnav-container"><ul id="menu-topnav" class="menu"><li><a href="../../index.htm">HOME</a></li>
+<li><a title="Aluminum Mteal Product" href="../../aluminum-metal/index.htm">Products</a>
+<ul class="sub-menu">
+	<li><a href="../../products/aluminum-mill-finish/index.htm">aluminum mill finish</a></li>
+	<li><a href="../../products/painted-coated-aluminum/index.htm">Painted coated aluminum</a></li>
+	<li><a href="../../products/powder-coating-aluminium/index.htm">Powder coating aluminium</a></li>
+	<li><a href="../../products/aluminium-cladding/index.htm">aluminum cladding</a></li>
+	<li><a href="../../products/perforated-aluminium/index.htm">Perforated aluminium</a></li>
+</ul>
+</li>
+<li class="current-post-ancestor current-menu-parent"><a href="../../blog/index.htm">Blog</a></li>
+<li><a rel="nofollow" href="../../about/index.htm">About Lions</a></li>
+<li><a rel="nofollow" href="../../contact/index.htm">Contact US</a></li>
+</ul></div></div></amp-sidebar></body>
+</html>
+
+<!-- Cached for great performance - Debug: cached@1653306084 -->

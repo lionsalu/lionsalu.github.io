@@ -1,0 +1,721 @@
+﻿<!doctype html>
+<html amp="" lang="pt-PT">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<script type='text/javascript' src='../../../v0.js' async=""></script>
+<script type='text/javascript' src='../../../v0/amp-sidebar-0.1.js' async="" custom-element="amp-sidebar"></script>
+<script type='text/javascript' src='../../../v0/amp-social-share-0.1.js' async="" custom-element="amp-social-share"></script>
+<script type='text/javascript' src='../../../v0/amp-analytics-0.1.js' async="" custom-element="amp-analytics"></script>
+	<style amp-boilerplate="">body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate="">body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial, Helvetica, sans-serif:400&subset=">	<style amp-custom="">
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+input, textarea {
+	padding: 5px;
+	box-sizing: border-box;
+}
+.amp-wp-enforced-sizes {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.amp-wp-unknown-size img {
+	object-fit: contain;
+}
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+table th, table td, table th {
+    padding: 5px;
+}
+table.shop_attributes td {
+    font-style: italic;
+}
+table tr:nth-child(even) {
+    background: rgba(0,0,0,.03);
+}
+/* Flex */
+
+.full-flex {
+	flex: 1 0 100%;
+}
+.flex-space-between {
+	justify-content: space-between;
+}
+.flex-align-center {
+	align-items: center;
+}
+.flex-wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/* Template Styles */
+* {
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+html body {
+	margin:0;
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+    font-family:  Impact, Charcoal, sans-serif;
+	color: #444444;
+	font-weight: 400;
+	letter-spacing: 0px;
+}
+body {
+	background: #ffffff;
+	color: #444444;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	letter-spacing: 0px;
+	font-size:16px;
+	line-height: 24px;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 16px;
+	padding: 0;
+}
+
+a {
+	color: #ce534d;
+}
+
+a:hover {
+	color: #ce534d;
+	text-decoration: underline;
+}
+.btn, .button, button {
+    color: #fff;
+    cursor: pointer;
+    padding: .518em 1.287em;
+    text-decoration: none;
+    font-weight: 600;
+	border: 0;
+    text-shadow: none;
+    display: inline-block;
+    outline: 0;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 0;
+    font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 0px;
+	font-size:16px;
+	line-height: 24px;
+    background: #ce534d;
+}
+.btn:hover, .button:hover, .btn:active, .button:active, .btn:focus .button:focus  {
+    color: #fff;
+    text-decoration: none;
+    background: #ce534d;
+    opacity:.8;
+}
+/* Breadcrumbs */
+#amp-bread {
+    font-size: 12px;
+    margin: 5px 0;
+}
+/* Quotes */
+
+blockquote {
+	color: #444444;
+	background: rgba(127,127,127,.1);
+	border-left: 2px solid #ce534d;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #3265c5;
+}
+
+.amp-wp-header > div {
+	color: #ffffff;
+	font-size: 18px;
+	line-height:50px;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 0 16px;
+	position: relative;
+	min-height: 50px;
+	box-sizing: border-box;
+}
+
+.amp-wp-header a {
+	text-decoration: none;
+	display:block;
+	float:left;
+	font-family:  'MS Serif', 'New York', sans-serif;
+	color: #ffffff;
+	font-weight: 700;
+	letter-spacing: 0px;
+}
+
+/* Site Logo */
+
+.amp-wp-header .amp-wp-site-icon {
+	margin: 9px 8px 9px 0;
+    float: left
+}
+
+/* Menu */
+button.amp-menu-sidebar {
+    display: block;
+    float: right;
+    height: 50px;
+    background: rgba(0,0,0,0.0);
+   	font-family:  Source Sans Pro;
+	color: #444444;
+	font-weight: ;
+	letter-spacing: 0px;
+    border: none;
+    padding:0;
+    font-size: 15px;
+    cursor: pointer;
+}
+.amp-icon-button {
+    position: relative;
+    width: 28px;
+}
+.amp-icon-button:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 28px;
+    height: 4px;
+    border-top: 12px double #ffffff;
+    border-bottom: 4px solid #ffffff;
+}
+amp-sidebar {
+	background-color: #3265c5;
+	width:250px;
+}
+.close-amp-sidebar {
+    font-size: 12px;
+    font-family: sans-serif;
+    background: rgba(0,0,0,.25);
+    letter-spacing: 1px;
+    padding: 12px;
+    line-height: 8px;
+    font-weight: bold;
+    margin: 12px 12px 2px;
+    cursor: pointer;
+    display: inline-block;
+    color: #fff;
+}
+.amp-sidebar-navigation ul.menu {
+    margin: 0 12px;
+}
+.amp-sidebar-navigation ul.menu li {
+    list-style: none;
+}
+.amp-sidebar-navigation ul.menu li a {
+    text-decoration: none;
+    display: block;
+    padding: 8px 10px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    font-size: 15px;
+    line-height: 20px;
+    font-family:  Source Serif Pro;
+	color: #ffffff;
+	font-weight: 400;
+	letter-spacing: 0px;
+}
+.amp-sidebar-navigation ul.menu ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+/* main */
+
+.main {
+	color: #444444;
+	font-weight: 400;
+	margin: 16px auto;
+	max-width: 600px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	padding: 0 16px;
+	box-sizing: border-box;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 16px 0 10px;
+}
+
+.amp-wp-title {
+	display: block;
+	width: 100%;
+	margin:0;
+}
+
+/* Article Meta */
+.amp-wp-article-meta {
+	margin: 0px 0 10px 0;
+}
+.amp-wp-meta {
+	color: #777777;
+	display: inline-block;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #ce534d;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+	display:block;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+.amp-wp-page-content {
+	padding: 6px 0 0;
+}
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+
+/* comments */
+
+.amp-comments {
+    margin-top: 16px;
+}
+.comment-text {
+    position: relative;
+    padding-left: 76px;
+    min-height:60px;
+}
+.comment-text p {
+	margin-bottom:0;
+}
+.comment-list .comment-metadata a {
+    font-size: 12px;
+    color: #777;
+}
+.comment-list .comment-author amp-img {
+    margin-right:10px;
+}
+ul.comment-list li {
+    list-style-type: none;
+}
+.comment {
+    margin-top: 16px;
+    border: 1px solid #ddd;
+    padding: 1em;
+}
+.comment-list amp-img {
+    float: left;
+}
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #eee;
+	color: #777777;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #eee;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #eee url( ../../../wp-content/plugins/kadence-amp/assets/images/placeholder-icon.png ) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	margin: 16px 0;
+	display: block;
+}
+
+.amp-wp-comments-link, .mod_show_original {
+	color: #777777;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 1.5em 0 1.5em;
+}
+.amp-wp-comments-link a, .mod_show_original a{
+	border-style: solid;
+	border-color: #eee;
+	border-width: 1px 1px 2px;
+	background-color: transparent;
+	color: #ce534d;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+/* Related Posts */
+.amp-related-posts ul {
+	list-style:none;
+}
+.amp-related-posts ul li {
+	margin-bottom:16px;
+}
+a.amp-related-img-link {
+    margin-right: 10px;
+    display: block;
+}
+.amp-related-posts .amp-related-meta {
+	display:block;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	background: #444444;
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.amp-wp-footer > div {
+	max-width: 600px;
+    margin: 0 auto;
+	padding: 16px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+	color: #ffffff;
+}
+.show_original {
+    display: block;
+    text-align: center;
+}
+.show_original a {
+    display: inline-block;
+    margin-top: 10px;
+    padding:4px 8px;
+    border: 1px solid #ffffff;
+}
+.back-to-top {
+	top: 16px;
+	position: absolute;
+	right: 16px;
+}
+@media (max-width: 544px) {
+	.wp-caption.alignleft, .amp-wp-article-content amp-img.alignleft {
+		float:none;
+		margin-right:auto;
+		margin-left:auto;
+	}
+}
+		/* Inline stylesheets */
+.amp-wp-inline-0f1bf07c72fdf1784fff2e164d9dca98 { display:none; }.amp-wp-inline-869b76696f15a7298bbe56bef936cfb5 { max-width:570px; }/* Custom styles */
+@font-face{font-family:"tigers";font-display:swap;src:url("../../../wp-content/themes/tgs/css/fonts/tigers.eot");src:url("../../../wp-content/themes/tgs/css/fonts/tigers-1.eot") format("embedded-opentype"),url("../../../wp-content/themes/tgs/css/fonts/tigers.woff2") format("woff2"),url("../../../wp-content/themes/tgs/css/fonts/tigers.woff") format("woff"),url("../../../wp-content/themes/tgs/css/fonts/tigers.ttf") format("truetype"),url("../../../wp-content/themes/tgs/css/fonts/tigers.svg") format("svg")}
+h1,h2,h3,h4,h5,h6{font-family:'Tigers',sans-serif,'Arial';color:#444444;line-height:1.2}
+h1{font-size:24px;font-weight:700; color: #000;}
+h2{font-size:22px;padding:10px 0 10px 8px;margin:25px 0 20px;border-left:2px solid #487bd9;background-color:#f5f8fb}
+h3{font-size:20px;padding:15px 0 15px;margin-bottom:0}
+h4{font-size:16px;padding:12px 0 12px;margin-bottom:0}
+h5{font-size:17px;padding:5px 0 0px;margin-bottom:0}
+h6{font-size:14px;margin-bottom:0}
+.main{padding:0 10px;margin-top: 0;}
+.amp-wp-page-content li{list-style-position:inside;padding-bottom:10px}
+.amp-wp-page-content strong{padding:8px 0}
+.amp-wp-page-content a{max-width:100%;display:inline-block;text-decoration:none}
+.amp-wp-page-content a:before{font-family:'tigers';content:"\e7ff";margin-right:0px;font-size:14px;color:#feb822}
+.amp-breadcrumb-container{font-size:15px;background-color:#f5f7fa;border-bottom:1px solid #eee;padding:10px 0px;-webkit-box-shadow:0 -1px 2px rgba(0,0,0,.06) inset;box-shadow:0 -1px 2px rgba(0,0,0,.06) inset}
+.amp-breadcrumb-container a{ text-decoration: none;}
+.amp-wp-article-header{padding-bottom: 10px;   border-bottom: 1px dotted #3265c5;margin-bottom: 0px;}	</style>
+</head>
+
+<body class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="../../index.htm">TIGRE ALUMÍNIO</a><div class="amp-accordion-header"><button class="amp-menu-sidebar amp-icon-button" on="tap:sidebar.toggle"></button></div>	</div>
+</header>
+
+<div class="main">
+	<article class="amp-wp-article">
+		<div id="amp-bread"><div class="amp-breadcrumb-container"><span><a href="../../index.htm" itemprop="url" class="kad-bc-home"><span>Lar</span></a></span> <span class="bc-delimiter">»</span> <span><a href="../../blog/index.htm" itemprop="url"><span>Blogue</span></a></span> <span class="bc-delimiter">»</span> <span class="kad-breadcurrent">3003 placa de alumínio VS 3004 placa de alumínio</span></div></div><header class="amp-wp-article-header"><h1 class="amp-wp-title">3003 placa de alumínio VS 3004 placa de alumínio</h1></header><div class="amp-wp-article-meta"><div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2021-12-20T00:40:49+00:00">
+		2021年12月20日	</time>
+</div>
+	<div class="amp-wp-meta amp-wp-byline">
+		<span class="kt-amp-by-author">de</span> <span class="amp-wp-author author vcard">administrador</span>
+	</div>
+</div><div class="amp-wp-page-content"><!--noindex--><div class="lwptoc toc-list lwptoc-autoWidth lwptoc-baseItems lwptoc-light lwptoc-notInherit" data-smooth-scroll="1" data-smooth-scroll-offset="24"><div class="lwptoc_i">    <div class="lwptoc_header">
+        <b class="lwptoc_title">Índice</b>                    <span class="lwptoc_toggle">
+                <a href="#" class="lwptoc_toggle_label" data-label="HIDE">EXPOSIÇÃO</a>
+            </span>
+            </div>
+<div class="lwptoc_items amp-wp-inline-0f1bf07c72fdf1784fff2e164d9dca98">
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#differences-in-chemical-composition-for-reference" rel="nofollow">
+                    <span class="lwptoc_item_number">1</span>
+                <span class="lwptoc_item_label">Diferenças na composição química (para referência)</span>
+    </a>
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#3003-aluminum-plate" rel="nofollow">
+                    <span class="lwptoc_item_number">1.1</span>
+                <span class="lwptoc_item_label">3003 placa de alumínio</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#3004-aluminium-plate" rel="nofollow">
+                    <span class="lwptoc_item_number">1.2</span>
+                <span class="lwptoc_item_label">3004 placa de alumínio</span>
+    </a>
+    </li></ul></li><li class="lwptoc_item">    <a href="#differences-in-physical-properties" rel="nofollow">
+                    <span class="lwptoc_item_number">2</span>
+                <span class="lwptoc_item_label">Diferenças nas propriedades físicas</span>
+    </a>
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#how-strong-is-3003-aluminum-sheet" rel="nofollow">
+                    <span class="lwptoc_item_number">2.1</span>
+                <span class="lwptoc_item_label">Quão forte é a folha de alumínio 3003?</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#how-strong-is-3004-aluminum-sheet" rel="nofollow">
+                    <span class="lwptoc_item_number">2.2</span>
+                <span class="lwptoc_item_label">Quão forte é a folha de alumínio 3004?</span>
+    </a>
+    </li></ul></li><li class="lwptoc_item">    <a href="#differences-in-mechanical-properties" rel="nofollow">
+                    <span class="lwptoc_item_number">3</span>
+                <span class="lwptoc_item_label">Diferenças nas propriedades mecânicas</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#the-difference-of-use" rel="nofollow">
+                    <span class="lwptoc_item_number">4</span>
+                <span class="lwptoc_item_label">A diferença de uso</span>
+    </a>
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#what-is-3003-aluminum-plate-used-for" rel="nofollow">
+                    <span class="lwptoc_item_number">4.1</span>
+                <span class="lwptoc_item_label">Para que serve a placa de alumínio 3003?</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#what-is-3004-aluminum-plate-used-for" rel="nofollow">
+                    <span class="lwptoc_item_number">4.2</span>
+                <span class="lwptoc_item_label">Para que serve a placa de alumínio 3004?</span>
+    </a>
+    </li></ul></li><li class="lwptoc_item">    <a href="#difference-in-temper" rel="nofollow">
+                    <span class="lwptoc_item_number">5</span>
+                <span class="lwptoc_item_label">Diferença de temperamento</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#standard-size" rel="nofollow">
+                    <span class="lwptoc_item_number">6</span>
+                <span class="lwptoc_item_label">Tamanho padrão</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#which-is-better-3003-aluminum-or-3004-aluminum" rel="nofollow">
+                    <span class="lwptoc_item_number">7</span>
+                <span class="lwptoc_item_label">Qual é melhor, alumínio 3003 ou alumínio 3004?</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#how-do-i-choose" rel="nofollow">
+                    <span class="lwptoc_item_number">8</span>
+                <span class="lwptoc_item_label">Como eu escolho?</span>
+    </a>
+    </li></ul></div>
+</div></div><!--/noindex--><p>Placa de alumínio 3003 e placa de alumínio 3004 são liga AL-Mn, é o alumínio à prova de ferrugem mais amplamente utilizado, não pode tratamento térmico para fortalecer, então o uso de métodos de processamento a frio Melhora suas propriedades mecânicas.</p>
+<h2><span id="differences-in-chemical-composition-for-reference">Diferenças na composição química (para referência)</span></h2>
+<h3><span id="3003-aluminum-plate"><a href="../../product/3003-aluminum-sheet/index.htm">3003 placa de alumínio</a></span></h3>
+<p>O alumínio 3003 é ligado com 1.2% maganese para fornecer uma faixa de resistência à tração de 17 a 30 KSI.</p>
+<div id="attachment_84" class="wp-caption alignnone amp-wp-inline-869b76696f15a7298bbe56bef936cfb5"><p id="caption-attachment-84" class="wp-caption-text">3003 h14 folha de alumínio</p></div>
+<h3><span id="3004-aluminium-plate"><a href="../../product/3004-aluminum-sheet/index.htm">3004 placa de alumínio</a></span></h3>
+<p>A liga 3004 é comumente usada na fabricação de latas de bebidas. O estoque de latas pode ser mais fino devido à adição de magnésio 1%, que contribui para o fortalecimento da solução sólida.</p>
+<p>A composição química “elemento Mg” da chapa de alumínio 3004 é muito maior do que a da chapa de alumínio 3003. Ao mesmo tempo, o “elemento magnésio” também é o item com maior diferença de composição química entre a chapa de alumínio 3003 e a chapa de alumínio 3004.</p>
+<div id="attachment_71" class="wp-caption alignnone amp-wp-inline-869b76696f15a7298bbe56bef936cfb5"><p id="caption-attachment-71" class="wp-caption-text">folha de alumínio com filmes azuis</p></div>
+<h2><span id="differences-in-physical-properties">Diferenças nas propriedades físicas</span></h2>
+<h3 id="exacc_9lm_Yf-8E_L19AO0nav4Bw41" class="iDjcJe IX9Lgd wwB5gf"><span id="how-strong-is-3003-aluminum-sheet">Quão forte é a folha de alumínio 3003?</span></h3>
+<p>Possui excelente resistência à corrosão, trabalhabilidade e pode ser repuxado ou fiado, soldado ou brasado. Não é tratável termicamente.</p>
+<p>A chapa de alumínio 3003 não é forte (ligeiramente maior que o alumínio puro industrial) e não pode ser reforçada por tratamento térmico. Portanto, métodos de trabalho a frio são usados para melhorar suas propriedades mecânicas.</p>
+<p>A folha de alumínio 3003 tem alta plasticidade no estado recozido e boa plasticidade no trabalho semi-frio. Modo de baixa dureza, boa resistência à corrosão, boa soldabilidade, baixa usinabilidade.</p>
+<h3><span id="how-strong-is-3004-aluminum-sheet">Quão forte é a folha de alumínio 3004?</span></h3>
+<p>A liga 3004 tem resistência moderada, boa trabalhabilidade e boa resistência à corrosão. É comumente laminado e extrudado, mas normalmente não forjado, não usado em fundição.</p>
+<h2><span id="differences-in-mechanical-properties">Diferenças nas propriedades mecânicas</span></h2>
+<table cellspacing="0"><tbody><tr class="firstRow"><td valign="top" width="142">Item</td>
+<td valign="top" width="142">Resistência à tração (Rm/MPa)</td>
+<td valign="top" width="142">Força de rendimento (Rp0.2/MPa)</td>
+<td valign="top" width="142">Densidade</td>
+</tr><tr><td valign="top" width="142">Liga 3003</td>
+<td valign="top" width="142">142-178</td>
+<td valign="top" width="142">150~285</td>
+<td rowspan="2" valign="top" width="142">2.71</td>
+</tr><tr><td valign="top" width="142">Liga 3004</td>
+<td valign="top" width="142">150-285</td>
+<td valign="top" width="142">110</td>
+</tr></tbody></table><h2><span id="the-difference-of-use">A diferença de uso</span></h2>
+<h3 id="exacc_9lm_Yf-8E_L19AO0nav4Bw28" class="iDjcJe IX9Lgd wwB5gf"><span id="what-is-3003-aluminum-plate-used-for">Para que serve a placa de alumínio 3003?</span></h3>
+<div class="iDjcJe IX9Lgd wwB5gf">A chapa de alumínio 3003 é comumente usada em veículos, navios, barcos, dispositivos de refrigeração, soldagem de automóveis, equipamentos de perfuração, vasos de pressão com rigorosos requisitos à prova de fogo, torres de TV, equipamentos de transporte, etc.</div>
+<h3 id="exacc_9lm_Yf-8E_L19AO0nav4Bw28" class="iDjcJe IX9Lgd wwB5gf"><span id="what-is-3004-aluminum-plate-used-for">Para que serve a placa de alumínio 3004?</span></h3>
+<div class="iDjcJe IX9Lgd wwB5gf">A placa de alumínio 3004 é usada principalmente em latas de bebidas, dispositivos de produção e armazenamento de produtos químicos, defletores de construção, peças de processamento de chapas finas, placas de alumínio coloridas, materiais de construção, esgotos, assentos elétricos, várias peças de iluminação, papelão ondulado, materiais de construção, tubos bcable.</div>
+<div>
+<p> </p>
+<h2><span id="difference-in-temper">Diferença de temperamento</span></h2>
+<p>O revenidor de 3003 tem O, H12, H14, H16, H18, H22, H24.</p>
+<p>Os revenimentos H22 e H24 etc podem não atender aos limites máximos de resistência à tração e limite mínimo de resistência ao escoamento.</p>
+<p>O estado de temperamento de 3004 é mais, F, H112, O, H111, H12, H22, H32, H14, H24, H34, H16, H26, H18, H19, H28, H38</p>
+</div>
+<h2><span id="standard-size">Tamanho padrão</span></h2>
+<p><strong>Largura e Comprimento Padrão:</strong></p>
+<p>4&#039; x 8&#039;, 4&#039;x 4&#039;, folha de alumínio de 4 pol. x 10 pol., folha de alumínio de 5 x 10 pés, folha de alumínio 48&#039; x 96&#039;, folha de alumínio 1219 * 2438mm, 1220mm x 2440mm, alumínio 1000mm x 2000mm folha, 1250 mm x 2500 mm, 1219 x 2438 mm, 1524 x 3048 mm, folha de alumínio 1500 mm x 3000 mm.</p>
+<h2><span id="which-is-better-3003-aluminum-or-3004-aluminum">Qual é melhor, alumínio 3003 ou alumínio 3004?</span></h2>
+<p>A folha de alumínio 3004 é mais forte que a folha de alumínio 3003, possui excelente formabilidade e boa resistência à corrosão. Precisa de maior resistência do que a placa de alumínio 3003.</p>
+<p>A fórmula de densidade e cálculo da placa de alumínio 3003 são: comprimento mm * largura mm * altura mm * 0,00000272.</p>
+<h2><span id="how-do-i-choose">Como eu escolho?</span></h2>
+<p>A liga 3004 tem essencialmente as mesmas necessidades em todos os componentes com a chapa de alumínio 3003, porém sua resistência é melhor que a da liga 3003. A chapa de alumínio 3004 é de melhor conformabilidade, solubilidade e resistência à corrosão. É por isso que muitos projetos abandonam constantemente a folha de alumínio 3003 para selecionar a folha de alumínio 3004.</p>
+<p>Na aplicação real, devemos escolher a placa de alumínio certa de acordo com nossas necessidades e atender às suas necessidades com preço razoável.</p>
+</div><div class="amp-wp-meta amp-wp-tax-category">Categorias: <a href="../../blog/index.htm" rel="category tag">Blogue</a></div><div class="amp-wp-meta amp-wp-tax-tag">Tag: <a href="../../tag/3003/index.htm" rel="tag">3003</a>, <a href="../../tag/3004/index.htm" rel="tag">3004</a>, <a href="../../tag/diffe/index.htm" rel="tag">diferente</a>, <a href="../../tag/plate/index.htm" rel="tag">placa</a>, <a href="../../tag/sheet/index.htm" rel="tag">Folha</a></div><div class="amp-share-box"><amp-social-share type="facebook" width="60" height="44" data-share-endpoint="http://www.facebook.com/sharer.php?u=https://pizzerialabellastoria.nl/pt/3003-aluminum-plate-vs-3004-aluminum-plate/"></amp-social-share><amp-social-share type="twitter" width="60" height="44"></amp-social-share><amp-social-share type="linkedin" width="60" height="44"></amp-social-share></div><div class="amp-comments"><div id="comments" class="section-content comments-area"></div>				<div class="amp-wp-comments-link">
+					<a href="../index.htm#respond">
+						Deixe um comentário					</a>
+				</div>
+			</div><div class="amp-related-posts"><h3>Postagens relacionadas</h3><ul><li class="flex items-center"><div class="amp-related-title"><a href="../../difference-in-aluminum-sheet-and-coil/amp/index.htm" title="Qual é a diferença entre folha de alumínio e bobina de alumínio?">Qual é a diferença entre folha de alumínio e bobina de alumínio?</a><div class="amp-related-meta amp-wp-meta">2021年11月25日</div></div></li><li class="flex items-center"><a href="../../what-is-the-thickness-of-12-gauge-aluminum/amp/index.htm" class="amp-related-img-link" title="Qual é a espessura do alumínio de calibre 12?"><amp-img src="../../../2021/02/1100-h14-aluminum-sheet-2-80x80.jpg" width="80" height="80" alt="1100 h14 aluminum sheet" srcset="/2021/02/1100-h14-aluminum-sheet-2-80x80.jpg 80w, /2021/02/1100-h14-aluminum-sheet-2-160x160.jpg 160w" sizes="(max-width: 80px) 100vw, 80px" class="amp-related-img"></amp-img></a><div class="amp-related-title"><a href="../../what-is-the-thickness-of-12-gauge-aluminum/amp/index.htm" title="Qual é a espessura do alumínio de calibre 12?">Qual é a espessura do alumínio de calibre 12?</a><div class="amp-related-meta amp-wp-meta">2022年1月12日</div></div></li><li class="flex items-center"><a href="../../how-thick-is-14-gauge-aluminum/amp/index.htm" class="amp-related-img-link" title="qual a espessura do alumínio calibre 14?"><amp-img src="../../../2021/02/cutting-edge-without-burrs-of-aluminum-sheet-80x80.jpg" width="80" height="80" alt="cutting edge without burrs of aluminum sheet" srcset="/2021/02/cutting-edge-without-burrs-of-aluminum-sheet-80x80.jpg 80w, /2021/02/cutting-edge-without-burrs-of-aluminum-sheet-160x160.jpg 160w" sizes="(max-width: 80px) 100vw, 80px" class="amp-related-img"></amp-img></a><div class="amp-related-title"><a href="../../how-thick-is-14-gauge-aluminum/amp/index.htm" title="qual a espessura do alumínio calibre 14?">qual a espessura do alumínio calibre 14?</a><div class="amp-related-meta amp-wp-meta">2022年1月26日</div></div></li></ul></div>
+	</article>
+</div>
+
+<footer class="amp-wp-footer">
+	<div class="clearfix">
+		<div class="amp-footer-content">© 2022 Lions Industry Aluminium</div>	</div>
+</footer>
+
+<amp-analytics id="UA-194323042-1" type="googleanalytics"><script type="application/json">{"vars":{"account":"UA-194323042-1"},"triggers":{"trackPageview":{"on":"visible","request":"pageview"}}}</script></amp-analytics><amp-sidebar id="sidebar" layout="nodisplay" side="right"><div class="amp-sidebar-navigation"><div role="button" tabindex="0" on="tap:sidebar.close" class="close-amp-sidebar">X</div><div class="menu-topnav-container"><ul id="menu-topnav" class="menu"><li><a href="../../index.htm">CASA</a></li>
+<li><a title="Produto de alumínio Mteal" href="../../aluminum-metal/index.htm">Produtos</a>
+<ul class="sub-menu">
+	<li><a href="../../products/aluminum-mill-finish/index.htm">acabamento do moinho de alumínio</a></li>
+	<li><a href="../../products/painted-coated-aluminum/index.htm">Alumínio revestido pintado</a></li>
+	<li><a href="../../products/powder-coating-aluminium/index.htm">Revestimento em pó de alumínio</a></li>
+	<li><a href="../../products/aluminium-cladding/index.htm">revestimento de alumínio</a></li>
+	<li><a href="../../products/perforated-aluminium/index.htm">Alumínio perfurado</a></li>
+</ul>
+</li>
+<li class="current-post-ancestor current-menu-parent"><a href="../../blog/index.htm">Blogue</a></li>
+<li><a rel="nofollow" href="../../about-tigers/index.htm">Sobre Lions</a></li>
+<li><a rel="nofollow" href="../../contact-tigers/index.htm">Contate-Nos</a></li>
+</ul></div></div></amp-sidebar></body>
+</html>
+<!-- Cached for great performance - Debug: cached@1653394555 -->

@@ -1,0 +1,728 @@
+﻿<!doctype html>
+<html amp="" lang="fr-FR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<script type='text/javascript' src='../../../v0.js' async=""></script>
+<script type='text/javascript' src='../../../v0/amp-sidebar-0.1.js' async="" custom-element="amp-sidebar"></script>
+<script type='text/javascript' src='../../../v0/amp-social-share-0.1.js' async="" custom-element="amp-social-share"></script>
+<script type='text/javascript' src='../../../v0/amp-analytics-0.1.js' async="" custom-element="amp-analytics"></script>
+	<style amp-boilerplate="">body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate="">body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial, Helvetica, sans-serif:400&subset=">	<style amp-custom="">
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+input, textarea {
+	padding: 5px;
+	box-sizing: border-box;
+}
+.amp-wp-enforced-sizes {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.amp-wp-unknown-size img {
+	object-fit: contain;
+}
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+table th, table td, table th {
+    padding: 5px;
+}
+table.shop_attributes td {
+    font-style: italic;
+}
+table tr:nth-child(even) {
+    background: rgba(0,0,0,.03);
+}
+/* Flex */
+
+.full-flex {
+	flex: 1 0 100%;
+}
+.flex-space-between {
+	justify-content: space-between;
+}
+.flex-align-center {
+	align-items: center;
+}
+.flex-wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/* Template Styles */
+* {
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+html body {
+	margin:0;
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+    font-family:  Impact, Charcoal, sans-serif;
+	color: #444444;
+	font-weight: 400;
+	letter-spacing: 0px;
+}
+body {
+	background: #ffffff;
+	color: #444444;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	letter-spacing: 0px;
+	font-size:16px;
+	line-height: 24px;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 16px;
+	padding: 0;
+}
+
+a {
+	color: #ce534d;
+}
+
+a:hover {
+	color: #ce534d;
+	text-decoration: underline;
+}
+.btn, .button, button {
+    color: #fff;
+    cursor: pointer;
+    padding: .518em 1.287em;
+    text-decoration: none;
+    font-weight: 600;
+	border: 0;
+    text-shadow: none;
+    display: inline-block;
+    outline: 0;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 0;
+    font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 0px;
+	font-size:16px;
+	line-height: 24px;
+    background: #ce534d;
+}
+.btn:hover, .button:hover, .btn:active, .button:active, .btn:focus .button:focus  {
+    color: #fff;
+    text-decoration: none;
+    background: #ce534d;
+    opacity:.8;
+}
+/* Breadcrumbs */
+#amp-bread {
+    font-size: 12px;
+    margin: 5px 0;
+}
+/* Quotes */
+
+blockquote {
+	color: #444444;
+	background: rgba(127,127,127,.1);
+	border-left: 2px solid #ce534d;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #3265c5;
+}
+
+.amp-wp-header > div {
+	color: #ffffff;
+	font-size: 18px;
+	line-height:50px;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 0 16px;
+	position: relative;
+	min-height: 50px;
+	box-sizing: border-box;
+}
+
+.amp-wp-header a {
+	text-decoration: none;
+	display:block;
+	float:left;
+	font-family:  'MS Serif', 'New York', sans-serif;
+	color: #ffffff;
+	font-weight: 700;
+	letter-spacing: 0px;
+}
+
+/* Site Logo */
+
+.amp-wp-header .amp-wp-site-icon {
+	margin: 9px 8px 9px 0;
+    float: left
+}
+
+/* Menu */
+button.amp-menu-sidebar {
+    display: block;
+    float: right;
+    height: 50px;
+    background: rgba(0,0,0,0.0);
+   	font-family:  Source Sans Pro;
+	color: #444444;
+	font-weight: ;
+	letter-spacing: 0px;
+    border: none;
+    padding:0;
+    font-size: 15px;
+    cursor: pointer;
+}
+.amp-icon-button {
+    position: relative;
+    width: 28px;
+}
+.amp-icon-button:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 28px;
+    height: 4px;
+    border-top: 12px double #ffffff;
+    border-bottom: 4px solid #ffffff;
+}
+amp-sidebar {
+	background-color: #3265c5;
+	width:250px;
+}
+.close-amp-sidebar {
+    font-size: 12px;
+    font-family: sans-serif;
+    background: rgba(0,0,0,.25);
+    letter-spacing: 1px;
+    padding: 12px;
+    line-height: 8px;
+    font-weight: bold;
+    margin: 12px 12px 2px;
+    cursor: pointer;
+    display: inline-block;
+    color: #fff;
+}
+.amp-sidebar-navigation ul.menu {
+    margin: 0 12px;
+}
+.amp-sidebar-navigation ul.menu li {
+    list-style: none;
+}
+.amp-sidebar-navigation ul.menu li a {
+    text-decoration: none;
+    display: block;
+    padding: 8px 10px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    font-size: 15px;
+    line-height: 20px;
+    font-family:  Source Serif Pro;
+	color: #ffffff;
+	font-weight: 400;
+	letter-spacing: 0px;
+}
+.amp-sidebar-navigation ul.menu ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+/* main */
+
+.main {
+	color: #444444;
+	font-weight: 400;
+	margin: 16px auto;
+	max-width: 600px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	padding: 0 16px;
+	box-sizing: border-box;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 16px 0 10px;
+}
+
+.amp-wp-title {
+	display: block;
+	width: 100%;
+	margin:0;
+}
+
+/* Article Meta */
+.amp-wp-article-meta {
+	margin: 0px 0 10px 0;
+}
+.amp-wp-meta {
+	color: #777777;
+	display: inline-block;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #ce534d;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+	display:block;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+.amp-wp-page-content {
+	padding: 6px 0 0;
+}
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+
+/* comments */
+
+.amp-comments {
+    margin-top: 16px;
+}
+.comment-text {
+    position: relative;
+    padding-left: 76px;
+    min-height:60px;
+}
+.comment-text p {
+	margin-bottom:0;
+}
+.comment-list .comment-metadata a {
+    font-size: 12px;
+    color: #777;
+}
+.comment-list .comment-author amp-img {
+    margin-right:10px;
+}
+ul.comment-list li {
+    list-style-type: none;
+}
+.comment {
+    margin-top: 16px;
+    border: 1px solid #ddd;
+    padding: 1em;
+}
+.comment-list amp-img {
+    float: left;
+}
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #eee;
+	color: #777777;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #eee;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #eee url( ../../../wp-content/plugins/kadence-amp/assets/images/placeholder-icon.png ) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	margin: 16px 0;
+	display: block;
+}
+
+.amp-wp-comments-link, .mod_show_original {
+	color: #777777;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 1.5em 0 1.5em;
+}
+.amp-wp-comments-link a, .mod_show_original a{
+	border-style: solid;
+	border-color: #eee;
+	border-width: 1px 1px 2px;
+	background-color: transparent;
+	color: #ce534d;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+/* Related Posts */
+.amp-related-posts ul {
+	list-style:none;
+}
+.amp-related-posts ul li {
+	margin-bottom:16px;
+}
+a.amp-related-img-link {
+    margin-right: 10px;
+    display: block;
+}
+.amp-related-posts .amp-related-meta {
+	display:block;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	background: #444444;
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.amp-wp-footer > div {
+	max-width: 600px;
+    margin: 0 auto;
+	padding: 16px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+	color: #ffffff;
+}
+.show_original {
+    display: block;
+    text-align: center;
+}
+.show_original a {
+    display: inline-block;
+    margin-top: 10px;
+    padding:4px 8px;
+    border: 1px solid #ffffff;
+}
+.back-to-top {
+	top: 16px;
+	position: absolute;
+	right: 16px;
+}
+@media (max-width: 544px) {
+	.wp-caption.alignleft, .amp-wp-article-content amp-img.alignleft {
+		float:none;
+		margin-right:auto;
+		margin-left:auto;
+	}
+}
+		/* Inline stylesheets */
+.amp-wp-inline-0f1bf07c72fdf1784fff2e164d9dca98 { display:none; }.amp-wp-inline-a76ab53db10ef3853910c24963ea59e6 { max-width:810px; }/* Custom styles */
+@font-face{font-family:"tigers";font-display:swap;src:url("../../../wp-content/themes/tgs/css/fonts/tigers.eot");src:url("../../../wp-content/themes/tgs/css/fonts/tigers-1.eot") format("embedded-opentype"),url("../../../wp-content/themes/tgs/css/fonts/tigers.woff2") format("woff2"),url("../../../wp-content/themes/tgs/css/fonts/tigers.woff") format("woff"),url("../../../wp-content/themes/tgs/css/fonts/tigers.ttf") format("truetype"),url("../../../wp-content/themes/tgs/css/fonts/tigers.svg") format("svg")}
+h1,h2,h3,h4,h5,h6{font-family:'Tigers',sans-serif,'Arial';color:#444444;line-height:1.2}
+h1{font-size:24px;font-weight:700; color: #000;}
+h2{font-size:22px;padding:10px 0 10px 8px;margin:25px 0 20px;border-left:2px solid #487bd9;background-color:#f5f8fb}
+h3{font-size:20px;padding:15px 0 15px;margin-bottom:0}
+h4{font-size:16px;padding:12px 0 12px;margin-bottom:0}
+h5{font-size:17px;padding:5px 0 0px;margin-bottom:0}
+h6{font-size:14px;margin-bottom:0}
+.main{padding:0 10px;margin-top: 0;}
+.amp-wp-page-content li{list-style-position:inside;padding-bottom:10px}
+.amp-wp-page-content strong{padding:8px 0}
+.amp-wp-page-content a{max-width:100%;display:inline-block;text-decoration:none}
+.amp-wp-page-content a:before{font-family:'tigers';content:"\e7ff";margin-right:0px;font-size:14px;color:#feb822}
+.amp-breadcrumb-container{font-size:15px;background-color:#f5f7fa;border-bottom:1px solid #eee;padding:10px 0px;-webkit-box-shadow:0 -1px 2px rgba(0,0,0,.06) inset;box-shadow:0 -1px 2px rgba(0,0,0,.06) inset}
+.amp-breadcrumb-container a{ text-decoration: none;}
+.amp-wp-article-header{padding-bottom: 10px;   border-bottom: 1px dotted #3265c5;margin-bottom: 0px;}	</style>
+</head>
+
+<body class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="../../index.htm">TIGRES ALUMINIUM</a><div class="amp-accordion-header"><button class="amp-menu-sidebar amp-icon-button" on="tap:sidebar.toggle"></button></div>	</div>
+</header>
+
+<div class="main">
+	<article class="amp-wp-article">
+		<div id="amp-bread"><div class="amp-breadcrumb-container"><span><a href="../../index.htm" itemprop="url" class="kad-bc-home"><span>Maison</span></a></span> <span class="bc-delimiter">»</span> <span><a href="../../blog/index.htm" itemprop="url"><span>Blog</span></a></span> <span class="bc-delimiter">»</span> <span class="kad-breadcurrent">Quelle est la différence entre la tôle d&#039;aluminium et la plaque d&#039;aluminium?</span></div></div><div class="amp-wp-article-featured-image feature-content">
+	<amp-img width="800" height="600" src="../../../2021/02/3mm-aa1050-h14-aluminum-sheet-1.jpg" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="3mm aa1050 h14 aluminum sheet" srcset="/2021/02/3mm-aa1050-h14-aluminum-sheet-1.jpg 800w, /2021/02/3mm-aa1050-h14-aluminum-sheet-1-160x120.jpg 160w, /2021/02/3mm-aa1050-h14-aluminum-sheet-1-560x420.jpg 560w, /2021/02/3mm-aa1050-h14-aluminum-sheet-1-380x285.jpg 380w" sizes="(max-width: 800px) 100vw, 800px" title="Quelle est la différence entre la tôle d&#039;aluminium et la plaque d&#039;aluminium? 1" layout="intrinsic"></amp-img></div>
+<header class="amp-wp-article-header"><h1 class="amp-wp-title">Quelle est la différence entre la tôle d&#039;aluminium et la plaque d&#039;aluminium?</h1></header><div class="amp-wp-article-meta"><div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2021-02-09T14:14:30+00:00">
+		2021年2月9日	</time>
+</div>
+	<div class="amp-wp-meta amp-wp-byline">
+		<span class="kt-amp-by-author">par</span> <span class="amp-wp-author author vcard">administrateur</span>
+	</div>
+</div><div class="amp-wp-page-content"><!--noindex--><div class="lwptoc toc-list lwptoc-autoWidth lwptoc-baseItems lwptoc-light lwptoc-notInherit" data-smooth-scroll="1" data-smooth-scroll-offset="24"><div class="lwptoc_i">    <div class="lwptoc_header">
+        <b class="lwptoc_title">Table des matières</b>                    <span class="lwptoc_toggle">
+                <a href="#" class="lwptoc_toggle_label" data-label="HIDE">AFFICHER</a>
+            </span>
+            </div>
+<div class="lwptoc_items amp-wp-inline-0f1bf07c72fdf1784fff2e164d9dca98">
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#what-is-the-aluminium-plate-and-what-is-aluminium-sheet" rel="nofollow">
+                    <span class="lwptoc_item_number">1</span>
+                <span class="lwptoc_item_label">Qu&#039;est-ce que la plaque d&#039;aluminium et qu&#039;est-ce que la tôle d&#039;aluminium ?</span>
+    </a>
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#the-thickness-of-aluminium-plate-and-aluminium-sheet-are-different" rel="nofollow">
+                    <span class="lwptoc_item_number">1.1</span>
+                <span class="lwptoc_item_label">L&#039;épaisseur de la plaque d&#039;aluminium et de la tôle d&#039;aluminium est différente :</span>
+    </a>
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#aluminium-foil" rel="nofollow">
+                    <span class="lwptoc_item_number">1.1.1</span>
+                <span class="lwptoc_item_label">Papier d&#039;aluminium</span>
+    </a>
+    </li></ul></li><li class="lwptoc_item">    <a href="#why-aluminum-and-aluminium" rel="nofollow">
+                    <span class="lwptoc_item_number">1.2</span>
+                <span class="lwptoc_item_label">Pourquoi l&#039;aluminium et l&#039;aluminium ?</span>
+    </a>
+    </li></ul></li><li class="lwptoc_item">    <a href="#difference-in-grades" rel="nofollow">
+                    <span class="lwptoc_item_number">2</span>
+                <span class="lwptoc_item_label">Différence de notes :</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#the-difference-in-thickness" rel="nofollow">
+                    <span class="lwptoc_item_number">3</span>
+                <span class="lwptoc_item_label">La différence d&#039;épaisseur</span>
+    </a>
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#aluminium-plate-thickness" rel="nofollow">
+                    <span class="lwptoc_item_number">3.1</span>
+                <span class="lwptoc_item_label">Épaisseur de plaque d&#039;aluminium :</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#aluminium-sheet-thickness" rel="nofollow">
+                    <span class="lwptoc_item_number">3.2</span>
+                <span class="lwptoc_item_label">Epaisseur tôle aluminium :</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#aluminium-foil-thickness" rel="nofollow">
+                    <span class="lwptoc_item_number">3.3</span>
+                <span class="lwptoc_item_label">Épaisseur de feuille d&#039;aluminium :</span>
+    </a>
+    </li></ul></li><li class="lwptoc_item">    <a href="#many-different-forms-of-aluminum-sheet-and-plate" rel="nofollow">
+                    <span class="lwptoc_item_number">4</span>
+                <span class="lwptoc_item_label">De nombreuses formes différentes de feuilles et de plaques d&#039;aluminium :</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#different-in-uses" rel="nofollow">
+                    <span class="lwptoc_item_number">5</span>
+                <span class="lwptoc_item_label">Différents dans les utilisations</span>
+    </a>
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#application-of-aluminium-sheetcoil" rel="nofollow">
+                    <span class="lwptoc_item_number">5.1</span>
+                <span class="lwptoc_item_label">Application de feuille/bobine d&#039;aluminium</span>
+    </a>
+    </li></ul></li><li class="lwptoc_item">    <a href="#more-aluminum-product-differences" rel="nofollow">
+                    <span class="lwptoc_item_number">6</span>
+                <span class="lwptoc_item_label">Plus de différences de produits en aluminium</span>
+    </a>
+    </li></ul></div>
+</div></div><!--/noindex--><h2><span id="what-is-the-aluminium-plate-and-what-is-aluminium-sheet">Qu&#039;est-ce que la plaque d&#039;aluminium et qu&#039;est-ce que la tôle d&#039;aluminium ?</span></h2>
+<p>Certaines personnes appellent des tôles d&#039;aluminium des plaques d&#039;aluminium, elles sont essentiellement les mêmes, mais il existe en fait des différences entre les deux produits.</p>
+<p>Lors du choix entre les deux types de produits, la seule différence est l&#039;épaisseur - la tôle étant la plus épaisse et la tôle la plus fine.</p>
+<h3><span id="the-thickness-of-aluminium-plate-and-aluminium-sheet-are-different">L&#039;épaisseur de la plaque d&#039;aluminium et de la tôle d&#039;aluminium est différente :</span></h3>
+<p>La plaque d&#039;aluminium fait référence à un matériau en aluminium d&#039;une épaisseur de plus de 5 mm à moins de 500 mm, d&#039;une largeur de plus de 200 mm.</p>
+<p>L&#039;épaisseur de la tôle d&#039;aluminium est inférieure à 5 mm.</p>
+<p>Les épaisseurs exactes séparant les catégories dépendent de l&#039;application, du métal en question, de la jauge et des spécifications du produit.</p>
+<h4><span id="aluminium-foil">Papier d&#039;aluminium</span></h4>
+<p>Plus mince que la plaque d&#039;aluminium s&#039;appelle une feuille d&#039;aluminium.</p>
+<p>Lors du choix entre les trois types de produits, la seule différence est l&#039;épaisseur - la plaque étant la plus épaisse et la feuille la plus fine.</p>
+<h3><span id="why-aluminum-and-aluminium">Pourquoi l&#039;aluminium et l&#039;aluminium ?</span></h3>
+<p>L&#039;aluminium et l&#039;aluminium sont deux noms pour l&#039;élément 13 du tableau périodique. Dans les deux cas, le symbole de l&#039;élément est Al, bien que les Américains et les Canadiens épellent et prononcent le nom aluminium, tandis que les Britanniques (et la plupart du reste du monde) utilisent l&#039;orthographe et la prononciation de l&#039;aluminium.</p>
+<p>Et c&#039;est ainsi que nous atterrissons aujourd&#039;hui : avec l&#039;aluminium utilisé par les anglophones d&#039;Amérique du Nord, et l&#039;aluminium utilisé partout ailleurs.</p>
+<p>La tôle d&#039;aluminium et la plaque d&#039;aluminium sont à la fois largement utilisées et respectées en raison de la légèreté du métal, ainsi que de sa haute résistance à la corrosion. Mais quelle est la différence entre une feuille, une plaque et une feuille ?</p>
+<h2><span id="difference-in-grades">Différence de notes :</span></h2>
+<p>Notre plaque d&#039;aluminium est disponible dans une variété d&#039;alliages et divers poids et épaisseurs. Les qualités populaires incluent la plaque 6061, la plaque 6082, les feuilles 5052 et l&#039;aluminium 7075.</p>
+<p>Le choix du bon grade de plaque d&#039;aluminium dépend de son utilisation prévue. La plaque 5052 offre une excellente résistance à la corrosion et une excellente soudabilité, tandis que la plaque d&#039;aluminium 6061 est l&#039;une des nuances les plus résistantes et les plus couramment utilisées pour le traitement thermique.</p>
+<p>Les grades supplémentaires disponibles incluent 1050, 1060, 1100, 3003, 3004, 5005, 5052, 5083, 5754, 6061, 6063, 6082, 7075 etc.</p>
+<div id="attachment_92" class="wp-caption alignnone amp-wp-inline-a76ab53db10ef3853910c24963ea59e6"><p id="caption-attachment-92" class="wp-caption-text">feuille d&#039;aluminium entrelacée de papier</p></div>
+<h2><span id="the-difference-in-thickness">La différence d&#039;épaisseur</span></h2>
+<h3><span id="aluminium-plate-thickness">Épaisseur de plaque d&#039;aluminium :</span></h3>
+<p>La plaque d&#039;aluminium est toute tôle d&#039;aluminium d&#039;une épaisseur supérieure à 6 mm.</p>
+<h3><span id="aluminium-sheet-thickness">Epaisseur tôle aluminium :</span></h3>
+<p>La tôle d&#039;aluminium est toute tôle d&#039;aluminium plus épaisse que la feuille d&#039;aluminium mais plus fine que 6 mm.</p>
+<h3><span id="aluminium-foil-thickness">Épaisseur de feuille d&#039;aluminium :</span></h3>
+<p>La feuille d&#039;aluminium est un alliage d&#039;aluminium d&#039;une épaisseur de 0,005 à 0,2 mm</p>
+<div id="attachment_79" class="wp-caption alignnone amp-wp-inline-a76ab53db10ef3853910c24963ea59e6"><p id="caption-attachment-79" class="wp-caption-text">Plaque aluminium 8mm 5005 h32</p></div>
+<h2><span id="many-different-forms-of-aluminum-sheet-and-plate">De nombreuses formes différentes de feuilles et de plaques d&#039;aluminium :</span></h2>
+<p>Les tôles ou plaques d&#039;aluminium se présentent sous de nombreuses formes, notamment les tôles diamantées, les tôles larmées en aluminium, les tôles d&#039;aluminium perforées expansées, les tôles d&#039;aluminium peintes et les panneaux de placage d&#039;aluminium.</p>
+<h2><span id="different-in-uses">Différents dans les utilisations</span></h2>
+<p>En raison de leurs propriétés physiques supérieures, les tôles et plaques d&#039;aluminium sont recherchées pour de nombreuses applications industrielles différentes.</p>
+<ul><li>La plaque d&#039;aluminium est utilisée pour les applications lourdes et structurelles, telles que l&#039;aérospatiale, l&#039;armée, le transport ferroviaire et maritime.</li>
+<li>La feuille d&#039;aluminium est la forme la plus courante de métal et est utilisée dans un large éventail d&#039;industries, de la mise en conserve d&#039;aliments et de boissons aux ustensiles de cuisine, aux appareils électroménagers et à la fabrication automobile. Il est particulièrement utile pour la construction de toitures, de gouttières et de parements.</li>
+</ul><p>La tôle ou la plaque d&#039;aluminium est utilisée dans diverses applications, notamment l&#039;aérospatiale, l&#039;armée, les transports, etc. La tôle ou la plaque d&#039;aluminium est également utilisée pour les réservoirs dans de nombreuses industries alimentaires, car certains alliages d&#039;aluminium deviennent plus résistants à basse température.</p>
+<p>Vous pouvez voir des feuilles d&#039;aluminium utilisées pour l&#039;emballage par les aliments, des feuilles d&#039;aluminium dans l&#039;industrie des emballages alimentaires et des boissons flexibles, et comme pièces d&#039;ustensiles de cuisine et d&#039;appareils électroménagers. Des tôles de ce métal peuvent également être utilisées par l&#039;industrie de la construction et de l&#039;habitation sous la forme de toitures, de gouttières, de parements et similaires.</p>
+<div class="table-responsive">
+<table class="table" border="0" width="100%" cellspacing="0" cellpadding="0"><caption>
+<h3><span id="application-of-aluminium-sheetcoil">Application de feuille/bobine d&#039;aluminium</span></h3>
+</caption>
+<thead><tr class="firstRow"><td width="30%">Taper</td>
+<td>Application</td>
+</tr></thead><tbody><tr><td>Emballages alimentaires</td>
+<td>La boisson peut se terminer, peut tarauder, couvrir le stock, etc.</td>
+</tr><tr><td>Construction</td>
+<td>Murs-rideaux, bardage, plafond, isolation thermique et bloc store vénitien, etc.</td>
+</tr><tr><td>Transport</td>
+<td>Pièces automobiles, carrosseries d&#039;autobus, aviation et construction navale et conteneurs de fret aérien, etc.</td>
+</tr><tr><td>Appareil électronique</td>
+<td>Appareils électriques, équipements de télécommunication, feuilles de guidage de perçage de cartes de circuits imprimés, matériaux d&#039;éclairage et de rayonnement thermique, etc.</td>
+</tr><tr><td>Biens de consommation</td>
+<td>Parasols et parapluies, ustensiles de cuisine, équipements sportifs, etc.</td>
+</tr><tr><td>Autre</td>
+<td>Tôle d&#039;aluminium militaire revêtue de couleur</td>
+</tr></tbody></table><p>Le contenu ci-dessus est la différence entre la plaque d&#039;aluminium et la feuille d&#039;aluminium.</p>
+<h2><span id="more-aluminum-product-differences">Plus de différences de produits en aluminium</span></h2>
+<p><a href="../../5083-aluminum-vs-6061-aluminum/index.htm">5083 aluminium VS. 6061 aluminium</a></p>
+<p><a href="../../difference-in-aluminum-sheet-and-coil/index.htm">Feuille d&#039;aluminium VS bobine d&#039;aluminium</a></p>
+</div>
+</div><div class="amp-wp-meta amp-wp-tax-category">Catégories : <a href="../../blog/index.htm" rel="category tag">Blog</a></div><div class="amp-wp-meta amp-wp-tax-tag">Mots clés: <a href="../../tag/diffe/index.htm" rel="tag">différent</a>, <a href="../../tag/plate/index.htm" rel="tag">assiette</a>, <a href="../../tag/sheet/index.htm" rel="tag">drap</a></div><div class="amp-share-box"><amp-social-share type="facebook" width="60" height="44" data-share-endpoint="http://www.facebook.com/sharer.php?u=https://pizzerialabellastoria.nl/fr/difference-aluminum-plate-and-sheet/"></amp-social-share><amp-social-share type="twitter" width="60" height="44"></amp-social-share><amp-social-share type="linkedin" width="60" height="44"></amp-social-share></div><div class="amp-comments"><div id="comments" class="section-content comments-area"></div>				<div class="amp-wp-comments-link">
+					<a href="../index.htm#respond">
+						Laissez un commentaire					</a>
+				</div>
+			</div><div class="amp-related-posts"><h3>Articles Similaires</h3><ul><li class="flex items-center"><a href="../../3003-aluminum-plate-vs-3004-aluminum-plate/amp/index.htm" class="amp-related-img-link" title="Plaque en aluminium 3003 VS plaque en aluminium 3004"><amp-img src="../../../2021/02/3003-h14-aluminum-sheet-3-80x80.jpg" width="80" height="80" alt="3003 h14 aluminum sheet" srcset="/2021/02/3003-h14-aluminum-sheet-3-80x80.jpg 80w, /2021/02/3003-h14-aluminum-sheet-3-160x160.jpg 160w" sizes="(max-width: 80px) 100vw, 80px" class="amp-related-img"></amp-img></a><div class="amp-related-title"><a href="../../3003-aluminum-plate-vs-3004-aluminum-plate/amp/index.htm" title="Plaque en aluminium 3003 VS plaque en aluminium 3004">Plaque en aluminium 3003 VS plaque en aluminium 3004</a><div class="amp-related-meta amp-wp-meta">2021年12月20日</div></div></li><li class="flex items-center"><a href="../../what-is-the-thickness-of-6-gauge-aluminum/amp/index.htm" class="amp-related-img-link" title="Quelle est l&#039;épaisseur de l&#039;aluminium de calibre 6 ?"><amp-img src="../../../2022/01/gauges-measurement-tool-2-80x80.jpg" width="80" height="80" alt="gauges measurement tool" srcset="/2022/01/gauges-measurement-tool-2-80x80.jpg 80w, /2022/01/gauges-measurement-tool-2-160x160.jpg 160w" sizes="(max-width: 80px) 100vw, 80px" class="amp-related-img"></amp-img></a><div class="amp-related-title"><a href="../../what-is-the-thickness-of-6-gauge-aluminum/amp/index.htm" title="Quelle est l&#039;épaisseur de l&#039;aluminium de calibre 6 ?">Quelle est l&#039;épaisseur de l&#039;aluminium de calibre 6 ?</a><div class="amp-related-meta amp-wp-meta">2022年1月12日</div></div></li><li class="flex items-center"><div class="amp-related-title"><a href="../../difference-between-hot-rolled-dc-and-casting-rolling-cc-aluminum/amp/index.htm" title="La différence entre la tôle d&#039;aluminium laminée à chaud DC et la tôle d&#039;aluminium CC à coulée continue?">La différence entre la tôle d&#039;aluminium laminée à chaud DC et la tôle d&#039;aluminium CC à coulée continue?</a><div class="amp-related-meta amp-wp-meta">2022年1月4日</div></div></li></ul></div>
+	</article>
+</div>
+
+<footer class="amp-wp-footer">
+	<div class="clearfix">
+		<div class="amp-footer-content">© 2022 Lions Industrie Aluminium</div>	</div>
+</footer>
+
+<amp-analytics id="UA-194323042-1" type="googleanalytics"><script type="application/json">{"vars":{"account":"UA-194323042-1"},"triggers":{"trackPageview":{"on":"visible","request":"pageview"}}}</script></amp-analytics><amp-sidebar id="sidebar" layout="nodisplay" side="right"><div class="amp-sidebar-navigation"><div role="button" tabindex="0" on="tap:sidebar.close" class="close-amp-sidebar">X</div><div class="menu-topnav-container"><ul id="menu-topnav" class="menu"><li><a href="../../index.htm">DOMICILE</a></li>
+<li><a title="Produit en métal d&#039;aluminium" href="../../aluminum-metal/index.htm">Des produits</a>
+<ul class="sub-menu">
+	<li><a href="../../products/aluminum-mill-finish/index.htm">finition de laminage d&#039;aluminium</a></li>
+	<li><a href="../../products/painted-coated-aluminum/index.htm">Aluminium enduit peint</a></li>
+	<li><a href="../../products/powder-coating-aluminium/index.htm">Aluminium enduit de poudre</a></li>
+	<li><a href="../../products/aluminium-cladding/index.htm">revêtement en aluminium</a></li>
+	<li><a href="../../products/perforated-aluminium/index.htm">Aluminium perforé</a></li>
+</ul>
+</li>
+<li class="current-post-ancestor current-menu-parent"><a href="../../blog/index.htm">Blog</a></li>
+<li><a rel="nofollow" href="../../about-tigers/index.htm">À propos des Lions</a></li>
+<li><a rel="nofollow" href="../../contact-tigers/index.htm">Nous contacter</a></li>
+</ul></div></div></amp-sidebar></body>
+</html>
+<!-- Cached for great performance - Debug: cached@1653373982 -->

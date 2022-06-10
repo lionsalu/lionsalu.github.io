@@ -1,0 +1,695 @@
+﻿<!doctype html>
+<html amp="" dir="rtl" lang="ar">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<script type='text/javascript' src='../../../v0.js' async=""></script>
+<script type='text/javascript' src='../../../v0/amp-sidebar-0.1.js' async="" custom-element="amp-sidebar"></script>
+<script type='text/javascript' src='../../../v0/amp-social-share-0.1.js' async="" custom-element="amp-social-share"></script>
+<script type='text/javascript' src='../../../v0/amp-analytics-0.1.js' async="" custom-element="amp-analytics"></script>
+	<style amp-boilerplate="">body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate="">body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial, Helvetica, sans-serif:400&subset=">	<style amp-custom="">
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+input, textarea {
+	padding: 5px;
+	box-sizing: border-box;
+}
+.amp-wp-enforced-sizes {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.amp-wp-unknown-size img {
+	object-fit: contain;
+}
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+table th, table td, table th {
+    padding: 5px;
+}
+table.shop_attributes td {
+    font-style: italic;
+}
+table tr:nth-child(even) {
+    background: rgba(0,0,0,.03);
+}
+/* Flex */
+
+.full-flex {
+	flex: 1 0 100%;
+}
+.flex-space-between {
+	justify-content: space-between;
+}
+.flex-align-center {
+	align-items: center;
+}
+.flex-wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/* Template Styles */
+* {
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+html body {
+	margin:0;
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+    font-family:  Impact, Charcoal, sans-serif;
+	color: #444444;
+	font-weight: 400;
+	letter-spacing: 0px;
+}
+body {
+	background: #ffffff;
+	color: #444444;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	letter-spacing: 0px;
+	font-size:16px;
+	line-height: 24px;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 16px;
+	padding: 0;
+}
+
+a {
+	color: #ce534d;
+}
+
+a:hover {
+	color: #ce534d;
+	text-decoration: underline;
+}
+.btn, .button, button {
+    color: #fff;
+    cursor: pointer;
+    padding: .518em 1.287em;
+    text-decoration: none;
+    font-weight: 600;
+	border: 0;
+    text-shadow: none;
+    display: inline-block;
+    outline: 0;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 0;
+    font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 0px;
+	font-size:16px;
+	line-height: 24px;
+    background: #ce534d;
+}
+.btn:hover, .button:hover, .btn:active, .button:active, .btn:focus .button:focus  {
+    color: #fff;
+    text-decoration: none;
+    background: #ce534d;
+    opacity:.8;
+}
+/* Breadcrumbs */
+#amp-bread {
+    font-size: 12px;
+    margin: 5px 0;
+}
+/* Quotes */
+
+blockquote {
+	color: #444444;
+	background: rgba(127,127,127,.1);
+	border-left: 2px solid #ce534d;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #3265c5;
+}
+
+.amp-wp-header > div {
+	color: #ffffff;
+	font-size: 18px;
+	line-height:50px;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 0 16px;
+	position: relative;
+	min-height: 50px;
+	box-sizing: border-box;
+}
+
+.amp-wp-header a {
+	text-decoration: none;
+	display:block;
+	float:left;
+	font-family:  'MS Serif', 'New York', sans-serif;
+	color: #ffffff;
+	font-weight: 700;
+	letter-spacing: 0px;
+}
+
+/* Site Logo */
+
+.amp-wp-header .amp-wp-site-icon {
+	margin: 9px 8px 9px 0;
+    float: left
+}
+
+/* Menu */
+button.amp-menu-sidebar {
+    display: block;
+    float: right;
+    height: 50px;
+    background: rgba(0,0,0,0.0);
+   	font-family:  Source Sans Pro;
+	color: #444444;
+	font-weight: ;
+	letter-spacing: 0px;
+    border: none;
+    padding:0;
+    font-size: 15px;
+    cursor: pointer;
+}
+.amp-icon-button {
+    position: relative;
+    width: 28px;
+}
+.amp-icon-button:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 28px;
+    height: 4px;
+    border-top: 12px double #ffffff;
+    border-bottom: 4px solid #ffffff;
+}
+amp-sidebar {
+	background-color: #3265c5;
+	width:250px;
+}
+.close-amp-sidebar {
+    font-size: 12px;
+    font-family: sans-serif;
+    background: rgba(0,0,0,.25);
+    letter-spacing: 1px;
+    padding: 12px;
+    line-height: 8px;
+    font-weight: bold;
+    margin: 12px 12px 2px;
+    cursor: pointer;
+    display: inline-block;
+    color: #fff;
+}
+.amp-sidebar-navigation ul.menu {
+    margin: 0 12px;
+}
+.amp-sidebar-navigation ul.menu li {
+    list-style: none;
+}
+.amp-sidebar-navigation ul.menu li a {
+    text-decoration: none;
+    display: block;
+    padding: 8px 10px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    font-size: 15px;
+    line-height: 20px;
+    font-family:  Source Serif Pro;
+	color: #ffffff;
+	font-weight: 400;
+	letter-spacing: 0px;
+}
+.amp-sidebar-navigation ul.menu ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+/* main */
+
+.main {
+	color: #444444;
+	font-weight: 400;
+	margin: 16px auto;
+	max-width: 600px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	padding: 0 16px;
+	box-sizing: border-box;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 16px 0 10px;
+}
+
+.amp-wp-title {
+	display: block;
+	width: 100%;
+	margin:0;
+}
+
+/* Article Meta */
+.amp-wp-article-meta {
+	margin: 0px 0 10px 0;
+}
+.amp-wp-meta {
+	color: #777777;
+	display: inline-block;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #ce534d;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+	display:block;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+.amp-wp-page-content {
+	padding: 6px 0 0;
+}
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+
+/* comments */
+
+.amp-comments {
+    margin-top: 16px;
+}
+.comment-text {
+    position: relative;
+    padding-left: 76px;
+    min-height:60px;
+}
+.comment-text p {
+	margin-bottom:0;
+}
+.comment-list .comment-metadata a {
+    font-size: 12px;
+    color: #777;
+}
+.comment-list .comment-author amp-img {
+    margin-right:10px;
+}
+ul.comment-list li {
+    list-style-type: none;
+}
+.comment {
+    margin-top: 16px;
+    border: 1px solid #ddd;
+    padding: 1em;
+}
+.comment-list amp-img {
+    float: left;
+}
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #eee;
+	color: #777777;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #eee;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #eee url( ../../../wp-content/plugins/kadence-amp/assets/images/placeholder-icon.png ) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	margin: 16px 0;
+	display: block;
+}
+
+.amp-wp-comments-link, .mod_show_original {
+	color: #777777;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 1.5em 0 1.5em;
+}
+.amp-wp-comments-link a, .mod_show_original a{
+	border-style: solid;
+	border-color: #eee;
+	border-width: 1px 1px 2px;
+	background-color: transparent;
+	color: #ce534d;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+/* Related Posts */
+.amp-related-posts ul {
+	list-style:none;
+}
+.amp-related-posts ul li {
+	margin-bottom:16px;
+}
+a.amp-related-img-link {
+    margin-right: 10px;
+    display: block;
+}
+.amp-related-posts .amp-related-meta {
+	display:block;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	background: #444444;
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.amp-wp-footer > div {
+	max-width: 600px;
+    margin: 0 auto;
+	padding: 16px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+	color: #ffffff;
+}
+.show_original {
+    display: block;
+    text-align: center;
+}
+.show_original a {
+    display: inline-block;
+    margin-top: 10px;
+    padding:4px 8px;
+    border: 1px solid #ffffff;
+}
+.back-to-top {
+	top: 16px;
+	position: absolute;
+	right: 16px;
+}
+@media (max-width: 544px) {
+	.wp-caption.alignleft, .amp-wp-article-content amp-img.alignleft {
+		float:none;
+		margin-right:auto;
+		margin-left:auto;
+	}
+}
+		/* Inline stylesheets */
+.amp-wp-inline-0f1bf07c72fdf1784fff2e164d9dca98 { display:none; }.amp-wp-inline-a76ab53db10ef3853910c24963ea59e6 { max-width:810px; }/* Custom styles */
+@font-face{font-family:"tigers";font-display:swap;src:url("../../../wp-content/themes/tgs/css/fonts/tigers.eot");src:url("../../../wp-content/themes/tgs/css/fonts/tigers-1.eot") format("embedded-opentype"),url("../../../wp-content/themes/tgs/css/fonts/tigers.woff2") format("woff2"),url("../../../wp-content/themes/tgs/css/fonts/tigers.woff") format("woff"),url("../../../wp-content/themes/tgs/css/fonts/tigers.ttf") format("truetype"),url("../../../wp-content/themes/tgs/css/fonts/tigers.svg") format("svg")}
+h1,h2,h3,h4,h5,h6{font-family:'Tigers',sans-serif,'Arial';color:#444444;line-height:1.2}
+h1{font-size:24px;font-weight:700; color: #000;}
+h2{font-size:22px;padding:10px 0 10px 8px;margin:25px 0 20px;border-left:2px solid #487bd9;background-color:#f5f8fb}
+h3{font-size:20px;padding:15px 0 15px;margin-bottom:0}
+h4{font-size:16px;padding:12px 0 12px;margin-bottom:0}
+h5{font-size:17px;padding:5px 0 0px;margin-bottom:0}
+h6{font-size:14px;margin-bottom:0}
+.main{padding:0 10px;margin-top: 0;}
+.amp-wp-page-content li{list-style-position:inside;padding-bottom:10px}
+.amp-wp-page-content strong{padding:8px 0}
+.amp-wp-page-content a{max-width:100%;display:inline-block;text-decoration:none}
+.amp-wp-page-content a:before{font-family:'tigers';content:"\e7ff";margin-right:0px;font-size:14px;color:#feb822}
+.amp-breadcrumb-container{font-size:15px;background-color:#f5f7fa;border-bottom:1px solid #eee;padding:10px 0px;-webkit-box-shadow:0 -1px 2px rgba(0,0,0,.06) inset;box-shadow:0 -1px 2px rgba(0,0,0,.06) inset}
+.amp-breadcrumb-container a{ text-decoration: none;}
+.amp-wp-article-header{padding-bottom: 10px;   border-bottom: 1px dotted #3265c5;margin-bottom: 0px;}	</style>
+</head>
+
+<body class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="../../index.htm">نمر للألمنيوم</a><div class="amp-accordion-header"><button class="amp-menu-sidebar amp-icon-button" on="tap:sidebar.toggle"></button></div>	</div>
+</header>
+
+<div class="main">
+	<article class="amp-wp-article">
+		<div id="amp-bread"><div class="amp-breadcrumb-container"><span><a href="../../index.htm" itemprop="url" class="kad-bc-home"><span>الصفحة الرئيسية</span></a></span> <span class="bc-delimiter">»</span> <span><a href="../../blog/index.htm" itemprop="url"><span>مقالات</span></a></span> <span class="bc-delimiter">»</span> <span class="kad-breadcurrent">ما هي ورقة الألومنيوم 6063؟</span></div></div><header class="amp-wp-article-header"><h1 class="amp-wp-title">ما هي ورقة الألومنيوم 6063؟</h1></header><div class="amp-wp-article-meta"><div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2021-02-09T14:32:16+00:00">
+		2021 2 9	</time>
+</div>
+	<div class="amp-wp-meta amp-wp-byline">
+		<span class="kt-amp-by-author">بواسطة</span> <span class="amp-wp-author author vcard">مشرف</span>
+	</div>
+</div><div class="amp-wp-page-content"><!--noindex--><div class="lwptoc toc-list lwptoc-autoWidth lwptoc-baseItems lwptoc-light lwptoc-notInherit" data-smooth-scroll="1" data-smooth-scroll-offset="24"><div class="lwptoc_i">    <div class="lwptoc_header">
+        <b class="lwptoc_title">جدول المحتويات</b>                    <span class="lwptoc_toggle">
+                <a href="#" class="lwptoc_toggle_label" data-label="HIDE">يعرض</a>
+            </span>
+            </div>
+<div class="lwptoc_items amp-wp-inline-0f1bf07c72fdf1784fff2e164d9dca98">
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#chemical-composition-of-aluminium-6063-plate" rel="nofollow">
+                    <span class="lwptoc_item_number">1</span>
+                <span class="lwptoc_item_label">التركيب الكيميائي لألواح الألومنيوم 6063</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#mechanical-properties-of-aluminium-6063-sheets-plates" rel="nofollow">
+                    <span class="lwptoc_item_number">2</span>
+                <span class="lwptoc_item_label">الخواص الميكانيكية لصفيحة / ألواح ألومنيوم 6063</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#the-difference-between-6063-aluminium-sheet-and-6061-aluminium-sheet" rel="nofollow">
+                    <span class="lwptoc_item_number">3</span>
+                <span class="lwptoc_item_label">الفرق بين لوح الألمنيوم 6063 و 6061 لوح الألمنيوم ：</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#our-advantages-and-services" rel="nofollow">
+                    <span class="lwptoc_item_number">4</span>
+                <span class="lwptoc_item_label">مزايانا وخدماتنا</span>
+    </a>
+    </li></ul></div>
+</div></div><!--/noindex--><p>6063 صفائح الألمنيوم عبارة عن سبيكة ألمنيوم مع المغنيسيوم والسيليكون كعناصر صناعة السبائك.</p>
+<h4 class="title-head p-b-5"><span id="chemical-composition-of-aluminium-6063-plate">التركيب الكيميائي لألواح الألومنيوم 6063</span></h4>
+<div class="table-responsive">
+<table class="table table-bordered"><tbody><tr class="firstRow"><td>النحاس</td>
+<td>سي</td>
+<td>الحديد</td>
+<td>مينيسوتا</td>
+<td>ملغ</td>
+<td>Zn</td>
+<td>سجل تجاري</td>
+<td>تي</td>
+<td>ال</td>
+<td>الآخر كل</td>
+<td>مجموع الآخرين</td>
+</tr><tr><td>.10 (حد أقصى)</td>
+<td>.20/.60</td>
+<td>.35 (حد أقصى)</td>
+<td>.10 (حد أقصى)</td>
+<td>.45/.90</td>
+<td>.10 (حد أقصى)</td>
+<td>.10 (حد أقصى)</td>
+<td>.10 (حد أقصى)</td>
+<td>بقية</td>
+<td>.05</td>
+<td>.015</td>
+</tr></tbody></table><div></div>
+<div id="attachment_76" class="wp-caption alignnone amp-wp-inline-a76ab53db10ef3853910c24963ea59e6"><p id="caption-attachment-76" class="wp-caption-text">3 مم h14 6063 ورقة الألومنيوم</p></div>
+</div>
+<p>Lions Aluminium حسب الطلب 6063 صفائح وصفائح ولفائف من الألومنيوم للعملاء مع خصائص ممتازة مثل قابلية اللحام ومقاومة التآكل وإمكانية التشغيل الآلي.</p>
+<p>يتميز الألمنيوم 6063 بخصائص ميكانيكية جيدة بشكل عام ويمكن معالجته بالحرارة واستخدامه بشكل كبير. تعتمد الخواص الميكانيكية لـ 6063 بشكل كبير على درجة الحرارة أو المعالجة الحرارية للمادة.</p>
+<h4><span id="mechanical-properties-of-aluminium-6063-sheets-plates">الخواص الميكانيكية لصفيحة / ألواح ألومنيوم 6063</span></h4>
+<div class="table-responsive">
+<table class="table table-bordered"><tbody><tr class="firstRow"><td><strong>قوة الشد (psi)</strong></td>
+<td><strong>قوة العائد (psi)</strong></td>
+<td><strong>استطالة (% في 2 ″) </strong></td>
+<td><strong>صلابة برينل</strong></td>
+</tr><tr><td>27,000</td>
+<td>21,000</td>
+<td>12</td>
+<td>60</td>
+</tr></tbody></table></div>
+<p>أنواع الحرارة المستخدمة بشكل شائع هي O و H4 و H6 و H651 و F وغيرها. جميع المواد من ألومنيوم Lions معتمدة بالكامل وفقًا لـ ASTM و EN و JIS. يتوفر كل من MSDS و ROHS وفقًا لطلبك المحدد.</p>
+<div id="attachment_114" class="wp-caption alignnone amp-wp-inline-a76ab53db10ef3853910c24963ea59e6"><p id="caption-attachment-114" class="wp-caption-text">غلاف السيارة مصنوع من صفائح الألمنيوم</p></div>
+<h3><span id="the-difference-between-6063-aluminium-sheet-and-6061-aluminium-sheet"><strong>الفرق بين لوح الألمنيوم 6063 و 6061 لوح الألمنيوم ：</strong></span></h3>
+<p>6063 صفائح الألمنيوم لديها نصف قوة سبائك الألومنيوم 6061. يتم إنتاجها عادةً بأسطح ناعمة جدًا مناسبة لأنودة وغالبًا ما تستخدم في صناعة قطع غيار السيارات والتصنيع المعماري وإطارات النوافذ والأبواب وأثاث الألمنيوم والمكونات الإلكترونية بالإضافة إلى العديد من المنتجات المعمرة للمستهلكين.</p>
+<p>تزود Lions Aluminium 6063 بلوحة وألواح ولفائف من الألومنيوم مع درجات حرارة خاصة مطورة للتطبيقات الفريدة ， اجتياز شهادة SGS ، ودعم فحص الطرف الثالث.</p>
+<h3><span id="our-advantages-and-services">مزايانا وخدماتنا</span></h3>
+<ol><li><strong>معدات فعالة</strong><br>
+فريق تصميم محترف ، مرافق متقدمة ، نظام صارم لمراقبة الجودة. يبلغ طول خط إنتاج مسحوق الطلاء / المسحوق الفلوروكربوني الذي يبلغ طوله 430 مترًا 480 مترًا مع نظام المعالجة المسبقة Henkel وأنظمة الرش الكهروستاتيكي الأوتوماتيكية Ransburg. خط طلاء الأسطوانة مجهز بحالات فرن 110 متر مع 9 مناطق للتحكم في درجة الحرارة. مرافق الصفائح المعدنية باستخدام الحاسب الآلي كلها جديدة من السوق. القدرة السنوية 1.8 مليون متر مربع.</li>
+<li><strong>نظام صارم لمراقبة الجودة (ISO9001: 2015)</strong><br>
+تحافظ Lions Aluminium دائمًا على معيار صارم لجودة المنتج مع السمعة الطيبة. نحن نضمن لعملائنا تقديم منتج عالي الجودة فقط.</li>
+<li><strong>موك والسعر</strong><br>
+موك مرنة ، توفر مجموعة واسعة من سلسلة منتجات الديكور الألومنيوم مع أكثر الأسعار تنافسية كشركة مصنعة.</li>
+<li><strong>التعبئة</strong><br>
+نستخدم غلافًا بلاستيكيًا أو ورق كرافت ، ونضع مجففًا مقاومًا للرطوبة في كل عبوة لمنع الرطوبة والمطر ، ونستخدم منصات خشبية خاصة وأشرطة فولاذية لتقوية ألواح الألمنيوم لضمان عدم تشوهها. عندما يتم تصدير المنتجات ، يتم تعبئتها في صناديق خشبية ومنصات خشبية مع علامات التبخير.</li>
+<li><strong>شحن</strong><br>
+يمكننا أن نقدم لك شركة شحن جيدة مع شريكنا وبأسعار تنافسية ؛ تقديم اقتراح جيد للتعبئة والشحن لتجنب المشاكل غير الضرورية.</li>
+<li><strong>خدمة OEM ODM</strong><br>
+قدم لنا تصميماتك ، أو أخبرنا بأفكارك ، يمكننا أن نقدم لك منتجات الألمنيوم التي تريدها.</li>
+<li><strong>خدمة ما بعد البيع</strong><br>
+امتلاك فريق مبيعات محترف وإيجابي وسريع الاستجابة لتقديم خدمة موثوقة. يمكنك الحصول على خدمة ما بعد البيع المتميزة في أي وقت.</li>
+</ol><p>مزيد من التفاصيل عن <a href="../../product/6061-aluminum-sheet-plate/index.htm">6061 لوح / لوح ألومنيوم</a></p>
+<p> </p>
+</div><div class="amp-wp-meta amp-wp-tax-category">فئات: <a href="../../blog/index.htm" rel="category tag">مقالات</a></div><div class="amp-wp-meta amp-wp-tax-tag">العلامات: <a href="../../tag/6063/index.htm" rel="tag">6063</a>, <a href="../../tag/sheet/index.htm" rel="tag">ورقة</a></div><div class="amp-share-box"><amp-social-share type="facebook" width="60" height="44" data-share-endpoint="http://www.facebook.com/sharer.php?u=https://pizzerialabellastoria.nl/ar/what-is-the-6063-aluminum-sheet/"></amp-social-share><amp-social-share type="twitter" width="60" height="44"></amp-social-share><amp-social-share type="linkedin" width="60" height="44"></amp-social-share></div><div class="amp-comments"><div id="comments" class="section-content comments-area"></div>				<div class="amp-wp-comments-link">
+					<a href="../index.htm#respond">
+						اترك تعليقا					</a>
+				</div>
+			</div><div class="amp-related-posts"><h3>المنشورات ذات الصلة</h3><ul><li class="flex items-center"><a href="../../how-thick-is-14-gauge-aluminum/amp/index.htm" class="amp-related-img-link" title="ما هي سماكة قياس 14 من الألومنيوم؟"><amp-img src="../../../2021/02/cutting-edge-without-burrs-of-aluminum-sheet-80x80.jpg" width="80" height="80" alt="cutting edge without burrs of aluminum sheet" srcset="/2021/02/cutting-edge-without-burrs-of-aluminum-sheet-80x80.jpg 80w, /2021/02/cutting-edge-without-burrs-of-aluminum-sheet-160x160.jpg 160w" sizes="(max-width: 80px) 100vw, 80px" class="amp-related-img"></amp-img></a><div class="amp-related-title"><a href="../../how-thick-is-14-gauge-aluminum/amp/index.htm" title="ما هي سماكة قياس 14 من الألومنيوم؟">ما هي سماكة قياس 14 من الألومنيوم؟</a><div class="amp-related-meta amp-wp-meta">2022 1 26</div></div></li><li class="flex items-center"><a href="../../what-is-the-thickness-of-10-gauge-aluminum/amp/index.htm" class="amp-related-img-link" title="ما هي سماكة الألمنيوم 10 مقياس؟"><amp-img src="../../../2022/01/gauges-measurement-tool-80x80.jpg" width="80" height="80" alt="gauges measurement tool" srcset="/2022/01/gauges-measurement-tool-80x80.jpg 80w, /2022/01/gauges-measurement-tool-160x160.jpg 160w" sizes="(max-width: 80px) 100vw, 80px" class="amp-related-img"></amp-img></a><div class="amp-related-title"><a href="../../what-is-the-thickness-of-10-gauge-aluminum/amp/index.htm" title="ما هي سماكة الألمنيوم 10 مقياس؟">ما هي سماكة الألمنيوم 10 مقياس؟</a><div class="amp-related-meta amp-wp-meta">2022 1 12 日</div></div></li><li class="flex items-center"><a href="../../5083-aluminum-vs-6061-aluminum/amp/index.htm" class="amp-related-img-link" title="5083 ورقة سبائك الألومنيوم VS. 6061 صفائح ألمنيوم معدنية"><amp-img src="../../../2021/02/aluminum-sheet-with-blue-films-1-80x80.jpg" width="80" height="80" alt="aluminum sheet with blue films" srcset="/2021/02/aluminum-sheet-with-blue-films-1-80x80.jpg 80w, /2021/02/aluminum-sheet-with-blue-films-1-160x160.jpg 160w" sizes="(max-width: 80px) 100vw, 80px" class="amp-related-img"></amp-img></a><div class="amp-related-title"><a href="../../5083-aluminum-vs-6061-aluminum/amp/index.htm" title="5083 ورقة سبائك الألومنيوم VS. 6061 صفائح ألمنيوم معدنية">5083 ورقة سبائك الألومنيوم VS. 6061 صفائح ألمنيوم معدنية</a><div class="amp-related-meta amp-wp-meta">2021 3 月 17</div></div></li></ul></div>
+	</article>
+</div>
+
+<footer class="amp-wp-footer">
+	<div class="clearfix">
+		<div class="amp-footer-content">© 2022 تايجر لصناعة الألمنيوم</div>	</div>
+</footer>
+
+<amp-analytics id="UA-194323042-1" type="googleanalytics"><script type="application/json">{"vars":{"account":"UA-194323042-1"},"triggers":{"trackPageview":{"on":"visible","request":"pageview"}}}</script></amp-analytics><amp-sidebar id="sidebar" layout="nodisplay" side="right"><div class="amp-sidebar-navigation"><div role="button" tabindex="0" on="tap:sidebar.close" class="close-amp-sidebar">X</div><div class="menu-topnav-container"><ul id="menu-topnav" class="menu"><li><a href="../../index.htm">الصفحة الرئيسية</a></li>
+<li><a title="منتج الألومنيوم Mteal" href="../../aluminum-metal/index.htm">منتجات</a>
+<ul class="sub-menu">
+	<li><a href="../../products/aluminum-mill-finish/index.htm">مطحنة الألومنيوم</a></li>
+	<li><a href="../../products/painted-coated-aluminum/index.htm">الألمنيوم المطلي المطلي</a></li>
+	<li><a href="../../products/powder-coating-aluminium/index.htm">مسحوق طلاء الألمنيوم</a></li>
+	<li><a href="../../products/aluminium-cladding/index.htm">الكسوة الألومنيوم</a></li>
+	<li><a href="../../products/perforated-aluminium/index.htm">ألمنيوم مثقب</a></li>
+</ul>
+</li>
+<li class="current-post-ancestor current-menu-parent"><a href="../../blog/index.htm">مقالات</a></li>
+<li><a rel="nofollow" href="../../about-tigers/index.htm">حول النمور</a></li>
+<li><a rel="nofollow" href="../../contact-tigers/index.htm">اتصل بنا</a></li>
+</ul></div></div></amp-sidebar></body>
+</html>
+<!-- Cached for great performance - Debug: cached@1653386891 -->

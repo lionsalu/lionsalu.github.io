@@ -1,0 +1,849 @@
+﻿<!doctype html>
+<html amp="" lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<script type='text/javascript' src='../../../v0.js' async=""></script>
+<script type='text/javascript' src='../../../v0/amp-sidebar-0.1.js' async="" custom-element="amp-sidebar"></script>
+<script type='text/javascript' src='../../../v0/amp-social-share-0.1.js' async="" custom-element="amp-social-share"></script>
+<script type='text/javascript' src='../../../v0/amp-analytics-0.1.js' async="" custom-element="amp-analytics"></script>
+	<style amp-boilerplate="">body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate="">body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arial, Helvetica, sans-serif:400&subset=">	<style amp-custom="">
+		/* Generic WP styling */
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+input, textarea {
+	padding: 5px;
+	box-sizing: border-box;
+}
+.amp-wp-enforced-sizes {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.amp-wp-unknown-size img {
+	object-fit: contain;
+}
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+table th, table td, table th {
+    padding: 5px;
+}
+table.shop_attributes td {
+    font-style: italic;
+}
+table tr:nth-child(even) {
+    background: rgba(0,0,0,.03);
+}
+/* Flex */
+
+.full-flex {
+	flex: 1 0 100%;
+}
+.flex-space-between {
+	justify-content: space-between;
+}
+.flex-align-center {
+	align-items: center;
+}
+.flex-wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/* Template Styles */
+* {
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+html body {
+	margin:0;
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+    font-family:  Impact, Charcoal, sans-serif;
+	color: #444444;
+	font-weight: 400;
+	letter-spacing: 0px;
+}
+body {
+	background: #ffffff;
+	color: #444444;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	letter-spacing: 0px;
+	font-size:16px;
+	line-height: 24px;
+}
+
+p,
+ol,
+ul,
+figure {
+	margin: 0 0 16px;
+	padding: 0;
+}
+
+a {
+	color: #ce534d;
+}
+
+a:hover {
+	color: #ce534d;
+	text-decoration: underline;
+}
+.btn, .button, button {
+    color: #fff;
+    cursor: pointer;
+    padding: .518em 1.287em;
+    text-decoration: none;
+    font-weight: 600;
+	border: 0;
+    text-shadow: none;
+    display: inline-block;
+    outline: 0;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 0;
+    font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 0px;
+	font-size:16px;
+	line-height: 24px;
+    background: #ce534d;
+}
+.btn:hover, .button:hover, .btn:active, .button:active, .btn:focus .button:focus  {
+    color: #fff;
+    text-decoration: none;
+    background: #ce534d;
+    opacity:.8;
+}
+/* Breadcrumbs */
+#amp-bread {
+    font-size: 12px;
+    margin: 5px 0;
+}
+/* Quotes */
+
+blockquote {
+	color: #444444;
+	background: rgba(127,127,127,.1);
+	border-left: 2px solid #ce534d;
+	margin: 8px 0 24px 0;
+	padding: 16px;
+}
+
+blockquote p:last-child {
+	margin-bottom: 0;
+}
+
+/* Header */
+
+.amp-wp-header {
+	background-color: #3265c5;
+}
+
+.amp-wp-header > div {
+	color: #ffffff;
+	font-size: 18px;
+	line-height:50px;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 0 16px;
+	position: relative;
+	min-height: 50px;
+	box-sizing: border-box;
+}
+
+.amp-wp-header a {
+	text-decoration: none;
+	display:block;
+	float:left;
+	font-family:  'MS Serif', 'New York', sans-serif;
+	color: #ffffff;
+	font-weight: 700;
+	letter-spacing: 0px;
+}
+
+/* Site Logo */
+
+.amp-wp-header .amp-wp-site-icon {
+	margin: 9px 8px 9px 0;
+    float: left
+}
+
+/* Menu */
+button.amp-menu-sidebar {
+    display: block;
+    float: right;
+    height: 50px;
+    background: rgba(0,0,0,0.0);
+   	font-family:  Source Sans Pro;
+	color: #444444;
+	font-weight: ;
+	letter-spacing: 0px;
+    border: none;
+    padding:0;
+    font-size: 15px;
+    cursor: pointer;
+}
+.amp-icon-button {
+    position: relative;
+    width: 28px;
+}
+.amp-icon-button:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 28px;
+    height: 4px;
+    border-top: 12px double #ffffff;
+    border-bottom: 4px solid #ffffff;
+}
+amp-sidebar {
+	background-color: #3265c5;
+	width:250px;
+}
+.close-amp-sidebar {
+    font-size: 12px;
+    font-family: sans-serif;
+    background: rgba(0,0,0,.25);
+    letter-spacing: 1px;
+    padding: 12px;
+    line-height: 8px;
+    font-weight: bold;
+    margin: 12px 12px 2px;
+    cursor: pointer;
+    display: inline-block;
+    color: #fff;
+}
+.amp-sidebar-navigation ul.menu {
+    margin: 0 12px;
+}
+.amp-sidebar-navigation ul.menu li {
+    list-style: none;
+}
+.amp-sidebar-navigation ul.menu li a {
+    text-decoration: none;
+    display: block;
+    padding: 8px 10px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    font-size: 15px;
+    line-height: 20px;
+    font-family:  Source Serif Pro;
+	color: #ffffff;
+	font-weight: 400;
+	letter-spacing: 0px;
+}
+.amp-sidebar-navigation ul.menu ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+/* main */
+
+.main {
+	color: #444444;
+	font-weight: 400;
+	margin: 16px auto;
+	max-width: 600px;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	padding: 0 16px;
+	box-sizing: border-box;
+}
+
+/* Article Header */
+
+.amp-wp-article-header {
+	align-items: center;
+	align-content: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 16px 0 10px;
+}
+
+.amp-wp-title {
+	display: block;
+	width: 100%;
+	margin:0;
+}
+
+/* Article Meta */
+.amp-wp-article-meta {
+	margin: 0px 0 10px 0;
+}
+.amp-wp-meta {
+	color: #777777;
+	display: inline-block;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+
+.amp-wp-article-header .amp-wp-meta:last-of-type {
+	text-align: right;
+}
+
+.amp-wp-article-header .amp-wp-meta:first-of-type {
+	text-align: left;
+}
+
+.amp-wp-byline amp-img,
+.amp-wp-byline .amp-wp-author {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.amp-wp-byline amp-img {
+	border: 1px solid #ce534d;
+	border-radius: 50%;
+	position: relative;
+	margin-right: 6px;
+}
+
+.amp-wp-posted-on {
+	text-align: right;
+}
+
+/* Featured image */
+
+.amp-wp-article-featured-image {
+	margin: 0 0 1em;
+}
+.amp-wp-article-featured-image amp-img {
+	margin: 0 auto;
+	display:block;
+}
+.amp-wp-article-featured-image.wp-caption .wp-caption-text {
+	margin: 0 18px;
+}
+
+/* Article Content */
+.amp-wp-page-content {
+	padding: 6px 0 0;
+}
+.amp-wp-article-content ul,
+.amp-wp-article-content ol {
+	margin-left: 1em;
+}
+
+.amp-wp-article-content amp-img {
+	margin: 0 auto;
+}
+
+.amp-wp-article-content amp-img.alignright {
+	margin: 0 0 1em 16px;
+}
+
+.amp-wp-article-content amp-img.alignleft {
+	margin: 0 16px 1em 0;
+}
+
+
+/* comments */
+
+.amp-comments {
+    margin-top: 16px;
+}
+.comment-text {
+    position: relative;
+    padding-left: 76px;
+    min-height:60px;
+}
+.comment-text p {
+	margin-bottom:0;
+}
+.comment-list .comment-metadata a {
+    font-size: 12px;
+    color: #777;
+}
+.comment-list .comment-author amp-img {
+    margin-right:10px;
+}
+ul.comment-list li {
+    list-style-type: none;
+}
+.comment {
+    margin-top: 16px;
+    border: 1px solid #ddd;
+    padding: 1em;
+}
+.comment-list amp-img {
+    float: left;
+}
+/* Captions */
+
+.wp-caption {
+	padding: 0;
+}
+
+.wp-caption.alignleft {
+	margin-right: 16px;
+}
+
+.wp-caption.alignright {
+	margin-left: 16px;
+}
+
+.wp-caption .wp-caption-text {
+	border-bottom: 1px solid #eee;
+	color: #777777;
+	font-size: .875em;
+	line-height: 1.5em;
+	margin: 0;
+	padding: .66em 10px .75em;
+}
+
+/* AMP Media */
+
+amp-iframe,
+amp-youtube,
+amp-instagram,
+amp-vine {
+	background: #eee;
+	margin: 0 -16px 1.5em;
+}
+
+.amp-wp-article-content amp-carousel amp-img {
+	border: none;
+}
+
+amp-carousel > amp-img > img {
+	object-fit: contain;
+}
+
+.amp-wp-iframe-placeholder {
+	background: #eee url( ../../../wp-content/plugins/kadence-amp/assets/images/placeholder-icon.png ) no-repeat center 40%;
+	background-size: 48px 48px;
+	min-height: 48px;
+}
+
+/* Article Footer Meta */
+
+.amp-wp-article-footer .amp-wp-meta {
+	display: block;
+}
+
+.amp-wp-tax-category,
+.amp-wp-tax-tag {
+	margin: 16px 0;
+	display: block;
+}
+
+.amp-wp-comments-link, .mod_show_original {
+	color: #777777;
+	font-size: .875em;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 1.5em 0 1.5em;
+}
+.amp-wp-comments-link a, .mod_show_original a{
+	border-style: solid;
+	border-color: #eee;
+	border-width: 1px 1px 2px;
+	background-color: transparent;
+	color: #ce534d;
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 0 auto;
+	max-width: 200px;
+	padding: 11px 16px;
+	text-decoration: none;
+	width: 50%;
+	-webkit-transition: background-color 0.2s ease;
+			transition: background-color 0.2s ease;
+}
+/* Related Posts */
+.amp-related-posts ul {
+	list-style:none;
+}
+.amp-related-posts ul li {
+	margin-bottom:16px;
+}
+a.amp-related-img-link {
+    margin-right: 10px;
+    display: block;
+}
+.amp-related-posts .amp-related-meta {
+	display:block;
+}
+
+/* AMP Footer */
+
+.amp-wp-footer {
+	background: #444444;
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.amp-wp-footer > div {
+	max-width: 600px;
+    margin: 0 auto;
+	padding: 16px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.amp-wp-footer a {
+	text-decoration: none;
+	color: #ffffff;
+}
+.show_original {
+    display: block;
+    text-align: center;
+}
+.show_original a {
+    display: inline-block;
+    margin-top: 10px;
+    padding:4px 8px;
+    border: 1px solid #ffffff;
+}
+.back-to-top {
+	top: 16px;
+	position: absolute;
+	right: 16px;
+}
+@media (max-width: 544px) {
+	.wp-caption.alignleft, .amp-wp-article-content amp-img.alignleft {
+		float:none;
+		margin-right:auto;
+		margin-left:auto;
+	}
+}
+		/* Inline stylesheets */
+.amp-wp-inline-0f1bf07c72fdf1784fff2e164d9dca98 { display:none; }/* Custom styles */
+@font-face{font-family:"tigers";font-display:swap;src:url("../../../wp-content/themes/tgs/css/fonts/tigers.eot");src:url("../../../wp-content/themes/tgs/css/fonts/tigers-1.eot") format("embedded-opentype"),url("../../../wp-content/themes/tgs/css/fonts/tigers.woff2") format("woff2"),url("../../../wp-content/themes/tgs/css/fonts/tigers.woff") format("woff"),url("../../../wp-content/themes/tgs/css/fonts/tigers.ttf") format("truetype"),url("../../../wp-content/themes/tgs/css/fonts/tigers.svg") format("svg")}
+h1,h2,h3,h4,h5,h6{font-family:'Tigers',sans-serif,'Arial';color:#444444;line-height:1.2}
+h1{font-size:24px;font-weight:700; color: #000;}
+h2{font-size:22px;padding:10px 0 10px 8px;margin:25px 0 20px;border-left:2px solid #487bd9;background-color:#f5f8fb}
+h3{font-size:20px;padding:15px 0 15px;margin-bottom:0}
+h4{font-size:16px;padding:12px 0 12px;margin-bottom:0}
+h5{font-size:17px;padding:5px 0 0px;margin-bottom:0}
+h6{font-size:14px;margin-bottom:0}
+.main{padding:0 10px;margin-top: 0;}
+.amp-wp-page-content li{list-style-position:inside;padding-bottom:10px}
+.amp-wp-page-content strong{padding:8px 0}
+.amp-wp-page-content a{max-width:100%;display:inline-block;text-decoration:none}
+.amp-wp-page-content a:before{font-family:'tigers';content:"\e7ff";margin-right:0px;font-size:14px;color:#feb822}
+.amp-breadcrumb-container{font-size:15px;background-color:#f5f7fa;border-bottom:1px solid #eee;padding:10px 0px;-webkit-box-shadow:0 -1px 2px rgba(0,0,0,.06) inset;box-shadow:0 -1px 2px rgba(0,0,0,.06) inset}
+.amp-breadcrumb-container a{ text-decoration: none;}
+.amp-wp-article-header{padding-bottom: 10px;   border-bottom: 1px dotted #3265c5;margin-bottom: 0px;}	</style>
+</head>
+
+<body class="">
+
+<header id="top" class="amp-wp-header">
+	<div>
+		<a href="../../index.htm">TIGRES ALUMINIO</a><div class="amp-accordion-header"><button class="amp-menu-sidebar amp-icon-button" on="tap:sidebar.toggle"></button></div>	</div>
+</header>
+
+<div class="main">
+	<article class="amp-wp-article">
+		<div id="amp-bread"><div class="amp-breadcrumb-container"><span><a href="../../index.htm" itemprop="url" class="kad-bc-home"><span>Casa</span></a></span> <span class="bc-delimiter">»</span> <span><a href="../../blog/index.htm" itemprop="url"><span>Blog</span></a></span> <span class="bc-delimiter">»</span> <span class="kad-breadcurrent">¿Qué propiedades tiene el aluminio 6061 t6?</span></div></div><div class="amp-wp-article-featured-image feature-content">
+	<amp-img width="800" height="600" src="../../../2021/02/6061-t6-aluminum-plate.jpg" class="attachment-large size-large wp-post-image amp-wp-enforced-sizes" alt="6061 t6 aluminum plate" srcset="/2021/02/6061-t6-aluminum-plate.jpg 800w, /2021/02/6061-t6-aluminum-plate-160x120.jpg 160w, /2021/02/6061-t6-aluminum-plate-560x420.jpg 560w, /2021/02/6061-t6-aluminum-plate-380x285.jpg 380w" sizes="(max-width: 800px) 100vw, 800px" title="¿Qué propiedades tiene el aluminio 6061 t6? 1" layout="intrinsic"></amp-img></div>
+<header class="amp-wp-article-header"><h1 class="amp-wp-title">¿Qué propiedades tiene el aluminio 6061 t6?</h1></header><div class="amp-wp-article-meta"><div class="amp-wp-meta amp-wp-posted-on">
+	<time datetime="2022-01-27T00:17:39+00:00">
+		2022年1月27日	</time>
+</div>
+	<div class="amp-wp-meta amp-wp-byline">
+		<span class="kt-amp-by-author">por</span> <span class="amp-wp-author author vcard">administración</span>
+	</div>
+</div><div class="amp-wp-page-content"><!--noindex--><div class="lwptoc toc-list lwptoc-autoWidth lwptoc-baseItems lwptoc-light lwptoc-notInherit" data-smooth-scroll="1" data-smooth-scroll-offset="24"><div class="lwptoc_i">    <div class="lwptoc_header">
+        <b class="lwptoc_title">Tabla de contenido</b>                    <span class="lwptoc_toggle">
+                <a href="#" class="lwptoc_toggle_label" data-label="HIDE">SHOW</a>
+            </span>
+            </div>
+<div class="lwptoc_items amp-wp-inline-0f1bf07c72fdf1784fff2e164d9dca98">
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#what-is-6061-aluminum-sheet" rel="nofollow">
+                    <span class="lwptoc_item_number">1</span>
+                <span class="lwptoc_item_label">¿Qué es la lámina de aluminio 6061?</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#aluminum-6061-t6-properties" rel="nofollow">
+                    <span class="lwptoc_item_number">2</span>
+                <span class="lwptoc_item_label">Aluminio 6061 t6 propiedades</span>
+    </a>
+    <ul class="lwptoc_itemWrap"><li class="lwptoc_item">    <a href="#6061-t6-aluminum-physical-properties" rel="nofollow">
+                    <span class="lwptoc_item_number">2.1</span>
+                <span class="lwptoc_item_label">Propiedades físicas del aluminio 6061 t6</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#6061-t6-aluminum-mechanical-properties" rel="nofollow">
+                    <span class="lwptoc_item_number">2.2</span>
+                <span class="lwptoc_item_label">Propiedades mecánicas del aluminio 6061-t6</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#6061-t6-aluminum-electrical-properties" rel="nofollow">
+                    <span class="lwptoc_item_number">2.3</span>
+                <span class="lwptoc_item_label">Propiedades eléctricas del aluminio 6061 t6</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#6061-t6-aluminum-thermal-properties" rel="nofollow">
+                    <span class="lwptoc_item_number">2.4</span>
+                <span class="lwptoc_item_label">Propiedades térmicas del aluminio 6061 t6</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#6061-t6-aluminum-processing-properties" rel="nofollow">
+                    <span class="lwptoc_item_number">2.5</span>
+                <span class="lwptoc_item_label">Propiedades de procesamiento de aluminio 6061-t6</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#the-advantages-of-6061-t6-aluminum-plate" rel="nofollow">
+                    <span class="lwptoc_item_number">2.6</span>
+                <span class="lwptoc_item_label">Las ventajas de la placa de aluminio 6061-T6</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#6061-t6-aluminum-sheet-applications" rel="nofollow">
+                    <span class="lwptoc_item_number">2.7</span>
+                <span class="lwptoc_item_label">Aplicaciones de láminas de aluminio 6061-T6</span>
+    </a>
+    </li></ul></li><li class="lwptoc_item">    <a href="#yield-strength-of-aluminum-6061-t6" rel="nofollow">
+                    <span class="lwptoc_item_number">3</span>
+                <span class="lwptoc_item_label">Límite elástico del aluminio 6061 T6</span>
+    </a>
+    </li><li class="lwptoc_item">    <a href="#6061-aluminum-vs-7075" rel="nofollow">
+                    <span class="lwptoc_item_number">4</span>
+                <span class="lwptoc_item_label">Aluminio 6061 frente a 7075</span>
+    </a>
+    </li></ul></div>
+</div></div><!--/noindex--><h2><span id="what-is-6061-aluminum-sheet">¿Qué es la lámina de aluminio 6061?</span></h2>
+<p>El aluminio 6061 t6 es una aleación muy resistente y duradera. La resistencia a la corrosión del aluminio 6061 t6 lo hace adecuado para su uso en cualquier entorno, ya sea en el agua o en el aire.</p>
+<p>6061 t6 es una aleación de uso general que tiene una excelente resistencia a la corrosión, buena soldabilidad y es bastante fuerte. También tiene buena maquinabilidad y se puede trabajar fácilmente con herramientas manuales.</p>
+<p>Para más detalles sobre<a href="../../product/6061-aluminum-sheet-plate/index.htm"> hoja de aluminio 6061</a>.</p>
+<h2><span id="aluminum-6061-t6-properties">Aluminio 6061 t6 propiedades</span></h2>
+<p>El aluminio 6061 t6 es la aleación de aluminio más utilizada porque tiene la mejor combinación de relación resistencia/peso, resistencia a la corrosión y soldabilidad.</p>
+<p>Los puntos de datos con la nota AA han sido proporcionados por Aluminium Association, Inc. y NO SON PARA DISEÑO.</p>
+<div class="table-responsive">
+<table class="table" border="0" width="100%" cellspacing="0" cellpadding="0"><caption>
+<h3><span id="6061-t6-aluminum-physical-properties"><strong>Propiedades físicas del aluminio 6061 t6</strong></span></h3>
+</caption>
+<tbody><tr><td>Propiedades físicas</td>
+<td>Métrico</td>
+<td>inglés</td>
+<td>Comentarios</td>
+</tr><tr><td>Densidad</td>
+<td>2,7 g/cc</td>
+<td>0,0975 lb/in³</td>
+<td valign="top"> AUTOMÓVIL CLUB BRITÁNICO; Típico</td>
+</tr></tbody></table></div>
+<div class="table-responsive">
+<table class="table" border="0" width="100%" cellspacing="0" cellpadding="0"><caption>
+<h3><span id="6061-t6-aluminum-mechanical-properties"><strong>Propiedades mecánicas del aluminio 6061-t6</strong></span></h3>
+</caption>
+<tbody><tr><td>Dureza, Brinell</td>
+<td>95</td>
+<td>95</td>
+<td valign="top"> AUTOMÓVIL CLUB BRITÁNICO; Típico; carga de 500 g; bola de 10mm</td>
+</tr><tr><td>Dureza, Nudo</td>
+<td>120</td>
+<td>120</td>
+<td valign="top"> Convertido del valor de dureza Brinell</td>
+</tr><tr><td>Dureza, Rockwell A</td>
+<td>40</td>
+<td>40</td>
+<td valign="top"> Convertido del valor de dureza Brinell</td>
+</tr><tr><td>Dureza, Rockwell B</td>
+<td>60</td>
+<td>60</td>
+<td valign="top"> Convertido del valor de dureza Brinell</td>
+</tr><tr><td>Dureza, Vickers</td>
+<td>107</td>
+<td>107</td>
+<td valign="top"> Convertido del valor de dureza Brinell</td>
+</tr><tr><td>Resistencia a la tracción</td>
+<td>310 MPa</td>
+<td>45000psi</td>
+<td valign="top"> AUTOMÓVIL CLUB BRITÁNICO; Típico</td>
+</tr><tr><td>Resistencia a la tracción</td>
+<td>276 MPa</td>
+<td>40000psi</td>
+<td valign="top"> AUTOMÓVIL CLUB BRITÁNICO; Típico</td>
+</tr><tr><td>Alargamiento a la rotura</td>
+<td>12 %</td>
+<td>12 %</td>
+<td valign="top"> AUTOMÓVIL CLUB BRITÁNICO; Típico; 1/16 pulg. (1,6 mm) de espesor</td>
+</tr><tr><td>Alargamiento a la rotura</td>
+<td>17 %</td>
+<td>17 %</td>
+<td valign="top"> AUTOMÓVIL CLUB BRITÁNICO; Típico; 1/2 pulg. (12,7 mm) de diámetro</td>
+</tr><tr><td>Módulo de elasticidad</td>
+<td>68,9 GPa</td>
+<td>10000 ksi</td>
+<td valign="top"> AUTOMÓVIL CLUB BRITÁNICO; Típico; Promedio de tensión y compresión. El módulo de compresión es aproximadamente 2% mayor que el módulo de tracción.</td>
+</tr><tr><td>Resistencia a la tracción con muescas</td>
+<td>324 MPa</td>
+<td>47000psi</td>
+<td valign="top"> Espécimen con muescas laterales de 2,5 cm de ancho x 0,16 cm de grosor, K<sub>t</sub> = 17.</td>
+</tr><tr><td>Fuerza máxima de rodamiento</td>
+<td>607 MPa</td>
+<td>88000psi</td>
+<td valign="top"> Distancia al borde/diámetro del pasador = 2,0</td>
+</tr><tr><td>Límite elástico del rodamiento</td>
+<td>386 MPa</td>
+<td>56000psi</td>
+<td valign="top"> Distancia al borde/diámetro del pasador = 2,0</td>
+</tr><tr><td>El coeficiente de Poisson</td>
+<td>0.33</td>
+<td>0.33</td>
+<td valign="top"> Estimado a partir de tendencias en aleaciones de Al similares.</td>
+</tr><tr><td>Resistencia a la fatiga</td>
+<td>96,5 MPa</td>
+<td>14000psi</td>
+<td valign="top"> AUTOMÓVIL CLUB BRITÁNICO; 500.000.000 ciclos de tensión completamente invertida; Máquina/muestra RR Moore</td>
+</tr><tr><td>Tenacidad a la fractura</td>
+<td>29 MPa-m½</td>
+<td>26,4 ksi-in½</td>
+<td valign="top"> k<sub>CI</sub>; orientación TL.</td>
+</tr><tr><td>maquinabilidad</td>
+<td>50 %</td>
+<td>50 %</td>
+<td valign="top"> Escala 0-100 de Aleaciones de Aluminio</td>
+</tr><tr><td>Módulo de corte</td>
+<td>26 GPa</td>
+<td>3770 ksi</td>
+<td valign="top"> Estimado a partir de aleaciones de Al similares.</td>
+</tr><tr><td>Resistencia a la cizalladura</td>
+<td>207 MPa</td>
+<td>30000psi</td>
+<td valign="top"> AUTOMÓVIL CLUB BRITÁNICO; Típico</td>
+</tr></tbody></table></div>
+<div class="table-responsive">
+<table class="table" border="0" width="100%" cellspacing="0" cellpadding="0"><caption>
+<h3><span id="6061-t6-aluminum-electrical-properties"><strong>Propiedades eléctricas del aluminio 6061 t6</strong></span></h3>
+</caption>
+<tbody><tr><td>Resistividad electrica</td>
+<td>3.99e-006 ohm-cm</td>
+<td>3.99e-006 ohm-cm</td>
+<td valign="top"> AUTOMÓVIL CLUB BRITÁNICO; Típico a 68°F</td>
+</tr></tbody></table></div>
+<div class="table-responsive">
+<table class="table" border="0" width="100%" cellspacing="0" cellpadding="0"><caption>
+<h3><span id="6061-t6-aluminum-thermal-properties"><strong>Propiedades térmicas del aluminio 6061 t6</strong></span></h3>
+</caption>
+<tbody><tr><td>CTE, lineal 68°F</td>
+<td>23,6 µm/m-°C</td>
+<td>13,1 µin/in-°F</td>
+<td valign="top"> AUTOMÓVIL CLUB BRITÁNICO; Típico; Promedio sobre el rango de 68-212°F.</td>
+</tr><tr><td>CTE, lineal 250°C</td>
+<td>25,2 µm/m-°C</td>
+<td>14 µin/in-°F</td>
+<td valign="top"> Estimado a partir de tendencias en aleaciones de Al similares. 20-300°C.</td>
+</tr><tr><td>Capacidad calorífica específica</td>
+<td>0,896 J/g-°C</td>
+<td>0,214 BTU/lb-°F</td>
+<td valign="top"></td>
+</tr><tr><td>Conductividad térmica</td>
+<td>167 W/mK</td>
+<td>1160 BTU-in/hr-ft²-°F</td>
+<td valign="top"> AUTOMÓVIL CLUB BRITÁNICO; Típico a 77°F</td>
+</tr><tr><td>Punto de fusion</td>
+<td>582 – 652 ºC</td>
+<td>1080 – 1205 °F</td>
+<td valign="top"> AUTOMÓVIL CLUB BRITÁNICO; Rango típico basado en la composición típica para productos forjados de 1/4 de pulgada de espesor o más; La fusión eutéctica puede eliminarse completamente por homogeneización.</td>
+</tr><tr><td>Solidus</td>
+<td>582 ºC</td>
+<td>1080 °F</td>
+<td valign="top"> AUTOMÓVIL CLUB BRITÁNICO; Típico</td>
+</tr><tr><td>Líquido</td>
+<td>652 ºC</td>
+<td>1205 °F</td>
+<td valign="top"> AUTOMÓVIL CLUB BRITÁNICO; Típico</td>
+</tr></tbody></table></div>
+<div class="table-responsive">
+<table class="table" border="0" width="100%" cellspacing="0" cellpadding="0"><caption>
+<h3><span id="6061-t6-aluminum-processing-properties"><strong>Propiedades de procesamiento de aluminio 6061-t6</strong></span></h3>
+</caption>
+<tbody><tr><td>Temperatura de la solución</td>
+<td>529 ºC</td>
+<td>985 °F</td>
+<td valign="top"></td>
+</tr><tr><td>Temperatura de envejecimiento</td>
+<td>160 °C</td>
+<td>320 °F</td>
+<td valign="top"> Productos laminados o trefilados; mantener a temperatura durante 18 h</td>
+</tr><tr><td>Temperatura de envejecimiento</td>
+<td>177 ºC</td>
+<td>350 °F</td>
+<td valign="top"> Extrusiones o forjas; mantener a temperatura durante 8 horas</td>
+</tr></tbody></table></div>
+<h3><span id="the-advantages-of-6061-t6-aluminum-plate">Las ventajas de la placa de aluminio 6061-T6</span></h3>
+<ul><li>El aluminio 6061-T6 está envejecido artificialmente.</li>
+<li>El 6061-T6 tiene una mayor resistencia a la tracción y a la fluencia que el 6061-T4.</li>
+<li>Ofrece buenas características de acabado.</li>
+<li>Se puede soldar o unir.</li>
+<li>También se puede anodizar.</li>
+</ul><h3><span id="6061-t6-aluminum-sheet-applications">Aplicaciones de láminas de aluminio 6061-T6</span></h3>
+<p>Las aplicaciones comunes para la hoja de aluminio 6061-T6 incluyen:</p>
+<ul><li> Accesorios de aeronaves</li>
+<li>monturas de lentes de cámara</li>
+<li>acoplamientos, accesorios marinos y hardware</li>
+<li>accesorios y conectores electricos</li>
+<li>decorativa o miscelánea</li>
+<li>hardware</li>
+<li>pasadores de bisagra</li>
+<li>partes magneto</li>
+<li>pistones de freno</li>
+<li>pistones hidraulicos</li>
+<li>accesorios de electrodomésticos</li>
+<li>valvulas y partes de valvulas</li>
+<li>cuadros de bicicleta</li>
+</ul><h2 class="css-a5m6co-text css-p8ym46-fontFamily css-11397xj-fontSize css-15qzf5r-display css-7bji7i-wordBreak"><span id="yield-strength-of-aluminum-6061-t6"><span class="">Límite elástico del aluminio 6061 T6</span></span></h2>
+<p>6061-T6. El templado T6 6061 tiene una resistencia máxima a la tracción de al menos 42 000 psi (290 MPa) y un límite elástico de al menos 35 000 psi (241 MPa). En espesores de 0,250 pulgadas (6,35 mm) o menos, tiene un alargamiento de 8% o más; en secciones más gruesas tiene un alargamiento de 10%.</p>
+<h2><span id="6061-aluminum-vs-7075">Aluminio 6061 frente a 7075</span></h2>
+<p>El aluminio 6061 es una aleación de uso general y bajo costo que se puede mecanizar fácilmente con tolerancias estrechas. Ofrece buena resistencia a la corrosión y soldabilidad. El contenido de magnesio lo convierte en una opción valiosa para piezas que requieren un producto conformable.</p>
+<p>El aluminio 7075 tiene una alta relación resistencia-peso y una resistencia superior a la corrosión debido a su contenido de aleación. El titanio y el cobre lo hacen aún más fuerte y resistente al calor que el aluminio 6061, pero las propiedades de ingeniería no son tan buenas porque no se puede mecanizar fácilmente con tolerancias estrictas.</p>
+<p>El aluminio 7075 tiene mayor resistencia y menor peso que el aluminio 6061 pero tiene menor dureza.</p>
+</div><div class="amp-wp-meta amp-wp-tax-category">Categorías: <a href="../../blog/index.htm" rel="category tag">Blog</a></div><div class="amp-wp-meta amp-wp-tax-tag">Etiquetas: <a href="../../tag/6061/index.htm" rel="tag">6061</a>, <a href="../../tag/properties/index.htm" rel="tag">propiedades</a>, <a href="../../tag/t6/index.htm" rel="tag">T6</a></div><div class="amp-share-box"><amp-social-share type="facebook" width="60" height="44" data-share-endpoint="http://www.facebook.com/sharer.php?u=https://pizzerialabellastoria.nl/es/what-is-aluminum-6061-t6-properties/"></amp-social-share><amp-social-share type="twitter" width="60" height="44"></amp-social-share><amp-social-share type="linkedin" width="60" height="44"></amp-social-share></div><div class="amp-comments"><div id="comments" class="section-content comments-area"></div>				<div class="amp-wp-comments-link">
+					<a href="../index.htm#respond">
+						Deja un comentario					</a>
+				</div>
+			</div><div class="amp-related-posts"><h3>Artículos Relacionados</h3><ul><li class="flex items-center"><a href="../../what-is-the-thickness-of-16-gauge-aluminum/amp/index.htm" class="amp-related-img-link" title="¿Cuál es el grosor del aluminio calibre 16?"><amp-img src="../../../2021/02/5mm-5052-aluminum-plate-2-80x80.jpg" width="80" height="80" alt="5mm 5052 aluminum plate" srcset="/2021/02/5mm-5052-aluminum-plate-2-80x80.jpg 80w, /2021/02/5mm-5052-aluminum-plate-2-160x160.jpg 160w" sizes="(max-width: 80px) 100vw, 80px" class="amp-related-img"></amp-img></a><div class="amp-related-title"><a href="../../what-is-the-thickness-of-16-gauge-aluminum/amp/index.htm" title="¿Cuál es el grosor del aluminio calibre 16?">¿Cuál es el grosor del aluminio calibre 16?</a><div class="amp-related-meta amp-wp-meta">2022年1月26日</div></div></li><li class="flex items-center"><div class="amp-related-title"><a href="../../what-is-the-sheet-metal-gauge-how-to-calculate-aluminum-gauge/amp/index.htm" title="¿Cuál es el calibre de la chapa? ¿Cómo calcular el calibre de aluminio?">¿Cuál es el calibre de la chapa? ¿Cómo calcular el calibre de aluminio?</a><div class="amp-related-meta amp-wp-meta">2022年1月11日</div></div></li><li class="flex items-center"><a href="../../aluminum-alloy-density-table-and-alternative/amp/index.htm" class="amp-related-img-link" title="Tabla de densidad de diferentes grados de aleación de aluminio y grados alternativos"><amp-img src="../../../2021/02/3003-aluminum-coil-2-80x80.jpg" width="80" height="80" alt="3003 aluminum coil" srcset="/2021/02/3003-aluminum-coil-2-80x80.jpg 80w, /2021/02/3003-aluminum-coil-2-160x160.jpg 160w" sizes="(max-width: 80px) 100vw, 80px" class="amp-related-img"></amp-img></a><div class="amp-related-title"><a href="../../aluminum-alloy-density-table-and-alternative/amp/index.htm" title="Tabla de densidad de diferentes grados de aleación de aluminio y grados alternativos">Tabla de densidad de diferentes grados de aleación de aluminio y grados alternativos</a><div class="amp-related-meta amp-wp-meta">2021年12月21日</div></div></li></ul></div>
+	</article>
+</div>
+
+<footer class="amp-wp-footer">
+	<div class="clearfix">
+		<div class="amp-footer-content">© 2022 Lions Industria Aluminio</div>	</div>
+</footer>
+
+<amp-analytics id="UA-194323042-1" type="googleanalytics"><script type="application/json">{"vars":{"account":"UA-194323042-1"},"triggers":{"trackPageview":{"on":"visible","request":"pageview"}}}</script></amp-analytics><amp-sidebar id="sidebar" layout="nodisplay" side="right"><div class="amp-sidebar-navigation"><div role="button" tabindex="0" on="tap:sidebar.close" class="close-amp-sidebar">X</div><div class="menu-topnav-container"><ul id="menu-topnav" class="menu"><li><a href="../../index.htm">CASA</a></li>
+<li><a title="Producto de metal de aluminio" href="../../aluminum-metal/index.htm">productos</a>
+<ul class="sub-menu">
+	<li><a href="../../products/aluminum-mill-finish/index.htm">acabado de molino de aluminio</a></li>
+	<li><a href="../../products/painted-coated-aluminum/index.htm">Aluminio revestido pintado</a></li>
+	<li><a href="../../products/powder-coating-aluminium/index.htm">Recubrimiento de polvo de aluminio</a></li>
+	<li><a href="../../products/aluminium-cladding/index.htm">revestimiento de aluminio</a></li>
+	<li><a href="../../products/perforated-aluminium/index.htm">Aluminio perforado</a></li>
+</ul>
+</li>
+<li class="current-post-ancestor current-menu-parent"><a href="../../blog/index.htm">Blog</a></li>
+<li><a rel="nofollow" href="../../about-tigers/index.htm">Acerca de los Lions</a></li>
+<li><a rel="nofollow" href="../../contact-tigers/index.htm">Contáctenos</a></li>
+</ul></div></div></amp-sidebar></body>
+</html>
+<!-- Cached for great performance - Debug: cached@1653388747 -->
